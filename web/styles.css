@@ -155,7 +155,8 @@ svg.i { width: 24px; height: 24px; fill: currentColor; flex: none; }
 .brand { display: flex; align-items: center; gap: 10px; }
 .brand img.mark { height: 26px; }
 .brand .title-m { flex: 1; }
-.avatar { width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid var(--line-strong); object-fit: cover; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid var(--line-strong); background: var(--bg); display: grid; place-items: center; }
+.avatar img { width: 22px; }
 .headline { margin-top: 30px; perspective: 600px; }
 .headline .w { display: inline-block; opacity: 0; transform: translateY(28px) rotateX(-50deg); animation: word .8s var(--ease-spring) forwards; animation-delay: calc(var(--d, 0ms) + var(--i) * 70ms); white-space: pre; }
 @keyframes word { to { opacity: 1; transform: none; } }
@@ -279,7 +280,8 @@ svg.i { width: 24px; height: 24px; fill: currentColor; flex: none; }
 .status .ic svg { width: 24px; height: 24px; fill: currentColor; }
 @keyframes pop { from { transform: scale(.4); } }
 .owner { display: flex; align-items: center; gap: 14px; }
-.owner img { width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--primary); object-fit: cover; }
+.owner .ff-badge { width: 56px; height: 56px; flex: none; border-radius: 50%; border: 2px solid var(--primary); background: var(--bg); display: grid; place-items: center; }
+.owner .ff-badge img { width: 32px; }
 .link-row { display: flex; align-items: center; gap: 14px; padding: 16px; border-radius: 20px; background: var(--surface); border: 1px solid var(--line); text-align: left; width: 100%; }
 .link-row > svg:first-child { fill: var(--primary); width: 24px; height: 24px; flex: none; }
 .link-row > div { flex: 1; min-width: 0; }

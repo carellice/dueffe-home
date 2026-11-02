@@ -191,9 +191,10 @@ private fun HomeHeader(catalog: Catalog, headlineDelay: Long, onInfo: () -> Unit
             Spacer(Modifier.width(10.dp))
             Text("Dueffe Home", style = MaterialTheme.typography.titleMedium, color = DF.Text, modifier = Modifier.weight(1f))
             Box(
-                Modifier.size(40.dp).pressScale(0.88f, onInfo).clip(CircleShape).border(1.5.dp, DF.LineStrong, CircleShape),
+                Modifier.size(40.dp).pressScale(0.88f, onInfo).clip(CircleShape).background(DF.Bg).border(1.5.dp, DF.LineStrong, CircleShape),
+                contentAlignment = Alignment.Center,
             ) {
-                AsyncImage(catalog.owner.avatar, "Profilo", Modifier.fillMaxSize().clip(CircleShape), contentScale = ContentScale.Crop)
+                FfMark(Modifier.size(22.dp))
             }
         }
         VerticalGap(30.dp)

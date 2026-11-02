@@ -59,7 +59,6 @@ const state = {
   latest: null,
   version: null,
   splashDone: false,
-  scroll: {},
   expanded: new Set(),
 };
 
@@ -184,7 +183,6 @@ function navigate(hash) { if (location.hash !== hash) location.hash = hash; else
 
 function onRoute() {
   const prev = state.route;
-  if (prev) state.scroll[prev] = scrollY;
   const r = parseRoute();
   const key = location.hash || '#/';
   const goingDetail = r.name === 'detail';
@@ -228,7 +226,8 @@ function render(r = parseRoute(), prev = null) {
   const html = { home, explore, gist, info }[r.name]();
   view.innerHTML = `<div class="page ${dirClass}">${html}</div>`;
   ({ home: wireHome, explore: wireExplore, gist: wireGist, info: wireInfo })[r.name]();
-  requestAnimationFrame(() => scrollTo(0, state.scroll[state.route] || 0));
+  // Ogni cambio di pagina riparte dall'alto.
+  scrollTo(0, 0);
 }
 
 function moveIndicator(idx) {
@@ -261,7 +260,7 @@ function home() {
   return `
   <header class="home-head">
     <div class="brand"><img class="mark" src="assets/ff-mark.png" alt=""><span class="title-m">Dueffe Home</span>
-      <a href="#/info" class="press"><img class="avatar" src="${esc(c.owner.avatar)}" alt="Profilo"></a></div>
+      <a href="#/info" class="press avatar" aria-label="Info"><img src="assets/ff-mark.png" alt=""></a></div>
     <h1 class="display-m headline">${headline}</h1>
     <p class="body-l muted reveal" style="--i:4;margin-top:10px">App Android, giochi, strumenti per il PC e web app di ${esc(c.owner.name)}. Tutto aggiornato in tempo reale da GitHub.</p>
     <div class="stats">
@@ -495,7 +494,7 @@ function info() {
     <h1 class="display-s reveal" style="--i:1;margin-top:18px">Dueffe Home</h1>
     <p class="body-m muted reveal" style="--i:2">Versione web${state.version ? ` ${esc(state.version)}` : ''}</p>
     <div class="card reveal" style="--i:3;margin-top:26px">${update}</div>
-    <div class="card reveal" style="--i:4;margin-top:16px"><div class="owner"><img src="${esc(c.owner.avatar)}" alt=""><div><div class="title-l">${esc(c.owner.name)}</div><div class="body-s muted">@${esc(c.owner.login)} su GitHub</div></div></div></div>
+    <div class="card reveal" style="--i:4;margin-top:16px"><div class="owner"><span class="ff-badge"><img src="assets/ff-mark.png" alt=""></span><div><div class="title-l">${esc(c.owner.name)}</div><div class="body-s muted">@${esc(c.owner.login)} su GitHub</div></div></div></div>
     <div class="stack reveal" style="--i:5;margin-top:16px">
       ${link('person', 'Profilo GitHub', 'Tutti i repository', esc(c.owner.url), 'target="_blank" rel="noopener"')}
       ${link('code', 'Codice di Dueffe Home', 'Repository pubblica', `https://github.com/${REPO}`, 'target="_blank" rel="noopener"')}

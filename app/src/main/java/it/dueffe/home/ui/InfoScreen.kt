@@ -89,10 +89,10 @@ fun InfoScreen(catalog: Catalog, vm: AppViewModel, scroll: ScrollState, bottomPa
         VerticalGap(16.dp)
         CardSurface(Modifier.fillMaxWidth().reveal(4)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
-                AsyncImage(
-                    catalog.owner.avatar, null, contentScale = ContentScale.Crop,
-                    modifier = Modifier.size(56.dp).clip(CircleShape).border(2.dp, DF.Primary, CircleShape),
-                )
+                Box(
+                    Modifier.size(56.dp).clip(CircleShape).background(DF.Bg).border(2.dp, DF.Primary, CircleShape),
+                    contentAlignment = Alignment.Center,
+                ) { FfMark(Modifier.size(32.dp)) }
                 Spacer(Modifier.width(14.dp))
                 Column(Modifier.weight(1f)) {
                     Text(catalog.owner.name, style = MaterialTheme.typography.titleLarge, color = DF.Text)
