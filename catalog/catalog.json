@@ -1,0 +1,2785 @@
+{
+ "schemaVersion": 1,
+ "generatedAt": "2026-11-02T17:00:07.840Z",
+ "owner": {
+  "login": "carellice",
+  "name": "Flavio Ceccarelli",
+  "avatar": "https://avatars.githubusercontent.com/u/100231222?v=4",
+  "url": "https://github.com/carellice"
+ },
+ "categories": [
+  {
+   "id": "android",
+   "title": "App Android",
+   "subtitle": "Native, in Kotlin e Jetpack Compose"
+  },
+  {
+   "id": "giochi",
+   "title": "Giochi",
+   "subtitle": "Da giocare da soli o in compagnia"
+  },
+  {
+   "id": "desktop",
+   "title": "Windows e Mac",
+   "subtitle": "Strumenti per il computer"
+  },
+  {
+   "id": "web",
+   "title": "Web app",
+   "subtitle": "Si aprono nel browser, senza installare nulla"
+  },
+  {
+   "id": "sviluppo",
+   "title": "AI e sviluppo",
+   "subtitle": "Server MCP, skill e librerie"
+  }
+ ],
+ "projects": [
+  {
+   "id": "money",
+   "name": "Money",
+   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
+   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
+   "features": [
+    "Font Bricolage Grotesque (SIL OFL).",
+    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "cloudflare-workers-ai",
+    "jetpack-compose",
+    "kotlin",
+    "personal-finance"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-28T11:41:54Z",
+   "updatedAt": "2026-11-02T16:51:04Z",
+   "repoUrl": "https://github.com/carellice/money",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/money"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.6.0",
+     "url": "https://github.com/carellice/money/releases/tag/v1.6.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/money/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/money/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.6.0",
+    "name": "Money 1.6.0",
+    "date": "2026-11-02T16:50:57Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.6.0",
+    "notes": "## Novita'\n- Metodi di pagamento personalizzati, nell'app Android e nella PWA\n",
+    "assets": [
+     {
+      "name": "Money-1.6.0.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.6.0/Money-1.6.0.apk",
+      "size": 6183145,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": true,
+   "dueffe": false
+  },
+  {
+   "id": "hommaterial",
+   "name": "Hommaterial",
+   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
+   "about": "Android · Web · Windows 11 (anteprima) · Gratuita · Open source\n\nGuida di configurazione web · Guida Windows",
+   "features": [
+    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
+    "Un tocco accende o spegne.",
+    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
+    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
+    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
+    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "web",
+    "windows"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-06T16:46:46Z",
+   "updatedAt": "2026-10-31T00:52:32Z",
+   "repoUrl": "https://github.com/carellice/hommaterial",
+   "webUrl": "https://carellice.github.io/hommaterial/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/hommaterial/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/hommaterial"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.40",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.40"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/hommaterial/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/hommaterial/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
+   ],
+   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
+   "release": {
+    "tag": "v1.40",
+    "name": "Hommaterial 1.40",
+    "date": "2026-10-31T00:52:32Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.40",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.39...v1.40",
+    "assets": [
+     {
+      "name": "Hommaterial-v1.40-windows-x64.zip",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.40/Hommaterial-v1.40-windows-x64.zip",
+      "size": 127147031,
+      "downloads": 1
+     },
+     {
+      "name": "Hommaterial-v1.40.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.40/Hommaterial-v1.40.apk",
+      "size": 3061077,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": true,
+   "dueffe": false
+  },
+  {
+   "id": "chiarella",
+   "name": "Chiarella",
+   "description": "Chiarella — app Android open source di suoni rilassanti da mescolare, con timer, profili, Live Update e widget",
+   "about": "Suoni della natura da mescolare per rilassarti, concentrarti e dormire. App nativa Android e Windows, più una versione web. Open source.\n\nApp nativa WinUI 3 (Windows App SDK, .NET 8) in windows/Chiarella.Windows, con le stesse funzioni dell'app Android: suoni con volume e scene animate, sfondo \"aurora\", profili, timer con dissolvenza, «Un momento per te». L'audio passa da un unico flusso WASAPI (NAudio) e i file Vorbis vengono riletti a livello di campione (NVorbis), quindi i loop restano senza giunture. I suoni sono gli stessi dell'app Android (app/src/main/res/raw), non duplicati. Dati e profili sono in %LOCALAPPDATA%\\Chiarella.",
+   "features": [
+    "Android: scarica Chiarella-X.apk e installalo (Android 8.0 o successivo). Gli aggiornamenti successivi arrivano direttamente dall'app.",
+    "Windows: scarica Chiarella-Windows-X.zip, estrailo dove preferisci e avvia Chiarella.exe (Windows 10 1809 o successivo, 64 bit). Non serve installare nulla.",
+    "Web: apri carellice.github.io/chiarella. Si installa anche come app dal browser e funziona offline. In alternativa Chiarella-Web-X.zip si può pubblicare su un qualsiasi hosting statico."
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "windows",
+    "web"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "ambient-sounds",
+    "android",
+    "jetpack-compose",
+    "kotlin",
+    "relaxing-sounds",
+    "sleep",
+    "white-noise"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-21T09:30:02Z",
+   "updatedAt": "2026-10-30T10:53:50Z",
+   "repoUrl": "https://github.com/carellice/chiarella",
+   "webUrl": "https://carellice.github.io/chiarella/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/chiarella/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/chiarella"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.15",
+     "url": "https://github.com/carellice/chiarella/releases/tag/v1.15"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/chiarella/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/chiarella/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/chiarella/main/branding/chiarella_icon_512.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.15",
+    "name": "Chiarella 1.15",
+    "date": "2026-10-30T10:53:59Z",
+    "url": "https://github.com/carellice/chiarella/releases/tag/v1.15",
+    "notes": "- Nuove Impostazioni su Android, Windows e web, accessibili dal pulsante con l'ingranaggio.\n- L'avviso del volume si può disabilitare in modo permanente dalle Impostazioni o con Non mostrare più nell'avviso stesso.\n- Nuova opzione Animazioni ridotte: ferma sfondi, particelle e pulsazioni e riduce le transizioni, per un'interfaccia più leggera.\n- Audio, timer e istruzioni del respiro continuano a funzionare. Le preferenze restano salvate sul dispositivo e non vengono sovrascritte importando un backup.",
+    "assets": [
+     {
+      "name": "Chiarella-1.15.apk",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.15/Chiarella-1.15.apk",
+      "size": 25478732,
+      "downloads": 2
+     },
+     {
+      "name": "Chiarella-Web-1.15.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.15/Chiarella-Web-1.15.zip",
+      "size": 22328623,
+      "downloads": 1
+     },
+     {
+      "name": "Chiarella-Windows-1.15.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.15/Chiarella-Windows-1.15.zip",
+      "size": 87599213,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": true,
+   "dueffe": false
+  },
+  {
+   "id": "brieffo",
+   "name": "Brieffo",
+   "description": "Meteo, agenda, spostamenti, salute, notizie e la tua squadra in un'unica schermata che cambia con l'ora del giorno.",
+   "about": "Android 9 o successivo · Gratuita · Senza pubblicità · Senza account\n\nIl video di presentazione, 40 secondi in Full HD: tocca l'immagine per guardarlo.",
+   "features": [
+    "Al mattino guarda avanti: meteo, spostamenti, impegni.",
+    "Nel pomeriggio mette in cima quello che ti resta da fare.",
+    "La sera tira il bilancio: passi, tempo al telefono, e uno sguardo a domani."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-05T16:52:53Z",
+   "updatedAt": "2026-10-29T12:02:29Z",
+   "repoUrl": "https://github.com/carellice/brieffo",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/brieffo"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.22",
+     "url": "https://github.com/carellice/brieffo/releases/tag/v1.22"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/brieffo/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/brieffo/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/brieffo/main/docs/logo.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/brieffo/main/docs/video/brieffo_presentazione.jpg",
+    "https://raw.githubusercontent.com/carellice/brieffo/main/docs/screenshots/benvenuto.png",
+    "https://raw.githubusercontent.com/carellice/brieffo/main/docs/screenshots/brief.png",
+    "https://raw.githubusercontent.com/carellice/brieffo/main/docs/screenshots/notizie.png",
+    "https://raw.githubusercontent.com/carellice/brieffo/main/docs/screenshots/squadra.png",
+    "https://raw.githubusercontent.com/carellice/brieffo/main/docs/screenshots/impostazioni.png"
+   ],
+   "video": "https://raw.githubusercontent.com/carellice/brieffo/main/docs/video/brieffo_presentazione.mp4",
+   "release": {
+    "tag": "v1.22",
+    "name": "Brieffo 1.22",
+    "date": "2026-10-29T12:02:09Z",
+    "url": "https://github.com/carellice/brieffo/releases/tag/v1.22",
+    "notes": "Brieffo 1.22 (build 23)\n\n**Novità: il riepilogo si ascolta.** Nel brief non c'è più il testo, solo il tasto *Ascolta il riepilogo*, che si accende quando è pronto e dice quanto dura. Il riepilogo parla solo delle schede accese in *Schede da mostrare* che hanno qualcosa da dire. In Impostazioni > Riepilogo con IA scegli quanto approfondito (breve, normale, approfondito), il tono (amichevole, essenziale, allegro) e le tue richieste personali.\n\n**Se hai ancora la 1.20:** dalla 1.21 l'app ha una firma nuova e non si installa sopra la 1.20, nemmeno con il tasto di aggiornamento dentro l'app. Esporta il backup dalle impostazioni, disinstalla Brieffo, installa Brieffo.apk da questa pagina e importa il backup. Dalla 1.21 in poi gli aggiornamenti si installano normalmente.",
+    "assets": [
+     {
+      "name": "Brieffo.apk",
+      "url": "https://github.com/carellice/brieffo/releases/download/v1.22/Brieffo.apk",
+      "size": 32735683,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": true,
+   "dueffe": false
+  },
+  {
+   "id": "Mappinando",
+   "name": "Mappinando",
+   "description": "Il tuo piccolo atlante personale: app Android nativa per luoghi preferiti, tappe e cose da fare. Kotlin, Compose e MapLibre.",
+   "about": "Mappinando Il tuo piccolo atlante personale. I posti del cuore. Quelli di domani.\n\nScarica l’APK · Guarda l’app · Segnala un problema",
+   "features": [
+    "Mappa immersiva: espandila a tutto schermo, cerca un punto o tieni premuto per segnare un luogo. I comandi restano a portata di mano.",
+    "Ricerca gratuita: città, indirizzi e attività per nome, con priorità alla zona della mappa. Seleziona un risultato, esploralo e poi decidi se aggiungerlo alle tappe.",
+    "Sei categorie: Ristoranti, Bar e caffè, Panorami, Cultura, Negozi e Natura, con filtri sulla mappa e nella raccolta.",
+    "Luoghi per città: ritrova le tappe salvate, i preferiti e i posti già visitati. Le intestazioni si comprimono scorrendo per lasciare spazio alle liste.",
+    "Le cose da fare: ogni luogo può avere note e una checklist. La sezione Da fare riunisce tutte le attività.",
+    "Verifica su Google Maps: dall’anteprima apri l’indirizzo selezionato per controllarlo meglio, prima di salvarlo."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "jetpack-compose",
+    "kotlin",
+    "maplibre",
+    "openstreetmap"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-27T01:16:53Z",
+   "updatedAt": "2026-10-27T15:29:53Z",
+   "repoUrl": "https://github.com/carellice/Mappinando",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/Mappinando"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.0.9",
+     "url": "https://github.com/carellice/Mappinando/releases/tag/v1.0.9"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/Mappinando/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/Mappinando/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/Mappinando/main/docs/mappinando-logo.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/Mappinando/main/docs/mappinando-search-fullscreen.png",
+    "https://raw.githubusercontent.com/carellice/Mappinando/main/docs/mappinando-cities.png",
+    "https://raw.githubusercontent.com/carellice/Mappinando/main/docs/mappinando-detail-fullscreen.png",
+    "https://raw.githubusercontent.com/carellice/Mappinando/main/docs/mappinando-onboarding.png",
+    "https://raw.githubusercontent.com/carellice/Mappinando/main/docs/mappinando-update-ready.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.0.9",
+    "name": "Mappinando 1.0.9",
+    "date": "2026-10-27T15:30:30Z",
+    "url": "https://github.com/carellice/Mappinando/releases/tag/v1.0.9",
+    "notes": "## Si parte da te\n\n- Una nuova introduzione animata ti accompagna al primo avvio: esplora, salva le tappe e scegli se usare la posizione.\n- La mappa parte vuota, senza luoghi preimpostati. Aggiornando, vengono rimossi solo i vecchi esempi ancora identici; le tappe personali e gli esempi modificati restano.\n- Premi il mirino per raggiungere la tua posizione sulla mappa. Puoi consentire anche la sola posizione approssimativa o continuare senza permessi.\n- Le card “La tua prossima tappa” mantengono un’altezza uniforme: scorrendole la mappa non si restringe più a scatti.\n- Indicatori di attesa e messaggi di posizione funzionano anche nella mappa a tutto schermo.\n\nInstalla l’APK senza disinstallare Mappinando per conservare i tuoi luoghi. Puoi aggiornare anche da **Informazioni → Aggiornamenti dell’app**.\n",
+    "assets": [
+     {
+      "name": "Mappinando-1.0.9-debug.apk",
+      "url": "https://github.com/carellice/Mappinando/releases/download/v1.0.9/Mappinando-1.0.9-debug.apk",
+      "size": 61215070,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": true,
+   "dueffe": false
+  },
+  {
+   "id": "piccole-gioie",
+   "name": "piccole gioie",
+   "description": "Un barattolo della felicità nativo Android, cozy e animato. Kotlin e Jetpack Compose.",
+   "about": "piccole gioie Le cose piccole fanno i giorni grandi.\n\nScarica per Android · Pubblica una release",
+   "features": [
+    "Scrittura minimale: testo e foglietti colorati da sfogliare con un carosello.",
+    "Solo l’anno nei ricordi e nel riepilogo, con conteggio dei momenti custoditi.",
+    "Tema chiaro e scuro automatico, seguendo il dispositivo.",
+    "Un ricordo a sorpresa toccando il barattolo o «Ho bisogno di un sorriso».",
+    "Raccolta per mese e anno, ricerca, preferiti e riepilogo annuale.",
+    "Promemoria quotidiano con orario personalizzabile."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-22T15:44:53Z",
+   "updatedAt": "2026-10-23T18:27:20Z",
+   "repoUrl": "https://github.com/carellice/piccole-gioie",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/piccole-gioie"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.4.0",
+     "url": "https://github.com/carellice/piccole-gioie/releases/tag/v1.4.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/piccole-gioie/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/piccole-gioie/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/piccole-gioie/main/artifacts/icon/piccole-gioie-icon-source.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/piccole-gioie/main/artifacts/onboarding-1.png",
+    "https://raw.githubusercontent.com/carellice/piccole-gioie/main/artifacts/onboarding-2.png",
+    "https://raw.githubusercontent.com/carellice/piccole-gioie/main/artifacts/onboarding-3.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.4.0",
+    "name": "piccole gioie 1.4.0",
+    "date": "2026-10-23T18:27:26Z",
+    "url": "https://github.com/carellice/piccole-gioie/releases/tag/v1.4.0",
+    "notes": "# Novità\r\n\r\n## 1.4.0\r\n\r\n- Tema chiaro e scuro automatico, compresi dock, onboarding, foglietti e barre di sistema.\r\n- Interruttore del promemoria più leggibile quando spento.\r\n- Scrittura minimale con carosello dei colori: testo condiviso tra i foglietti, senza selettori di data o categoria.\r\n- Anno al posto della data nei ricordi; riepilogo annuale con il solo conteggio dei momenti custoditi.\r\n- Rimossa la firma testuale in fondo al Rituale.\r\n- Script di verifica compatibile con lo spostamento del progetto nella cartella GitHub.\r\n\r\nI dati e i backup esistenti restano compatibili.\r\n",
+    "assets": [
+     {
+      "name": "piccole-gioie.apk",
+      "url": "https://github.com/carellice/piccole-gioie/releases/download/v1.4.0/piccole-gioie.apk",
+      "size": 12123649,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": true,
+   "dueffe": false
+  },
+  {
+   "id": "dueffe-streamwise",
+   "name": "Dueffe StreamWise",
+   "description": "StreamWise per Android – cosa guardare, dove e quando",
+   "about": "Cosa guardare, dove e quando. App nativa Kotlin + Jetpack Compose della famiglia Dueffe.\n\nQuesta è la riscrittura nativa Android della precedente PWA StreamWise. L'interfaccia usa Jetpack Compose e Material 3, senza WebView, React o browser incorporati.",
+   "features": [
+    "Interfaccia Material 3 scura e cinematografica, animazioni Compose e navigazione ottimizzata per l'uso con una mano.",
+    "Home con “Da continuare”, “La mia lista”, “Già visti” e titoli nascosti.",
+    "Cataloghi Film e Serie, Top 10, generi preferiti, sezione True crime e caricamento di altre proposte.",
+    "Widget ridimensionabile “Prossimi episodi”: mostra le serie da continuare e permette di segnare gli episodi come visti; al termine della serie chiede Mi piace / Non mi piace. Aggiungilo tenendo premuto sulla schermata Home del telefono e scegliendo Widget → StreamWise.",
+    "Ricerca per titolo con anno facoltativo e ricerca per attore/attrice con filmografia. Per impostazione predefinita le filmografie nascondono late show, talk show, reality, telegiornali e apparizioni come sé stessi; si può disattivare da Impostazioni → “Filmografie senza talk show”.",
+    "“Segui” per attori e registi: dalla pagina della filmografia si ricevono notifiche quando a TMDB viene aggiunto un loro nuovo film o serie (recente o in arrivo). Le persone seguite compaiono in Home in “Persone che segui” e sono incluse nel backup."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "TypeScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:47Z",
+   "updatedAt": "2026-11-02T08:42:59Z",
+   "repoUrl": "https://github.com/carellice/dueffe-streamwise",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-streamwise"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-streamwise/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-streamwise/issues"
+    },
+    {
+     "type": "release",
+     "label": "Scarica APK",
+     "url": "https://github.com/carellice/android-app-releases/releases"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-streamwise/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": true
+  },
+  {
+   "id": "dueffe-garage",
+   "name": "Dueffe Garage",
+   "description": "Garage per Android – auto, interventi, scadenze e documenti",
+   "about": "Auto, interventi, scadenze e documenti in un unico posto. App nativa della famiglia Dueffe.\n\nL'app nativa è direttamente in questa repository. È scritta in Kotlin con Jetpack Compose e si apre come progetto Android Studio.",
+   "features": [
+    "Schede auto con foto, targa, chilometri, carburante facoltativo, note e archivio delle auto vendute o rottamate. Il carburante si può scegliere da un elenco o specificare con «Altro».",
+    "Interventi con costi e promemoria per data, intervallo, chilometri o prima condizione raggiunta.",
+    "Documenti locali: importazione, fotocamera, galleria, apertura, condivisione, rinomina ed eliminazione.",
+    "Scadenze nell'app e notifiche opzionali tramite un controllo giornaliero di WorkManager. L'orario delle notifiche dipende da Android.",
+    "Tema chiaro, scuro o automatico; blocco all'apertura con le credenziali del dispositivo.",
+    "Importazione dei vecchi backup JSON della PWA e dei backup dell'app. I nuovi file sono identificati come Garage; includono foto e documenti. L'importazione valida il file prima della sostituzione e usa una transazione SQLite."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "TypeScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:27Z",
+   "updatedAt": "2026-11-01T19:29:26Z",
+   "repoUrl": "https://github.com/carellice/dueffe-garage",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-garage"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-garage/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-garage/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-garage/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": true
+  },
+  {
+   "id": "dueffe-health",
+   "name": "Dueffe Health",
+   "description": "Health per Android – terapie, visite e documenti sanitari",
+   "about": "Terapie, visite e documenti sanitari, solo sul tuo dispositivo. App nativa della famiglia Dueffe.\n\nApp nativa Kotlin + Jetpack Compose. I dati sanitari restano nel dispositivo; il backup JSON può essere esportato/importato dalle Impostazioni. Gli allegati vengono copiati nello spazio privato dell'app e non sono inclusi nel backup JSON.",
+   "features": [],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:34Z",
+   "updatedAt": "2026-10-22T10:02:35Z",
+   "repoUrl": "https://github.com/carellice/dueffe-health",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-health"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-health/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-health/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-health/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": true
+  },
+  {
+   "id": "dueffe-since",
+   "name": "Dueffe Since",
+   "description": "Since per Android – percorsi, abitudini e acquisti consapevoli",
+   "about": "Percorsi, abitudini e scelte consapevoli. App nativa Kotlin + Jetpack Compose della famiglia Dueffe.\n\nI dati restano solo sul dispositivo. Il PIN non viene inviato all'esterno.",
+   "features": [
+    "Percorsi: obiettivi come «Non fumare», «Allenarmi» o «Leggere» con data e ora di inizio, tempo trascorso, traguardi, reset e ricadute con nota facoltativa e storico ricercabile.",
+    "Traguardi: notifiche opzionali quando si raggiunge un nuovo traguardo.",
+    "Passioni: elenco delle proprie passioni con sotto passioni e importanza da 1 a 5; l'app può proporne una a caso, pesata sull'importanza.",
+    "Anti-consumista: un questionario guidato prima di un acquisto (bisogno, alternative già disponibili, vantaggi, frequenza d'uso, possibilità di aspettare) con una valutazione finale e bozze da completare.",
+    "Blocco con PIN da 4 a 8 cifre e, facoltativamente, biometria o credenziali del dispositivo.",
+    "Backup JSON esportabile e importabile dalle impostazioni; scheda Aggiornamenti per installare le nuove release."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:40Z",
+   "updatedAt": "2026-10-21T18:30:21Z",
+   "repoUrl": "https://github.com/carellice/dueffe-since",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-since"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-since/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-since/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-since/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": true
+  },
+  {
+   "id": "dueffe-subber",
+   "name": "Dueffe Subber",
+   "description": "Subber per Android – abbonamenti e rinnovi",
+   "about": "Tieni sotto controllo abbonamenti e rinnovi. App nativa Kotlin + Jetpack Compose della famiglia Dueffe.\n\nFai doppio clic su Avvia Pixel.command (Mac) o Avvia Pixel.bat (Windows): avvia il primo emulatore Pixel (o quello indicato in SUBBERAVD), compila, installa e apre l'app.",
+   "features": [
+    "Abbonamenti con prezzo, cadenza (settimanale, mensile, annuale, biennale), categoria, icona del servizio o immagine personalizzata, note e data di scadenza.",
+    "Rinnovi automatici o manuali, giorno di rinnovo mantenuto anche nei mesi più corti e abbonamenti annuali pagabili mensilmente con durata del vincolo.",
+    "Storico dei pagamenti e costo equivalente mensile; analisi delle spese per categoria.",
+    "Categorie personalizzabili con nome, icona e colore.",
+    "Avvisi di rinnovo giornalieri a un orario scelto, con anticipo configurabile.",
+    "Widget con i prossimi rinnovi."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:55Z",
+   "updatedAt": "2026-10-21T14:46:25Z",
+   "repoUrl": "https://github.com/carellice/dueffe-subber",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-subber"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-subber/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-subber/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-subber/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": true
+  },
+  {
+   "id": "ND2.0",
+   "name": "ND2.0",
+   "description": "Non disturbare, ma con intelligenza: una modalità Non disturbare per Android che lascia passare solo i contatti e le app che contano.",
+   "about": "Una modalità \"Non disturbare\" per Android che lascia passare solo le persone e le app che contano davvero.\n\nIl \"Non disturbare\" classico è tutto o niente. ND2.0 ti fa scegliere chi e cosa può raggiungerti.",
+   "features": [
+    "Non si perde niente. Le notifiche bloccate restano da parte e ricompaiono quando disattivi la modalità.",
+    "Altri nomi. Se una persona compare nelle app con un altro nome (es. username Instagram), aggiungilo e ND2.0 la riconosce lo stesso.",
+    "Pulsante rapido. Attivi e disattivi ND2.0 dalle Impostazioni rapide, senza aprire l'app.",
+    "Aggiornamenti integrati. Nelle Impostazioni l'app controlla se c'è una nuova versione e la scarica e installa da sola.",
+    "Backup. Dalle Impostazioni esporti contatti, altri nomi e app su un file e li reimporti su un nuovo telefono: i contatti vengono ritrovati in rubrica dal numero o dal nome."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "do-not-disturb",
+    "jetpack-compose",
+    "kotlin"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T14:38:07Z",
+   "updatedAt": "2026-10-18T10:17:00Z",
+   "repoUrl": "https://github.com/carellice/ND2.0",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/ND2.0"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.3",
+     "url": "https://github.com/carellice/ND2.0/releases/tag/v1.3"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/ND2.0/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/ND2.0/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/ND2.0/main/docs/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/ND2.0/main/docs/screenshot-spenta.png",
+    "https://raw.githubusercontent.com/carellice/ND2.0/main/docs/screenshot-attiva.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.3",
+    "name": "ND2.0 1.3",
+    "date": "2026-10-18T10:14:42Z",
+    "url": "https://github.com/carellice/ND2.0/releases/tag/v1.3",
+    "notes": "Novità:\n- Backup: dalle Impostazioni puoi esportare contatti, altri nomi e app su un file e reimportarlo su un nuovo telefono.\n\nAttenzione: questa versione è firmata con una nuova chiave. L'aggiornamento in-app dalla 1.2 non funziona: disinstalla la versione precedente e installa questa.",
+    "assets": [
+     {
+      "name": "ND2.0.apk",
+      "url": "https://github.com/carellice/ND2.0/releases/download/v1.3/ND2.0.apk",
+      "size": 21804408,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "MemShot",
+   "name": "MemShot",
+   "description": "App Android che importa i tuoi screenshot, li legge con l'OCR e li cataloga in automatico (film, prompt AI, ricette…). Kotlin + Jetpack Compose, offline.",
+   "about": "Ogni screenshot entra da solo nell'app, viene letto e finisce nella categoria giusta: film, prompt per l'AI, ricette, chat, shopping e altre 17. Quando ti serve, lo ritrovi cercando qualsiasi parola scritta dentro.\n\nAndroid 10 o successivo · Gratuita · Senza pubblicità · Senza account · Funziona offline",
+   "features": [],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "jetpack-compose",
+    "kotlin",
+    "ml-kit",
+    "ocr",
+    "screenshots"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T14:40:24Z",
+   "updatedAt": "2026-10-16T15:01:48Z",
+   "repoUrl": "https://github.com/carellice/MemShot",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/MemShot"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.0.2",
+     "url": "https://github.com/carellice/MemShot/releases/tag/v1.0.2"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/MemShot/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/MemShot/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/MemShot/main/docs/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/home.png",
+    "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/categorie.png",
+    "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/dettaglio.png",
+    "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/tiktok.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.0.2",
+    "name": "MemShot v1.0.2",
+    "date": "2026-10-16T15:01:49Z",
+    "url": "https://github.com/carellice/MemShot/releases/tag/v1.0.2",
+    "notes": "APK di MemShot v1.0.2. Se hai già MemShot, aggiorna da Impostazioni → Aggiornamenti. Altrimenti scarica il file sul telefono Android e aprilo per installarlo (va consentita l'installazione da origini sconosciute).",
+    "assets": [
+     {
+      "name": "MemShot-v1.0.2.apk",
+      "url": "https://github.com/carellice/MemShot/releases/download/v1.0.2/MemShot-v1.0.2.apk",
+      "size": 30862314,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "SimPhotos",
+   "name": "SimPhotos",
+   "description": "App Android che trova le foto simili o doppie e tiene solo la migliore",
+   "about": "Una galleria più leggera, senza doppioni.\n\nSimPhotos trova le foto identiche o quasi uguali scattate nello stesso momento, sceglie quella venuta meglio e ti aiuta a eliminare le altre in pochi tocchi.",
+   "features": [
+    "🔍 Analisi intelligente: confronta ogni foto con quelle scattate nello stesso periodo e riconosce raffiche, scatti ripetuti e copie identiche.",
+    "🏆 Sceglie la migliore: per ogni gruppo valuta nitidezza, esposizione e risoluzione e mette da parte la foto venuta meglio.",
+    "✋ Decidi tu: niente viene cancellato senza la tua conferma. Prima vedi il riepilogo, poi confermi nel dialogo di sistema di Android.",
+    "♻️ Cestino sicuro: per impostazione predefinita le foto finiscono nel cestino e restano recuperabili per 30 giorni.",
+    "⭐ Preferite protette: le foto contrassegnate come preferite non vengono mai proposte per l'eliminazione.",
+    "🎚️ Sensibilità regolabile: scegli quanto devono essere simili le foto, da \"Più permissivo\" a \"Solo quasi identiche\"."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T14:37:48Z",
+   "updatedAt": "2026-10-16T07:41:05Z",
+   "repoUrl": "https://github.com/carellice/SimPhotos",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/SimPhotos"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.0.2",
+     "url": "https://github.com/carellice/SimPhotos/releases/tag/v1.0.2"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/SimPhotos/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/SimPhotos/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/SimPhotos/main/docs/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/SimPhotos/main/docs/home.png",
+    "https://raw.githubusercontent.com/carellice/SimPhotos/main/docs/results.png",
+    "https://raw.githubusercontent.com/carellice/SimPhotos/main/docs/detail.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.0.2",
+    "name": "SimPhotos 1.0.2",
+    "date": "2026-10-16T07:41:01Z",
+    "url": "https://github.com/carellice/SimPhotos/releases/tag/v1.0.2",
+    "notes": "## Novità\n\n- Visualizzatore a schermo intero con zoom per le foto dei gruppi\n\n📲 Scarica **SimPhotos.apk** qui sotto, oppure aggiorna direttamente dall'app in Impostazioni → Aggiornamenti.",
+    "assets": [
+     {
+      "name": "SimPhotos.apk",
+      "url": "https://github.com/carellice/SimPhotos/releases/download/v1.0.2/SimPhotos.apk",
+      "size": 2569656,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "Topperia",
+   "name": "Topperia",
+   "description": "Topperia: il trivia Android delle Top 10. Classifiche reali, sfide locali e nuove curiosità.",
+   "about": "Il mondo è una Top 10. Quanto in alto riesci ad arrivare?\n\nScarica Topperia per Android · Come si gioca · Pubblicare una versione · Privacy",
+   "features": [
+    "Sorprendimi: una scelta casuale animata che rispetta categoria e modalità, dà precedenza alle classifiche non completate ed evita ripetizioni durante il ciclo.",
+    "Un benvenuto in tre scene: spiega il gioco al primo avvio; puoi saltarlo e rivederlo dalle impostazioni.",
+    "Grafica originale: logo creato con ImageGen, avorio, bosco e lime, carte che si girano, una barra flottante e coriandoli per le tue scoperte.",
+    "Movimenti curati: passaggi tra pagine senza lampeggi, pannelli che scorrono e si chiudono anche trascinandoli, pulsanti e interruttori animati. Le classifiche scorrono con inerzia e disegnano soltanto le schede visibili.",
+    "Controlli Android: tastiera nativa, suoni, feedback aptico, controlli per l’accessibilità e animazioni ridotte."
+   ],
+   "category": "giochi",
+   "platforms": [
+    "android"
+   ],
+   "language": "Java",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-28T11:44:14Z",
+   "updatedAt": "2026-10-28T21:35:40Z",
+   "repoUrl": "https://github.com/carellice/Topperia",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/Topperia"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.1.5",
+     "url": "https://github.com/carellice/Topperia/releases/tag/v1.1.5"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/Topperia/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/Topperia/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/Topperia/main/branding/topperia-logo.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/Topperia/main/docs/images/home.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.1.5",
+    "name": "Topperia 1.1.5",
+    "date": "2026-10-28T21:35:50Z",
+    "url": "https://github.com/carellice/Topperia/releases/tag/v1.1.5",
+    "notes": "## Topperia 1.1.5\n\nCorretto il blocco dell’aggiornamento dall’app dopo il download.\n\n- Il pulsante **Installa** prosegue con la richiesta del permesso Android anche quando la finestra precedente si sta ancora chiudendo.\n- Le finestre di aggiornamento attendono il ritorno dell’app in primo piano; non vengono più perse durante il passaggio tra finestre e impostazioni Android.\n- Un APK scaricato non valido viene eliminato e può essere riscaricato, senza restare bloccati su Installa.\n\nSe la versione già installata rimane ferma su **Installa**, scarica e apri **Topperia-1.1.5.apk** da questa release una volta. La correzione entrerà così nell’app anche per gli aggiornamenti successivi. La firma resta la stessa: partite e preferenze vengono conservate. Richiede Android 8 o successivo.\n",
+    "assets": [
+     {
+      "name": "Topperia-1.1.5.apk",
+      "url": "https://github.com/carellice/Topperia/releases/download/v1.1.5/Topperia-1.1.5.apk",
+      "size": 616600,
+      "downloads": 3
+     }
+    ]
+   },
+   "featured": true,
+   "dueffe": false
+  },
+  {
+   "id": "arcade-classici",
+   "name": "Arcadio",
+   "description": "Snake, Campo Minato, Breakout e Invasori rivisitati in chiave neon/3D per Android (Kotlin + Jetpack Compose)",
+   "about": "Sei giochi classici rivisitati in chiave neon/synthwave e 3D, per Android.\n\n▶ Guarda il video di presentazione (53 s, musica originale)",
+   "features": [
+    "Snake – movimento fluido, bordi attraversabili, stella bonus",
+    "Campo Minato – tre difficoltà, prima mossa sicura, apertura rapida sui numeri",
+    "Breakout – sei livelli, mattoni resistenti e d'acciaio, potenziamenti e combo",
+    "Invasori – in stile Space Invaders: alieni voxel, scudi distruttibili, UFO e potenziamenti",
+    "Blocchi – in stile Tetris: rotazione con un tocco, caduta istantanea, ombra di atterraggio e livelli sempre più veloci",
+    "PONG – duello a 11 punti, 1vCPU con tre difficoltà o 1v1 locale con controlli touch simultanei; supporta anche W/S e frecce sulla tastiera"
+   ],
+   "category": "giochi",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "arcade",
+    "breakout",
+    "game",
+    "jetpack-compose",
+    "kotlin",
+    "minesweeper",
+    "snake",
+    "space-invaders"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-16T10:13:54Z",
+   "updatedAt": "2026-10-27T09:57:24Z",
+   "repoUrl": "https://github.com/carellice/arcade-classici",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/arcade-classici"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.4.0",
+     "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.4.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/arcade-classici/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/arcade-classici/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/icon.svg",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/trailer-poster.jpg"
+   ],
+   "video": "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/trailer.mp4",
+   "release": {
+    "tag": "v1.4.0",
+    "name": "Arcadio 1.4.0",
+    "date": "2026-10-27T09:57:27Z",
+    "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.4.0",
+    "notes": "## Novità\n\n- Aggiunto **PONG**, con grafica neon e superfici in rilievo nello stile di Arcadio.\n- **1v1 locale** sullo stesso dispositivo, con controlli touch simultanei per i due giocatori.\n- **1vCPU** con tre difficoltà: Facile, Media e Difficile.\n- Partite a **11 punti**, rimbalzi controllabili con i bordi della racchetta e pallina sempre più veloce durante gli scambi.\n- Anteprima animata nel menu, tutorial illustrato, musica dedicata, effetti sonori, pausa e rivincita.\n- Supporto alla tastiera: **W/S** e **↑/↓**, utile anche nell'emulatore.\n\n---\n\nScarica **Arcadio.apk** qui sotto e installalo, oppure aggiorna direttamente dall'app: **Impostazioni → Aggiornamenti**.\n",
+    "assets": [
+     {
+      "name": "Arcadio.apk",
+      "url": "https://github.com/carellice/arcade-classici/releases/download/v1.4.0/Arcadio.apk",
+      "size": 1058948,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": true,
+   "dueffe": false
+  },
+  {
+   "id": "spariaps-game",
+   "name": "SPARIAPS",
+   "description": "Sparatutto arena in prima persona · Ondate · Zombie · Boss Salta, spara, sopravvivi. Un FPS frenetico che gira direttamente nel browser, senza installare nulla.",
+   "about": "Tag popolari: FPS Arena Shooter Zombie Ondate Boss Frenetico Movimento veloce Loot Gratis Supporto controller\n\nSPARIAPS è uno sparatutto in prima persona veloce e senza pause, ispirato ai grandi arena shooter e alle modalità a ondate più amate. Scegli la tua classe, entra nell'arena e resisti a ondate di nemici sempre più numerosi e aggressivi. Ogni cinque ondate arriva un boss.",
+   "features": [
+    "🗺️ Due mappe, da scegliere prima di ogni partita",
+    "Quartiere: un incrocio di città con piazza e fontana, vicoli, parcheggio, officina e benzinaio. Auto, autobus e palazzi per ripararsi; nella Classica i trampolini portano sui tetti.",
+    "Arena: il campo di prova aperto e simmetrico, con muri bassi, casse e piattaforme sospese.",
+    "🎯 Due modalità di gioco",
+    "Classica: arena verticale con piattaforme sospese, trampolini e doppio salto, contro bot armati che ti cercano e rispondono al fuoco.",
+    "Zombie: notte, nebbia e orde corpo a corpo. Corridori, arrampicatori dagli occhi viola e abomini giganti."
+   ],
+   "category": "giochi",
+   "platforms": [
+    "web",
+    "windows",
+    "macos"
+   ],
+   "language": "GDScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-01T09:48:33Z",
+   "updatedAt": "2026-10-31T11:53:00Z",
+   "repoUrl": "https://github.com/carellice/spariaps-game",
+   "webUrl": "https://carellice.github.io/spariaps-game/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/spariaps-game/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/spariaps-game"
+    },
+    {
+     "type": "release",
+     "label": "Release v2.1.0",
+     "url": "https://github.com/carellice/spariaps-game/releases/tag/v2.1.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/spariaps-game/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/spariaps-game/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/spariaps-game/main/Spariaps-icona.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/spariaps-game/main/screenshots/piazza.jpg",
+    "https://raw.githubusercontent.com/carellice/spariaps-game/main/screenshots/zombie-notte.jpg",
+    "https://raw.githubusercontent.com/carellice/spariaps-game/main/screenshots/farmacia.jpg"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v2.1.0",
+    "name": "Spariaps 2.1 · versione Windows nativa",
+    "date": "2026-10-31T11:53:00Z",
+    "url": "https://github.com/carellice/spariaps-game/releases/tag/v2.1.0",
+    "notes": "## Spariaps 2.1 · versione Windows nativa\n\n### Novità\n- **Schermata di caricamento**: all'avvio compaiono subito logo e barra di avanzamento invece di una finestra vuota; sfuma nel menu quando la scena è pronta.\n- **Grafica più morbida**: braccia in prima persona rifatte (avambraccio sagomato, manica arrotolata con mimetica, guanti imbottiti con grana di cuoio), bordi arrotondati su armi, oggetti e nemici, più dettaglio sulle forme curve.\n- Alcuni oggetti della mappa e parti delle mani che prima non venivano disegnate ora compaiono.\n\n### Correzioni\n- Il tasto **ESCI** nel menu ora apre di nuovo il dialogo per uscire dal gioco.\n\n### Come giocare\n1. Scarica **Spariaps.exe** qui sotto.\n2. Avvialo con un doppio clic: non serve installare nulla. I progressi della 2.0 restano.\n\n> Windows potrebbe mostrare l'avviso SmartScreen perché il file non è firmato: *Ulteriori informazioni* → *Esegui comunque*.\n\nRequisiti: Windows 10/11 64 bit, scheda video con supporto Vulkan.\n",
+    "assets": [
+     {
+      "name": "Spariaps.exe",
+      "url": "https://github.com/carellice/spariaps-game/releases/download/v2.1.0/Spariaps.exe",
+      "size": 117690792,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "funcouple",
+   "name": "FunCouple",
+   "description": "Gioco per coppie per Android (18+): Verità o Obbligo, Kamasutra, dadi 3D e ruota. Kotlin + Jetpack Compose, offline.",
+   "about": "Gioco per coppie per Android, in italiano. Contenuti per adulti (18+).\n\nApp nativa in Kotlin e Jetpack Compose. Funziona offline e tutti i dati restano sul dispositivo: l'app va in rete solo quando chiedi di controllare gli aggiornamenti dalle impostazioni.",
+   "features": [
+    "Verità o Obbligo — 240 carte su quattro livelli, modalità Escalation, carte speciali, penitenze",
+    "Kamasutra — 500 posizioni illustrate (40 con scheda completa), preferite, traguardi e Maratona a tempo",
+    "Dadi del Piacere — dadi 3D: cosa, dove, per quanto e come",
+    "Ruota del Desiderio — dodici premi",
+    "Non ho mai, Roulette dei Preliminari, Buoni del Piacere",
+    "Le vostre carte — verità e obblighi scritti da voi"
+   ],
+   "category": "giochi",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-08T14:26:53Z",
+   "updatedAt": "2026-10-14T13:32:39Z",
+   "repoUrl": "https://github.com/carellice/funcouple",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/funcouple"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.0.5",
+     "url": "https://github.com/carellice/funcouple/releases/tag/v1.0.5"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/funcouple/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/funcouple/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/funcouple/main/docs/icon.svg",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.0.5",
+    "name": "FunCouple v1.0.5",
+    "date": "2026-10-14T13:32:39Z",
+    "url": "https://github.com/carellice/funcouple/releases/tag/v1.0.5",
+    "notes": "APK di FunCouple v1.0.5. Scaricalo sul telefono Android e aprilo per installarlo (va consentita l'installazione da origini sconosciute).",
+    "assets": [
+     {
+      "name": "FunCouple-v1.0.5.apk",
+      "url": "https://github.com/carellice/funcouple/releases/download/v1.0.5/FunCouple-v1.0.5.apk",
+      "size": 19126041,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "ondalunga",
+   "name": "Onda Lunga",
+   "description": "Party game per Android: siete sulla stessa lunghezza d'onda? Kotlin + Jetpack Compose.",
+   "about": "Un party game per Android da giocare in compagnia con un solo telefono: siete sulla stessa lunghezza d'onda?\n\nA ogni turno un giocatore, il Sensitivo, fa girare la ruota a schermo chiuso, poi sbircia dove si è fermato il bersaglio su uno spettro tra due estremi (per esempio Freddo – Caldo). Dà un solo indizio, richiude lo schermo, e la sua squadra deve trascinare la lancetta dove pensa che sia il bersaglio.",
+   "features": [
+    "A squadre: 4, 3 o 2 punti in base alla fascia colpita, scommessa sinistra/destra degli avversari, turno extra in rimonta.",
+    "1 contro 1: a turno uno fa il Sensitivo e dà l'indizio all'avversario, che muove la lancetta e prende i punti.",
+    "Cooperativa: tutti insieme, un numero fisso di carte per fare più punti possibile.",
+    "Ruota da far girare con il dito, lancetta da trascinare, schermo che scorre.",
+    "221 carte in italiano.",
+    "Suoni, vibrazione e regole regolabili dalle impostazioni."
+   ],
+   "category": "giochi",
+   "platforms": [
+    "android",
+    "macos"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-08T14:24:28Z",
+   "updatedAt": "2026-10-08T23:54:43Z",
+   "repoUrl": "https://github.com/carellice/ondalunga",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/ondalunga"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.0.5",
+     "url": "https://github.com/carellice/ondalunga/releases/tag/v1.0.5"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/ondalunga/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/ondalunga/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/ondalunga/main/docs/icon.svg",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.0.5",
+    "name": "Onda Lunga 1.0.5",
+    "date": "2026-10-08T23:54:41Z",
+    "url": "https://github.com/carellice/ondalunga/releases/tag/v1.0.5",
+    "notes": "Scarica **OndaLunga-1.0.5.apk** sul telefono Android e aprilo per installare il gioco (serve Android 8.0 o successivo).",
+    "assets": [
+     {
+      "name": "OndaLunga-1.0.5.apk",
+      "url": "https://github.com/carellice/ondalunga/releases/download/v1.0.5/OndaLunga-1.0.5.apk",
+      "size": 1665837,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "il-sognatore",
+   "name": "Il Sognatore",
+   "description": "Platform 2D in pixel art · Android · Italiano e inglese",
+   "about": "Ogni sera, in cameretta, Flavio gioca con Chiara. Lei è fatta di luce, e solo lui può vederla.\n\nUna notte un'ombra se la porta via. Flavio la insegue dentro il sogno, e il sogno non finisce più: lo attraversa da bambino, da ragazzo, da adulto. A ogni mondo lui cresce un po', e la luce di Chiara si fa un po' più lontana.",
+   "features": [
+    "50 livelli, cinque per mondo: quattro da attraversare e il quinto contro un boss.",
+    "Ogni partita è diversa. I livelli nascono da un numero, il seme del sogno: partita nuova, livelli nuovi. Se un sogno ti è piaciuto, passa il numero a un amico e giocherà gli stessi livelli.",
+    "30 nemici e 10 boss, dal Re dei Giocattoli al Grande Orologio, fino all'Incubo.",
+    "Un oggetto segreto in ogni livello. Trovali tutti in un mondo per sbloccare un ricordo di Flavio e Chiara. Trovali tutti e cinquanta per vedere l'epilogo.",
+    "Una galleria con le scene della storia, i ricordi e il bestiario dei nemici incontrati.",
+    "Una colonna sonora originale: un brano per ogni mondo, più i temi del menu, della storia, dei boss e del finale."
+   ],
+   "category": "giochi",
+   "platforms": [
+    "android"
+   ],
+   "language": "GDScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-06T11:48:22Z",
+   "updatedAt": "2026-10-06T12:00:08Z",
+   "repoUrl": "https://github.com/carellice/il-sognatore",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/il-sognatore"
+    },
+    {
+     "type": "release",
+     "label": "Release v0.1.13",
+     "url": "https://github.com/carellice/il-sognatore/releases/tag/v0.1.13"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/il-sognatore/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/il-sognatore/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/il-sognatore/main/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/il-sognatore/main/docs/img/title.png",
+    "https://raw.githubusercontent.com/carellice/il-sognatore/main/docs/img/w1.png",
+    "https://raw.githubusercontent.com/carellice/il-sognatore/main/docs/img/w4.png",
+    "https://raw.githubusercontent.com/carellice/il-sognatore/main/docs/img/w3.png",
+    "https://raw.githubusercontent.com/carellice/il-sognatore/main/docs/img/w7.png",
+    "https://raw.githubusercontent.com/carellice/il-sognatore/main/docs/img/boss.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v0.1.13",
+    "name": "Il Sognatore 0.1.13",
+    "date": "2026-10-06T11:59:19Z",
+    "url": "https://github.com/carellice/il-sognatore/releases/tag/v0.1.13",
+    "notes": "Versione 0.1.13 (codice 14)",
+    "assets": [
+     {
+      "name": "il-sognatore-0.1.13.apk",
+      "url": "https://github.com/carellice/il-sognatore/releases/download/v0.1.13/il-sognatore-0.1.13.apk",
+      "size": 86893120,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "IPTVISION",
+   "name": "IPTVISION",
+   "description": "Lettore IPTV per Windows: TV in diretta, film e serie da Xtream Codes, modalità TV per controller e telecomando, aggiornamenti automatici.",
+   "about": "Lettore IPTV per Windows, Android, Android TV, TV LG (webOS) e TV Samsung (Tizen): leggero e veloce, pensato per guardare la TV dal PC, dal telefono o dal divano.\n\nTV in diretta, film e serie da un account Xtream Codes, con guida TV, ricerca vocale e una modalità TV da usare con controller o telecomando.",
+   "features": [
+    "Fluido: motore video libVLC con decodifica hardware. Mentre guarda, il programma usa circa l'1–2% della CPU.",
+    "Affidabile: se un flusso si blocca o si interrompe, IPTVISION lo riapre in automatico, aspettando un po' di più a ogni tentativo.",
+    "Semplice: inserisci server, utente e password, oppure incolla il link M3U, e la lista è pronta."
+   ],
+   "category": "desktop",
+   "platforms": [
+    "windows"
+   ],
+   "language": "C#",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-28T15:30:03Z",
+   "updatedAt": "2026-11-02T14:15:01Z",
+   "repoUrl": "https://github.com/carellice/IPTVISION",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/IPTVISION"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.11.0",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.11.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/IPTVISION/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/IPTVISION/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/IPTVISION/main/src/IPTVISION/Assets/logo.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/IPTVISION/main/docs/screenshots/principale.png",
+    "https://raw.githubusercontent.com/carellice/IPTVISION/main/docs/screenshots/ricerca.png",
+    "https://raw.githubusercontent.com/carellice/IPTVISION/main/docs/screenshots/modalita-tv.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.11.0",
+    "name": "IPTVISION 1.11.0",
+    "date": "2026-11-02T14:15:08Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.11.0",
+    "notes": "**Stato della VPN del server di casa**: con l'app collegata al server di casa, sotto l'orologio (TV LG e Samsung, Android TV e tablet, modalità TV di Windows) e nelle impostazioni compare come il server esce su Internet: VPN attiva o no (NordVPN), paese e indirizzo IP, con un pallino verde o rosso.\nLa versione nel browser lo mostra allo stesso modo: il server di casa si aggiorna da solo nella notte (versione 2.1.0).\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.11.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.11.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.11.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.11.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "assets": [
+     {
+      "name": "IPTVISION-1.11.0.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.11.0/IPTVISION-1.11.0.apk",
+      "size": 2778579,
+      "downloads": 1
+     },
+     {
+      "name": "IPTVISION-1.11.0.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.11.0/IPTVISION-1.11.0.ipk",
+      "size": 132812,
+      "downloads": 0
+     },
+     {
+      "name": "IPTVISION-1.11.0.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.11.0/IPTVISION-1.11.0.wgt",
+      "size": 147187,
+      "downloads": 0
+     },
+     {
+      "name": "IPTVISION-Setup-1.11.0.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.11.0/IPTVISION-Setup-1.11.0.exe",
+      "size": 71474013,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": true,
+   "dueffe": false
+  },
+  {
+   "id": "claude-monitor",
+   "name": "Claude Monitor",
+   "description": "Limiti di utilizzo Claude (5 ore e settimanali) su Windows e Android, con widget",
+   "about": "Controlla i limiti di utilizzo dei tuoi account Claude (sessione di 5 ore e settimanale) da Windows e Android, gratis, in un'app leggera a tema Claude.\n\n⬇ Windows (.exe) · ⬇ Android (.apk) · Tutte le release",
+   "features": [
+    "Più account: collega tutti gli account Claude (Pro/Max) che vuoi e vedi i limiti uno sotto l'altro.",
+    "Limiti: sessione di 5 ore, settimana e, quando presenti, i limiti settimanali Sonnet e Opus, con percentuale, barra e orario di reset. La barra diventa rossa dal 90%.",
+    "Windows: un solo .exe da ~45 KB, nessuna installazione. Resta nell'area di notifica, con le percentuali nel tooltip. Opzioni: sempre in primo piano, avvio con Windows (anche ridotta nel tray).",
+    "Android: app da ~60 KB con widget per la home ridimensionabile. Aggiornamento automatico ogni 15 minuti, anche dopo il riavvio.",
+    "Aggiornamenti integrati: entrambe le app controllano le nuove versioni nelle release di questo repository e si aggiornano con un clic."
+   ],
+   "category": "desktop",
+   "platforms": [
+    "windows",
+    "android"
+   ],
+   "language": "C#",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-11-02T15:27:55Z",
+   "updatedAt": "2026-11-02T15:28:29Z",
+   "repoUrl": "https://github.com/carellice/claude-monitor",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/claude-monitor"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.0.0",
+     "url": "https://github.com/carellice/claude-monitor/releases/tag/v1.0.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/claude-monitor/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/claude-monitor/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/logo.svg",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/windows.png",
+    "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/android-app.png",
+    "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/android-widget.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.0.0",
+    "name": "Claude Monitor v1.0.0",
+    "date": "2026-11-02T15:28:33Z",
+    "url": "https://github.com/carellice/claude-monitor/releases/tag/v1.0.0",
+    "notes": "Prima versione: app Windows (.exe) e Android (.apk) con widget, multi-account, aggiornamenti integrati.",
+    "assets": [
+     {
+      "name": "ClaudeMonitor.apk",
+      "url": "https://github.com/carellice/claude-monitor/releases/download/v1.0.0/ClaudeMonitor.apk",
+      "size": 59348,
+      "downloads": 2
+     },
+     {
+      "name": "ClaudeMonitor.exe",
+      "url": "https://github.com/carellice/claude-monitor/releases/download/v1.0.0/ClaudeMonitor.exe",
+      "size": 49152,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "timer-spegnimento",
+   "name": "Timer spegnimento",
+   "description": "App Windows in italiano per programmare lo spegnimento del PC e la chiusura dei programmi.",
+   "about": "Scegli quando spegnere o riavviare il PC. Al resto pensa Windows.\n\nUna piccola app per Windows, in italiano, per programmare lo spegnimento o il riavvio del computer e la chiusura delle finestre aperte.",
+   "features": [
+    "Programmare lo spegnimento o il riavvio tra un certo numero di minuti oppure a un’ora precisa.",
+    "Chiedere la chiusura dei programmi prima dello spegnimento, con un anticipo regolabile da 5 a 600 secondi.",
+    "Programmare solo la chiusura dei programmi, senza spegnere il PC.",
+    "Chiudere subito le finestre aperte, dopo una conferma.",
+    "Annullare i timer e controllare il tempo rimanente.",
+    "Lasciare l’app nell’area di notifica quando è attivo un timer."
+   ],
+   "category": "desktop",
+   "platforms": [
+    "windows"
+   ],
+   "language": "C#",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-30T11:34:58Z",
+   "updatedAt": "2026-10-30T11:43:02Z",
+   "repoUrl": "https://github.com/carellice/timer-spegnimento",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/timer-spegnimento"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.1.0",
+     "url": "https://github.com/carellice/timer-spegnimento/releases/tag/v1.1.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/timer-spegnimento/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/timer-spegnimento/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/timer-spegnimento/main/assets/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.1.0",
+    "name": "Timer spegnimento v1.1.0 — Riavvio programmato",
+    "date": "2026-10-30T11:43:02Z",
+    "url": "https://github.com/carellice/timer-spegnimento/releases/tag/v1.1.0",
+    "notes": "## Timer spegnimento v1.1.0\r\n\r\n- Nuovo menu **Azione** per scegliere se spegnere o riavviare il computer.\r\n- Riavvio programmabile tra un numero di minuti o a un’ora precisa, con annullamento e chiusura anticipata dei programmi.\r\n- Il conto alla rovescia e l’area di notifica mostrano l’azione effettivamente programmata.\r\n- Cambiare la selezione non modifica un timer attivo: premi **Programma** per sostituirlo.\r\n\r\nScarica `TimerSpegnimento.exe` e avvialo su Windows con .NET Framework 4.x. `SHA256SUMS.txt` contiene l’impronta SHA-256 dell’eseguibile.\r\n\r\n**Salva il lavoro prima di attivare il timer:** Windows può forzare la chiusura delle applicazioni. Uscire dall’app non annulla lo spegnimento o il riavvio già programmato; usa **Annulla** o `shutdown /a`. La chiusura anticipata dei programmi richiede che l’app rimanga aperta, anche nell’area di notifica.\r\n",
+    "assets": [
+     {
+      "name": "TimerSpegnimento.exe",
+      "url": "https://github.com/carellice/timer-spegnimento/releases/download/v1.1.0/TimerSpegnimento.exe",
+      "size": 17408,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "easy-crypt",
+   "name": "EasyCrypt",
+   "description": "Scrivi messaggi che può leggere solo chi conosce la tua password.",
+   "about": "Su Android, Mac e PC è un’app per cifrare e decifrare testi: stessa cifratura, stessi testi.\n\nEasyCrypt trasforma un testo normale in un testo cifrato da incollare in qualsiasi chat, email o nota, e fa il percorso inverso per chi conosce la password.",
+   "features": [
+    "Funziona ovunque: il testo cifrato è testo semplice, quindi passa per WhatsApp, Telegram, email, note.",
+    "Tutto in locale: nessun server, nessun account, nessuna connessione a Internet.",
+    "Compatibile tra dispositivi: un testo cifrato sul telefono si decifra sul computer (e nella web app EasyCrypt) e viceversa, con la stessa password."
+   ],
+   "category": "desktop",
+   "platforms": [
+    "android",
+    "windows",
+    "macos"
+   ],
+   "language": "Python",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-01T18:50:01Z",
+   "updatedAt": "2026-10-29T09:44:40Z",
+   "repoUrl": "https://github.com/carellice/easy-crypt",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/easy-crypt"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.0.11",
+     "url": "https://github.com/carellice/easy-crypt/releases/tag/v1.0.11"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/easy-crypt/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/easy-crypt/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/easy-crypt/main/EasyCrypt-Mac-PC/icon.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.0.11",
+    "name": "EasyCrypt 1.0.11",
+    "date": "2026-10-29T09:48:10Z",
+    "url": "https://github.com/carellice/easy-crypt/releases/tag/v1.0.11",
+    "notes": "## EasyCrypt 1.0.11\n\n### Android: accesso protetto con biometria\n\nIn **Impostazioni › Sicurezza** puoi attivare **Richiedi autenticazione biometrica**. EasyCrypt richiede impronta o volto quando apri l’app e quando torni dopo averla lasciata in background. È disponibile anche lo sblocco con PIN, sequenza o password del telefono.\n\n- Sono protetti anche i testi ricevuti da Condividi, le azioni Cifra/Decifra nel menu di selezione e le Impostazioni.\n- Il blocco si attiva solo dopo una verifica biometrica riuscita; per disattivarlo serve un’altra autenticazione.\n- Con il blocco attivo, testo e risultati restano nascosti fino allo sblocco, e Android impedisce screenshot e anteprime nelle app recenti.\n- La cifratura dei messaggi resta compatibile con tutte le versioni precedenti e con Mac e Windows.\n\n### Prima di installare su Android\n\n**La chiave delle vecchie release è stata smarrita. Questa versione usa una nuova chiave dedicata: Android richiede di disinstallare la vecchia app prima di installare il nuovo APK.**\n\n**Assicurati prima di conoscere la password di cifratura.** La disinstallazione cancella password e impostazioni locali: dovrai reinserirle nella nuova app. I messaggi già cifrati restano decifrabili con la stessa password. Gli aggiornamenti successivi alla 1.0.11 useranno la nuova firma e si installeranno normalmente.\n\n### Download\n\n| File | Dispositivo |\n|---|---|\n| `EasyCrypt-Android-1.0.11.apk` | Android 8.0 o successivo |\n| `EasyCrypt-Mac-AppleSilicon-1.0.11.zip` |",
+    "assets": [
+     {
+      "name": "EasyCrypt-Android-1.0.11.apk",
+      "url": "https://github.com/carellice/easy-crypt/releases/download/v1.0.11/EasyCrypt-Android-1.0.11.apk",
+      "size": 1971670,
+      "downloads": 3
+     },
+     {
+      "name": "EasyCrypt-Mac-AppleSilicon-1.0.11.zip",
+      "url": "https://github.com/carellice/easy-crypt/releases/download/v1.0.11/EasyCrypt-Mac-AppleSilicon-1.0.11.zip",
+      "size": 14658192,
+      "downloads": 1
+     },
+     {
+      "name": "EasyCrypt-Mac-Intel-1.0.11.zip",
+      "url": "https://github.com/carellice/easy-crypt/releases/download/v1.0.11/EasyCrypt-Mac-Intel-1.0.11.zip",
+      "size": 13710079,
+      "downloads": 1
+     },
+     {
+      "name": "EasyCrypt-PC-1.0.11.exe",
+      "url": "https://github.com/carellice/easy-crypt/releases/download/v1.0.11/EasyCrypt-PC-1.0.11.exe",
+      "size": 16431890,
+      "downloads": 3
+     },
+     {
+      "name": "EasyCrypt-PC-1.0.11.zip",
+      "url": "https://github.com/carellice/easy-crypt/releases/download/v1.0.11/EasyCrypt-PC-1.0.11.zip",
+      "size": 52438,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "MonitorSwitch",
+   "name": "MonitorSwitch",
+   "description": "Lightweight Windows monitor profiles, per-display resolutions and tray shortcuts.",
+   "about": "MonitorSwitch Remember your monitors. Choose your screens. Keep your resolution.\n\nDownload portable ZIP · Download standalone EXE",
+   "features": [],
+   "category": "desktop",
+   "platforms": [
+    "windows"
+   ],
+   "language": "C#",
+   "topics": [
+    "csharp",
+    "display",
+    "monitors",
+    "portable",
+    "tray-application",
+    "windows"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-19T15:40:12Z",
+   "updatedAt": "2026-10-26T15:39:48Z",
+   "repoUrl": "https://github.com/carellice/MonitorSwitch",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/MonitorSwitch"
+    },
+    {
+     "type": "release",
+     "label": "Release v3.0.1",
+     "url": "https://github.com/carellice/MonitorSwitch/releases/tag/v3.0.1"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/MonitorSwitch/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/MonitorSwitch/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/MonitorSwitch/main/assets/monitor-switch.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/MonitorSwitch/main/docs/screenshot.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v3.0.1",
+    "name": "MonitorSwitch v3.0.1",
+    "date": "2026-10-26T15:40:27Z",
+    "url": "https://github.com/carellice/MonitorSwitch/releases/tag/v3.0.1",
+    "notes": "## Profile switching fix\n\n- Fixed the generic \"Windows ha applicato impostazioni diverse dal profilo salvato\" error on Windows virtual-mode display paths, including Intel-driven ultrawide monitors.\n- Set the requested desktop image explicitly, so a 1920 x 1080 profile does not inherit the previous ultrawide virtual desktop surface. Native physical signal timings remain available for GPU aspect scaling.\n- Wait for the display change to settle before verification. Genuine resolution/aspect mismatches still trigger recovery and now include the requested and received settings in the error.\n- Preserve virtual desktop geometry in recovery snapshots and verify both virtual image scaling and physical output scaling.\n\nExisting profiles and monitor names are preserved; **you do not need to recreate your profiles**. Install from **Aggiornamenti** or download below.\n\n## Download\n\n- **MonitorSwitch-portable-win-x64.zip**: portable package.\n- **MonitorSwitch.exe**: standalone executable.\n- **SHA256SUMS.txt**: checksums.\n\nWindows 10/11 x64. Italian interface. No installation or administrator rights required. Binaries are unsigned.\n\nFor games, use Borderless and the profile resolution. Protection restores detected Windows output changes; it cannot universally lock exclusive-fullscreen modes or a game's internal rendering.\n",
+    "assets": [
+     {
+      "name": "MonitorSwitch-portable-win-x64.zip",
+      "url": "https://github.com/carellice/MonitorSwitch/releases/download/v3.0.1/MonitorSwitch-portable-win-x64.zip",
+      "size": 154470,
+      "downloads": 0
+     },
+     {
+      "name": "MonitorSwitch.exe",
+      "url": "https://github.com/carellice/MonitorSwitch/releases/download/v3.0.1/MonitorSwitch.exe",
+      "size": 249344,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "Castino",
+   "name": "Castino",
+   "description": "Android screen mirroring and control over Wi-Fi. Native Windows app built with WinUI 3 and .NET.",
+   "about": "Castino Il tuo Android, sul tuo PC. Mirroring Wi-Fi e controllo da Windows.\n\nCastino è un'app desktop open source per Windows, realizzata con WinUI 3 e .NET 8. Mostra lo schermo di Android sul computer e permette di controllarlo con mouse, tastiera e touch.",
+   "features": [
+    "Video H.264 con decodifica Media Foundation e rendering Direct3D 11.",
+    "Associazione con QR code o codice numerico, ricerca in rete tramite mDNS e connessione manuale.",
+    "Controllo con mouse, tastiera e touchscreen; copia degli appunti del PC sul telefono.",
+    "Scorrimento fluido, zoom con Ctrl + rotellina e velocità di scorrimento regolabile.",
+    "Risoluzione, bitrate e frequenza dei fotogrammi configurabili.",
+    "Schermo intero, rotazione e spegnimento dello schermo del telefono durante il mirroring."
+   ],
+   "category": "desktop",
+   "platforms": [
+    "windows",
+    "android"
+   ],
+   "language": "C#",
+   "topics": [
+    "android",
+    "scrcpy",
+    "screen-mirroring",
+    "windows",
+    "winui3"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-19T15:59:52Z",
+   "updatedAt": "2026-10-19T16:18:10Z",
+   "repoUrl": "https://github.com/carellice/Castino",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/Castino"
+    },
+    {
+     "type": "release",
+     "label": "Release v0.1.1",
+     "url": "https://github.com/carellice/Castino/releases/tag/v0.1.1"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/Castino/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/Castino/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/Castino/main/docs/castino-icon.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v0.1.1",
+    "name": "Castino v0.1.1 - Aggiornamenti dall'app",
+    "date": "2026-10-19T16:18:11Z",
+    "url": "https://github.com/carellice/Castino/releases/tag/v0.1.1",
+    "notes": "## Aggiornamenti direttamente da Castino\n\n- Controllo delle release stabili GitHub all'avvio e ogni 6 ore, disattivabile.\n- Pannello **Aggiornamenti** con versione installata e verifica manuale.\n- **Scarica aggiornamento**: download in background, avanzamento e annullamento.\n- Controllo SHA-256 prima dell'estrazione e protezione dai percorsi ZIP non validi.\n- **Installa e riavvia**: aggiornamento dei file con backup e tentativo di ripristino in caso di errore.\n- Impostazioni conservate. I controlli automatici non interrompono il mirroring.\n\n### Come passare alla nuova versione\n\nChi usa **v0.1.0** deve scaricare questa versione manualmente una volta: la precedente non contiene ancora l'aggiornatore.\nScarica **Castino-0.1.1-win-x64.zip**, estrai tutto lo ZIP e apri **Castino.exe**. Non occorre installare .NET.\nDa questa versione, gli aggiornamenti futuri si gestiscono direttamente dall'app.\n\nWindows 10 1809+ / Windows 11, **x64**. La cartella dell'app deve essere scrivibile; chiudi eventuali altre istanze prima di aggiornare.\nLe installazioni MSIX continuano a usare il proprio canale. La build non è firmata digitalmente.\n\n### Verifiche\n\n- Compilazione Release e avvio della finestra su Windows x64.\n- 25 controlli su parsing release, ordinamento versioni, URL ufficiali, checksum, limiti GitHub, cancellazione e ZIP non validi.\n- Prove dell'installatore su sostituzione, backup, rollback con file bloccato e percorsi con spazi e caratteri speciali.\n- Controllo dell'API delle release ",
+    "assets": [
+     {
+      "name": "Castino-0.1.1-win-x64.zip",
+      "url": "https://github.com/carellice/Castino/releases/download/v0.1.1/Castino-0.1.1-win-x64.zip",
+      "size": 98945341,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "slideshower",
+   "name": "Slideshower",
+   "description": "Presentazioni automatiche di foto e video da una cartella, per Mac, Windows e Android",
+   "about": "Scegli una cartella. Al resto pensiamo noi.\n\nPresentazioni automatiche di foto e video, fluide e personalizzabili, per Mac, Windows e Android — e anche direttamente nel browser.",
+   "features": [
+    "Una cartella, tutto automatico — scegli la cartella (o trascinala nella finestra su Mac e PC) e la presentazione parte. Le ultime cartelle restano tra i Recenti.",
+    "Foto e video insieme — durata di ogni foto da 1 secondo a 10 minuti; i video possono andare per intero, avere un tempo massimo oppure durare quanto le foto.",
+    "Ordine — per nome, per data o casuale, anche al contrario. Alla fine ricomincia da capo oppure si ferma, e in ordine casuale può rimescolare a ogni giro.",
+    "12 transizioni — dissolvenza, scorrimento, verticale, zoom, sfocatura, copertura, capovolgi, cubo 3D, tendina, cerchio, nessuna e casuale, con durata regolabile e anteprima animata.",
+    "Aspetto — foto intera con sfondo sfocato o nero, oppure a tutto schermo; movimento lento sulle foto (effetto Ken Burns); barra di avanzamento, contatore, nome del file e orologio a scelta.",
+    "Contenuti — solo foto, solo video o entrambi; sottocartelle incluse o escluse."
+   ],
+   "category": "desktop",
+   "platforms": [
+    "windows",
+    "macos",
+    "android"
+   ],
+   "language": "JavaScript",
+   "topics": [
+    "android",
+    "electron",
+    "photos",
+    "slideshow"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-08T17:13:49Z",
+   "updatedAt": "2026-10-09T07:23:31Z",
+   "repoUrl": "https://github.com/carellice/slideshower",
+   "webUrl": "https://carellice.github.io/slideshower/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/slideshower/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/slideshower"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.1.0",
+     "url": "https://github.com/carellice/slideshower/releases/tag/v1.1.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/slideshower/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/slideshower/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/slideshower/main/build/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/slideshower/main/docs/home.png",
+    "https://raw.githubusercontent.com/carellice/slideshower/main/docs/impostazioni.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.1.0",
+    "name": "Slideshower 1.1.0",
+    "date": "2026-10-08T22:15:33Z",
+    "url": "https://github.com/carellice/slideshower/releases/tag/v1.1.0",
+    "notes": "Novità: introduzione guidata al primo avvio, rivedibile da Impostazioni → Aiuto.",
+    "assets": [
+     {
+      "name": "Slideshower-android.apk",
+      "url": "https://github.com/carellice/slideshower/releases/download/v1.1.0/Slideshower-android.apk",
+      "size": 4243629,
+      "downloads": 1
+     },
+     {
+      "name": "Slideshower-mac-arm64.dmg",
+      "url": "https://github.com/carellice/slideshower/releases/download/v1.1.0/Slideshower-mac-arm64.dmg",
+      "size": 128630790,
+      "downloads": 1
+     },
+     {
+      "name": "Slideshower-mac-x64.dmg",
+      "url": "https://github.com/carellice/slideshower/releases/download/v1.1.0/Slideshower-mac-x64.dmg",
+      "size": 132435832,
+      "downloads": 0
+     },
+     {
+      "name": "Slideshower-windows.zip",
+      "url": "https://github.com/carellice/slideshower/releases/download/v1.1.0/Slideshower-windows.zip",
+      "size": 153251569,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "sweep",
+   "name": "Sweep",
+   "description": "Pulizia consapevole per macOS, open source. Sweep trova quello che occupa spazio inutilmente sul tuo Mac, ti spiega cos'è e ti lascia decidere cosa rimuovere.",
+   "about": "Servono macOS 14+ e Xcode 15+ (o la toolchain Swift 5.10+).\n\nPer lo sviluppo: swift run Sweep e swift test.",
+   "features": [
+    "Pulizia — cache delle app, log e report di crash, dati temporanei di Xcode, cache di npm/pnpm/Bun/Gradle/Cargo, allegati di Mail, installer nei Download, archivi di Xcode, backup di iPhone/iPad, Cestino. Ogni categoria spiega cosa contiene e cosa succede se la elimini.",
+    "Disinstalla app — rimuove un'app insieme a preferenze, cache, container, file di supporto, agenti di avvio e stato salvato. Se l'app è aperta ti chiede prima di chiuderla.",
+    "File grandi — elenca i file (e, se richiesto, le cartelle intere) oltre una soglia (da 50 MB a 1 GB) in una cartella a tua scelta.",
+    "Panoramica — spazio usato e libero sul disco."
+   ],
+   "category": "desktop",
+   "platforms": [
+    "macos"
+   ],
+   "language": "Swift",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-01T19:46:38Z",
+   "updatedAt": "2026-10-08T10:30:44Z",
+   "repoUrl": "https://github.com/carellice/sweep",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/sweep"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.0.0",
+     "url": "https://github.com/carellice/sweep/releases/tag/v1.0.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/sweep/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/sweep/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/sweep/main/Resources/AppIcon.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.0.0",
+    "name": "Sweep 1.0.0",
+    "date": "2026-10-01T20:00:15Z",
+    "url": "https://github.com/carellice/sweep/releases/tag/v1.0.0",
+    "notes": "## Installazione\n\n1. Scarica `Sweep-1.0.0.zip`, decomprimilo e sposta **Sweep** in Applicazioni.\n2. L'app non è notarizzata da Apple: al primo avvio macOS la blocca. Apri\n   Impostazioni di Sistema → Privacy e sicurezza e premi **Apri comunque**, oppure esegui:\n\n   ```bash\n   xattr -dr com.apple.quarantine /Applications/Sweep.app\n   ```\n\nRichiede macOS 14 o successivo, Apple silicon o Intel.\n\nSHA-256: `0538e785cf9501c707f94903fce9c99f2b9dd728ddd6795dc645cb85315c7251`\n\n\n**Full Changelog**: https://github.com/carellice/sweep/commits/v1.0.0",
+    "assets": [
+     {
+      "name": "Sweep-1.0.0.zip",
+      "url": "https://github.com/carellice/sweep/releases/download/v1.0.0/Sweep-1.0.0.zip",
+      "size": 1947586,
+      "downloads": 4
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "CeccaStore",
+   "name": "CeccaStore",
+   "description": "App, giochi e progetti di Flavio Ceccarelli in un app store React.",
+   "about": "La raccolta di app, giochi e progetti di Flavio Ceccarelli: un’interfaccia React per esplorare le idee del suo laboratorio, provarle nel browser o scaricarne le release ufficiali.\n\nI download puntano ai repository originali: CeccaStore non ospita gli installer. Librerie e componenti tecnici sono distinti dalle applicazioni installabili.",
+   "features": [
+    "47 schede visibili, tra progetti, skill per Claude e la raccolta personale di Gist su GitHub, con descrizioni, piattaforme e screenshot disponibili.",
+    "28 progetti scaricabili, con 42 pacchetti dalle release ufficiali GitHub.",
+    "Ricerca, categorie, filtri per piattaforma, vista griglia/elenco, caricamento automatico scorrendo la lista e preferiti salvati sul dispositivo.",
+    "Tema chiaro/scuro, navigazione responsive, animazioni e rispetto delle preferenze di movimento ridotto.",
+    "Un’area con PIN per un ulteriore progetto, conservato in un pacchetto cifrato separato."
+   ],
+   "category": "web",
+   "platforms": [
+    "web"
+   ],
+   "language": "JavaScript",
+   "topics": [
+    "app-store",
+    "github-pages",
+    "portfolio",
+    "react"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-29T16:20:30Z",
+   "updatedAt": "2026-10-31T11:53:18Z",
+   "repoUrl": "https://github.com/carellice/CeccaStore",
+   "webUrl": "https://carellice.github.io/CeccaStore/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/CeccaStore/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/CeccaStore"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/CeccaStore/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/CeccaStore/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/CeccaStore/main/public/favicon.svg",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "aiming",
+   "name": "Aiming",
+   "description": "Aiming: lavagne infinite, testi liberi, post-it e backup cifrati. Dati salvati localmente nel browser.",
+   "about": "Il sito viene pubblicato automaticamente da GitHub Actions a ogni push su main. Viene servita soltanto la cartella dist; i contenuti delle lavagne restano nel browser. Per trasferire le lavagne dal precedente indirizzo, esporta un backup e reimportalo su GitHub Pages.\n\nUno spazio personale per raccogliere e organizzare le idee su più lavagne infinite. L’interfaccia è in italiano e include post-it, testi liberi, checklist, immagini e link.",
+   "features": [
+    "Creare, rinominare, duplicare, eliminare e aggiungere ai preferiti più lavagne.",
+    "Aggiungere post-it, testi, checklist, immagini e collegamenti web.",
+    "Spostare e ridimensionare le card, scegliere i colori e assegnare un’etichetta.",
+    "Collegare due card con una freccia e rimuovere i collegamenti.",
+    "Spostarti nella lavagna, cambiare zoom, adattare la vista e navigare dalla minimappa.",
+    "Cercare tra tutte le lavagne e i contenuti delle card."
+   ],
+   "category": "web",
+   "platforms": [
+    "web"
+   ],
+   "language": "JavaScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-30T11:16:51Z",
+   "updatedAt": "2026-10-30T11:40:53Z",
+   "repoUrl": "https://github.com/carellice/aiming",
+   "webUrl": "https://carellice.github.io/aiming/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/aiming/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/aiming"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/aiming/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/aiming/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/aiming/main/dist/favicon.svg",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/aiming/main/docs/screenshots/home.png",
+    "https://raw.githubusercontent.com/carellice/aiming/main/docs/screenshots/lavagna.png"
+   ],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "LoopingSounds",
+   "name": "Looping Sounds",
+   "description": "Crea loop perfetti da qualsiasi suono, direttamente nel browser",
+   "about": "Crea loop perfetti da qualsiasi suono, senza stacchi udibili. ▶ Prova online\n\nUn'app che gira tutta nel browser, ispirata ad Audjust Loop. Carichi un file audio, l'app trova automaticamente i punti in cui il suono si ripete e ti propone loop di varie lunghezze che ripartono senza che te ne accorga.",
+   "features": [
+    "Analisi: per ogni istante calcola un'impronta del suono (armonia sulle 12 note + timbro/volume per bande di frequenza) e cerca, per ogni lunghezza, i due punti in cui l'audio prima e dopo è più simile.",
+    "Lunghezze proposte: le lunghezze con il punteggio migliore. Se il brano ha un tempo riconoscibile, quelle che corrispondono a battute intere sono segnate come a tempo.",
+    "Precisione al campione: il punto finale viene allineato con la correlazione della forma d'onda.",
+    "Giunzione invisibile: un crossfade regolabile verso l'audio che precede il punto di inizio. Il loop riparte esattamente come continuerebbe la registrazione originale."
+   ],
+   "category": "web",
+   "platforms": [
+    "web"
+   ],
+   "language": "HTML",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-18T09:51:12Z",
+   "updatedAt": "2026-10-20T17:56:59Z",
+   "repoUrl": "https://github.com/carellice/LoopingSounds",
+   "webUrl": "https://carellice.github.io/LoopingSounds/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/LoopingSounds/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/LoopingSounds"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/LoopingSounds/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/LoopingSounds/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/LoopingSounds/main/icon.svg",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "appunto",
+   "name": "Appunto",
+   "description": "Appunto La tua prossima app per Mac, Windows e Android. Un catalogo personale di applicazioni utili, curate e piacevoli da usare, presentato come un piccolo desktop macOS dentro il",
+   "about": "Appunto è una raccolta di app scelte personalmente da Flavio: piccoli strumenti che risolvono un problema preciso e lo fanno bene. Niente classifiche e niente pubblicità: ogni scheda spiega in poche righe cosa fa l’app, quando torna utile e dove scaricarla dal sito ufficiale.\n\nNon serve installare nulla né registrarsi: si apre nel browser, da computer, tablet o telefono.",
+   "features": [
+    "Computer: un desktop con finestra, Dock e menu, come su macOS. La finestra si può trascinare ed espandere.",
+    "Tablet: lo stesso catalogo, con un layout pensato per lo schermo più ampio.",
+    "Telefono: una Home a pagine orizzontali in stile iOS, con Dock e ricerca Spotlight. Le schede salgono dal basso a tutto schermo."
+   ],
+   "category": "web",
+   "platforms": [
+    "android",
+    "windows",
+    "macos",
+    "web"
+   ],
+   "language": "TypeScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-09-14T21:16:21Z",
+   "updatedAt": "2026-10-18T10:08:39Z",
+   "repoUrl": "https://github.com/carellice/appunto",
+   "webUrl": "https://carellice.github.io/appunto/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/appunto/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/appunto"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/appunto/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/appunto/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/appunto/main/public/favicon.svg",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/rectangle.png",
+    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/maccy.png",
+    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/keka.png",
+    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/amphetamine.png",
+    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/coteditor.png",
+    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/pearcleaner.png",
+    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/linearmouse.png",
+    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/marktext.png",
+    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/sublime-text.png",
+    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/stirling-pdf.png"
+   ],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "mutuo-roma-nord",
+   "name": "Mutuo Roma Nord",
+   "description": "Simulatore mutuo prima casa per Roma nord",
+   "about": "Sito: https://carellice.github.io/mutuo-roma-nord/\n\nSimulatore di mutuo prima casa per le zone di Roma nord (Porta di Roma, Casal Boccone, Bufalotta, Fidene, Colle Salario, Settebagni, Serpentara): rata, spese accessorie, prezzo massimo approvabile, scenari, confronto fisso/variabile e offerte delle banche (dati di ottobre 2026).",
+   "features": [],
+   "category": "web",
+   "platforms": [
+    "web"
+   ],
+   "language": "HTML",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-14T15:28:00Z",
+   "updatedAt": "2026-10-14T15:35:16Z",
+   "repoUrl": "https://github.com/carellice/mutuo-roma-nord",
+   "webUrl": "https://carellice.github.io/mutuo-roma-nord/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/mutuo-roma-nord/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/mutuo-roma-nord"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/mutuo-roma-nord/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/mutuo-roma-nord/issues"
+    }
+   ],
+   "icon": null,
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "pillole-poetiche",
+   "name": "Pillole Poetiche",
+   "description": "Pillole Poetiche Una poesia al giorno, per riscoprire la bellezza delle parole. Una raccolta di versi, frasi e pensieri da leggere in pochi secondi.",
+   "about": "Pillole Poetiche è una piccola app che raccoglie 144 pillole — poesie brevi, frammenti e citazioni — di 74 autori. È pensata per essere aperta un momento, leggere qualcosa di bello e richiuderla.\n\nNon serve registrarsi né installare nulla: si apre dal browser, sul telefono o sul computer.",
+   "features": [
+    "Pillola casuale a ogni apertura e a ogni tocco.",
+    "Raccolta completa da sfogliare senza un ordine fisso.",
+    "Ricerca per autore con filtro immediato mentre scrivi.",
+    "Ritratti degli autori recuperati da Wikipedia, quando disponibili.",
+    "Interfaccia scura pensata per il telefono, utilizzabile anche da computer.",
+    "App Android generabile dallo stesso codice tramite Capacitor."
+   ],
+   "category": "web",
+   "platforms": [
+    "android",
+    "web"
+   ],
+   "language": "JavaScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2023-12-25T23:19:33Z",
+   "updatedAt": "2026-10-07T07:58:49Z",
+   "repoUrl": "https://github.com/carellice/pillole-poetiche",
+   "webUrl": "https://carellice.github.io/pillole-poetiche/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/pillole-poetiche/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/pillole-poetiche"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/pillole-poetiche/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/pillole-poetiche/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/pillole-poetiche/main/public/logo512.png",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "devdex",
+   "name": "DevDex",
+   "description": "DevDex Il Pokédex dello sviluppatore. Un’enciclopedia tascabile per studiare, ripassare prima di un colloquio e mettersi alla prova con quiz e flashcard.",
+   "about": "DevDex raccoglie in un unico posto i concetti che uno sviluppatore incontra davvero: Java, Spring, database, architetture, API e intelligenza artificiale. Ogni argomento è spiegato su tre livelli di profondità — principiante, medio e avanzato — così puoi partire dalle basi o andare dritto ai dettagli.\n\nSi usa dal browser, senza account: progressi e preferenze restano salvati sul tuo dispositivo.",
+   "features": [
+    "A chi parte da zero: il percorso guidato Start here accompagna dai primi concetti di programmazione alla scelta di un linguaggio.",
+    "A chi prepara un colloquio: ripasso veloce per argomento, poi quiz e flashcard per verificare cosa è rimasto.",
+    "A chi lavora già: una consultazione rapida quando serve rinfrescare un concetto."
+   ],
+   "category": "web",
+   "platforms": [
+    "web"
+   ],
+   "language": "MDX",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-09-22T15:11:04Z",
+   "updatedAt": "2026-10-07T07:58:46Z",
+   "repoUrl": "https://github.com/carellice/devdex",
+   "webUrl": "https://carellice.github.io/devdex/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/devdex/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/devdex"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/devdex/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/devdex/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/devdex/main/public/pwa-512x512.png",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "app-to-pwa-casaos",
+   "name": "App to PWA · CasaOS",
+   "description": "Claude skill: turn your native app into an identical PWA and self-host it on CasaOS with a one-command installer and nightly auto-updates",
+   "about": "A Claude skill that turns your native mobile app into a Progressive Web App that looks, animates and behaves exactly like the original, with a small backend you host yourself on CasaOS (or any Docker box, Raspberry Pi included), installed with one command and updated every night.\n\n🇮🇹 Una skill per Claude che converte la tua app nativa (Android, iOS, Flutter, React Native) in una PWA identica per grafica, animazioni e utilizzo, con un piccolo server da ospitare sul tuo CasaOS: installazione guidata con un solo comando, account per ogni persona di famiglia, notifiche push e aggiornamenti automatici ogni notte.",
+   "features": [
+    "Identical UI: same colors, fonts, shapes, copy. Compose/SwiftUI springs and easings converted exactly, Kotlin's Random(seed) reproduced bit for bit so generated shapes match, Material icons from the same set.",
+    "Your native app stays untouched: everything lives in its own folder. Unless you want the opposite: an optional server mode in the native app's settings makes the phone use the same account and data as the PWA (local copy for offline reading, changes from the PWA show up within 30 seconds).",
+    "Accounts: username and password, no email. Each person gets private data (their own SQLite file).",
+    "Native features mapped: notifications → Web Push, background workers → server jobs, biometric lock → WebAuthn passkey, camera, voice, PDF/share, backups compatible with the native app.",
+    "One-command install on the server, with HTTPS through Tailscale, a local certificate or your reverse proxy; the app appears in the CasaOS dashboard. Several apps can share one server: each gets its own Tailscale HTTPS port automatically (443, then 8443, 10000...), without taking over the others' links.",
+    "Nightly auto-update: when you bump the version on GitHub, servers rebuild, back up every database, switch over and roll back by themselves if the new version doesn't start."
+   ],
+   "category": "sviluppo",
+   "platforms": [
+    "android",
+    "macos",
+    "web"
+   ],
+   "language": "TypeScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-31T11:20:30Z",
+   "updatedAt": "2026-11-01T17:43:31Z",
+   "repoUrl": "https://github.com/carellice/app-to-pwa-casaos",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/app-to-pwa-casaos"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.4.0",
+     "url": "https://github.com/carellice/app-to-pwa-casaos/releases/tag/v1.4.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/app-to-pwa-casaos/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/app-to-pwa-casaos/issues"
+    }
+   ],
+   "icon": null,
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.4.0",
+    "name": "v1.4.0",
+    "date": "2026-11-01T17:43:32Z",
+    "url": "https://github.com/carellice/app-to-pwa-casaos/releases/tag/v1.4.0",
+    "notes": "Nuova domanda nell'intervista: vuoi accedere ai dati del server anche dall'app nativa? Se sì, l'app nativa riceve una modalità server facoltativa nelle impostazioni: stesso account e stessi dati della PWA, copia locale per la lettura offline, aggiornamento ogni 30 secondi. Guida in references/native-server-mode.md e template Android in assets/native-android/.\n\nNew intake question: should the native app reach the server's data too? If yes, the native app gets an optional server mode in its settings: same account and data as the PWA, local copy for offline reading, refresh every 30 seconds. Guide in references/native-server-mode.md, Android template in assets/native-android/.",
+    "assets": [
+     {
+      "name": "app-to-pwa-casaos.skill",
+      "url": "https://github.com/carellice/app-to-pwa-casaos/releases/download/v1.4.0/app-to-pwa-casaos.skill",
+      "size": 88502,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "chatgpt-image-mcp",
+   "name": "ChatGPT Image MCP",
+   "description": "MCP server that lets Claude generate and edit images with ChatGPT through the locally installed ChatGPT/Codex app. No API key needed.",
+   "about": "Let Claude generate and edit images with ChatGPT, using the ChatGPT app already on your computer. No API key and no extra billing: images are generated with your ChatGPT subscription.\n\n\"a cute minimalist flat illustration of a fox reading a book\", landscape \"give the fox a small pair of round glasses\"",
+   "features": [
+    "🖼️ Generate images from a text prompt, optionally guided by reference images",
+    "✏️ Edit existing images (change backgrounds or colors, add or remove objects) without touching the original",
+    "🔑 No API key: uses the Codex CLI bundled with the ChatGPT desktop app, signed in with your ChatGPT account",
+    "👀 Previews: the client gets the image back inline, so Claude can look at the result and iterate",
+    "💾 Saved to disk wherever you want, with safe file names and no overwrites",
+    "🧩 Works with Claude Code, Claude Desktop and any other MCP client"
+   ],
+   "category": "sviluppo",
+   "platforms": [
+    "windows"
+   ],
+   "language": "JavaScript",
+   "topics": [
+    "chatgpt",
+    "claude",
+    "claude-code",
+    "codex",
+    "image-generation",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-27T15:41:22Z",
+   "updatedAt": "2026-10-27T15:42:11Z",
+   "repoUrl": "https://github.com/carellice/chatgpt-image-mcp",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/chatgpt-image-mcp"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/chatgpt-image-mcp/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/chatgpt-image-mcp/issues"
+    }
+   ],
+   "icon": null,
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/chatgpt-image-mcp/main/assets/example-generate.jpg",
+    "https://raw.githubusercontent.com/carellice/chatgpt-image-mcp/main/assets/example-edit.jpg"
+   ],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "alexa-home-mcp",
+   "name": "Claude → Alexa",
+   "description": "Connettore (server MCP) che permette a Claude di comandare la domotica di Alexa, anche dall'app sul telefono. Costo: zero.",
+   "about": "Usa l'API non ufficiale di Alexa (libreria alexa-remote2): se Amazon cambia qualcosa può smettere di funzionare.\n\nStrumento Cosa fa ------ comandoalexa Invia un comando testuale all'Echo, come se lo dicessi a voce listadispositivi Elenca i dispositivi domotici listaecho Elenca gli Echo e se sono online",
+   "features": [
+    "Un account Amazon con almeno un dispositivo Echo: i comandi passano da lì.",
+    "Un piano Claude che permetta i connettori personalizzati (provato con Pro).",
+    "Un computer Mac o Windows che resti acceso: il server gira lì.",
+    "Un account Tailscale gratuito: https://tailscale.com"
+   ],
+   "category": "sviluppo",
+   "platforms": [
+    "windows",
+    "macos"
+   ],
+   "language": "JavaScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-08T12:30:07Z",
+   "updatedAt": "2026-10-08T23:45:58Z",
+   "repoUrl": "https://github.com/carellice/alexa-home-mcp",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/alexa-home-mcp"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/alexa-home-mcp/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/alexa-home-mcp/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/alexa-home-mcp/main/logo.svg",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": false
+  },
+  {
+   "id": "java-strings-matcher",
+   "name": "StringsMatcher",
+   "description": "Il progetto StringsMatcher è una libreria Java per confrontare due stringhe (in particolare ragioni sociali) e determinarne il livello di similarità tramite quattro algoritmi diffe",
+   "about": "Misura il numero minimo di operazioni (inserimenti, cancellazioni, sostituzioni) necessarie per trasformare una stringa nell'altra. La similarità è normalizzata tra 0 e 1.\n\nAlgoritmo efficace su nomi propri e stringhe brevi, valuta: - Matching dei caratteri - Ordine relativo - Prefisso comune",
+   "features": [
+    "Pulizia e normalizzazione delle stringhe (rimozione caratteri speciali, lowercase, trim)",
+    "Calcolo della similarità tra stringhe tramite:",
+    "Levenshtein Distance",
+    "Jaro-Winkler Similarity",
+    "Jaccard Distance",
+    "Sørensen-Dice Coefficient"
+   ],
+   "category": "sviluppo",
+   "platforms": [],
+   "language": "Java",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2025-05-26T21:21:27Z",
+   "updatedAt": "2025-05-27T10:56:49Z",
+   "repoUrl": "https://github.com/carellice/java-strings-matcher",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/java-strings-matcher"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/java-strings-matcher/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/java-strings-matcher/issues"
+    }
+   ],
+   "icon": null,
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "dueffe": false
+  }
+ ],
+ "gists": [
+  {
+   "id": "434b24eae41c24d3d0f8eb15cf3f8120",
+   "description": "Configurazione guidata (Windows .bat): il Raspberry Pi invia un messaggio Telegram a ogni avvio",
+   "url": "https://gist.github.com/carellice/434b24eae41c24d3d0f8eb15cf3f8120",
+   "createdAt": "2026-10-31T11:12:14Z",
+   "updatedAt": "2026-11-02T12:12:33Z",
+   "files": [
+    {
+     "name": "Telegram-Notifica-Raspberry.bat",
+     "language": "Batchfile",
+     "size": 12153,
+     "rawUrl": "https://gist.githubusercontent.com/carellice/434b24eae41c24d3d0f8eb15cf3f8120/raw/9562baf8d85edc0004aa0dfea309bb4fc2932864/Telegram-Notifica-Raspberry.bat",
+     "preview": "<# : batch\n@echo off\ntitle Notifica Telegram al riavvio del Raspberry Pi\npowershell -NoProfile -ExecutionPolicy Bypass -Command \"$f='%~f0'; iex ([IO.File]::ReadAllText($f, [Text.Encoding]::UTF8))\"\necho.\npause\nexit /b\n#>\n\n# ---------------------------------------------------------------------------\n# Configurazione guidata: il Raspberry Pi invia un messaggio Telegram\n# ogni volta che si avvia. Gira su Windows e configura il Pi via SSH.\n# ---------------------------------------------------------------------------\n\n$ErrorActionPreference = 'Stop'\n[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12\n\nfunction Titolo($n, $testo) {\n    Write-Host \"\"\n    Write-Host \"==================================================\" -ForegroundColor Cyan\n    Write-Host \" PASSO $n di 5 - $testo\" -ForegroundColor Cyan\n    Write-Host \"==================================================\" -ForegroundColor Cyan\n    Write-Host \"\"\n}\nfunction Ok($t)     { Write-Host \"[OK] $t\" -ForegroundColor Green }\nfunction Errore($t) { Write-Host \"[ERRORE] $t\" -ForegroundColor Red }\nfunction Avviso($t) { Write-Host $t -ForegroundColor Yellow }\n\nfunction Chiedi($domanda) {\n    do { $r = (Read-Host $domanda).Trim() } while (-not $r)\n    return $r\n}\nfunction SiNo($domanda, $default = 'S') {\n    $r = (Read-Host \"$domanda (S/N) [$default]\").Trim()\n    if (-not $r) { $r = $default }\n    return ($r -match '^[sSyY]')\n}\nfunction Pausa($t = 'Premi INVIO per continuare') { [void](Read-Host $t) }\n\nfunction Telegram($token, $metodo) {"
+    }
+   ]
+  },
+  {
+   "id": "8befdb3a441c6081049787a267db5b5f",
+   "description": "Utility per copiare l'ip della VPN cloudflare",
+   "url": "https://gist.github.com/carellice/8befdb3a441c6081049787a267db5b5f",
+   "createdAt": "2026-10-30T11:28:23Z",
+   "updatedAt": "2026-10-30T11:28:24Z",
+   "files": [
+    {
+     "name": "copia-ip-cloudflare.bat",
+     "language": "Batchfile",
+     "size": 290,
+     "rawUrl": "https://gist.githubusercontent.com/carellice/8befdb3a441c6081049787a267db5b5f/raw/50d69f4c7245417d2b5f6d2cda1f28b3b86c1138/copia-ip-cloudflare.bat",
+     "preview": "@echo off\npowershell -NoProfile -Command \"$ip = (Get-NetIPAddress -InterfaceAlias 'CloudflareWARP' -AddressFamily IPv4 -ErrorAction SilentlyContinue).IPAddress; if ($ip) { Set-Clipboard $ip; Write-Host \\\"Copiato: $ip\\\" } else { Write-Host 'CloudflareWARP non connesso' }\"\ntimeout /t 2 >nul\n"
+    }
+   ]
+  },
+  {
+   "id": "a399beec81aba52d46440f394ccd1f63",
+   "description": "Windows Defender Manager: menu .bat per controllare lo stato, riattivare la protezione in tempo reale o aprire le impostazioni per disattivarla. Richiede amministratore.",
+   "url": "https://gist.github.com/carellice/a399beec81aba52d46440f394ccd1f63",
+   "createdAt": "2026-10-28T15:51:30Z",
+   "updatedAt": "2026-10-28T15:51:31Z",
+   "files": [
+    {
+     "name": "windows-defender.bat",
+     "language": "Batchfile",
+     "size": 1327,
+     "rawUrl": "https://gist.githubusercontent.com/carellice/a399beec81aba52d46440f394ccd1f63/raw/d0526ee2f45d346786c5496057524960bd5faecb/windows-defender.bat",
+     "preview": "@echo off\ntitle Windows Defender Manager\ncolor 0B\n\n:: Verifica privilegi amministratore\nnet session >nul 2>&1\nif %errorlevel% neq 0 (\n    echo Avvia questo file come amministratore.\n    pause\n    exit /b\n)\n\n:menu\ncls\necho ========================================\necho       WINDOWS DEFENDER MANAGER\necho ========================================\necho.\necho [1] Disattiva protezione temporaneamente\necho [2] Attiva protezione\necho [3] Controlla stato\necho [4] Esci\necho.\nset /p scelta=Scegli un'opzione: \n\nif \"%scelta%\"==\"1\" goto disattiva\nif \"%scelta%\"==\"2\" goto attiva\nif \"%scelta%\"==\"3\" goto stato\nif \"%scelta%\"==\"4\" exit\ngoto menu\n\n:disattiva\ncls\necho Apertura delle impostazioni di sicurezza...\nstart windowsdefender://threatsettings\necho.\necho Disattiva manualmente:\necho \"Protezione in tempo reale\"\necho.\necho Windows potrebbe riattivarla automaticamente."
+    }
+   ]
+  },
+  {
+   "id": "ec37a7bfef118f4f5b358c3605a22fb9",
+   "description": "Preme INVIO automaticamente dopo N minuti (es. per far continuare un chatbot IA quando si resetta il limite). Windows .bat",
+   "url": "https://gist.github.com/carellice/ec37a7bfef118f4f5b358c3605a22fb9",
+   "createdAt": "2026-10-28T15:51:28Z",
+   "updatedAt": "2026-10-28T15:51:29Z",
+   "files": [
+    {
+     "name": "premi_invio.bat",
+     "language": "Batchfile",
+     "size": 404,
+     "rawUrl": "https://gist.githubusercontent.com/carellice/ec37a7bfef118f4f5b358c3605a22fb9/raw/40a50def7486e96eb15760dccc913bb789678aec/premi_invio.bat",
+     "preview": "\n@echo off\ntitle Premi Invio automaticamente\n\nset /p MINUTI=\"Tra quanti minuti vuoi premere INVIO? \"\n\nset /a SECONDI=MINUTI*60\n\necho.\necho Premo INVIO tra %MINUTI% minuti.\necho Puoi lasciare questa finestra aperta.\n\ntimeout /t %SECONDI% /nobreak >nul\n\npowershell -NoProfile -Command \"$ws = New-Object -ComObject WScript.Shell; $ws.SendKeys('{ENTER}')\"\n\necho.\necho INVIO premuto!\npause\n"
+    }
+   ]
+  },
+  {
+   "id": "cda713ede50accc6f00e5ff4be0c9a10",
+   "description": "Gestore emulatori Android (AVD) per Windows: elenca, avvia, spegne, crea, rinomina, elimina; installa SDK/Java/emulatore se mancano. File .bat unico.",
+   "url": "https://gist.github.com/carellice/cda713ede50accc6f00e5ff4be0c9a10",
+   "createdAt": "2026-10-28T15:47:01Z",
+   "updatedAt": "2026-10-30T10:26:56Z",
+   "files": [
+    {
+     "name": "gestisci-emulatori-android-windows.bat",
+     "language": "Batchfile",
+     "size": 23718,
+     "rawUrl": "https://gist.githubusercontent.com/carellice/cda713ede50accc6f00e5ff4be0c9a10/raw/857699434ff38199e737179f4dbcbe9666c871f4/gestisci-emulatori-android-windows.bat",
+     "preview": "<# : sezione batch (cmd la esegue, PowerShell la vede come commento)\n@echo off\npowershell -NoProfile -ExecutionPolicy Bypass -Command \"iex (Get-Content -LiteralPath '%~f0' -Raw)\"\nexit /b\n#>\n# Gestione semplice degli emulatori Android (AVD)\n[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12\n$ProgressPreference = 'SilentlyContinue'   # download molto piu' veloci senza barra di avanzamento\n$sdkPredefinito = \"$env:LOCALAPPDATA\\Android\\Sdk\"\n$immagineBase   = 'system-images;android-35;google_apis;x86_64'\n$urlJdk         = 'https://api.adoptium.net/v3/binary/latest/21/ga/windows/x64/jdk/hotspot/normal/eclipse'\n$urlRepo        = 'https://dl.google.com/android/repository/'\n$avdDir = if ($env:ANDROID_AVD_HOME) { $env:ANDROID_AVD_HOME } else { \"$env:USERPROFILE\\.android\\avd\" }\n\nfunction Pausa($msg) { if ($msg) { Write-Host $msg -ForegroundColor Yellow }; Read-Host \"Invio per continuare\" | Out-Null }\n\n# SDK completo (con emulatore). Include anche gli SDK installati da app Store (MSIX), salvati in Packages\\<app>\\LocalCache\nfunction Find-Sdk {\n    $candidati = @($env:ANDROID_HOME, $env:ANDROID_SDK_ROOT, $sdkPredefinito) +\n        @(Get-ChildItem \"$env:LOCALAPPDATA\\Packages\\*\\LocalCache\\Local\\Android\\Sdk\" -Directory -ErrorAction SilentlyContinue | ForEach-Object FullName)\n    $candidati | Where-Object { $_ -and (Test-Path \"$_\\emulator\\emulator.exe\") } | Select-Object -First 1\n}\n\n# Java 17+ serve ad avdmanager/sdkmanager: prima quello scaricato nell'SDK, poi quello di sistema\nfunction Get-JavaHome($root) {\n    $locale = Get-ChildItem \"$root\\jdk\" -Filter java.exe -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1\n    if ($locale) { return $locale.Directory.Parent.FullName }\n    $sistema = @($env:JAVA_HOME) + @(Get-Command java -ErrorAction SilentlyContinue | ForEach-Object { Split-Path (Split-Path $_.Source) })\n    foreach ($h in $sistema) {\n        if ($h -and (Test-Path \"$h\\bin\\java.exe\")) {\n            $v = cmd /c \"`\"$h\\bin\\java.exe`\" -version 2>&1\" | Select-Object -First 1\n            if ($v -match 'version \"(\\d+)' -and [int]$Matches[1] -ge 17) { return $h }\n        }\n    }\n    return $null\n}\n\nfunction Get-AvdManager($root) {\n    Get-ChildItem \"$root\\cmdline-tools\" -Recurse -Filter avdmanager.bat -ErrorAction SilentlyContinue |\n        Select-Object -First 1 -ExpandProperty FullName"
+    }
+   ]
+  }
+ ]
+}

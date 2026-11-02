@@ -1,0 +1,216 @@
+{
+  "ownerName": "Flavio Ceccarelli",
+  "exclude": [
+    "android-app-releases",
+    "iron-pump-images"
+  ],
+  "categories": [
+    {
+      "id": "android",
+      "title": "App Android",
+      "subtitle": "Native, in Kotlin e Jetpack Compose"
+    },
+    {
+      "id": "giochi",
+      "title": "Giochi",
+      "subtitle": "Da giocare da soli o in compagnia"
+    },
+    {
+      "id": "desktop",
+      "title": "Windows e Mac",
+      "subtitle": "Strumenti per il computer"
+    },
+    {
+      "id": "web",
+      "title": "Web app",
+      "subtitle": "Si aprono nel browser, senza installare nulla"
+    },
+    {
+      "id": "sviluppo",
+      "title": "AI e sviluppo",
+      "subtitle": "Server MCP, skill e librerie"
+    }
+  ],
+  "projects": {
+    "claude-monitor": {
+      "category": "desktop",
+      "platforms": [
+        "windows",
+        "android"
+      ]
+    },
+    "easy-crypt": {
+      "category": "desktop",
+      "platforms": [
+        "android",
+        "windows",
+        "macos"
+      ]
+    },
+    "slideshower": {
+      "category": "desktop",
+      "platforms": [
+        "windows",
+        "macos",
+        "android"
+      ]
+    },
+    "sweep": {
+      "category": "desktop",
+      "platforms": [
+        "macos"
+      ]
+    },
+    "Castino": {
+      "category": "desktop",
+      "platforms": [
+        "windows",
+        "android"
+      ]
+    },
+    "hommaterial": {
+      "category": "android",
+      "featured": true,
+      "platforms": [
+        "android",
+        "web",
+        "windows"
+      ]
+    },
+    "Topperia": {
+      "category": "giochi",
+      "featured": true
+    },
+    "funcouple": {
+      "category": "giochi"
+    },
+    "ondalunga": {
+      "category": "giochi"
+    },
+    "arcade-classici": {
+      "category": "giochi",
+      "featured": true
+    },
+    "spariaps-game": {
+      "category": "giochi",
+      "platforms": [
+        "web",
+        "windows",
+        "macos"
+      ]
+    },
+    "il-sognatore": {
+      "category": "giochi",
+      "platforms": [
+        "android"
+      ]
+    },
+    "chiarella": {
+      "featured": true
+    },
+    "Mappinando": {
+      "featured": true
+    },
+    "money": {
+      "featured": true,
+      "platforms": [
+        "android"
+      ]
+    },
+    "brieffo": {
+      "featured": true
+    },
+    "IPTVISION": {
+      "category": "desktop",
+      "featured": true,
+      "platforms": [
+        "windows"
+      ]
+    },
+    "piccole-gioie": {
+      "featured": true
+    },
+    "app-to-pwa-casaos": {
+      "category": "sviluppo",
+      "name": "App to PWA · CasaOS"
+    },
+    "chatgpt-image-mcp": {
+      "category": "sviluppo",
+      "name": "ChatGPT Image MCP"
+    },
+    "alexa-home-mcp": {
+      "category": "sviluppo",
+      "name": "Claude → Alexa"
+    },
+    "java-strings-matcher": {
+      "category": "sviluppo",
+      "platforms": []
+    },
+    "CeccaStore": {
+      "category": "web"
+    },
+    "aiming": {
+      "category": "web"
+    },
+    "LoopingSounds": {
+      "category": "web"
+    },
+    "mutuo-roma-nord": {
+      "category": "web",
+      "platforms": [
+        "web"
+      ]
+    },
+    "appunto": {
+      "category": "web"
+    },
+    "pillole-poetiche": {
+      "category": "web"
+    },
+    "devdex": {
+      "category": "web"
+    },
+    "dueffe-streamwise": {
+      "category": "android",
+      "platforms": [
+        "android"
+      ],
+      "name": "Dueffe StreamWise",
+      "links": [
+        {
+          "type": "release",
+          "label": "Scarica APK",
+          "url": "https://github.com/carellice/android-app-releases/releases"
+        }
+      ]
+    },
+    "dueffe-garage": {
+      "category": "android",
+      "platforms": [
+        "android"
+      ],
+      "name": "Dueffe Garage"
+    },
+    "dueffe-health": {
+      "name": "Dueffe Health",
+      "category": "android",
+      "platforms": [
+        "android"
+      ]
+    },
+    "dueffe-since": {
+      "name": "Dueffe Since",
+      "category": "android",
+      "platforms": [
+        "android"
+      ]
+    },
+    "dueffe-subber": {
+      "name": "Dueffe Subber",
+      "category": "android",
+      "platforms": [
+        "android"
+      ]
+    }
+  }
+}
