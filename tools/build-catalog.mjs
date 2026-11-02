@@ -22,7 +22,12 @@ if (!token) {
 async function gh(path, { raw = false, allow404 = false } = {}) {
   const headers = { 'User-Agent': 'dueffe-home-catalog', Accept: raw ? 'application/vnd.github.raw' : 'application/vnd.github+json' };
   if (token) headers.Authorization = `Bearer ${token}`;
-  const res = await fetch(`https://api.github.com/${path}`, { headers });
+  let res = await fetch(`https://api.github.com/${path}`, { headers });
+  // Il GITHUB_TOKEN delle Action non può leggere i gist: per quelli pubblici basta una richiesta anonima.
+  if (res.status === 403 && token) {
+    delete headers.Authorization;
+    res = await fetch(`https://api.github.com/${path}`, { headers });
+  }
   if (allow404 && (res.status === 404 || res.status === 409)) return null;
   if (!res.ok) throw new Error(`GitHub ${res.status} su ${path}`);
   return raw ? res.text() : res.json();
