@@ -170,7 +170,7 @@ private fun UpdateCard(vm: AppViewModel, modifier: Modifier) {
                         StatusLine(Icons.Rounded.Download, DF.Primary, "Disponibile la ${s.info.version}", "Stai usando la ${BuildConfig.VERSION_NAME} · ${formatSize(s.info.size)}")
                         if (s.info.notes.isNotBlank()) {
                             VerticalGap(10.dp)
-                            Text(s.info.notes.take(500), style = MaterialTheme.typography.bodySmall, color = DF.Muted)
+                            Text(cleanNotes(s.info.notes).take(500), style = MaterialTheme.typography.bodySmall, color = DF.Muted)
                         }
                         VerticalGap(14.dp)
                         GoldButton("Scarica e installa", Icons.Rounded.Download, Modifier.fillMaxWidth()) { vm.downloadUpdate() }

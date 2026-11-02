@@ -479,7 +479,7 @@ private fun linkIcon(type: String): ImageVector = when (type) {
 }
 
 /** Le note di rilascio arrivano in Markdown: ne tengo solo il testo leggibile. */
-private fun cleanNotes(md: String) = md
+fun cleanNotes(md: String) = md
     .replace(Regex("""!\[[^\]]*]\([^)]*\)"""), "")
     .replace(Regex("""\[([^\]]*)]\([^)]*\)"""), "$1")
     .replace(Regex("""(?m)^#+\s*"""), "")
