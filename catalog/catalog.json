@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-02T17:06:36.528Z",
+ "generatedAt": "2026-11-02T19:25:09.624Z",
  "owner": {
   "login": "carellice",
   "name": "Flavio Ceccarelli",
@@ -60,7 +60,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-02T16:51:04Z",
+   "updatedAt": "2026-11-02T19:16:45Z",
    "repoUrl": "https://github.com/carellice/money",
    "webUrl": null,
    "links": [
@@ -71,8 +71,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.6.0",
-     "url": "https://github.com/carellice/money/releases/tag/v1.6.0"
+     "label": "Release v1.8.0",
+     "url": "https://github.com/carellice/money/releases/tag/v1.8.0"
     },
     {
      "type": "releases",
@@ -89,17 +89,17 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.6.0",
-    "name": "Money 1.6.0",
-    "date": "2026-11-02T16:50:57Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.6.0",
-    "notes": "## Novita'\n- Metodi di pagamento personalizzati, nell'app Android e nella PWA\n",
+    "tag": "v1.8.0",
+    "name": "Money 1.8.0",
+    "date": "2026-11-02T19:16:49Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.8.0",
+    "notes": "## Novita'\n- Spese fisse con metodo di pagamento, ordinamento e totali per metodo; importo in stile POS; offline subito senza rete",
     "assets": [
      {
-      "name": "Money-1.6.0.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.6.0/Money-1.6.0.apk",
-      "size": 6183145,
-      "downloads": 1
+      "name": "Money-1.8.0.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.8.0/Money-1.8.0.apk",
+      "size": 6215913,
+      "downloads": 0
      }
     ]
    },
@@ -2476,7 +2476,6 @@
    "about": "A Claude skill that turns your native mobile app into a Progressive Web App that looks, animates and behaves exactly like the original, with a small backend you host yourself on CasaOS (or any Docker box, Raspberry Pi included), installed with one command and updated every night.\n\n🇮🇹 Una skill per Claude che converte la tua app nativa (Android, iOS, Flutter, React Native) in una PWA identica per grafica, animazioni e utilizzo, con un piccolo server da ospitare sul tuo CasaOS: installazione guidata con un solo comando, account per ogni persona di famiglia, notifiche push e aggiornamenti automatici ogni notte.",
    "features": [
     "Identical UI: same colors, fonts, shapes, copy. Compose/SwiftUI springs and easings converted exactly, Kotlin's Random(seed) reproduced bit for bit so generated shapes match, Material icons from the same set.",
-    "Your native app stays untouched: everything lives in its own folder. Unless you want the opposite: an optional server mode in the native app's settings makes the phone use the same account and data as the PWA (local copy for offline reading, changes from the PWA show up within 30 seconds).",
     "Accounts: username and password, no email. Each person gets private data (their own SQLite file).",
     "Native features mapped: notifications → Web Push, background workers → server jobs, biometric lock → WebAuthn passkey, camera, voice, PDF/share, backups compatible with the native app.",
     "One-command install on the server, with HTTPS through Tailscale, a local certificate or your reverse proxy; the app appears in the CasaOS dashboard. Several apps can share one server: each gets its own Tailscale HTTPS port automatically (443, then 8443, 10000...), without taking over the others' links.",
@@ -2494,7 +2493,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-31T11:20:30Z",
-   "updatedAt": "2026-11-01T17:43:31Z",
+   "updatedAt": "2026-11-02T18:46:46Z",
    "repoUrl": "https://github.com/carellice/app-to-pwa-casaos",
    "webUrl": null,
    "links": [
@@ -2505,8 +2504,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.4.0",
-     "url": "https://github.com/carellice/app-to-pwa-casaos/releases/tag/v1.4.0"
+     "label": "Release v1.5.0",
+     "url": "https://github.com/carellice/app-to-pwa-casaos/releases/tag/v1.5.0"
     },
     {
      "type": "releases",
@@ -2523,16 +2522,16 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.4.0",
-    "name": "v1.4.0",
-    "date": "2026-11-01T17:43:32Z",
-    "url": "https://github.com/carellice/app-to-pwa-casaos/releases/tag/v1.4.0",
-    "notes": "Nuova domanda nell'intervista: vuoi accedere ai dati del server anche dall'app nativa? Se sì, l'app nativa riceve una modalità server facoltativa nelle impostazioni: stesso account e stessi dati della PWA, copia locale per la lettura offline, aggiornamento ogni 30 secondi. Guida in references/native-server-mode.md e template Android in assets/native-android/.\n\nNew intake question: should the native app reach the server's data too? If yes, the native app gets an optional server mode in its settings: same account and data as the PWA, local copy for offline reading, refresh every 30 seconds. Guide in references/native-server-mode.md, Android template in assets/native-android/.",
+    "tag": "v1.5.0",
+    "name": "v1.5.0",
+    "date": "2026-11-02T18:46:50Z",
+    "url": "https://github.com/carellice/app-to-pwa-casaos/releases/tag/v1.5.0",
+    "notes": "Modalità server dell'app nativa: senza connessione le modifiche restano sul telefono (coda) e partono da sole quando il server torna raggiungibile, con la rimappatura degli id creati offline. Le rotte di salvataggio del server restituiscono sempre l'id.",
     "assets": [
      {
       "name": "app-to-pwa-casaos.skill",
-      "url": "https://github.com/carellice/app-to-pwa-casaos/releases/download/v1.4.0/app-to-pwa-casaos.skill",
-      "size": 88502,
+      "url": "https://github.com/carellice/app-to-pwa-casaos/releases/download/v1.5.0/app-to-pwa-casaos.skill",
+      "size": 89780,
       "downloads": 1
      }
     ]
