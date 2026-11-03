@@ -142,6 +142,10 @@
       "category": "sviluppo",
       "name": "Claude → Alexa"
     },
+    "alexa-notion": {
+      "category": "sviluppo",
+      "name": "Alexa → Notion"
+    },
     "java-strings-matcher": {
       "category": "sviluppo",
       "platforms": []
