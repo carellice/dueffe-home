@@ -101,14 +101,6 @@ fun DueffeHomeApp(vm: AppViewModel) {
     val pager = rememberPagerState { featuredCount }
     val scope = rememberCoroutineScope()
 
-    // Ogni cambio di pagina riparte dall'alto.
-    LaunchedEffect(tab, opened) {
-        homeList.scrollToItem(0)
-        exploreList.scrollToItem(0)
-        gistList.scrollToItem(0)
-        infoScroll.scrollTo(0)
-    }
-
     BackHandler(opened != null) { opened = history.removeLastOrNull() }
     BackHandler(opened == null && tab != Tab.Home) { tab = Tab.Home }
 

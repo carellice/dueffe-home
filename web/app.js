@@ -59,6 +59,8 @@ const state = {
   latest: null,
   version: null,
   splashDone: false,
+  // Posizione di scorrimento di ogni scheda: chi la visita per la prima volta parte dall'alto.
+  scroll: {},
   expanded: new Set(),
 };
 
@@ -183,13 +185,14 @@ function navigate(hash) { if (location.hash !== hash) location.hash = hash; else
 
 function onRoute() {
   const prev = state.route;
+  if (prev && !prev.startsWith('#/p/')) state.scroll[state.tab] = scrollY;
   const r = parseRoute();
   const key = location.hash || '#/';
   const goingDetail = r.name === 'detail';
   const leavingDetail = prev?.startsWith('#/p/') && !goingDetail;
   state.route = key;
   if (r.name === 'explore' && r.cat !== undefined) state.category = r.cat || null;
-  const swap = () => render(r, prev);
+  const swap = () => render(r, prev, r.name === 'detail' ? 0 : state.scroll[r.name] || 0);
   if (document.startViewTransition && !reduced && (goingDetail || leavingDetail)) {
     // Icona condivisa tra lista e dettaglio con le View Transitions.
     const from = goingDetail ? pendingShared : $('.hero [data-icon]');
@@ -203,7 +206,8 @@ function onRoute() {
 }
 
 // ---------- render ----------
-function render(r = parseRoute(), prev = null) {
+// `top` è lo scorrimento della pagina in arrivo; senza, si ridisegna la pagina corrente restando dove si è.
+function render(r = parseRoute(), prev = null, top = scrollY) {
   const view = $('#view');
   const c = state.catalog;
   if (!c) { view.innerHTML = ''; return; }
@@ -214,7 +218,7 @@ function render(r = parseRoute(), prev = null) {
     nav.classList.add('hidden');
     view.innerHTML = `<div class="page detail-in">${detail(p)}</div>`;
     wireDetail(p);
-    scrollTo(0, 0);
+    scrollTo(0, top);
     return;
   }
   nav.classList.remove('hidden');
@@ -226,8 +230,7 @@ function render(r = parseRoute(), prev = null) {
   const html = { home, explore, gist, info }[r.name]();
   view.innerHTML = `<div class="page ${dirClass}">${html}</div>`;
   ({ home: wireHome, explore: wireExplore, gist: wireGist, info: wireInfo })[r.name]();
-  // Ogni cambio di pagina riparte dall'alto.
-  scrollTo(0, 0);
+  scrollTo(0, top);
 }
 
 function moveIndicator(idx) {
