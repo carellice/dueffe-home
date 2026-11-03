@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-02T19:25:09.624Z",
+ "generatedAt": "2026-11-03T12:04:22.153Z",
  "owner": {
   "login": "carellice",
   "name": "Flavio Ceccarelli",
@@ -36,77 +36,6 @@
  ],
  "projects": [
   {
-   "id": "money",
-   "name": "Money",
-   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
-   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
-   "features": [
-    "Font Bricolage Grotesque (SIL OFL).",
-    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "android",
-    "cloudflare-workers-ai",
-    "jetpack-compose",
-    "kotlin",
-    "personal-finance"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-02T19:16:45Z",
-   "repoUrl": "https://github.com/carellice/money",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/money"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.8.0",
-     "url": "https://github.com/carellice/money/releases/tag/v1.8.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/money/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/money/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.8.0",
-    "name": "Money 1.8.0",
-    "date": "2026-11-02T19:16:49Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.8.0",
-    "notes": "## Novita'\n- Spese fisse con metodo di pagamento, ordinamento e totali per metodo; importo in stile POS; offline subito senza rete",
-    "assets": [
-     {
-      "name": "Money-1.8.0.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.8.0/Money-1.8.0.apk",
-      "size": 6215913,
-      "downloads": 0
-     }
-    ]
-   },
-   "featured": true,
-   "dueffe": false
-  },
-  {
    "id": "hommaterial",
    "name": "Hommaterial",
    "description": "Comanda la tua smart home Alexa, senza fronzoli.",
@@ -131,7 +60,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-10-31T00:52:32Z",
+   "updatedAt": "2026-11-03T12:03:57Z",
    "repoUrl": "https://github.com/carellice/hommaterial",
    "webUrl": "https://carellice.github.io/hommaterial/",
    "links": [
@@ -147,8 +76,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.40",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.40"
+     "label": "Release v1.41",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.41"
     },
     {
      "type": "releases",
@@ -167,22 +96,93 @@
    ],
    "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
    "release": {
-    "tag": "v1.40",
-    "name": "Hommaterial 1.40",
-    "date": "2026-10-31T00:52:32Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.40",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.39...v1.40",
+    "tag": "v1.41",
+    "name": "Hommaterial 1.41",
+    "date": "2026-11-03T12:03:58Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.41",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.40...v1.41",
     "assets": [
      {
-      "name": "Hommaterial-v1.40-windows-x64.zip",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.40/Hommaterial-v1.40-windows-x64.zip",
-      "size": 127147031,
-      "downloads": 1
+      "name": "Hommaterial-v1.41-windows-x64.zip",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.41/Hommaterial-v1.41-windows-x64.zip",
+      "size": 127149919,
+      "downloads": 0
      },
      {
-      "name": "Hommaterial-v1.40.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.40/Hommaterial-v1.40.apk",
-      "size": 3061077,
+      "name": "Hommaterial-v1.41.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.41/Hommaterial-v1.41.apk",
+      "size": 3079413,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": true,
+   "dueffe": false
+  },
+  {
+   "id": "money",
+   "name": "Money",
+   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
+   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
+   "features": [
+    "Font Bricolage Grotesque (SIL OFL).",
+    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "cloudflare-workers-ai",
+    "jetpack-compose",
+    "kotlin",
+    "personal-finance"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-28T11:41:54Z",
+   "updatedAt": "2026-11-03T11:55:28Z",
+   "repoUrl": "https://github.com/carellice/money",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/money"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.9.1",
+     "url": "https://github.com/carellice/money/releases/tag/v1.9.1"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/money/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/money/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.9.1",
+    "name": "Money 1.9.1",
+    "date": "2026-11-02T22:15:59Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.9.1",
+    "notes": "## Novita'\n- Bottom bar: blob più grande che contiene anche la label e passaggio da pillola a blob più morbido",
+    "assets": [
+     {
+      "name": "Money-1.9.1.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.9.1/Money-1.9.1.apk",
+      "size": 6248685,
       "downloads": 2
      }
     ]
@@ -349,87 +349,6 @@
       "name": "Brieffo.apk",
       "url": "https://github.com/carellice/brieffo/releases/download/v1.22/Brieffo.apk",
       "size": 32735683,
-      "downloads": 2
-     }
-    ]
-   },
-   "featured": true,
-   "dueffe": false
-  },
-  {
-   "id": "Mappinando",
-   "name": "Mappinando",
-   "description": "Il tuo piccolo atlante personale: app Android nativa per luoghi preferiti, tappe e cose da fare. Kotlin, Compose e MapLibre.",
-   "about": "Mappinando Il tuo piccolo atlante personale. I posti del cuore. Quelli di domani.\n\nScarica l’APK · Guarda l’app · Segnala un problema",
-   "features": [
-    "Mappa immersiva: espandila a tutto schermo, cerca un punto o tieni premuto per segnare un luogo. I comandi restano a portata di mano.",
-    "Ricerca gratuita: città, indirizzi e attività per nome, con priorità alla zona della mappa. Seleziona un risultato, esploralo e poi decidi se aggiungerlo alle tappe.",
-    "Sei categorie: Ristoranti, Bar e caffè, Panorami, Cultura, Negozi e Natura, con filtri sulla mappa e nella raccolta.",
-    "Luoghi per città: ritrova le tappe salvate, i preferiti e i posti già visitati. Le intestazioni si comprimono scorrendo per lasciare spazio alle liste.",
-    "Le cose da fare: ogni luogo può avere note e una checklist. La sezione Da fare riunisce tutte le attività.",
-    "Verifica su Google Maps: dall’anteprima apri l’indirizzo selezionato per controllarlo meglio, prima di salvarlo."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "android",
-    "jetpack-compose",
-    "kotlin",
-    "maplibre",
-    "openstreetmap"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-27T01:16:53Z",
-   "updatedAt": "2026-10-27T15:29:53Z",
-   "repoUrl": "https://github.com/carellice/Mappinando",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/Mappinando"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.0.9",
-     "url": "https://github.com/carellice/Mappinando/releases/tag/v1.0.9"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/Mappinando/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/Mappinando/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/Mappinando/main/docs/mappinando-logo.png",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/Mappinando/main/docs/mappinando-search-fullscreen.png",
-    "https://raw.githubusercontent.com/carellice/Mappinando/main/docs/mappinando-cities.png",
-    "https://raw.githubusercontent.com/carellice/Mappinando/main/docs/mappinando-detail-fullscreen.png",
-    "https://raw.githubusercontent.com/carellice/Mappinando/main/docs/mappinando-onboarding.png",
-    "https://raw.githubusercontent.com/carellice/Mappinando/main/docs/mappinando-update-ready.png"
-   ],
-   "video": null,
-   "release": {
-    "tag": "v1.0.9",
-    "name": "Mappinando 1.0.9",
-    "date": "2026-10-27T15:30:30Z",
-    "url": "https://github.com/carellice/Mappinando/releases/tag/v1.0.9",
-    "notes": "## Si parte da te\n\n- Una nuova introduzione animata ti accompagna al primo avvio: esplora, salva le tappe e scegli se usare la posizione.\n- La mappa parte vuota, senza luoghi preimpostati. Aggiornando, vengono rimossi solo i vecchi esempi ancora identici; le tappe personali e gli esempi modificati restano.\n- Premi il mirino per raggiungere la tua posizione sulla mappa. Puoi consentire anche la sola posizione approssimativa o continuare senza permessi.\n- Le card “La tua prossima tappa” mantengono un’altezza uniforme: scorrendole la mappa non si restringe più a scatti.\n- Indicatori di attesa e messaggi di posizione funzionano anche nella mappa a tutto schermo.\n\nInstalla l’APK senza disinstallare Mappinando per conservare i tuoi luoghi. Puoi aggiornare anche da **Informazioni → Aggiornamenti dell’app**.\n",
-    "assets": [
-     {
-      "name": "Mappinando-1.0.9-debug.apk",
-      "url": "https://github.com/carellice/Mappinando/releases/download/v1.0.9/Mappinando-1.0.9-debug.apk",
-      "size": 61215070,
       "downloads": 2
      }
     ]
@@ -1496,13 +1415,13 @@
       "name": "IPTVISION-1.11.0.ipk",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.11.0/IPTVISION-1.11.0.ipk",
       "size": 132812,
-      "downloads": 0
+      "downloads": 1
      },
      {
       "name": "IPTVISION-1.11.0.wgt",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.11.0/IPTVISION-1.11.0.wgt",
       "size": 147187,
-      "downloads": 0
+      "downloads": 1
      },
      {
       "name": "IPTVISION-Setup-1.11.0.exe",
