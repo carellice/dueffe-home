@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-05T14:34:39.549Z",
+ "generatedAt": "2026-11-05T14:44:54.668Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -500,7 +500,7 @@
       "name": "MyExperience-v1.1.0.apk",
       "url": "https://github.com/carellice/MyExperience/releases/download/v1.1.0/MyExperience-v1.1.0.apk",
       "size": 5288315,
-      "downloads": 0
+      "downloads": 1
      }
     ]
    },
@@ -591,7 +591,7 @@
   },
   {
    "id": "dueffe-streamwise",
-   "name": "Dueffe StreamWise",
+   "name": "StreamWise",
    "description": "StreamWise per Android – cosa guardare, dove e quando",
    "about": "Cosa guardare, dove e quando. App nativa Kotlin + Jetpack Compose della famiglia Dueffe.\n\nQuesta è la riscrittura nativa Android della precedente PWA StreamWise. L'interfaccia usa Jetpack Compose e Material 3, senza WebView, React o browser incorporati.",
    "features": [
@@ -648,7 +648,7 @@
   },
   {
    "id": "dueffe-garage",
-   "name": "Dueffe Garage",
+   "name": "Garage",
    "description": "Garage per Android – auto, interventi, scadenze e documenti",
    "about": "Auto, interventi, scadenze e documenti in un unico posto. App nativa della famiglia Dueffe.\n\nL'app nativa è direttamente in questa repository. È scritta in Kotlin con Jetpack Compose e si apre come progetto Android Studio.",
    "features": [
@@ -700,7 +700,7 @@
   },
   {
    "id": "dueffe-health",
-   "name": "Dueffe Health",
+   "name": "Health",
    "description": "Health per Android – terapie, visite e documenti sanitari",
    "about": "Terapie, visite e documenti sanitari, solo sul tuo dispositivo. App nativa della famiglia Dueffe.\n\nApp nativa Kotlin + Jetpack Compose. I dati sanitari restano nel dispositivo; il backup JSON può essere esportato/importato dalle Impostazioni. Gli allegati vengono copiati nello spazio privato dell'app e non sono inclusi nel backup JSON.",
    "features": [],
@@ -735,110 +735,6 @@
     }
    ],
    "icon": "https://raw.githubusercontent.com/carellice/dueffe-health/main/docs/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": null,
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": true
-  },
-  {
-   "id": "dueffe-since",
-   "name": "Dueffe Since",
-   "description": "Since per Android – percorsi, abitudini e acquisti consapevoli",
-   "about": "Percorsi, abitudini e scelte consapevoli. App nativa Kotlin + Jetpack Compose della famiglia Dueffe.\n\nI dati restano solo sul dispositivo. Il PIN non viene inviato all'esterno.",
-   "features": [
-    "Percorsi: obiettivi come «Non fumare», «Allenarmi» o «Leggere» con data e ora di inizio, tempo trascorso, traguardi, reset e ricadute con nota facoltativa e storico ricercabile.",
-    "Traguardi: notifiche opzionali quando si raggiunge un nuovo traguardo.",
-    "Passioni: elenco delle proprie passioni con sotto passioni e importanza da 1 a 5; l'app può proporne una a caso, pesata sull'importanza.",
-    "Anti-consumista: un questionario guidato prima di un acquisto (bisogno, alternative già disponibili, vantaggi, frequenza d'uso, possibilità di aspettare) con una valutazione finale e bozze da completare.",
-    "Blocco con PIN da 4 a 8 cifre e, facoltativamente, biometria o credenziali del dispositivo.",
-    "Backup JSON esportabile e importabile dalle impostazioni; scheda Aggiornamenti per installare le nuove release."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T20:43:40Z",
-   "updatedAt": "2026-10-21T18:30:21Z",
-   "repoUrl": "https://github.com/carellice/dueffe-since",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/dueffe-since"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/dueffe-since/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/dueffe-since/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-since/main/docs/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": null,
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": true
-  },
-  {
-   "id": "dueffe-subber",
-   "name": "Dueffe Subber",
-   "description": "Subber per Android – abbonamenti e rinnovi",
-   "about": "Tieni sotto controllo abbonamenti e rinnovi. App nativa Kotlin + Jetpack Compose della famiglia Dueffe.\n\nFai doppio clic su Avvia Pixel.command (Mac) o Avvia Pixel.bat (Windows): avvia il primo emulatore Pixel (o quello indicato in SUBBERAVD), compila, installa e apre l'app.",
-   "features": [
-    "Abbonamenti con prezzo, cadenza (settimanale, mensile, annuale, biennale), categoria, icona del servizio o immagine personalizzata, note e data di scadenza.",
-    "Rinnovi automatici o manuali, giorno di rinnovo mantenuto anche nei mesi più corti e abbonamenti annuali pagabili mensilmente con durata del vincolo.",
-    "Storico dei pagamenti e costo equivalente mensile; analisi delle spese per categoria.",
-    "Categorie personalizzabili con nome, icona e colore.",
-    "Avvisi di rinnovo giornalieri a un orario scelto, con anticipo configurabile.",
-    "Widget con i prossimi rinnovi."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T20:43:55Z",
-   "updatedAt": "2026-10-21T14:46:25Z",
-   "repoUrl": "https://github.com/carellice/dueffe-subber",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/dueffe-subber"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/dueffe-subber/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/dueffe-subber/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-subber/main/docs/logo.png",
    "screenshots": [],
    "video": null,
    "release": null,

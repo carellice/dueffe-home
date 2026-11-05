@@ -2,7 +2,9 @@
   "ownerName": "Dueffe",
   "exclude": [
     "android-app-releases",
-    "iron-pump-images"
+    "iron-pump-images",
+    "dueffe-since",
+    "dueffe-subber"
   ],
   "categories": [
     {
@@ -185,7 +187,7 @@
       "platforms": [
         "android"
       ],
-      "name": "Dueffe StreamWise",
+      "name": "StreamWise",
       "links": [
         {
           "type": "release",
@@ -199,24 +201,10 @@
       "platforms": [
         "android"
       ],
-      "name": "Dueffe Garage"
+      "name": "Garage"
     },
     "dueffe-health": {
-      "name": "Dueffe Health",
-      "category": "android",
-      "platforms": [
-        "android"
-      ]
-    },
-    "dueffe-since": {
-      "name": "Dueffe Since",
-      "category": "android",
-      "platforms": [
-        "android"
-      ]
-    },
-    "dueffe-subber": {
-      "name": "Dueffe Subber",
+      "name": "Health",
       "category": "android",
       "platforms": [
         "android"
