@@ -70,6 +70,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.util.lerp
 import coil.compose.AsyncImage
 import it.dueffe.home.AppViewModel
@@ -77,6 +78,7 @@ import it.dueffe.home.UpdateState
 import it.dueffe.home.data.Catalog
 import it.dueffe.home.data.Project
 import it.dueffe.home.ui.theme.DF
+import it.dueffe.home.ui.theme.DueffeFont
 import it.dueffe.home.ui.theme.Motion
 import kotlinx.coroutines.delay
 import kotlin.math.PI
@@ -188,9 +190,7 @@ fun HomeScreen(
 private fun HomeHeader(catalog: Catalog, headlineDelay: Long, updateDot: Boolean, onInfo: () -> Unit, modifier: Modifier) {
     Column(modifier.statusBarsPadding().padding(horizontal = 20.dp).padding(top = 14.dp, bottom = 26.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            FfMark(Modifier.height(26.dp))
-            Spacer(Modifier.width(10.dp))
-            Text("Dueffe Home", style = MaterialTheme.typography.titleMedium, color = DF.Text, modifier = Modifier.weight(1f))
+            Text("Dueffe Home", fontFamily = DueffeFont, fontSize = 22.sp, color = DF.Text, modifier = Modifier.weight(1f))
             Box(
                 Modifier.size(40.dp).pressScale(0.88f, onInfo),
                 contentAlignment = Alignment.Center,

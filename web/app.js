@@ -321,7 +321,7 @@ function home() {
   const recent = c.projects.filter((p) => p.release?.date).sort((a, b) => b.release.date.localeCompare(a.release.date)).slice(0, 5);
   return `
   <header class="home-head">
-    <div class="brand"><img class="mark" src="assets/ff-mark.png" alt=""><span class="title-m">Dueffe Home</span>
+    <div class="brand"><span class="logo-type">Dueffe Home</span>
       <a href="#/info" class="press avatar${state.latest?.apk ? ' dot' : ''}" aria-label="Info">${svg('info')}</a></div>
     <h1 class="display-m headline">${headline}</h1>
     <p class="body-l muted reveal" style="--i:4;margin-top:10px">App Android, giochi, strumenti per il PC e web app di ${esc(c.owner.name)}. Tutto aggiornato in tempo reale da GitHub.</p>
@@ -331,7 +331,9 @@ function home() {
   </header>
   ${state.latest?.apk ? `<a class="banner press" href="#/info">${svg('phoneDl', 'i')}<div><div class="title-m">Dueffe Home per Android</div><div class="body-s" style="opacity:.8">Scarica l'app nativa · ${esc(state.latest.tag)}</div></div>${svg('arrow', 'i')}</a>` : ''}
   ${featured.length ? `<section class="reveal" style="--i:1">${sectionHead('In evidenza', 'I progetti a cui tengo di più')}
-    <div class="carousel" id="carousel">${featured.map((p) => feat(p)).join('')}</div>
+    <div class="carousel-wrap"><button class="car-btn prev" id="car-prev" aria-label="Precedente">${svg('left')}</button>
+      <div class="carousel" id="carousel">${featured.map((p) => feat(p)).join('')}</div>
+      <button class="car-btn next" id="car-next" aria-label="Successivo">${svg('right')}</button></div>
     <div class="dots" id="dots">${featured.map((_, k) => `<i class="${k ? '' : 'on'}"></i>`).join('')}</div></section>` : ''}
   <section class="section reveal" style="--i:2">${sectionHead('Categorie', 'Ordinati per tipo, per trovare subito tutto', 'Tutti', '#/esplora?cat=')}
     <div class="hscroll" style="gap:12px">${c.categories.map((cat, k) => `<a class="card cat-card press reveal" style="--i:${k + 2};--t:${1.8 + k * 0.23}s" href="#/esplora?cat=${cat.id}">
@@ -398,8 +400,11 @@ function wireHome() {
       if (Math.abs(off) < bestD) { bestD = Math.abs(off); best = k; }
     });
     dots.forEach((d, k) => d.classList.toggle('on', k === best));
+    $('#car-prev').disabled = best === 0;
+    $('#car-next').disabled = best === cards.length - 1;
     return best;
   };
+  const goTo = (k) => car.scrollTo({ left: cards[k].offsetLeft - (car.clientWidth - cards[k].offsetWidth) / 2, behavior: 'smooth' });
   car.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
   update();
   let timer;
@@ -407,13 +412,14 @@ function wireHome() {
     clearTimeout(timer);
     timer = setTimeout(() => {
       if (!document.body.contains(car)) return;
-      const next = (update() + 1) % cards.length;
-      car.scrollTo({ left: cards[next].offsetLeft - (car.clientWidth - cards[next].offsetWidth) / 2, behavior: 'smooth' });
+      goTo((update() + 1) % cards.length);
       auto();
     }, 5200);
   };
   car.addEventListener('pointerdown', () => clearTimeout(timer));
   car.addEventListener('pointerup', auto);
+  $('#car-prev').addEventListener('click', () => { goTo(Math.max(0, update() - 1)); auto(); });
+  $('#car-next').addEventListener('click', () => { goTo(Math.min(cards.length - 1, update() + 1)); auto(); });
   auto();
 }
 

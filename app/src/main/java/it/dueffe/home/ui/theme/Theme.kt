@@ -60,6 +60,9 @@ private fun inter(weight: Int) = Font(
 val DisplayFont = FontFamily(bricolage(400), bricolage(500), bricolage(600), bricolage(700), bricolage(800))
 val BodyFont = FontFamily(inter(400), inter(500), inter(600), inter(700))
 
+/** Il font del logo ("font-dueffe"): solo nella splash e nel nome in alto nella Home. */
+val DueffeFont = FontFamily(Font(R.font.font_dueffe))
+
 private val typography = Typography(
     displayLarge = TextStyle(fontFamily = DisplayFont, fontWeight = FontWeight.ExtraBold, fontSize = 48.sp, lineHeight = 48.sp, letterSpacing = (-0.035).em),
     displayMedium = TextStyle(fontFamily = DisplayFont, fontWeight = FontWeight.ExtraBold, fontSize = 38.sp, lineHeight = 40.sp, letterSpacing = (-0.03).em),

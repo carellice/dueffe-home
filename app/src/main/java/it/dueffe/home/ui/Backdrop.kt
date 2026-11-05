@@ -50,6 +50,10 @@ import androidx.compose.ui.unit.sp
 import it.dueffe.home.R
 import it.dueffe.home.ui.theme.DF
 import it.dueffe.home.ui.theme.DisplayFont
+import it.dueffe.home.ui.theme.DueffeFont
+import androidx.compose.ui.layout.layout
+import androidx.compose.ui.text.TextStyle
+import kotlin.math.roundToInt
 import it.dueffe.home.ui.theme.Motion
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -103,6 +107,13 @@ fun animationsDisabled(scale: Float) = scale == 0f
  * Due/e che si aprono, lettere di Home con overshoot, tagline, e uscita con un
  * foro circolare che si allarga e rivela l'app.
  */
+// Misure del font del logo e del monogramma, in em (stesse della versione web).
+private const val MARK_HEIGHT = 1.323f // il disegno occupa il 54% dell'immagine: così è alto quanto le maiuscole
+private const val MARK_FOOT = 0.778f // linea di base del disegno, in frazione dell'altezza dell'immagine
+private const val MARK_SHIFT = 0.204f // margine trasparente a sinistra da recuperare
+private const val FF_ADVANCE = 0.833f // avanzamento di "ff" nel font
+private const val SPACE = 0.35f
+
 @Composable
 fun SplashOverlay(onFinished: () -> Unit) {
     val context = LocalContext.current
@@ -146,7 +157,8 @@ fun SplashOverlay(onFinished: () -> Unit) {
     }
 
     val density = LocalDensity.current
-    val fontSize = 50.sp
+    // Il font del logo è largo: 44sp tengono "Dueffe Home" dentro anche i telefoni stretti.
+    val fontSize = 44.sp
     val em = with(density) { fontSize.toPx() }
     Box(
         Modifier
@@ -183,22 +195,28 @@ fun SplashOverlay(onFinished: () -> Unit) {
                 .clearAndSetSemantics { contentDescription = "Dueffe Home" },
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy((-3).dp)) {
-                val wordStyle = MaterialTheme.typography.displayLarge.copy(fontSize = fontSize, color = DF.Text)
+            Row {
+                val wordStyle = TextStyle(fontFamily = DueffeFont, fontSize = fontSize, color = DF.Text)
                 Text(
                     "Due", style = wordStyle,
-                    modifier = Modifier.graphicsLayer {
+                    modifier = Modifier.alignByBaseline().graphicsLayer {
                         translationX = (1f - sides.value) * em * 0.5f
                         alpha = sides.value
                     }.drawWithContent {
                         clipRect(left = size.width * (1f - sides.value)) { this@drawWithContent.drawContent() }
                     },
                 )
+                // Il monogramma prende il posto delle "ff" del font: alto quanto le maiuscole,
+                // appoggiato sulla linea di base e largo quanto l'avanzamento di "ff".
                 Image(
                     painterResource(R.drawable.ff_mark), null,
                     modifier = Modifier
-                        .padding(horizontal = 1.dp)
-                        .height(with(density) { (em * 0.98f).toDp() })
+                        .alignBy { (it.measuredHeight * MARK_FOOT).roundToInt() }
+                        .layout { measurable, constraints ->
+                            val p = measurable.measure(constraints)
+                            layout((em * FF_ADVANCE).roundToInt(), p.height) { p.place((-em * MARK_SHIFT).roundToInt(), 0) }
+                        }
+                        .height(with(density) { (em * MARK_HEIGHT).toDp() })
                         .graphicsLayer {
                             val m = mark.value
                             translationY = -0.72f * em * (1f - m)
@@ -210,18 +228,18 @@ fun SplashOverlay(onFinished: () -> Unit) {
                 )
                 Text(
                     "e", style = wordStyle,
-                    modifier = Modifier.graphicsLayer {
+                    modifier = Modifier.alignByBaseline().graphicsLayer {
                         translationX = -(1f - sides.value) * em * 0.5f
                         alpha = sides.value
                     }.drawWithContent {
                         clipRect(right = size.width * sides.value) { this@drawWithContent.drawContent() }
                     },
                 )
-                Spacer(Modifier.width(18.dp))
+                Spacer(Modifier.width(with(density) { (em * SPACE).toDp() }))
                 "Home".forEachIndexed { i, ch ->
                     Text(
                         ch.toString(), style = wordStyle.copy(color = DF.Primary),
-                        modifier = Modifier.graphicsLayer {
+                        modifier = Modifier.alignByBaseline().graphicsLayer {
                             val v = letters[i].value
                             alpha = v.coerceIn(0f, 1f)
                             translationY = 0.72f * em * (1f - v)

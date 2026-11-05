@@ -1,4 +1,6 @@
 /* Dueffe Home — versione web. Token e curve dal design system Dueffe, identici all'app Android. */
+/* Il font del logo: usato solo nella splash e nel nome in alto nella Home. */
+@font-face { font-family: "font-dueffe"; src: url("assets/fonts/font-dueffe.otf") format("opentype"); font-display: block; }
 :root {
   --bg: #050505;
   --bg-elevated: #0b0a08;
@@ -115,14 +117,17 @@ svg.i { width: 24px; height: 24px; fill: currentColor; flex: none; }
 .lockup { text-align: center; }
 #splash.out .lockup { animation: lockup-out .26s var(--ease-std) forwards; }
 @keyframes lockup-out { to { opacity: 0; transform: translateY(-10px) scale(.985); } }
-.word { display: flex; align-items: center; justify-content: center; font: 800 clamp(2.4rem, 12vw, 3.6rem)/1 var(--display); letter-spacing: -.035em; color: var(--text); }
+.word { white-space: nowrap; text-align: center; font: 400 clamp(1.9rem, 11vw, 3.4rem)/1.35 "font-dueffe", var(--display); color: var(--text); }
+.word > span { display: inline-block; }
 .word .due { animation: due 1.25s var(--ease-reveal) both; clip-path: inset(0 0 0 0); }
 .word .e { animation: e 1.25s var(--ease-reveal) both; }
 @keyframes due { from { opacity: 0; transform: translateX(.5em); clip-path: inset(0 0 0 100%); } }
 @keyframes e { from { opacity: 0; transform: translateX(-.5em); clip-path: inset(0 100% 0 0); } }
-.word .ff { height: .86em; margin: 0 1px; animation: ff 1.275s var(--ease-mark) both; }
+/* Il monogramma prende il posto delle "ff" del font: alto quanto le maiuscole, appoggiato sulla linea di base e largo quanto "ff". */
+.word .ff { display: inline-block; height: 1.323em; margin: 0 -.286em 0 -.204em; vertical-align: -.294em; animation: ff 1.275s var(--ease-mark) both; }
 @keyframes ff { 0% { opacity: 0; transform: translateY(-.72em) scale(.44) rotate(-9deg); } 40% { opacity: 1; } 100% { transform: none; } }
-.word .gap { width: 14px; }
+/* Lo spazio tra Dueffe e Home è quello del font (gli a capo nell'HTML), non un elemento. */
+.word .gap { display: none; }
 .word .home { color: var(--primary); display: inline-flex; }
 .word .home i { font-style: normal; display: inline-block; transform-origin: 50% 100%; animation: letter .62s var(--ease-spring) both; animation-delay: calc(480ms + var(--i) * 70ms); }
 @keyframes letter { from { opacity: 0; transform: translateY(.72em) rotate(5deg) scale(.82); } }
@@ -153,8 +158,7 @@ svg.i { width: 24px; height: 24px; fill: currentColor; flex: none; }
 /* ---------- home ---------- */
 .home-head { padding: calc(14px + env(safe-area-inset-top)) 20px 26px; }
 .brand { display: flex; align-items: center; gap: 10px; }
-.brand img.mark { height: 26px; }
-.brand .title-m { flex: 1; }
+.brand .logo-type { flex: 1; font: 400 22px/1 "font-dueffe", var(--display); color: var(--text); }
 .avatar { width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid var(--line-strong); background: var(--bg); display: grid; place-items: center; }
 .avatar img { width: 22px; }
 .headline { margin-top: 30px; perspective: 600px; }
@@ -173,6 +177,16 @@ svg.i { width: 24px; height: 24px; fill: currentColor; flex: none; }
 .banner svg.i { width: 28px; height: 28px; }
 .banner > div { flex: 1; }
 
+.carousel-wrap { position: relative; }
+/* Frecce per scorrere il carosello con il mouse: compaiono solo con un puntatore preciso. */
+.car-btn { position: absolute; top: 50%; z-index: 2; width: 44px; height: 44px; margin-top: -32px; border-radius: 50%; display: none; place-items: center;
+  background: var(--surface-container); border: 1px solid var(--line-strong); color: var(--text); cursor: pointer; transition: opacity .2s, transform .2s; }
+.car-btn svg { width: 26px; height: 26px; fill: currentColor; }
+.car-btn.prev { left: 8px; }
+.car-btn.next { right: 8px; }
+.car-btn:hover { transform: scale(1.08); border-color: var(--primary); color: var(--primary); }
+.car-btn:disabled { opacity: 0; pointer-events: none; }
+@media (hover: hover) and (pointer: fine) { .car-btn { display: grid; } }
 .carousel { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 30px 6px; scrollbar-width: none; perspective: 1200px; }
 .carousel::-webkit-scrollbar { display: none; }
 .feat { flex: 0 0 calc(100% - 60px); height: 410px; scroll-snap-align: center; position: relative; border-radius: 32px; overflow: hidden; background: var(--surface); cursor: pointer;
