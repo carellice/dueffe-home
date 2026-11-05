@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-05T10:48:17.139Z",
+ "generatedAt": "2026-11-05T11:00:53.894Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -447,7 +447,7 @@
    "features": [
     "Oggi: la data, la stagione, cosa succede nei campi questo mese (olio nuovo al frantoio, vendemmia, castagne, fermo pesca…), frutta e verdura al meglio adesso, novità e prodotti agli sgoccioli, curiosità e la bottega più vicina.",
     "Stagioni: calendario mese per mese di frutta, verdura, pesce del Tirreno e dispensa (olio, ricotta, miele, legumi…), con consigli d'acquisto per ogni prodotto.",
-    "Botteghe: mappa e lista di quasi 400 botteghe e piccoli produttori del Lazio (fruttivendoli, macellerie, forni, caseifici, frantoi, norcinerie, cantine, mulini, apicoltori…), con ricerca, filtri per categoria e distanza dalla tua posizione.",
+    "Botteghe: mappa e lista di oltre 500 botteghe e piccoli produttori di Roma e del Lazio, con un focus su Colle Salario e il quadrante nord (fruttivendoli, macellerie, forni, caseifici, frantoi, norcinerie, cantine, mulini, apicoltori…), con ricerca, filtri per categoria e distanza dalla tua posizione.",
     "Filiera: dove va 1 € della spesa, perché la stagionalità conta, come leggere le etichette e una lista di piccoli impegni da spuntare.",
     "Introduzione animata al primo avvio, rivedibile da Filiera, e"
    ],
@@ -461,7 +461,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-11-04T19:47:39Z",
-   "updatedAt": "2026-11-05T09:47:51Z",
+   "updatedAt": "2026-11-05T11:00:46Z",
    "repoUrl": "https://github.com/carellice/jonica",
    "webUrl": null,
    "links": [
