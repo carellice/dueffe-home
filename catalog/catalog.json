@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-05T15:42:30.643Z",
+ "generatedAt": "2026-11-05T16:04:02.213Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -1552,7 +1552,7 @@
       "name": "IPTVISION-1.12.1.apk",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.1/IPTVISION-1.12.1.apk",
       "size": 8689776,
-      "downloads": 2
+      "downloads": 3
      },
      {
       "name": "IPTVISION-1.12.1.ipk",
@@ -1570,7 +1570,7 @@
       "name": "IPTVISION-Setup-1.12.1.exe",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.1/IPTVISION-Setup-1.12.1.exe",
       "size": 71488394,
-      "downloads": 1
+      "downloads": 2
      }
     ]
    },
