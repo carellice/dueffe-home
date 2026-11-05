@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-05T14:45:19.437Z",
+ "generatedAt": "2026-11-05T15:41:55.584Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -440,6 +440,219 @@
    "dueffe": false
   },
   {
+   "id": "dueffe-health",
+   "name": "Health",
+   "description": "Health per Android – terapie, visite e documenti sanitari",
+   "about": "Terapie, visite e documenti sanitari, solo sul tuo dispositivo. Organizza i farmaci con orari e promemoria, tieni traccia delle visite e conserva referti e ricette in un unico posto. App nativa della famiglia Dueffe.",
+   "features": [
+    "Terapie con frequenza, giorni e orari scelti con semplici selettori, e promemoria per ogni dose.",
+    "Terapie al bisogno senza avvisi automatici: le assunzioni si segnano dalla lista Terapie.",
+    "Storico delle dosi assunte.",
+    "Visite mediche e documenti sanitari, con allegati salvati nello spazio privato dell'app.",
+    "Moduli guidati a passaggi per farmaci, visite e documenti.",
+    "Dati solo sul dispositivo, con backup JSON da esportare e importare dalle Impostazioni."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:34Z",
+   "updatedAt": "2026-11-05T15:24:55Z",
+   "repoUrl": "https://github.com/carellice/dueffe-health",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-health"
+    },
+    {
+     "type": "release",
+     "label": "Release health-v1.0.28",
+     "url": "https://github.com/carellice/dueffe-health/releases/tag/health-v1.0.28"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-health/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-health/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-health/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "health-v1.0.28",
+    "name": "Health 1.0.28",
+    "date": "2026-11-05T15:24:45Z",
+    "url": "https://github.com/carellice/dueffe-health/releases/tag/health-v1.0.28",
+    "notes": "APK Android Health 1.0.28",
+    "assets": [
+     {
+      "name": "health-1.0.28.apk",
+      "url": "https://github.com/carellice/dueffe-health/releases/download/health-v1.0.28/health-1.0.28.apk",
+      "size": 13200046,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.dueffe.health",
+   "dueffe": true
+  },
+  {
+   "id": "dueffe-streamwise",
+   "name": "StreamWise",
+   "description": "StreamWise per Android – cosa guardare, dove e quando",
+   "about": "Cosa guardare, dove e quando. Tieni traccia di film e serie, scopri le novità sulle piattaforme e ricevi un avviso quando escono nuovi episodi o nuovi titoli delle persone che segui. App nativa della famiglia Dueffe.",
+   "features": [
+    "Interfaccia Material 3 scura e cinematografica, animazioni Compose e navigazione ottimizzata per l'uso con una mano.",
+    "Home con “Da continuare”, “La mia lista”, “Già visti” e titoli nascosti.",
+    "Cataloghi Film e Serie, Top 10, generi preferiti, sezione True crime e caricamento di altre proposte.",
+    "Widget ridimensionabile “Prossimi episodi”: mostra le serie da continuare e permette di segnare gli episodi come visti; al termine della serie chiede Mi piace / Non mi piace. Aggiungilo tenendo premuto sulla schermata Home del telefono e scegliendo Widget → StreamWise.",
+    "Ricerca per titolo con anno facoltativo e ricerca per attore/attrice con filmografia. Per impostazione predefinita le filmografie nascondono late show, talk show, reality, telegiornali e apparizioni come sé stessi; si può disattivare da Impostazioni → “Filmografie senza talk show”.",
+    "“Segui” per attori e registi: dalla pagina della filmografia si ricevono notifiche quando a TMDB viene aggiunto un loro nuovo film o serie (recente o in arrivo). Le persone seguite compaiono in Home in “Persone che segui” e sono incluse nel backup."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "TypeScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:47Z",
+   "updatedAt": "2026-11-05T15:14:19Z",
+   "repoUrl": "https://github.com/carellice/dueffe-streamwise",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-streamwise"
+    },
+    {
+     "type": "release",
+     "label": "Release streamwise-v2.0.140",
+     "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.140"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-streamwise/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-streamwise/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-streamwise/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "streamwise-v2.0.140",
+    "name": "StreamWise 2.0.140",
+    "date": "2026-11-05T15:13:45Z",
+    "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.140",
+    "notes": "APK Android firmato di StreamWise. Versione 2.0.140, codice aggiornamento 147.",
+    "assets": [
+     {
+      "name": "StreamWise-2.0.140.apk",
+      "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.0.140/StreamWise-2.0.140.apk",
+      "size": 16784002,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.dueffe.streamwise",
+   "dueffe": true
+  },
+  {
+   "id": "dueffe-garage",
+   "name": "Garage",
+   "description": "Garage per Android – auto, interventi, scadenze e documenti",
+   "about": "Auto, interventi, scadenze e documenti in un unico posto. Per ogni auto tieni lo storico dei lavori, i costi e i promemoria per tagliandi, revisioni e assicurazioni. I dati restano sul telefono. App nativa della famiglia Dueffe.",
+   "features": [
+    "Schede auto con foto, targa, chilometri, carburante facoltativo, note e archivio delle auto vendute o rottamate. Il carburante si può scegliere da un elenco o specificare con «Altro».",
+    "Interventi con costi e promemoria per data, intervallo, chilometri o prima condizione raggiunta.",
+    "Documenti locali: importazione, fotocamera, galleria, apertura, condivisione, rinomina ed eliminazione.",
+    "Scadenze nell'app e notifiche opzionali tramite un controllo giornaliero di WorkManager. L'orario delle notifiche dipende da Android.",
+    "Tema chiaro, scuro o automatico; blocco all'apertura con le credenziali del dispositivo.",
+    "Importazione dei vecchi backup JSON della PWA e dei backup dell'app. I nuovi file sono identificati come Garage; includono foto e documenti. L'importazione valida il file prima della sostituzione e usa una transazione SQLite."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "TypeScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:27Z",
+   "updatedAt": "2026-11-05T15:14:11Z",
+   "repoUrl": "https://github.com/carellice/dueffe-garage",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-garage"
+    },
+    {
+     "type": "release",
+     "label": "Release garage-v1.0.48",
+     "url": "https://github.com/carellice/dueffe-garage/releases/tag/garage-v1.0.48"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-garage/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-garage/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-garage/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "garage-v1.0.48",
+    "name": "Garage 1.0.48",
+    "date": "2026-11-05T15:13:36Z",
+    "url": "https://github.com/carellice/dueffe-garage/releases/tag/garage-v1.0.48",
+    "notes": "APK Android nativo di Garage. Versione 1.0.48 (code 49).",
+    "assets": [
+     {
+      "name": "garage-v1.0.48.apk",
+      "url": "https://github.com/carellice/dueffe-garage/releases/download/garage-v1.0.48/garage-v1.0.48.apk",
+      "size": 9587960,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.dueffe.garage",
+   "dueffe": true
+  },
+  {
    "id": "MyExperience",
    "name": "MyExperience",
    "description": "Diario di viaggio per Android: globo 3D, album e pianificazione viaggi",
@@ -500,7 +713,7 @@
       "name": "MyExperience-v1.1.0.apk",
       "url": "https://github.com/carellice/MyExperience/releases/download/v1.1.0/MyExperience-v1.1.0.apk",
       "size": 5288315,
-      "downloads": 1
+      "downloads": 2
      }
     ]
    },
@@ -588,160 +801,6 @@
    "hidden": false,
    "androidPackage": "it.jonica.app",
    "dueffe": false
-  },
-  {
-   "id": "dueffe-streamwise",
-   "name": "StreamWise",
-   "description": "StreamWise per Android – cosa guardare, dove e quando",
-   "about": "Cosa guardare, dove e quando. App nativa Kotlin + Jetpack Compose della famiglia Dueffe.\n\nQuesta è la riscrittura nativa Android della precedente PWA StreamWise. L'interfaccia usa Jetpack Compose e Material 3, senza WebView, React o browser incorporati.",
-   "features": [
-    "Interfaccia Material 3 scura e cinematografica, animazioni Compose e navigazione ottimizzata per l'uso con una mano.",
-    "Home con “Da continuare”, “La mia lista”, “Già visti” e titoli nascosti.",
-    "Cataloghi Film e Serie, Top 10, generi preferiti, sezione True crime e caricamento di altre proposte.",
-    "Widget ridimensionabile “Prossimi episodi”: mostra le serie da continuare e permette di segnare gli episodi come visti; al termine della serie chiede Mi piace / Non mi piace. Aggiungilo tenendo premuto sulla schermata Home del telefono e scegliendo Widget → StreamWise.",
-    "Ricerca per titolo con anno facoltativo e ricerca per attore/attrice con filmografia. Per impostazione predefinita le filmografie nascondono late show, talk show, reality, telegiornali e apparizioni come sé stessi; si può disattivare da Impostazioni → “Filmografie senza talk show”.",
-    "“Segui” per attori e registi: dalla pagina della filmografia si ricevono notifiche quando a TMDB viene aggiunto un loro nuovo film o serie (recente o in arrivo). Le persone seguite compaiono in Home in “Persone che segui” e sono incluse nel backup."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "TypeScript",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T20:43:47Z",
-   "updatedAt": "2026-11-02T08:42:59Z",
-   "repoUrl": "https://github.com/carellice/dueffe-streamwise",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/dueffe-streamwise"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/dueffe-streamwise/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/dueffe-streamwise/issues"
-    },
-    {
-     "type": "release",
-     "label": "Scarica APK",
-     "url": "https://github.com/carellice/android-app-releases/releases"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-streamwise/main/docs/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": null,
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": true
-  },
-  {
-   "id": "dueffe-garage",
-   "name": "Garage",
-   "description": "Garage per Android – auto, interventi, scadenze e documenti",
-   "about": "Auto, interventi, scadenze e documenti in un unico posto. App nativa della famiglia Dueffe.\n\nL'app nativa è direttamente in questa repository. È scritta in Kotlin con Jetpack Compose e si apre come progetto Android Studio.",
-   "features": [
-    "Schede auto con foto, targa, chilometri, carburante facoltativo, note e archivio delle auto vendute o rottamate. Il carburante si può scegliere da un elenco o specificare con «Altro».",
-    "Interventi con costi e promemoria per data, intervallo, chilometri o prima condizione raggiunta.",
-    "Documenti locali: importazione, fotocamera, galleria, apertura, condivisione, rinomina ed eliminazione.",
-    "Scadenze nell'app e notifiche opzionali tramite un controllo giornaliero di WorkManager. L'orario delle notifiche dipende da Android.",
-    "Tema chiaro, scuro o automatico; blocco all'apertura con le credenziali del dispositivo.",
-    "Importazione dei vecchi backup JSON della PWA e dei backup dell'app. I nuovi file sono identificati come Garage; includono foto e documenti. L'importazione valida il file prima della sostituzione e usa una transazione SQLite."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "TypeScript",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T20:43:27Z",
-   "updatedAt": "2026-11-01T19:29:26Z",
-   "repoUrl": "https://github.com/carellice/dueffe-garage",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/dueffe-garage"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/dueffe-garage/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/dueffe-garage/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-garage/main/docs/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": null,
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": true
-  },
-  {
-   "id": "dueffe-health",
-   "name": "Health",
-   "description": "Health per Android – terapie, visite e documenti sanitari",
-   "about": "Terapie, visite e documenti sanitari, solo sul tuo dispositivo. App nativa della famiglia Dueffe.\n\nApp nativa Kotlin + Jetpack Compose. I dati sanitari restano nel dispositivo; il backup JSON può essere esportato/importato dalle Impostazioni. Gli allegati vengono copiati nello spazio privato dell'app e non sono inclusi nel backup JSON.",
-   "features": [],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T20:43:34Z",
-   "updatedAt": "2026-10-22T10:02:35Z",
-   "repoUrl": "https://github.com/carellice/dueffe-health",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/dueffe-health"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/dueffe-health/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/dueffe-health/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-health/main/docs/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": null,
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": true
   },
   {
    "id": "ND2.0",
@@ -2459,7 +2518,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-11-05T09:38:35Z",
-   "updatedAt": "2026-11-05T10:17:00Z",
+   "updatedAt": "2026-11-05T14:48:27Z",
    "repoUrl": "https://github.com/carellice/telegram-notify",
    "webUrl": null,
    "links": [

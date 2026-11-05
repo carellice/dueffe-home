@@ -188,26 +188,30 @@
         "android"
       ],
       "name": "StreamWise",
-      "links": [
-        {
-          "type": "release",
-          "label": "Scarica APK",
-          "url": "https://github.com/carellice/android-app-releases/releases"
-        }
-      ]
+      "about": "Cosa guardare, dove e quando. Tieni traccia di film e serie, scopri le novità sulle piattaforme e ricevi un avviso quando escono nuovi episodi o nuovi titoli delle persone che segui. App nativa della famiglia Dueffe."
     },
     "dueffe-garage": {
       "category": "android",
       "platforms": [
         "android"
       ],
-      "name": "Garage"
+      "name": "Garage",
+      "about": "Auto, interventi, scadenze e documenti in un unico posto. Per ogni auto tieni lo storico dei lavori, i costi e i promemoria per tagliandi, revisioni e assicurazioni. I dati restano sul telefono. App nativa della famiglia Dueffe."
     },
     "dueffe-health": {
       "name": "Health",
       "category": "android",
       "platforms": [
         "android"
+      ],
+      "about": "Terapie, visite e documenti sanitari, solo sul tuo dispositivo. Organizza i farmaci con orari e promemoria, tieni traccia delle visite e conserva referti e ricette in un unico posto. App nativa della famiglia Dueffe.",
+      "features": [
+        "Terapie con frequenza, giorni e orari scelti con semplici selettori, e promemoria per ogni dose.",
+        "Terapie al bisogno senza avvisi automatici: le assunzioni si segnano dalla lista Terapie.",
+        "Storico delle dosi assunte.",
+        "Visite mediche e documenti sanitari, con allegati salvati nello spazio privato dell'app.",
+        "Moduli guidati a passaggi per farmaci, visite e documenti.",
+        "Dati solo sul dispositivo, con backup JSON da esportare e importare dalle Impostazioni."
       ]
     }
   }

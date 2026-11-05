@@ -11,7 +11,8 @@ import java.io.File
 
 /** Un'app del catalogo presente sul telefono. */
 data class InstalledApp(val project: Project, val packageName: String, val version: String) {
-    val latest: String? get() = project.release?.tag?.removePrefix("v")
+    // Il tag può avere un prefisso, come "streamwise-v2.0.140": conta solo il numero di versione.
+    val latest: String? get() = project.release?.tag?.let { Regex("""\d+(\.\d+)*""").find(it)?.value }
     val hasUpdate: Boolean get() = latest?.let { Updater.isNewer(it, version) } == true
 }
 
