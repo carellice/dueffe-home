@@ -123,8 +123,8 @@ svg.i { width: 24px; height: 24px; fill: currentColor; flex: none; }
 .word .e { animation: e 1.25s var(--ease-reveal) both; }
 @keyframes due { from { opacity: 0; transform: translateX(.5em); clip-path: inset(0 0 0 100%); } }
 @keyframes e { from { opacity: 0; transform: translateX(-.5em); clip-path: inset(0 100% 0 0); } }
-/* Il monogramma prende il posto delle "ff" del font: alto quanto le maiuscole, appoggiato sulla linea di base e largo quanto "ff". */
-.word .ff { display: inline-block; height: 1.323em; margin: 0 -.286em 0 -.204em; vertical-align: -.294em; animation: ff 1.275s var(--ease-mark) both; }
+/* Le "ff" del font compaiono per prime, poi si aprono "Due", "e" e "Home". */
+.word .ff { animation: ff 1.275s var(--ease-mark) both; }
 @keyframes ff { 0% { opacity: 0; transform: translateY(-.72em) scale(.44) rotate(-9deg); } 40% { opacity: 1; } 100% { transform: none; } }
 /* Lo spazio tra Dueffe e Home è quello del font (gli a capo nell'HTML), non un elemento. */
 .word .gap { display: none; }

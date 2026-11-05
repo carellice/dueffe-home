@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-05T16:04:02.213Z",
+ "generatedAt": "2026-11-05T16:12:40.079Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -2501,6 +2501,192 @@
    "dueffe": false
   },
   {
+   "id": "java-strings-matcher",
+   "name": "StringsMatcher",
+   "description": "Il progetto StringsMatcher è una libreria Java per confrontare due stringhe (in particolare ragioni sociali) e determinarne il livello di similarità tramite quattro algoritmi diffe",
+   "about": "Misura il numero minimo di operazioni (inserimenti, cancellazioni, sostituzioni) necessarie per trasformare una stringa nell'altra. La similarità è normalizzata tra 0 e 1.\n\nAlgoritmo efficace su nomi propri e stringhe brevi, valuta: - Matching dei caratteri - Ordine relativo - Prefisso comune",
+   "features": [
+    "Pulizia e normalizzazione delle stringhe (rimozione caratteri speciali, lowercase, trim)",
+    "Calcolo della similarità tra stringhe tramite:",
+    "Levenshtein Distance",
+    "Jaro-Winkler Similarity",
+    "Jaccard Distance",
+    "Sørensen-Dice Coefficient"
+   ],
+   "category": "sviluppo",
+   "platforms": [],
+   "language": "Java",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2025-05-26T21:21:27Z",
+   "updatedAt": "2026-11-05T16:10:40Z",
+   "repoUrl": "https://github.com/carellice/java-strings-matcher",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/java-strings-matcher"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/java-strings-matcher/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/java-strings-matcher/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/java-strings-matcher/main/assets/icon.png",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "hidden": false,
+   "androidPackage": null,
+   "dueffe": false
+  },
+  {
+   "id": "chatgpt-image-mcp",
+   "name": "ChatGPT Image MCP",
+   "description": "MCP server that lets Claude generate and edit images with ChatGPT through the locally installed ChatGPT/Codex app. No API key needed.",
+   "about": "Let Claude generate and edit images with ChatGPT, using the ChatGPT app already on your computer. No API key and no extra billing: images are generated with your ChatGPT subscription.\n\n\"a cute minimalist flat illustration of a fox reading a book\", landscape \"give the fox a small pair of round glasses\"",
+   "features": [
+    "🖼️ Generate images from a text prompt, optionally guided by reference images",
+    "✏️ Edit existing images (change backgrounds or colors, add or remove objects) without touching the original",
+    "🔑 No API key: uses the Codex CLI bundled with the ChatGPT desktop app, signed in with your ChatGPT account",
+    "👀 Previews: the client gets the image back inline, so Claude can look at the result and iterate",
+    "💾 Saved to disk wherever you want, with safe file names and no overwrites",
+    "🧩 Works with Claude Code, Claude Desktop and any other MCP client"
+   ],
+   "category": "sviluppo",
+   "platforms": [
+    "windows"
+   ],
+   "language": "JavaScript",
+   "topics": [
+    "chatgpt",
+    "claude",
+    "claude-code",
+    "codex",
+    "image-generation",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-27T15:41:22Z",
+   "updatedAt": "2026-11-05T16:10:25Z",
+   "repoUrl": "https://github.com/carellice/chatgpt-image-mcp",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/chatgpt-image-mcp"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/chatgpt-image-mcp/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/chatgpt-image-mcp/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/chatgpt-image-mcp/main/assets/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/chatgpt-image-mcp/main/assets/example-generate.jpg",
+    "https://raw.githubusercontent.com/carellice/chatgpt-image-mcp/main/assets/example-edit.jpg"
+   ],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "hidden": false,
+   "androidPackage": null,
+   "dueffe": false
+  },
+  {
+   "id": "app-to-pwa-casaos",
+   "name": "App to PWA · CasaOS",
+   "description": "Claude skill: turn your native app into an identical PWA and self-host it on CasaOS with a one-command installer and nightly auto-updates",
+   "about": "A Claude skill that turns your native mobile app into a Progressive Web App that looks, animates and behaves exactly like the original, with a small backend you host yourself on CasaOS (or any Docker box, Raspberry Pi included), installed with one command and updated every night.\n\n🇮🇹 Una skill per Claude che converte la tua app nativa (Android, iOS, Flutter, React Native) in una PWA identica per grafica, animazioni e utilizzo, con un piccolo server da ospitare sul tuo CasaOS: installazione guidata con un solo comando, account per ogni persona di famiglia, notifiche push e aggiornamenti automatici ogni notte.",
+   "features": [
+    "Identical UI: same colors, fonts, shapes, copy. Compose/SwiftUI springs and easings converted exactly, Kotlin's Random(seed) reproduced bit for bit so generated shapes match, Material icons from the same set.",
+    "Accounts: username and password, no email. Each person gets private data (their own SQLite file).",
+    "Native features mapped: notifications → Web Push, background workers → server jobs, biometric lock → WebAuthn passkey, camera, voice, PDF/share, backups compatible with the native app.",
+    "One-command install on the server, with HTTPS through Tailscale, a local certificate or your reverse proxy; the app appears in the CasaOS dashboard. Several apps can share one server: each gets its own Tailscale HTTPS port automatically (443, then 8443, 10000...), without taking over the others' links.",
+    "Nightly auto-update: when you bump the version on GitHub, servers rebuild, back up every database, switch over and roll back by themselves if the new version doesn't start."
+   ],
+   "category": "sviluppo",
+   "platforms": [
+    "android",
+    "macos",
+    "web"
+   ],
+   "language": "TypeScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-31T11:20:30Z",
+   "updatedAt": "2026-11-05T16:10:22Z",
+   "repoUrl": "https://github.com/carellice/app-to-pwa-casaos",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/app-to-pwa-casaos"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.5.0",
+     "url": "https://github.com/carellice/app-to-pwa-casaos/releases/tag/v1.5.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/app-to-pwa-casaos/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/app-to-pwa-casaos/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/app-to-pwa-casaos/main/assets/icon.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.5.0",
+    "name": "v1.5.0",
+    "date": "2026-11-02T18:46:50Z",
+    "url": "https://github.com/carellice/app-to-pwa-casaos/releases/tag/v1.5.0",
+    "notes": "Modalità server dell'app nativa: senza connessione le modifiche restano sul telefono (coda) e partono da sole quando il server torna raggiungibile, con la rimappatura degli id creati offline. Le rotte di salvataggio del server restituiscono sempre l'id.",
+    "assets": [
+     {
+      "name": "app-to-pwa-casaos.skill",
+      "url": "https://github.com/carellice/app-to-pwa-casaos/releases/download/v1.5.0/app-to-pwa-casaos.skill",
+      "size": 89780,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": null,
+   "dueffe": false
+  },
+  {
    "id": "telegram-notify",
    "name": "Telegram Notify",
    "description": "Claude Code plugin: get recaps, links and attachments on Telegram, on demand or after every prompt",
@@ -2540,142 +2726,6 @@
    ],
    "icon": "https://raw.githubusercontent.com/carellice/telegram-notify/main/assets/icon.png",
    "screenshots": [],
-   "video": null,
-   "release": null,
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": false
-  },
-  {
-   "id": "app-to-pwa-casaos",
-   "name": "App to PWA · CasaOS",
-   "description": "Claude skill: turn your native app into an identical PWA and self-host it on CasaOS with a one-command installer and nightly auto-updates",
-   "about": "A Claude skill that turns your native mobile app into a Progressive Web App that looks, animates and behaves exactly like the original, with a small backend you host yourself on CasaOS (or any Docker box, Raspberry Pi included), installed with one command and updated every night.\n\n🇮🇹 Una skill per Claude che converte la tua app nativa (Android, iOS, Flutter, React Native) in una PWA identica per grafica, animazioni e utilizzo, con un piccolo server da ospitare sul tuo CasaOS: installazione guidata con un solo comando, account per ogni persona di famiglia, notifiche push e aggiornamenti automatici ogni notte.",
-   "features": [
-    "Identical UI: same colors, fonts, shapes, copy. Compose/SwiftUI springs and easings converted exactly, Kotlin's Random(seed) reproduced bit for bit so generated shapes match, Material icons from the same set.",
-    "Accounts: username and password, no email. Each person gets private data (their own SQLite file).",
-    "Native features mapped: notifications → Web Push, background workers → server jobs, biometric lock → WebAuthn passkey, camera, voice, PDF/share, backups compatible with the native app.",
-    "One-command install on the server, with HTTPS through Tailscale, a local certificate or your reverse proxy; the app appears in the CasaOS dashboard. Several apps can share one server: each gets its own Tailscale HTTPS port automatically (443, then 8443, 10000...), without taking over the others' links.",
-    "Nightly auto-update: when you bump the version on GitHub, servers rebuild, back up every database, switch over and roll back by themselves if the new version doesn't start."
-   ],
-   "category": "sviluppo",
-   "platforms": [
-    "android",
-    "macos",
-    "web"
-   ],
-   "language": "TypeScript",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-31T11:20:30Z",
-   "updatedAt": "2026-11-02T18:46:46Z",
-   "repoUrl": "https://github.com/carellice/app-to-pwa-casaos",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/app-to-pwa-casaos"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.5.0",
-     "url": "https://github.com/carellice/app-to-pwa-casaos/releases/tag/v1.5.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/app-to-pwa-casaos/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/app-to-pwa-casaos/issues"
-    }
-   ],
-   "icon": null,
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.5.0",
-    "name": "v1.5.0",
-    "date": "2026-11-02T18:46:50Z",
-    "url": "https://github.com/carellice/app-to-pwa-casaos/releases/tag/v1.5.0",
-    "notes": "Modalità server dell'app nativa: senza connessione le modifiche restano sul telefono (coda) e partono da sole quando il server torna raggiungibile, con la rimappatura degli id creati offline. Le rotte di salvataggio del server restituiscono sempre l'id.",
-    "assets": [
-     {
-      "name": "app-to-pwa-casaos.skill",
-      "url": "https://github.com/carellice/app-to-pwa-casaos/releases/download/v1.5.0/app-to-pwa-casaos.skill",
-      "size": 89780,
-      "downloads": 1
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": false
-  },
-  {
-   "id": "chatgpt-image-mcp",
-   "name": "ChatGPT Image MCP",
-   "description": "MCP server that lets Claude generate and edit images with ChatGPT through the locally installed ChatGPT/Codex app. No API key needed.",
-   "about": "Let Claude generate and edit images with ChatGPT, using the ChatGPT app already on your computer. No API key and no extra billing: images are generated with your ChatGPT subscription.\n\n\"a cute minimalist flat illustration of a fox reading a book\", landscape \"give the fox a small pair of round glasses\"",
-   "features": [
-    "🖼️ Generate images from a text prompt, optionally guided by reference images",
-    "✏️ Edit existing images (change backgrounds or colors, add or remove objects) without touching the original",
-    "🔑 No API key: uses the Codex CLI bundled with the ChatGPT desktop app, signed in with your ChatGPT account",
-    "👀 Previews: the client gets the image back inline, so Claude can look at the result and iterate",
-    "💾 Saved to disk wherever you want, with safe file names and no overwrites",
-    "🧩 Works with Claude Code, Claude Desktop and any other MCP client"
-   ],
-   "category": "sviluppo",
-   "platforms": [
-    "windows"
-   ],
-   "language": "JavaScript",
-   "topics": [
-    "chatgpt",
-    "claude",
-    "claude-code",
-    "codex",
-    "image-generation",
-    "mcp",
-    "mcp-server",
-    "model-context-protocol"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-27T15:41:22Z",
-   "updatedAt": "2026-10-27T15:42:11Z",
-   "repoUrl": "https://github.com/carellice/chatgpt-image-mcp",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/chatgpt-image-mcp"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/chatgpt-image-mcp/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/chatgpt-image-mcp/issues"
-    }
-   ],
-   "icon": null,
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/chatgpt-image-mcp/main/assets/example-generate.jpg",
-    "https://raw.githubusercontent.com/carellice/chatgpt-image-mcp/main/assets/example-edit.jpg"
-   ],
    "video": null,
    "release": null,
    "featured": false,
@@ -2726,56 +2776,6 @@
     }
    ],
    "icon": "https://raw.githubusercontent.com/carellice/alexa-home-mcp/main/logo.svg",
-   "screenshots": [],
-   "video": null,
-   "release": null,
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": false
-  },
-  {
-   "id": "java-strings-matcher",
-   "name": "StringsMatcher",
-   "description": "Il progetto StringsMatcher è una libreria Java per confrontare due stringhe (in particolare ragioni sociali) e determinarne il livello di similarità tramite quattro algoritmi diffe",
-   "about": "Misura il numero minimo di operazioni (inserimenti, cancellazioni, sostituzioni) necessarie per trasformare una stringa nell'altra. La similarità è normalizzata tra 0 e 1.\n\nAlgoritmo efficace su nomi propri e stringhe brevi, valuta: - Matching dei caratteri - Ordine relativo - Prefisso comune",
-   "features": [
-    "Pulizia e normalizzazione delle stringhe (rimozione caratteri speciali, lowercase, trim)",
-    "Calcolo della similarità tra stringhe tramite:",
-    "Levenshtein Distance",
-    "Jaro-Winkler Similarity",
-    "Jaccard Distance",
-    "Sørensen-Dice Coefficient"
-   ],
-   "category": "sviluppo",
-   "platforms": [],
-   "language": "Java",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2025-05-26T21:21:27Z",
-   "updatedAt": "2025-05-27T10:56:49Z",
-   "repoUrl": "https://github.com/carellice/java-strings-matcher",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/java-strings-matcher"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/java-strings-matcher/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/java-strings-matcher/issues"
-    }
-   ],
-   "icon": null,
    "screenshots": [],
    "video": null,
    "release": null,

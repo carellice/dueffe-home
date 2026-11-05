@@ -9,7 +9,6 @@ import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -41,19 +40,15 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import it.dueffe.home.R
 import it.dueffe.home.ui.theme.DF
 import it.dueffe.home.ui.theme.DisplayFont
 import it.dueffe.home.ui.theme.DueffeFont
-import androidx.compose.ui.layout.layout
 import androidx.compose.ui.text.TextStyle
-import kotlin.math.roundToInt
 import it.dueffe.home.ui.theme.Motion
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -107,11 +102,7 @@ fun animationsDisabled(scale: Float) = scale == 0f
  * Due/e che si aprono, lettere di Home con overshoot, tagline, e uscita con un
  * foro circolare che si allarga e rivela l'app.
  */
-// Misure del font del logo e del monogramma, in em (stesse della versione web).
-private const val MARK_HEIGHT = 1.323f // il disegno occupa il 54% dell'immagine: così è alto quanto le maiuscole
-private const val MARK_FOOT = 0.778f // linea di base del disegno, in frazione dell'altezza dell'immagine
-private const val MARK_SHIFT = 0.204f // margine trasparente a sinistra da recuperare
-private const val FF_ADVANCE = 0.833f // avanzamento di "ff" nel font
+// Spazio tra "Dueffe" e "Home", in em: quello del font del logo.
 private const val SPACE = 0.35f
 
 @Composable
@@ -206,17 +197,11 @@ fun SplashOverlay(onFinished: () -> Unit) {
                         clipRect(left = size.width * (1f - sides.value)) { this@drawWithContent.drawContent() }
                     },
                 )
-                // Il monogramma prende il posto delle "ff" del font: alto quanto le maiuscole,
-                // appoggiato sulla linea di base e largo quanto l'avanzamento di "ff".
-                Image(
-                    painterResource(R.drawable.ff_mark), null,
+                // Le "ff" del font compaiono per prime, poi si aprono "Due", "e" e "Home".
+                Text(
+                    "ff", style = wordStyle,
                     modifier = Modifier
-                        .alignBy { (it.measuredHeight * MARK_FOOT).roundToInt() }
-                        .layout { measurable, constraints ->
-                            val p = measurable.measure(constraints)
-                            layout((em * FF_ADVANCE).roundToInt(), p.height) { p.place((-em * MARK_SHIFT).roundToInt(), 0) }
-                        }
-                        .height(with(density) { (em * MARK_HEIGHT).toDp() })
+                        .alignByBaseline()
                         .graphicsLayer {
                             val m = mark.value
                             translationY = -0.72f * em * (1f - m)
