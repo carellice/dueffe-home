@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-05T11:00:53.894Z",
+ "generatedAt": "2026-11-05T14:34:16.235Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -355,7 +355,7 @@
       "name": "Brieffo.apk",
       "url": "https://github.com/carellice/brieffo/releases/download/v1.22/Brieffo.apk",
       "size": 32735683,
-      "downloads": 2
+      "downloads": 4
      }
     ]
    },
@@ -440,6 +440,76 @@
    "dueffe": false
   },
   {
+   "id": "MyExperience",
+   "name": "MyExperience",
+   "description": "Diario di viaggio per Android: globo 3D, album e pianificazione viaggi",
+   "about": "MyExperience è un diario di viaggio per Android: un globo 3D con i luoghi che hai visitato, album-diario con foto, video e blocchi di testo, e la pianificazione dei prossimi viaggi.\n\n1. Scarica l'APK dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da origini sconosciute.",
+   "features": [
+    "🌍 Globo 3D interattivo con i tuoi luoghi",
+    "📔 Album-diario per ogni viaggio, con temi, foto e video",
+    "🧳 Pianificazione dei viaggi con tappe e cose da fare",
+    "👤 Profilo con statistiche (paesi, giorni, foto, video)",
+    "🔄 Aggiornamento in-app direttamente dalle GitHub Releases"
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-05T14:24:58Z",
+   "updatedAt": "2026-11-05T14:25:22Z",
+   "repoUrl": "https://github.com/carellice/MyExperience",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/MyExperience"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.1.0",
+     "url": "https://github.com/carellice/MyExperience/releases/tag/v1.1.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/MyExperience/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/MyExperience/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/MyExperience/main/branding/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.1.0",
+    "name": "MyExperience v1.1.0",
+    "date": "2026-11-05T14:25:22Z",
+    "url": "https://github.com/carellice/MyExperience/releases/tag/v1.1.0",
+    "notes": "Prima release pubblica.\n\n- Nuovo nome: MyExperience\n- Nuova icona\n- Aggiornamento in-app: l'app controlla le nuove release all'avvio (o da Profilo → Controlla aggiornamenti) e installa l'APK direttamente.\n\nNota: questa versione usa una nuova chiave di firma. Se avevi installato una build precedente, disinstallala prima di installare questa.",
+    "assets": [
+     {
+      "name": "MyExperience-v1.1.0.apk",
+      "url": "https://github.com/carellice/MyExperience/releases/download/v1.1.0/MyExperience-v1.1.0.apk",
+      "size": 5288315,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "com.myexperience.app",
+   "dueffe": false
+  },
+  {
    "id": "jonica",
    "name": "Jonica",
    "description": "Jonica: app Android etica per scoprire la stagionalità dei prodotti e le botteghe di quartiere",
@@ -461,7 +531,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-11-04T19:47:39Z",
-   "updatedAt": "2026-11-05T11:00:46Z",
+   "updatedAt": "2026-11-05T11:00:49Z",
    "repoUrl": "https://github.com/carellice/jonica",
    "webUrl": null,
    "links": [
@@ -472,8 +542,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.5.1",
-     "url": "https://github.com/carellice/jonica/releases/tag/v1.5.1"
+     "label": "Release v1.6.0",
+     "url": "https://github.com/carellice/jonica/releases/tag/v1.6.0"
     },
     {
      "type": "releases",
@@ -500,17 +570,17 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.5.1",
-    "name": "Jonica 1.5.1",
-    "date": "2026-11-05T09:47:51Z",
-    "url": "https://github.com/carellice/jonica/releases/tag/v1.5.1",
-    "notes": "Introduzione più fluida.\n\n- I puntini delle pagine e il pulsante con la freccia ora restano fermi: niente più movimento che si contrae e torna a scatto\n- Il passaggio da una pagina all'altra è più fluido e la pagina vicina non si vede più ai bordi (ad esempio nell'ultima pagina)\n- Le animazioni di ogni pagina partono già mentre la stai raggiungendo\n\nPuoi aggiornare direttamente dall'app.",
+    "tag": "v1.6.0",
+    "name": "Jonica 1.6.0",
+    "date": "2026-11-05T11:00:50Z",
+    "url": "https://github.com/carellice/jonica/releases/tag/v1.6.0",
+    "notes": "Le botteghe di Roma, a partire da Colle Salario.\n\n- 148 nuove schede dalla mappatura di Roma: botteghe, forni, pescherie, macellerie, pasticcerie, torrefazioni, formaggerie e mercati, con priorità su Colle Salario, Fidene, Villa Spada, Porta di Roma e il quadrante nord\n- 527 botteghe in totale: 19 doppioni con le schede precedenti sono stati sostituiti dalla versione nuova, più completa\n- Schede con zona di Roma, prodotti, modi di acquisto, note di verifica, telefono e sito\n- \"Portami qui\" apre direttamente la scheda Maps del negozio quando disponibile\n\nPuoi aggiornare direttamente dall'app.",
     "assets": [
      {
-      "name": "Jonica-1.5.1.apk",
-      "url": "https://github.com/carellice/jonica/releases/download/v1.5.1/Jonica-1.5.1.apk",
-      "size": 3333586,
-      "downloads": 2
+      "name": "Jonica-1.6.0.apk",
+      "url": "https://github.com/carellice/jonica/releases/download/v1.6.0/Jonica-1.6.0.apk",
+      "size": 3366358,
+      "downloads": 3
      }
     ]
    },
@@ -1152,7 +1222,7 @@
       "name": "Arcadio.apk",
       "url": "https://github.com/carellice/arcade-classici/releases/download/v1.4.0/Arcadio.apk",
       "size": 1058948,
-      "downloads": 3
+      "downloads": 4
      }
     ]
    },
@@ -1484,7 +1554,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-03T17:54:52Z",
+   "updatedAt": "2026-11-05T11:06:34Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -1495,8 +1565,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.12.0",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.12.0"
+     "label": "Release v1.12.1",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.12.1"
     },
     {
      "type": "releases",
@@ -1517,35 +1587,35 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.12.0",
-    "name": "IPTVISION 1.12.0",
-    "date": "2026-11-03T17:54:59Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.12.0",
-    "notes": "Versioni dei film più chiare.\n- Quando un film c'è in più versioni, per ognuna vedi risoluzione (4K, 1080p, 720p...), codec video, audio con canali e lingua, bitrate, formato del file, durata e categoria (se il fornitore li comunica).\n- Gli stessi dati compaiono nella scheda del film su Android e sui TV LG e Samsung.\n- Android: negli elenchi degli episodi e dei download la barra di avanzamento non copre più il titolo.\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.12.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.12.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.12.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.12.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.12.1",
+    "name": "IPTVISION 1.12.1",
+    "date": "2026-11-05T11:07:09Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.12.1",
+    "notes": "Audio sui canali del digitale terrestre.\n- Alcuni canali (per esempio Rai 1 FHD, Rai 2 4K/FHD, Italia 1 4K/FHD) hanno audio Dolby (AC-3/E-AC-3) o MPEG Layer II e si vedevano senza audio.\n- Android e Android TV: decoder FFmpeg incluso, ora questi canali si sentono.\n- TV LG: se il browser del TV non decodifica l'audio, il canale passa da solo al lettore del TV.\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.12.1.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.12.1.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.12.1.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.12.1.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.12.0.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.0/IPTVISION-1.12.0.apk",
-      "size": 2778579,
-      "downloads": 3
+      "name": "IPTVISION-1.12.1.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.1/IPTVISION-1.12.1.apk",
+      "size": 8689776,
+      "downloads": 2
      },
      {
-      "name": "IPTVISION-1.12.0.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.0/IPTVISION-1.12.0.ipk",
-      "size": 133820,
+      "name": "IPTVISION-1.12.1.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.1/IPTVISION-1.12.1.ipk",
+      "size": 134230,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-1.12.0.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.0/IPTVISION-1.12.0.wgt",
-      "size": 149271,
+      "name": "IPTVISION-1.12.1.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.1/IPTVISION-1.12.1.wgt",
+      "size": 150072,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-Setup-1.12.0.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.0/IPTVISION-Setup-1.12.0.exe",
-      "size": 71476192,
-      "downloads": 4
+      "name": "IPTVISION-Setup-1.12.1.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.1/IPTVISION-Setup-1.12.1.exe",
+      "size": 71488394,
+      "downloads": 1
      }
     ]
    },
@@ -1767,7 +1837,7 @@
       "name": "EasyCrypt-Android-1.0.11.apk",
       "url": "https://github.com/carellice/easy-crypt/releases/download/v1.0.11/EasyCrypt-Android-1.0.11.apk",
       "size": 1971670,
-      "downloads": 3
+      "downloads": 5
      },
      {
       "name": "EasyCrypt-Mac-AppleSilicon-1.0.11.zip",
