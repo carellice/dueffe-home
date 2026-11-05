@@ -14,6 +14,10 @@ data class Catalog(
     fun inCategory(id: String) = projects.filter { it.category == id }
     fun category(id: String) = categories.firstOrNull { it.id == id }
 
+    /** Il catalogo con le release lette in diretta da GitHub, più fresche di quelle del catalogo. */
+    fun withReleases(live: Map<String, Release>): Catalog =
+        if (live.isEmpty()) this else copy(projects = projects.map { p -> live[p.id]?.let { p.copy(release = it) } ?: p })
+
     /** Il catalogo senza i progetti nascosti, finché non vengono sbloccati con il PIN. */
     fun withoutHidden(): Catalog {
         val shown = projects.filterNot { it.hidden }
@@ -75,6 +79,22 @@ data class Catalog(
             androidPackage = p.str("androidPackage"),
             dueffe = p.optBoolean("dueffe"),
         )
+
+        /** Una release come la restituisce l'API di GitHub, con gli stessi allegati scartati dal catalogo. */
+        fun parseGitHubRelease(text: String): Release {
+            val r = JSONObject(text)
+            val tag = r.getString("tag_name")
+            return Release(
+                tag = tag,
+                name = r.str("name")?.takeIf { it.isNotBlank() } ?: tag,
+                date = r.str("published_at"),
+                url = r.getString("html_url"),
+                notes = r.str("body").orEmpty().take(1500),
+                assets = r.getJSONArray("assets").objects()
+                    .filterNot { Regex("""\.(json|txt|sha256|sig|asc)$""", RegexOption.IGNORE_CASE).containsMatchIn(it.getString("name")) }
+                    .map { ReleaseAsset(it.getString("name"), it.getString("browser_download_url"), it.optLong("size"), it.optInt("download_count")) },
+            )
+        }
 
         private fun parseGist(g: JSONObject) = Gist(
             id = g.getString("id"),

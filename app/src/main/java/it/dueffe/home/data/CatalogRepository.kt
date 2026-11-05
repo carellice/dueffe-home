@@ -36,4 +36,14 @@ class CatalogRepository(private val context: Context) {
         }
         throw failure ?: IOException("Catalogo non disponibile")
     }
+
+    /** L'ultima release di un progetto letta in diretta: il catalogo su Pages può essere indietro di qualche ora. */
+    suspend fun latestRelease(project: Project): Release? = withContext(Dispatchers.IO) {
+        val repo = project.repoUrl.removePrefix("https://github.com/").trimEnd('/')
+        try {
+            Catalog.parseGitHubRelease(Http.get("https://api.github.com/repos/$repo/releases/latest", "application/vnd.github+json"))
+        } catch (e: IOException) {
+            if (e.message == "HTTP 404") null else throw e
+        }
+    }
 }

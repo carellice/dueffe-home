@@ -1,7 +1,11 @@
 package it.dueffe.home.apps
 
+import android.app.AppOpsManager
+import android.app.usage.UsageStatsManager
 import android.content.Context
 import android.content.pm.PackageManager
+import android.os.Build
+import android.os.Process
 import it.dueffe.home.data.Http
 import it.dueffe.home.data.Project
 import it.dueffe.home.update.Updater
@@ -10,7 +14,7 @@ import kotlinx.coroutines.withContext
 import java.io.File
 
 /** Un'app del catalogo presente sul telefono. */
-data class InstalledApp(val project: Project, val packageName: String, val version: String) {
+data class InstalledApp(val project: Project, val packageName: String, val version: String, val lastUpdate: Long = 0) {
     // Il tag può avere un prefisso, come "streamwise-v2.0.140": conta solo il numero di versione.
     val latest: String? get() = project.release?.tag?.let { Regex("""\d+(\.\d+)*""").find(it)?.value }
     val hasUpdate: Boolean get() = latest?.let { Updater.isNewer(it, version) } == true
@@ -37,7 +41,7 @@ class AppManager(private val context: Context) {
         projects.filter { it.apk != null }.mapNotNull { p ->
             val pkg = packageOf(p) ?: return@mapNotNull null
             val info = try { context.packageManager.getPackageInfo(pkg, 0) } catch (_: PackageManager.NameNotFoundException) { null }
-            info?.let { InstalledApp(p, pkg, it.versionName.orEmpty()) }
+            info?.let { InstalledApp(p, pkg, it.versionName.orEmpty(), it.lastUpdateTime) }
         }
     }
 
@@ -50,6 +54,25 @@ class AppManager(private val context: Context) {
             prefs.edit().putString(project.id, it).apply()
         }
         target
+    }
+
+    /** Tempo in primo piano negli ultimi 30 giorni per package; null se manca l'accesso ai dati di utilizzo. */
+    suspend fun usage(): Map<String, Long>? = withContext(Dispatchers.IO) {
+        if (!hasUsageAccess()) return@withContext null
+        val usm = context.getSystemService(Context.USAGE_STATS_SERVICE) as UsageStatsManager
+        val now = System.currentTimeMillis()
+        usm.queryAndAggregateUsageStats(now - 30L * 24 * 60 * 60 * 1000, now).mapValues { it.value.totalTimeInForeground }
+    }
+
+    fun hasUsageAccess(): Boolean {
+        val ops = context.getSystemService(Context.APP_OPS_SERVICE) as AppOpsManager
+        val mode = if (Build.VERSION.SDK_INT >= 29) {
+            ops.unsafeCheckOpNoThrow(AppOpsManager.OPSTR_GET_USAGE_STATS, Process.myUid(), context.packageName)
+        } else {
+            @Suppress("DEPRECATION")
+            ops.checkOpNoThrow(AppOpsManager.OPSTR_GET_USAGE_STATS, Process.myUid(), context.packageName)
+        }
+        return mode == AppOpsManager.MODE_ALLOWED
     }
 
     fun install(file: File): Boolean = Updater.install(context, file)

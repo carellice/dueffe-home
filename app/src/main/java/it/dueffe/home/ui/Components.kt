@@ -217,9 +217,10 @@ fun GoldButton(
     modifier: Modifier = Modifier,
     filled: Boolean = true,
     accent: Color = DF.Primary,
+    dense: Boolean = false,
     onClick: () -> Unit,
 ) {
-    val shape = RoundedCornerShape(18.dp)
+    val shape = RoundedCornerShape(if (dense) 14.dp else 18.dp)
     val onAccent = if (luminance(accent) > 0.45f) DF.OnPrimary else DF.Text
     Row(
         modifier
@@ -229,7 +230,7 @@ fun GoldButton(
                 if (filled) Modifier.background(Brush.linearGradient(listOf(accent, lerpColor(accent, DF.PrimaryStrong, 0.35f))))
                 else Modifier.background(DF.Surface).border(1.dp, DF.LineStrong, shape),
             )
-            .padding(horizontal = 18.dp, vertical = 14.dp),
+            .then(if (dense) Modifier.padding(horizontal = 8.dp, vertical = 9.dp) else Modifier.padding(horizontal = 18.dp, vertical = 14.dp)),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center,
     ) {
@@ -238,7 +239,7 @@ fun GoldButton(
             Icon(icon, null, tint = fg, modifier = Modifier.size(20.dp))
             Spacer(Modifier.width(8.dp))
         }
-        Text(text, style = MaterialTheme.typography.labelLarge.copy(fontSize = 15.sp), color = fg, maxLines = 1)
+        Text(text, style = MaterialTheme.typography.labelLarge.copy(fontSize = if (dense) 13.sp else 15.sp), color = fg, maxLines = 1)
     }
 }
 

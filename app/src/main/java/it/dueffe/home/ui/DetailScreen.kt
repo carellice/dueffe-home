@@ -92,6 +92,8 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.compose.SubcomposeAsyncImage
 import it.dueffe.home.AppViewModel
+import it.dueffe.home.apps.InstalledApp
+import it.dueffe.home.update.Updater
 import it.dueffe.home.data.Catalog
 import it.dueffe.home.data.Project
 import it.dueffe.home.ui.theme.DF
@@ -101,7 +103,9 @@ import kotlin.math.abs
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun DetailScreen(opened: Opened, catalog: Catalog, vm: AppViewModel, scopes: SharedScopes?, onBack: () -> Unit, onOpen: (Opened) -> Unit) {
-    val p = opened.project
+    // Dal catalogo corrente, così la release letta in diretta da GitHub arriva anche qui.
+    val p = catalog.projects.firstOrNull { it.id == opened.project.id } ?: opened.project
+    LaunchedEffect(p.id) { vm.checkRelease(p) }
     val context = LocalContext.current
     val list = rememberLazyListState()
     val accent = rememberAccent(p.icon)
@@ -144,7 +148,7 @@ fun DetailScreen(opened: Opened, catalog: Catalog, vm: AppViewModel, scopes: Sha
                         VerticalGap(18.dp)
                         Text(p.description, style = MaterialTheme.typography.bodyLarge, color = DF.Text.copy(alpha = 0.86f), modifier = Modifier.reveal(2))
                         VerticalGap(18.dp)
-                        StatsStrip(p, Modifier.reveal(3))
+                        StatsStrip(p, vm.installedOf(p), Modifier.reveal(3))
                         VerticalGap(18.dp)
                         Actions(p, vm, accent, Modifier.reveal(4))
                     }
@@ -271,9 +275,15 @@ fun DetailScreen(opened: Opened, catalog: Catalog, vm: AppViewModel, scopes: Sha
 }
 
 @Composable
-private fun StatsStrip(p: Project, modifier: Modifier) {
+private fun StatsStrip(p: Project, installed: InstalledApp?, modifier: Modifier) {
+    // Se sul telefono c'è una versione più nuova della release nota (catalogo indietro, offline), mostra quella.
+    val version = when {
+        installed != null && installed.version.isNotBlank() &&
+            (installed.latest == null || Updater.isNewer(installed.version, installed.latest!!)) -> "v${installed.version.removePrefix("v")}"
+        else -> p.release?.tag ?: "—"
+    }
     val cells = buildList {
-        add(Triple(p.release?.tag ?: "—", "versione", Icons.Rounded.NewReleases))
+        add(Triple(version, "versione", Icons.Rounded.NewReleases))
         add(Triple(p.stars.toString(), if (p.stars == 1) "stella" else "stelle", Icons.Rounded.Star))
         add(Triple(relativeDate(p.updatedAt).ifEmpty { "—" }, "aggiornato", Icons.Rounded.Code))
         p.license?.let { add(Triple(it, "licenza", Icons.Rounded.Inventory2)) }

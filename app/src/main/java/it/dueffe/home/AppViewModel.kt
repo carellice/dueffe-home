@@ -15,9 +15,13 @@ import it.dueffe.home.apps.InstalledApp
 import it.dueffe.home.data.Catalog
 import it.dueffe.home.data.CatalogRepository
 import it.dueffe.home.data.Project
+import it.dueffe.home.data.Release
 import it.dueffe.home.update.UpdateInfo
 import it.dueffe.home.update.Updater
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import java.io.File
@@ -33,6 +37,9 @@ sealed interface UpdateState {
     data class Failed(val message: String) : UpdateState
 }
 
+/** Ordine delle app in "Le tue app". */
+enum class AppSort { Name, Updated, Usage }
+
 class AppViewModel(app: Application) : AndroidViewModel(app) {
     private val repository = CatalogRepository(app)
     private val apps = AppManager(app)
@@ -40,17 +47,36 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     private var fullCatalog by mutableStateOf<Catalog?>(null)
 
+    // Release lette in diretta da GitHub: il catalogo su Pages si rigenera solo ogni tanto.
+    private val liveReleases = mutableStateMapOf<String, Release>()
+    private val releaseChecked = mutableMapOf<String, Long>()
+
     /** Contenuti nascosti sbloccati con il PIN dalla pagina Info. */
     var unlocked by mutableStateOf(prefs.getBoolean("unlocked", false))
         private set
 
-    val catalog by derivedStateOf { fullCatalog?.let { if (unlocked) it else it.withoutHidden() } }
+    val catalog by derivedStateOf { fullCatalog?.let { if (unlocked) it else it.withoutHidden() }?.withReleases(liveReleases.toMap()) }
 
     var installed by mutableStateOf<List<InstalledApp>>(emptyList())
         private set
     val downloads = mutableStateMapOf<String, AppDownload>()
     var refreshing by mutableStateOf(false)
         private set
+
+    /** Vero mentre "Aggiorna tutto" scarica gli APK; poi gli installer si aprono uno dopo l'altro. */
+    var updatingAll by mutableStateOf(false)
+        private set
+    private val installQueue = ArrayDeque<String>()
+
+    var appsGrid by mutableStateOf(prefs.getBoolean("apps_grid", false))
+        private set
+    var appsSort by mutableStateOf(runCatching { AppSort.valueOf(prefs.getString("apps_sort", null).orEmpty()) }.getOrDefault(AppSort.Name))
+        private set
+
+    /** Tempo d'uso per package; null finché Android non concede l'accesso ai dati di utilizzo. */
+    var usage by mutableStateOf<Map<String, Long>?>(null)
+        private set
+
     var update by mutableStateOf<UpdateState>(UpdateState.Idle)
         private set
     var updateBannerDismissed by mutableStateOf(false)
@@ -62,7 +88,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     init {
         viewModelScope.launch {
             fullCatalog = repository.loadLocal()
-            refreshInstalled()
+            loadInstalled()
             refresh(silent = true)
         }
         checkUpdates(silent = true)
@@ -80,10 +106,13 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
             refreshing = !silent
             try {
                 fullCatalog = repository.refresh()
-                refreshInstalled()
+                loadInstalled()
                 if (!silent) toast("Catalogo aggiornato")
             } catch (_: Exception) {
                 if (!silent) toast("Sei offline: mostro l'ultimo catalogo salvato")
+            }
+            try {
+                checkReleases(installed.map { it.project }, force = !silent)
             } finally {
                 refreshing = false
             }
@@ -146,12 +175,57 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
 
     /** Rilegge le app installate: va chiamata anche al ritorno nell'app, dopo un'installazione. */
     fun refreshInstalled() {
-        val projects = catalog?.projects ?: return
+        viewModelScope.launch { loadInstalled() }
+    }
+
+    /** Al ritorno nell'app: rilegge le installate e, durante "Aggiorna tutto", apre l'installer successivo. */
+    fun onResume() {
         viewModelScope.launch {
-            installed = apps.installed(projects)
-            // Un download già installato non serve più.
-            installed.forEach { a -> if (downloads[a.project.id] is AppDownload.Ready && !a.hasUpdate) downloads.remove(a.project.id) }
+            loadInstalled()
+            installNext()
         }
+    }
+
+    private suspend fun loadInstalled() {
+        val projects = catalog?.projects ?: return
+        installed = apps.installed(projects)
+        usage = apps.usage()
+        // Un download già installato non serve più.
+        installed.forEach { a -> if (downloads[a.project.id] is AppDownload.Ready && !a.hasUpdate) downloads.remove(a.project.id) }
+    }
+
+    /** Aggiorna la release di un progetto leggendola da GitHub, al più una volta ogni dieci minuti. */
+    fun checkRelease(project: Project) {
+        viewModelScope.launch { checkReleases(listOf(project), force = false) }
+    }
+
+    private suspend fun checkReleases(projects: List<Project>, force: Boolean) {
+        val now = System.currentTimeMillis()
+        val due = projects.filter { force || now - (releaseChecked[it.id] ?: 0L) > RELEASE_TTL }
+        if (due.isEmpty()) return
+        due.forEach { releaseChecked[it.id] = now }
+        val fresh = coroutineScope {
+            due.map { p -> async { p.id to runCatching { repository.latestRelease(p) }.getOrNull() } }.awaitAll()
+        }
+        var changed = false
+        fresh.forEach { (id, release) ->
+            if (release != null && liveReleases[id] != release) {
+                liveReleases[id] = release
+                changed = true
+            }
+        }
+        if (changed) loadInstalled()
+    }
+
+    fun toggleAppsGrid() {
+        appsGrid = !appsGrid
+        prefs.edit().putBoolean("apps_grid", appsGrid).apply()
+    }
+
+    fun sortApps(sort: AppSort) {
+        appsSort = sort
+        prefs.edit().putString("apps_sort", sort.name).apply()
+        if (sort == AppSort.Usage) refreshInstalled()
     }
 
     fun installedOf(project: Project): InstalledApp? = installed.firstOrNull { it.project.id == project.id }
@@ -162,15 +236,59 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         if (current is AppDownload.Downloading) return
         if (current is AppDownload.Ready && current.file.exists()) return installApp(project)
         viewModelScope.launch {
-            downloads[project.id] = AppDownload.Downloading(0f)
-            try {
-                val file = apps.download(project) { p -> downloads[project.id] = AppDownload.Downloading(p) }
-                downloads[project.id] = AppDownload.Ready(file)
-                installApp(project)
-            } catch (e: Exception) {
-                downloads[project.id] = AppDownload.Failed(e.message ?: "errore di rete")
-                toast("Download non riuscito: ${e.message ?: "errore di rete"}")
+            if (fetchApk(project)) installApp(project)
+        }
+    }
+
+    /** Scarica insieme gli aggiornamenti di tutte le app, poi apre un installer alla volta. */
+    fun updateAll() {
+        if (updatingAll) return
+        val targets = installed.filter { it.hasUpdate }.map { it.project }
+        if (targets.isEmpty()) return
+        updatingAll = true
+        viewModelScope.launch {
+            val ready = try {
+                coroutineScope {
+                    targets.map { p ->
+                        async {
+                            val current = downloads[p.id]
+                            val ok = (current is AppDownload.Ready && current.file.exists()) ||
+                                (current !is AppDownload.Downloading && fetchApk(p))
+                            p.id.takeIf { ok }
+                        }
+                    }.awaitAll().filterNotNull()
+                }
+            } finally {
+                updatingAll = false
             }
+            installQueue.clear()
+            installQueue.addAll(ready)
+            installNext()
+        }
+    }
+
+    private fun installNext() {
+        while (installQueue.isNotEmpty()) {
+            val id = installQueue.removeFirst()
+            val ready = downloads[id] as? AppDownload.Ready ?: continue
+            if (!apps.install(ready.file)) {
+                installQueue.clear()
+                toast("Consenti l'installazione per Dueffe Home, poi tocca di nuovo Aggiorna tutto")
+            }
+            return
+        }
+    }
+
+    private suspend fun fetchApk(project: Project): Boolean {
+        downloads[project.id] = AppDownload.Downloading(0f)
+        return try {
+            val file = apps.download(project) { p -> downloads[project.id] = AppDownload.Downloading(p) }
+            downloads[project.id] = AppDownload.Ready(file)
+            true
+        } catch (e: Exception) {
+            downloads[project.id] = AppDownload.Failed(e.message ?: "errore di rete")
+            toast("Download di ${project.name} non riuscito: ${e.message ?: "errore di rete"}")
+            false
         }
     }
 
@@ -180,10 +298,18 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     fun openApp(app: InstalledApp) {
+        prefs.edit().putInt("opens/${app.project.id}", opens(app) + 1).apply()
         if (!apps.open(app.packageName)) toast("${app.project.name} non si può aprire da qui")
     }
 
+    /** Quante volte l'app è stata aperta da qui: ordina per utilizzo quando Android non dà i suoi dati. */
+    fun opens(app: InstalledApp): Int = prefs.getInt("opens/${app.project.id}", 0)
+
+    fun hasUsageAccess(): Boolean = apps.hasUsageAccess()
+
     private companion object {
+        const val RELEASE_TTL = 10 * 60 * 1000L
+
         // SHA-256 del PIN che mostra i contenuti nascosti.
         const val PIN_HASH = "d7fdeffc0f8ba1b3f6b504bed173480e62a2915fb118d0e2a6f946131ac6fbcc"
     }

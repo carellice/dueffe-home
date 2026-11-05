@@ -109,7 +109,7 @@ fun DueffeHomeApp(vm: AppViewModel) {
 
     // Le installazioni avvengono fuori dall'app: al ritorno si rilegge cosa è installato.
     LifecycleResumeEffect(Unit) {
-        vm.refreshInstalled()
+        vm.onResume()
         onPauseOrDispose { }
     }
 
