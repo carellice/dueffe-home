@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-05T16:16:00.281Z",
+ "generatedAt": "2026-11-05T21:46:53.059Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -355,7 +355,7 @@
       "name": "Brieffo.apk",
       "url": "https://github.com/carellice/brieffo/releases/download/v1.22/Brieffo.apk",
       "size": 32735683,
-      "downloads": 4
+      "downloads": 6
      }
     ]
    },
@@ -437,6 +437,77 @@
    "featured": true,
    "hidden": false,
    "androidPackage": "it.piccolegioie.app",
+   "dueffe": false
+  },
+  {
+   "id": "MyExperience",
+   "name": "MyExperience",
+   "description": "Diario di viaggio per Android: globo 3D, album e pianificazione viaggi",
+   "about": "MyExperience è un diario di viaggio per Android: un globo 3D con i luoghi che hai visitato, album-diario con foto, video e blocchi di testo, e la pianificazione dei prossimi viaggi.\n\n1. Scarica l'APK dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da origini sconosciute.",
+   "features": [
+    "🌍 Globo 3D interattivo con i tuoi luoghi",
+    "📔 Album-diario per ogni viaggio, con temi, foto e video",
+    "🚐 Album \"on the road\" con più tappe, mappa e percorso disegnato nel diario",
+    "🧳 Pianificazione dei viaggi con tappe e cose da fare: a viaggio concluso diventa da solo un unico album",
+    "👤 Profilo con statistiche (paesi, giorni, foto, video)",
+    "🔄 Aggiornamento in-app direttamente dalle GitHub Releases"
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-05T14:24:58Z",
+   "updatedAt": "2026-11-05T19:02:05Z",
+   "repoUrl": "https://github.com/carellice/MyExperience",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/MyExperience"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.4.0",
+     "url": "https://github.com/carellice/MyExperience/releases/tag/v1.4.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/MyExperience/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/MyExperience/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/MyExperience/main/branding/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.4.0",
+    "name": "MyExperience v1.4.0",
+    "date": "2026-11-05T19:02:05Z",
+    "url": "https://github.com/carellice/MyExperience/releases/tag/v1.4.0",
+    "notes": "## Novità\n\n- **Icone al posto delle emoji** in tutta l'app: categorie, mood, mezzi di trasporto, temi del diario, elementi della pagina, schede e indicatori.\n- Le bandiere sono sostituite dalle sigle dei paesi (IT, FR, ES…).\n- Il blocco diario \"Sticker\" diventa **Icone**: 42 icone a tema viaggio, multicolore o in un solo colore. Gli sticker già presenti nei diari vengono convertiti in automatico.",
+    "assets": [
+     {
+      "name": "MyExperience-v1.4.0.apk",
+      "url": "https://github.com/carellice/MyExperience/releases/download/v1.4.0/MyExperience-v1.4.0.apk",
+      "size": 5341551,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "com.myexperience.app",
    "dueffe": false
   },
   {
@@ -572,7 +643,7 @@
       "name": "StreamWise-2.0.140.apk",
       "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.0.140/StreamWise-2.0.140.apk",
       "size": 16784002,
-      "downloads": 1
+      "downloads": 3
      }
     ]
    },
@@ -643,7 +714,7 @@
       "name": "garage-v1.0.48.apk",
       "url": "https://github.com/carellice/dueffe-garage/releases/download/garage-v1.0.48/garage-v1.0.48.apk",
       "size": 9587960,
-      "downloads": 1
+      "downloads": 3
      }
     ]
    },
@@ -651,76 +722,6 @@
    "hidden": false,
    "androidPackage": "it.dueffe.garage",
    "dueffe": true
-  },
-  {
-   "id": "MyExperience",
-   "name": "MyExperience",
-   "description": "Diario di viaggio per Android: globo 3D, album e pianificazione viaggi",
-   "about": "MyExperience è un diario di viaggio per Android: un globo 3D con i luoghi che hai visitato, album-diario con foto, video e blocchi di testo, e la pianificazione dei prossimi viaggi.\n\n1. Scarica l'APK dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da origini sconosciute.",
-   "features": [
-    "🌍 Globo 3D interattivo con i tuoi luoghi",
-    "📔 Album-diario per ogni viaggio, con temi, foto e video",
-    "🧳 Pianificazione dei viaggi con tappe e cose da fare",
-    "👤 Profilo con statistiche (paesi, giorni, foto, video)",
-    "🔄 Aggiornamento in-app direttamente dalle GitHub Releases"
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-11-05T14:24:58Z",
-   "updatedAt": "2026-11-05T14:25:22Z",
-   "repoUrl": "https://github.com/carellice/MyExperience",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/MyExperience"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.1.0",
-     "url": "https://github.com/carellice/MyExperience/releases/tag/v1.1.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/MyExperience/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/MyExperience/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/MyExperience/main/branding/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.1.0",
-    "name": "MyExperience v1.1.0",
-    "date": "2026-11-05T14:25:22Z",
-    "url": "https://github.com/carellice/MyExperience/releases/tag/v1.1.0",
-    "notes": "Prima release pubblica.\n\n- Nuovo nome: MyExperience\n- Nuova icona\n- Aggiornamento in-app: l'app controlla le nuove release all'avvio (o da Profilo → Controlla aggiornamenti) e installa l'APK direttamente.\n\nNota: questa versione usa una nuova chiave di firma. Se avevi installato una build precedente, disinstallala prima di installare questa.",
-    "assets": [
-     {
-      "name": "MyExperience-v1.1.0.apk",
-      "url": "https://github.com/carellice/MyExperience/releases/download/v1.1.0/MyExperience-v1.1.0.apk",
-      "size": 5288315,
-      "downloads": 2
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "com.myexperience.app",
-   "dueffe": false
   },
   {
    "id": "jonica",
@@ -1552,7 +1553,7 @@
       "name": "IPTVISION-1.12.1.apk",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.1/IPTVISION-1.12.1.apk",
       "size": 8689776,
-      "downloads": 3
+      "downloads": 5
      },
      {
       "name": "IPTVISION-1.12.1.ipk",
