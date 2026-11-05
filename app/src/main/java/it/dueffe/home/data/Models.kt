@@ -14,6 +14,12 @@ data class Catalog(
     fun inCategory(id: String) = projects.filter { it.category == id }
     fun category(id: String) = categories.firstOrNull { it.id == id }
 
+    /** Il catalogo senza i progetti nascosti, finché non vengono sbloccati con il PIN. */
+    fun withoutHidden(): Catalog {
+        val shown = projects.filterNot { it.hidden }
+        return copy(projects = shown, categories = categories.filter { c -> shown.any { it.category == c.id } })
+    }
+
     companion object {
         fun parse(text: String): Catalog {
             val o = JSONObject(text)
@@ -65,6 +71,8 @@ data class Catalog(
                 )
             },
             featured = p.optBoolean("featured"),
+            hidden = p.optBoolean("hidden"),
+            androidPackage = p.str("androidPackage"),
             dueffe = p.optBoolean("dueffe"),
         )
 
@@ -108,6 +116,8 @@ data class Project(
     val links: List<ProjectLink>,
     val release: Release?,
     val featured: Boolean,
+    val hidden: Boolean,
+    val androidPackage: String?,
     val dueffe: Boolean,
 ) {
     val apk: ReleaseAsset? get() = release?.assets?.firstOrNull { it.name.endsWith(".apk", true) }

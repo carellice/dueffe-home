@@ -235,7 +235,7 @@ fun SplashOverlay(onFinished: () -> Unit) {
             }
             Spacer(Modifier.height(14.dp))
             Text(
-                "Tutti i progetti di Flavio, in un solo posto",
+                "Tutti i progetti di Dueffe, in un solo posto",
                 style = MaterialTheme.typography.bodyLarge,
                 fontFamily = DisplayFont,
                 fontWeight = FontWeight.Medium,

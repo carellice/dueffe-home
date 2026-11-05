@@ -91,6 +91,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.compose.SubcomposeAsyncImage
+import it.dueffe.home.AppViewModel
 import it.dueffe.home.data.Catalog
 import it.dueffe.home.data.Project
 import it.dueffe.home.ui.theme.DF
@@ -99,7 +100,7 @@ import kotlin.math.abs
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun DetailScreen(opened: Opened, catalog: Catalog, scopes: SharedScopes?, onBack: () -> Unit, onOpen: (Opened) -> Unit) {
+fun DetailScreen(opened: Opened, catalog: Catalog, vm: AppViewModel, scopes: SharedScopes?, onBack: () -> Unit, onOpen: (Opened) -> Unit) {
     val p = opened.project
     val context = LocalContext.current
     val list = rememberLazyListState()
@@ -145,7 +146,7 @@ fun DetailScreen(opened: Opened, catalog: Catalog, scopes: SharedScopes?, onBack
                         VerticalGap(18.dp)
                         StatsStrip(p, Modifier.reveal(3))
                         VerticalGap(18.dp)
-                        Actions(p, accent, Modifier.reveal(4))
+                        Actions(p, vm, accent, Modifier.reveal(4))
                     }
                 }
             }
@@ -178,7 +179,9 @@ fun DetailScreen(opened: Opened, catalog: Catalog, scopes: SharedScopes?, onBack
                                 }
                                 r.assets.forEach { a ->
                                     Row(
-                                        Modifier.fillMaxWidth().clip(RoundedCornerShape(14.dp)).pressScale(0.97f) { openUrl(context, a.url) }
+                                        // Gli APK si scaricano e si installano dentro l'app, il resto si apre nel browser.
+                                        Modifier.fillMaxWidth().clip(RoundedCornerShape(14.dp))
+                                            .pressScale(0.97f) { if (a.name.endsWith(".apk", true) && a == p.apk) vm.downloadApp(p) else openUrl(context, a.url) }
                                             .padding(vertical = 8.dp),
                                         verticalAlignment = Alignment.CenterVertically,
                                     ) {
@@ -290,13 +293,14 @@ private fun StatsStrip(p: Project, modifier: Modifier) {
 }
 
 @Composable
-private fun Actions(p: Project, accent: Color, modifier: Modifier) {
+private fun Actions(p: Project, vm: AppViewModel, accent: Color, modifier: Modifier) {
     val context = LocalContext.current
     Column(modifier, verticalArrangement = Arrangement.spacedBy(10.dp)) {
         PlatformRow(p.platforms, tint = DF.Secondary, size = 18.dp)
         val download = p.primaryDownload
         Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
             when {
+                p.apk != null -> AppActionButton(p, vm, Modifier.weight(1f), accent = accent)
                 download != null -> GoldButton(
                     if (download.name.endsWith(".apk", true)) "Scarica APK" else "Scarica",
                     Icons.Rounded.Download, Modifier.weight(1f), accent = accent,

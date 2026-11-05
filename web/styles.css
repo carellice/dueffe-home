@@ -359,3 +359,20 @@ svg.i { width: 24px; height: 24px; fill: currentColor; flex: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 1ms !important; animation-delay: 0ms !important; transition-duration: 1ms !important; }
 }
+
+/* Info in alto a destra nella Home, con il pallino quando c'è l'app Android. */
+.avatar { position: relative; color: var(--text); }
+.avatar svg { width: 22px; height: 22px; fill: currentColor; }
+.avatar.dot::after { content: ""; position: absolute; top: -1px; right: -1px; width: 10px; height: 10px; border-radius: 50%; background: var(--error); border: 2px solid var(--bg); }
+.info-back { align-self: flex-start; margin-bottom: 4px; }
+
+/* Sblocco dei contenuti nascosti. */
+.pin-form { display: flex; gap: 10px; margin-top: 14px; }
+.pin-form input { flex: 1; min-width: 0; padding: 14px 16px; border-radius: 16px; border: 1px solid var(--line-strong); background: var(--bg); color: var(--text); font: 600 18px/20px var(--body); letter-spacing: .3em; outline: none; }
+.pin-form input:focus { border-color: var(--primary); }
+.pin-form input.wrong { border-color: var(--error); animation: shake .4s; }
+@keyframes shake { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+
+/* Le tue app. */
+.btn.small { padding: 10px 16px; border-radius: 14px; font-size: 14px; }
+.my-app .end { flex: none; }

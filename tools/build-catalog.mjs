@@ -194,11 +194,22 @@ async function buildProject(repo) {
   shots = [...new Set(shots)].filter((s) => s !== icon).slice(0, 10);
   const video = md.match(/(?:src|href)=["']([^"']+\.mp4)["']|\]\(([^)]+\.mp4)\)/i);
 
+  // Package Android: serve all'app per riconoscere le app già installate e aprirle.
+  let androidPackage = ov.androidPackage || null;
+  if (!androidPackage && (release?.assets || []).some((a) => /\.apk$/i.test(a.name))) {
+    const gradle = paths.filter((p) => /(^|\/)build\.gradle(\.kts)?$/.test(p)).sort((a, b) => b.split('/').length - a.split('/').length || a.length - b.length);
+    for (const g of gradle) {
+      const src = await gh(`repos/${OWNER}/${repo.name}/contents/${g}?ref=${branch}`, { raw: true, allow404: true });
+      const id = src?.match(/applicationId\s*=?\s*["']([\w.]+)["']/)?.[1];
+      if (id) { androidPackage = id; break; }
+    }
+  }
+
   const assets = (release?.assets || []).filter((a) => !/\.(json|txt|sha256|sig|asc)$/i.test(a.name)).map((a) => ({
     name: a.name, url: a.browser_download_url, size: a.size, downloads: a.download_count,
   }));
   const title = ov.name || readmeTitle(md) || prettyName(repo.name);
-  const description = ov.description || repo.description || readmeAbout(md, title)?.split('\n')[0]?.slice(0, 180) || 'Progetto open source di Flavio Ceccarelli.';
+  const description = ov.description || repo.description || readmeAbout(md, title)?.split('\n')[0]?.slice(0, 180) || 'Progetto open source di Dueffe.';
   const text = [repo.description, plain(md).slice(0, 1500)].join(' ');
   const platforms = detectPlatforms(text, repo, assets, ov);
   const pagesUrl = repo.has_pages ? `https://${OWNER}.github.io/${repo.name}/` : null;
@@ -238,6 +249,9 @@ async function buildProject(repo) {
       url: release.html_url, notes: (release.body || '').slice(0, 1500), assets,
     } : null,
     featured: Boolean(ov.featured),
+    // Nascosto finché non si sbloccano i contenuti nascosti dalla pagina Info.
+    hidden: Boolean(ov.hidden),
+    androidPackage,
     dueffe: repo.name.startsWith('dueffe-'),
   };
 }

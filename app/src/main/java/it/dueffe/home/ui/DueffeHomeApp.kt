@@ -46,6 +46,7 @@ import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Apps
 import androidx.compose.material.icons.rounded.Code
 import androidx.compose.material.icons.rounded.Explore
 import androidx.compose.material.icons.rounded.Home
@@ -55,6 +56,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.lifecycle.compose.LifecycleResumeEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -76,11 +78,13 @@ import it.dueffe.home.ui.theme.Motion
 import kotlinx.coroutines.launch
 import kotlin.math.sign
 
-enum class Tab(val label: String, val icon: ImageVector) {
+enum class Tab(val label: String, val icon: ImageVector, val inNav: Boolean = true) {
     Home("Home", Icons.Rounded.Home),
     Explore("Esplora", Icons.Rounded.Explore),
     Gist("Gist", Icons.Rounded.Code),
-    Info("Info", Icons.Rounded.Info),
+    Apps("Le tue app", Icons.Rounded.Apps),
+    // Info si apre dal pulsante in alto a destra della Home, non dalla barra.
+    Info("Info", Icons.Rounded.Info, inNav = false),
 }
 
 @OptIn(ExperimentalSharedTransitionApi::class)
@@ -88,6 +92,7 @@ enum class Tab(val label: String, val icon: ImageVector) {
 fun DueffeHomeApp(vm: AppViewModel) {
     var splashDone by rememberSaveable { mutableStateOf(false) }
     var tab by rememberSaveable { mutableStateOf(Tab.Home) }
+    var infoFrom by rememberSaveable { mutableStateOf(Tab.Home) }
     var category by rememberSaveable { mutableStateOf<String?>(null) }
     var opened by remember { mutableStateOf<Opened?>(null) }
     val history = remember { ArrayList<Opened>() }
@@ -96,13 +101,21 @@ fun DueffeHomeApp(vm: AppViewModel) {
     val homeList = rememberLazyListState()
     val exploreList = rememberLazyListState()
     val gistList = rememberLazyListState()
+    val appsList = rememberLazyListState()
     val infoScroll = rememberScrollState()
     val featuredCount = vm.catalog?.featured?.size ?: 0
     val pager = rememberPagerState { featuredCount }
     val scope = rememberCoroutineScope()
 
+    // Le installazioni avvengono fuori dall'app: al ritorno si rilegge cosa è installato.
+    LifecycleResumeEffect(Unit) {
+        vm.refreshInstalled()
+        onPauseOrDispose { }
+    }
+
     BackHandler(opened != null) { opened = history.removeLastOrNull() }
-    BackHandler(opened == null && tab != Tab.Home) { tab = Tab.Home }
+    BackHandler(opened == null && tab != Tab.Home && tab != Tab.Info) { tab = Tab.Home }
+    BackHandler(opened == null && tab == Tab.Info) { tab = infoFrom }
 
     val open: (Opened) -> Unit = { o -> opened?.let { history.add(it) }; opened = o }
     val bottomPadding = WindowInsets.navigationBars.asPaddingValues().calculateBottomPadding() + 112.dp
@@ -132,24 +145,27 @@ fun DueffeHomeApp(vm: AppViewModel) {
                     if (target == null) {
                         MainTabs(
                             catalog, vm, tab, category, scopes, splashDone,
-                            homeList, exploreList, gistList, infoScroll, pager, bottomPadding,
+                            homeList, exploreList, gistList, appsList, infoScroll, pager, bottomPadding,
                             onTab = { t ->
                                 if (t == tab) scope.launch {
                                     when (t) {
                                         Tab.Home -> homeList.animateScrollToItem(0)
                                         Tab.Explore -> exploreList.animateScrollToItem(0)
                                         Tab.Gist -> gistList.animateScrollToItem(0)
+                                        Tab.Apps -> appsList.animateScrollToItem(0)
                                         Tab.Info -> infoScroll.animateScrollTo(0)
                                     }
                                 }
+                                if (t == Tab.Info && tab != Tab.Info) infoFrom = tab
                                 tab = t
                             },
+                            onInfoBack = { tab = infoFrom },
                             onCategory = { category = it; tab = Tab.Explore },
                             onCategoryInline = { category = it },
                             onOpen = open,
                         )
                     } else {
-                        DetailScreen(target, catalog, scopes, onBack = { opened = history.removeLastOrNull() }, onOpen = open)
+                        DetailScreen(target, catalog, vm, scopes, onBack = { opened = history.removeLastOrNull() }, onOpen = open)
                     }
                 }
             }
@@ -185,10 +201,12 @@ private fun MainTabs(
     homeList: androidx.compose.foundation.lazy.LazyListState,
     exploreList: androidx.compose.foundation.lazy.LazyListState,
     gistList: androidx.compose.foundation.lazy.LazyListState,
+    appsList: androidx.compose.foundation.lazy.LazyListState,
     infoScroll: androidx.compose.foundation.ScrollState,
     pager: androidx.compose.foundation.pager.PagerState,
     bottomPadding: androidx.compose.ui.unit.Dp,
     onTab: (Tab) -> Unit,
+    onInfoBack: () -> Unit,
     onCategory: (String?) -> Unit,
     onCategoryInline: (String?) -> Unit,
     onOpen: (Opened) -> Unit,
@@ -213,14 +231,22 @@ private fun MainTabs(
                 )
                 Tab.Explore -> ExploreScreen(catalog, exploreList, category, onCategoryInline, scopes, bottomPadding, onOpen)
                 Tab.Gist -> GistScreen(catalog.gists, vm, gistList, bottomPadding)
-                Tab.Info -> InfoScreen(catalog, vm, infoScroll, bottomPadding)
+                Tab.Apps -> AppsScreen(catalog, vm, appsList, scopes, bottomPadding, onOpen) { onTab(Tab.Explore) }
+                Tab.Info -> InfoScreen(catalog, vm, infoScroll, onInfoBack)
             }
         }
         Box(
             Modifier.fillMaxWidth().windowInsetsTopHeight(WindowInsets.statusBars.add(WindowInsets(top = 12.dp)))
                 .background(Brush.verticalGradient(listOf(DF.Bg.copy(alpha = 0.92f), DF.Bg.copy(alpha = 0f)))),
         )
-        BottomNav(tab, onTab, vm.update is it.dueffe.home.UpdateState.Available, Modifier.align(Alignment.BottomCenter))
+        AnimatedVisibility(
+            tab.inNav,
+            modifier = Modifier.align(Alignment.BottomCenter),
+            enter = slideInVertically(spring(dampingRatio = 0.8f, stiffness = 400f)) { it } + fadeIn(),
+            exit = slideOutVertically(tween(260)) { it } + fadeOut(tween(200)),
+        ) {
+            BottomNav(if (tab.inNav) tab else Tab.Home, onTab, vm.installed.any { it.hasUpdate }, Modifier)
+        }
     }
 }
 
@@ -240,7 +266,8 @@ private fun BottomNav(selected: Tab, onSelect: (Tab) -> Unit, updateDot: Boolean
             .border(1.dp, DF.Line, shape),
     ) {
         BoxWithConstraints(Modifier.fillMaxSize().padding(6.dp)) {
-            val slot = maxWidth / Tab.entries.size
+            val tabs = Tab.entries.filter { it.inNav }
+            val slot = maxWidth / tabs.size
             val memory = remember { IntArray(1) { selected.ordinal } }
             val dir = remember(selected) { val d = (selected.ordinal - memory[0]).sign; memory[0] = selected.ordinal; d }
             val fast = spring<androidx.compose.ui.unit.Dp>(dampingRatio = 0.75f, stiffness = 900f)
@@ -252,8 +279,8 @@ private fun BottomNav(selected: Tab, onSelect: (Tab) -> Unit, updateDot: Boolean
                     .background(Brush.linearGradient(listOf(DF.Primary, DF.PrimaryStrong))),
             )
             Row(Modifier.fillMaxSize()) {
-                Tab.entries.forEach { t ->
-                    NavItem(t, t == selected, updateDot && t == Tab.Info, Modifier.weight(1f)) { onSelect(t) }
+                tabs.forEach { t ->
+                    NavItem(t, t == selected, updateDot && t == Tab.Apps, Modifier.weight(1f)) { onSelect(t) }
                 }
             }
         }
@@ -283,6 +310,6 @@ private fun NavItem(tab: Tab, selected: Boolean, dot: Boolean, modifier: Modifie
             )
             if (dot) Box(Modifier.align(Alignment.TopEnd).size(8.dp).clip(RoundedCornerShape(4.dp)).background(DF.Error))
         }
-        Text(tab.label, style = MaterialTheme.typography.labelSmall, color = color)
+        Text(tab.label, style = MaterialTheme.typography.labelSmall, color = color, maxLines = 1)
     }
 }

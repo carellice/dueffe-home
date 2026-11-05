@@ -36,11 +36,23 @@ const P = {
   error: 'M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z',
   left: 'M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z',
   right: 'M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z',
+  info: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1s1 .45 1 1v4c0 .55-.45 1-1 1zm1-8h-2V7h2v2z',
+  apps: 'M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z',
+  lock: 'M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM9 8V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9z',
+  unlock: 'M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h2c0-1.66 1.34-3 3-3s3 1.34 3 3v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z',
 };
 const svg = (name, cls = '') => `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true"><path d="${P[name]}"/></svg>`;
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+// localStorage può mancare (navigazione privata): l'app funziona lo stesso, senza ricordare.
+function store(key, value) {
+  try {
+    if (value === undefined) return localStorage.getItem(key);
+    if (value === null) localStorage.removeItem(key); else localStorage.setItem(key, value);
+  } catch { return null; }
+  return value;
+}
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const PLATFORM = { android: ['Android', 'android'], windows: ['Windows', 'windows'], macos: ['macOS', 'macos'], web: ['Web', 'web'] };
@@ -59,6 +71,10 @@ const state = {
   latest: null,
   version: null,
   splashDone: false,
+  full: null,
+  unlocked: store('unlocked') === '1',
+  // App scaricate da questo browser: id del progetto -> tag della release scaricata.
+  myApps: JSON.parse(store('myApps') || '{}'),
   // Posizione di scorrimento di ogni scheda: chi la visita per la prima volta parte dall'alto.
   scroll: {},
   expanded: new Set(),
@@ -159,16 +175,51 @@ async function loadLatest() {
     const j = await r.json();
     const apk = j.assets.find((a) => a.name.endsWith('.apk'));
     state.latest = { tag: j.tag_name, version: j.tag_name.replace(/^v/, ''), url: j.html_url, apk: apk?.browser_download_url, size: apk?.size, notes: j.body || '', date: j.published_at };
-    if (state.tab === 'info' && !state.route.startsWith('p/')) render();
-    $('#nav a[data-tab="info"]').classList.toggle('dot', Boolean(state.latest?.apk));
+    if ((state.tab === 'info' || state.tab === 'home') && !state.route.startsWith('#/p/')) render();
   } catch { /* offline */ }
 }
 async function loadVersion() {
   try { state.version = (await (await fetch('version.json', { cache: 'no-store' })).json()).version; } catch { state.version = null; }
 }
 
+// I progetti nascosti restano fuori dal catalogo finché non si inserisce il PIN nella pagina Info.
+const PIN_HASH = 'd7fdeffc0f8ba1b3f6b504bed173480e62a2915fb118d0e2a6f946131ac6fbcc';
+function setCatalog(c) {
+  state.full = c;
+  if (!c) { state.catalog = null; return; }
+  const projects = state.unlocked ? c.projects : c.projects.filter((p) => !p.hidden);
+  state.catalog = { ...c, projects, categories: c.categories.filter((k) => projects.some((p) => p.category === k.id)) };
+  updateAppsDot();
+}
+async function unlock(pin) {
+  const bytes = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(pin.trim()));
+  const hash = [...new Uint8Array(bytes)].map((b) => b.toString(16).padStart(2, '0')).join('');
+  if (hash !== PIN_HASH) return false;
+  state.unlocked = true;
+  store('unlocked', '1');
+  setCatalog(state.full);
+  return true;
+}
+function lock() {
+  state.unlocked = false;
+  store('unlocked', null);
+  setCatalog(state.full);
+}
+
+// ---------- le tue app ----------
+const myAppList = () => state.catalog.projects.filter((p) => state.myApps[p.id]);
+const hasUpdate = (p) => Boolean(p.release && state.myApps[p.id] && state.myApps[p.id] !== p.release.tag && state.myApps[p.id] !== 'web');
+function remember(p, tag) {
+  state.myApps[p.id] = tag;
+  store('myApps', JSON.stringify(state.myApps));
+  updateAppsDot();
+}
+function updateAppsDot() {
+  $('#nav a[data-tab="apps"]')?.classList.toggle('dot', Boolean(state.catalog?.projects.some(hasUpdate)));
+}
+
 // ---------- routing ----------
-const TAB_ORDER = ['home', 'explore', 'gist', 'info'];
+const TAB_ORDER = ['home', 'explore', 'gist', 'apps'];
 let lastTabIndex = 0;
 let pendingShared = null;
 
@@ -178,6 +229,7 @@ function parseRoute() {
   if (h.startsWith('esplora')) return { name: 'explore', cat: new URLSearchParams(h.split('?')[1] || '').get('cat') };
   if (h === 'gist') return { name: 'gist' };
   if (h === 'info') return { name: 'info' };
+  if (h === 'app') return { name: 'apps' };
   return { name: 'home' };
 }
 
@@ -221,15 +273,22 @@ function render(r = parseRoute(), prev = null, top = scrollY) {
     scrollTo(0, top);
     return;
   }
-  nav.classList.remove('hidden');
   state.tab = r.name;
-  const idx = TAB_ORDER.indexOf(r.name);
-  const dirClass = prev && !prev.startsWith('#/p/') && idx < lastTabIndex ? 'from-left' : '';
-  moveIndicator(idx);
-  lastTabIndex = idx;
-  const html = { home, explore, gist, info }[r.name]();
+  let dirClass = '';
+  // Info si apre dal pulsante in alto nella Home: la barra si nasconde come nel dettaglio.
+  if (r.name === 'info') {
+    nav.classList.add('hidden');
+    if (prev !== '#/info') state.infoFrom = prev;
+  } else {
+    nav.classList.remove('hidden');
+    const idx = TAB_ORDER.indexOf(r.name);
+    dirClass = prev && !prev.startsWith('#/p/') && prev !== '#/info' && idx < lastTabIndex ? 'from-left' : '';
+    moveIndicator(idx);
+    lastTabIndex = idx;
+  }
+  const html = { home, explore, gist, apps, info }[r.name]();
   view.innerHTML = `<div class="page ${dirClass}">${html}</div>`;
-  ({ home: wireHome, explore: wireExplore, gist: wireGist, info: wireInfo })[r.name]();
+  ({ home: wireHome, explore: wireExplore, gist: wireGist, apps: wireApps, info: wireInfo })[r.name]();
   scrollTo(0, top);
 }
 
@@ -263,7 +322,7 @@ function home() {
   return `
   <header class="home-head">
     <div class="brand"><img class="mark" src="assets/ff-mark.png" alt=""><span class="title-m">Dueffe Home</span>
-      <a href="#/info" class="press avatar" aria-label="Info"><img src="assets/ff-mark.png" alt=""></a></div>
+      <a href="#/info" class="press avatar${state.latest?.apk ? ' dot' : ''}" aria-label="Info">${svg('info')}</a></div>
     <h1 class="display-m headline">${headline}</h1>
     <p class="body-l muted reveal" style="--i:4;margin-top:10px">App Android, giochi, strumenti per il PC e web app di ${esc(c.owner.name)}. Tutto aggiornato in tempo reale da GitHub.</p>
     <div class="stats">
@@ -478,6 +537,45 @@ async function onGistClick(e) {
   }
 }
 
+// ---------- Le tue app ----------
+function apps() {
+  const list = myAppList();
+  const updates = list.filter(hasUpdate);
+  const rest = list.filter((p) => !hasUpdate(p));
+  const row = (p, k) => {
+    const dl = p.release?.assets?.find((a) => a.name.toLowerCase().endsWith('.apk')) || p.release?.assets?.[0];
+    const action = hasUpdate(p) && dl ? `<a class="btn press small" href="${esc(dl.url)}" data-update="${esc(p.id)}">Aggiorna</a>`
+      : p.webUrl ? `<a class="btn ghost press small" href="${esc(p.webUrl)}" target="_blank" rel="noopener">Apri</a>`
+        : '<span class="label-m gold">Aggiornata</span>';
+    const sub = hasUpdate(p) ? `<span class="gold">${esc(state.myApps[p.id])} → ${esc(p.release.tag)}</span>`
+      : p.release ? `Versione ${esc(p.release.tag)}` : 'Web app';
+    return `<div class="row-item my-app reveal" style="--i:${k}"><a class="press" href="#/p/${encodeURIComponent(p.id)}">${icon(p, 54, 'apps')}</a>
+      <a class="mid press" href="#/p/${encodeURIComponent(p.id)}"><div class="title-m ellipsis">${esc(p.name)}</div><div class="body-s muted ellipsis">${sub}</div></a>
+      <div class="end">${action}</div></div>`;
+  };
+  return `<header class="page-head"><h1 class="display-s">Le tue app</h1><p class="body-m muted">Le app scaricate da questo browser</p>
+    <button class="btn ghost press" id="check" style="width:100%;margin-top:16px">${svg('refresh')}Controlla aggiornamenti</button></header>
+    ${list.length ? '' : `<div class="empty"><div class="bubble">${svg('apps')}</div><div class="title-l">Nessuna app scaricata</div>
+      <p class="body-m muted" style="margin:6px 32px 18px">Scarica un'app dal catalogo: la ritroverai qui, con gli aggiornamenti.</p><a class="btn press" href="#/esplora">${svg('search')}Esplora le app</a></div>`}
+    ${updates.length ? `<section class="section">${sectionHead('Aggiornamenti', updates.length === 1 ? '1 app da aggiornare' : `${updates.length} app da aggiornare`)}${updates.map(row).join('')}</section>` : ''}
+    ${rest.length ? `<section class="section">${sectionHead('Scaricate', rest.length === 1 ? '1 app' : `${rest.length} app`)}${rest.map(row).join('')}</section>` : ''}`;
+}
+function wireApps() {
+  $('#check').addEventListener('click', async () => {
+    const c = await loadCatalog();
+    if (!c) return toast("Sei offline: mostro l'ultimo catalogo salvato");
+    setCatalog(c);
+    const n = state.catalog.projects.filter(hasUpdate).length;
+    toast(n ? (n === 1 ? '1 aggiornamento disponibile' : `${n} aggiornamenti disponibili`) : 'Tutte le app sono aggiornate');
+    render();
+  });
+  $$('[data-update]').forEach((a) => a.addEventListener('click', () => {
+    const p = state.catalog.projects.find((x) => x.id === a.dataset.update);
+    remember(p, p.release.tag);
+    setTimeout(() => render(), 300);
+  }));
+}
+
 // ---------- Info ----------
 function info() {
   const c = state.catalog;
@@ -489,7 +587,14 @@ function info() {
     : `${status('check', 'var(--success)', 'Sei aggiornato', 'La versione web è sempre l\'ultima')}
        <a class="btn ghost" style="width:100%;margin-top:14px" href="https://github.com/${REPO}/releases">${svg('release')}Release su GitHub</a>`;
   const link = (ic, t, s, href, attrs = '') => `<a class="link-row press" href="${href}" ${attrs}>${svg(ic)}<div><div class="title-s">${esc(t)}</div><div class="body-s muted">${esc(s)}</div></div>${svg('arrow')}</a>`;
+  const hidden = state.unlocked
+    ? `${status('unlock', 'var(--success)', 'Contenuti nascosti visibili', 'Li trovi nel catalogo insieme agli altri')}
+       <button class="btn ghost press" id="lock" style="width:100%;margin-top:14px">${svg('lock')}Nascondi di nuovo</button>`
+    : `${status('lock', 'var(--primary)', 'Contenuti nascosti', 'Inserisci il PIN per mostrarli')}
+       <form id="pin-form" class="pin-form"><input id="pin" type="password" inputmode="numeric" autocomplete="off" maxlength="12" placeholder="PIN" aria-label="PIN">
+       <button class="btn press" type="submit">${svg('unlock')}Sblocca</button></form>`;
   return `<div class="info">
+    <button class="round press info-back" id="info-back" aria-label="Indietro">${svg('back')}</button>
     <div class="orbit reveal" style="--i:0"><span class="glow"></span>
       <svg class="rings" viewBox="0 0 150 150"><g class="r1" fill="none" stroke-width="1.5" stroke-linecap="round"><path d="M75 10 A65 65 0 0 1 136 52" stroke="#ffd84d"/><path d="M75 140 A65 65 0 0 1 22 112" stroke="#ffd84d57"/></g>
       <g class="r2" fill="none" stroke-width="1.5" stroke-linecap="round"><path d="M75 24 A51 51 0 0 1 124 62" stroke="#fff0ad99"/></g></svg>
@@ -504,13 +609,25 @@ function info() {
       ${link('android', 'App per Android', 'Ultima release su GitHub', `https://github.com/${REPO}/releases/latest`, 'target="_blank" rel="noopener"')}
       ${link('refresh', 'Aggiorna il catalogo', `Ultimo aggiornamento ${relativeDate(c.generatedAt)}`, '#/info', 'id="refresh"')}
     </div>
+    <div class="card reveal" style="--i:6;margin-top:16px">${hidden}</div>
     <p class="body-s" style="color:#b8aa8dbf;margin-top:24px">Il catalogo si rigenera ogni giorno da GitHub: nuovi progetti, release e gist compaiono da soli.</p></div>`;
 }
 function wireInfo() {
+  $('#info-back').addEventListener('click', () => (state.infoFrom ? history.back() : navigate('#/')));
+  $('#lock')?.addEventListener('click', () => { lock(); toast('Contenuti nascosti'); render(); });
+  $('#pin-form')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const input = $('#pin');
+    if (await unlock(input.value)) { toast('Contenuti nascosti sbloccati'); render(); } else {
+      input.value = '';
+      input.classList.remove('wrong'); void input.offsetWidth; input.classList.add('wrong');
+      toast('PIN non corretto');
+    }
+  });
   $('#refresh')?.addEventListener('click', async (e) => {
     e.preventDefault();
     const c = await loadCatalog();
-    if (c) { state.catalog = c; toast('Catalogo aggiornato'); render(); } else toast("Sei offline: mostro l'ultimo catalogo salvato");
+    if (c) { setCatalog(c); toast('Catalogo aggiornato'); render(); } else toast("Sei offline: mostro l'ultimo catalogo salvato");
   });
 }
 
@@ -523,7 +640,7 @@ function detail(p) {
   const c = state.catalog;
   const origin = pendingShared?.dataset.icon?.split('/')[0] || 'detail';
   const dl = p.release?.assets?.find((a) => a.name.toLowerCase().endsWith('.apk')) || p.release?.assets?.[0];
-  const primary = dl ? `<a class="btn press" href="${esc(dl.url)}">${svg('download')}${dl.name.toLowerCase().endsWith('.apk') ? 'Scarica APK' : 'Scarica'}</a>`
+  const primary = dl ? `<a class="btn press" href="${esc(dl.url)}" data-get="${esc(p.id)}">${svg('download')}${dl.name.toLowerCase().endsWith('.apk') ? 'Scarica APK' : 'Scarica'}</a>`
     : p.webUrl ? `<a class="btn press" href="${esc(p.webUrl)}" target="_blank" rel="noopener">${svg('web')}Apri</a>`
       : `<a class="btn press" href="${esc(p.repoUrl)}" target="_blank" rel="noopener">${svg('code')}Vedi su GitHub</a>`;
   const secondary = dl && p.webUrl ? `<a class="btn ghost press" href="${esc(p.webUrl)}" target="_blank" rel="noopener">${svg('web')}Apri</a>`
@@ -549,7 +666,7 @@ function detail(p) {
     ${p.features.length ? `<section class="section">${sectionHead('Cosa sa fare')}<div class="features">${p.features.map((f, k) => `<div class="reveal" style="--i:${k}"><i style="--i:${k}"></i><span class="body-m" style="color:#fffaf0e0">${esc(f)}</span></div>`).join('')}</div></section>` : ''}
     ${p.release ? `<section class="section">${sectionHead('Novità', `${p.release.name} · ${fullDate(p.release.date)}`)}<div class="card" style="margin:0 20px">
       ${p.release.notes.trim() ? `<p class="body-m muted notes clamp" style="margin-bottom:14px;max-height:200px;overflow:hidden">${esc(cleanNotes(p.release.notes))}</p>` : ''}
-      ${p.release.assets.map((a) => `<a class="asset press" href="${esc(a.url)}">${svg('box')}<div><div class="title-s ellipsis">${esc(a.name)}</div><div class="body-s muted">${[size(a.size), a.downloads ? `${a.downloads} download` : ''].filter(Boolean).join(' · ')}</div></div>${svg('download')}</a>`).join('')}</div></section>` : ''}
+      ${p.release.assets.map((a) => `<a class="asset press" href="${esc(a.url)}" data-get="${esc(p.id)}">${svg('box')}<div><div class="title-s ellipsis">${esc(a.name)}</div><div class="body-s muted">${[size(a.size), a.downloads ? `${a.downloads} download` : ''].filter(Boolean).join(' · ')}</div></div>${svg('download')}</a>`).join('')}</div></section>` : ''}
     <section class="section">${sectionHead('Link utili')}<div class="links">${p.links.map((l) => `<a class="link press" href="${esc(l.url)}" target="_blank" rel="noopener">${svg(LINK_ICON[l.type] || 'open')}<div><div class="title-s">${esc(l.label)}</div><div class="body-s muted ellipsis">${esc(l.url.replace('https://', ''))}</div></div>${svg('open')}</a>`).join('')}</div></section>
     ${p.topics.length ? `<div class="topics">${p.topics.map((t) => `<span class="pill" style="--c:var(--muted)">#${esc(t)}</span>`).join('')}</div>` : ''}
     ${related.length ? `<section class="section" style="margin-top:24px">${sectionHead('Potrebbe piacerti anche', CAT_LABEL[p.category])}<div class="hscroll">${related.map((r, k) => tile(r, 'related', k)).join('')}</div></section>` : ''}
@@ -573,6 +690,8 @@ function wireDetail(p) {
     more.classList.toggle('open', open);
     more.firstChild.textContent = open ? 'Mostra meno' : 'Leggi tutto';
   });
+  // Ogni download finisce in "Le tue app", per accorgersi quando esce una versione nuova.
+  $$('[data-get]', root).forEach((a) => a.addEventListener('click', () => remember(p, p.release?.tag || 'web')));
   $$('[data-shot]', root).forEach((b) => b.addEventListener('click', () => openViewer(p.screenshots, Number(b.dataset.shot))));
   const bar = $('#topbar');
   const onScroll = () => bar.classList.toggle('solid', scrollY > 420);
@@ -686,7 +805,7 @@ addEventListener('hashchange', onRoute);
   aurora();
   splash();
   const [catalog] = await Promise.all([loadCatalog(), loadVersion()]);
-  state.catalog = catalog;
+  setCatalog(catalog);
   if (!catalog) { $('#view').innerHTML = '<div class="empty"><div class="title-l">Catalogo non disponibile</div><p class="body-m muted">Controlla la connessione e ricarica.</p></div>'; return; }
   onRoute();
   loadLatest();

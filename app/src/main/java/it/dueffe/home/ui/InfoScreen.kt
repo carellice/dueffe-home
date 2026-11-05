@@ -25,14 +25,18 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material.icons.automirrored.rounded.ArrowForward
 import androidx.compose.material.icons.rounded.CheckCircle
 import androidx.compose.material.icons.rounded.Code
@@ -40,16 +44,23 @@ import androidx.compose.material.icons.rounded.Download
 import androidx.compose.material.icons.rounded.ErrorOutline
 import androidx.compose.material.icons.rounded.InstallMobile
 import androidx.compose.material.icons.rounded.Language
+import androidx.compose.material.icons.rounded.Lock
+import androidx.compose.material.icons.rounded.LockOpen
 import androidx.compose.material.icons.rounded.Person
 import androidx.compose.material.icons.rounded.Refresh
 import androidx.compose.material.icons.rounded.Sync
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -63,6 +74,10 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
@@ -74,12 +89,16 @@ import it.dueffe.home.ui.theme.DF
 import it.dueffe.home.ui.theme.Motion
 
 @Composable
-fun InfoScreen(catalog: Catalog, vm: AppViewModel, scroll: ScrollState, bottomPadding: Dp) {
+fun InfoScreen(catalog: Catalog, vm: AppViewModel, scroll: ScrollState, onBack: () -> Unit) {
     val context = LocalContext.current
     Column(
-        Modifier.fillMaxSize().verticalScroll(scroll).statusBarsPadding().padding(horizontal = 20.dp).padding(top = 24.dp, bottom = bottomPadding),
+        Modifier.fillMaxSize().verticalScroll(scroll).statusBarsPadding().navigationBarsPadding().padding(horizontal = 20.dp).padding(top = 12.dp, bottom = 40.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
+        Box(
+            Modifier.align(Alignment.Start).size(44.dp).pressScale(0.86f, onBack).clip(CircleShape).background(DF.SurfaceContainer).border(1.dp, DF.Line, CircleShape),
+            contentAlignment = Alignment.Center,
+        ) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Indietro", tint = DF.Text) }
         OrbitLogo(Modifier.reveal(0))
         VerticalGap(18.dp)
         Text("Dueffe Home", style = MaterialTheme.typography.displaySmall, color = DF.Text, modifier = Modifier.reveal(1))
@@ -107,11 +126,58 @@ fun InfoScreen(catalog: Catalog, vm: AppViewModel, scroll: ScrollState, bottomPa
             LinkRow(Icons.Rounded.Language, "Versione web", "Apri Dueffe Home nel browser") { openUrl(context, "https://carellice.github.io/dueffe-home/") }
             LinkRow(Icons.Rounded.Sync, "Aggiorna il catalogo", "Ultimo aggiornamento ${relativeDate(catalog.generatedAt)}") { vm.refresh() }
         }
+        VerticalGap(16.dp)
+        HiddenContentCard(vm, Modifier.reveal(6))
         VerticalGap(24.dp)
         Text(
             "Il catalogo si rigenera ogni giorno da GitHub: nuovi progetti, release e gist compaiono da soli.",
             style = MaterialTheme.typography.bodySmall, color = DF.Muted.copy(alpha = 0.75f),
         )
+    }
+}
+
+/** Sblocco con PIN dei progetti nascosti dal catalogo. */
+@Composable
+private fun HiddenContentCard(vm: AppViewModel, modifier: Modifier) {
+    val focus = LocalFocusManager.current
+    var asking by rememberSaveable { mutableStateOf(false) }
+    var pin by rememberSaveable { mutableStateOf("") }
+    var wrong by remember { mutableStateOf(false) }
+    val submit = {
+        if (vm.unlock(pin)) { asking = false; pin = ""; focus.clearFocus(); vm.toast("Contenuti nascosti sbloccati") } else wrong = true
+    }
+    CardSurface(modifier.fillMaxWidth()) {
+        Column(Modifier.fillMaxWidth()) {
+            if (vm.unlocked) {
+                StatusLine(Icons.Rounded.LockOpen, DF.Success, "Contenuti nascosti visibili", "Li trovi nel catalogo insieme agli altri")
+                VerticalGap(14.dp)
+                GoldButton("Nascondi di nuovo", Icons.Rounded.Lock, Modifier.fillMaxWidth(), filled = false) { vm.lock(); vm.toast("Contenuti nascosti") }
+            } else {
+                StatusLine(Icons.Rounded.Lock, DF.Primary, "Contenuti nascosti", "Inserisci il PIN per mostrarli")
+                VerticalGap(14.dp)
+                if (asking) {
+                    OutlinedTextField(
+                        pin, { pin = it.filter(Char::isDigit).take(12); wrong = false },
+                        modifier = Modifier.fillMaxWidth(),
+                        singleLine = true,
+                        isError = wrong,
+                        label = { Text(if (wrong) "PIN non corretto" else "PIN") },
+                        visualTransformation = PasswordVisualTransformation(),
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.NumberPassword, imeAction = ImeAction.Done),
+                        keyboardActions = KeyboardActions(onDone = { submit() }),
+                        shape = RoundedCornerShape(16.dp),
+                        colors = OutlinedTextFieldDefaults.colors(
+                            focusedBorderColor = DF.Primary, unfocusedBorderColor = DF.LineStrong, cursorColor = DF.Primary,
+                            focusedLabelColor = DF.Primary, unfocusedLabelColor = DF.Muted, focusedTextColor = DF.Text, unfocusedTextColor = DF.Text,
+                        ),
+                    )
+                    VerticalGap(12.dp)
+                    GoldButton("Sblocca", Icons.Rounded.LockOpen, Modifier.fillMaxWidth()) { submit() }
+                } else {
+                    GoldButton("Sblocca con PIN", Icons.Rounded.LockOpen, Modifier.fillMaxWidth(), filled = false) { asking = true }
+                }
+            }
+        }
     }
 }
 

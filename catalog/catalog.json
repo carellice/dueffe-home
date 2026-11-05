@@ -1,9 +1,9 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-03T18:22:38.757Z",
+ "generatedAt": "2026-11-05T10:48:17.139Z",
  "owner": {
   "login": "carellice",
-  "name": "Flavio Ceccarelli",
+  "name": "Dueffe",
   "avatar": "https://avatars.githubusercontent.com/u/100231222?v=4",
   "url": "https://github.com/carellice"
  },
@@ -36,6 +36,92 @@
  ],
  "projects": [
   {
+   "id": "hommaterial",
+   "name": "Hommaterial",
+   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
+   "about": "Android · Server di casa (CasaOS) · Windows 11 (anteprima) · Gratuita · Open source\n\nWindows 11: scarica lo ZIP Windows dalle release GitHub, estrailo interamente in una cartella personale e avvia Hommaterial.Windows.exe. Gli aggiornamenti si scaricano dall'app, in Impostazioni → Controlla aggiornamenti. Per pubblicare Android e Windows da questo PC usa release.bat: guida al rilascio.",
+   "features": [
+    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
+    "Un tocco accende o spegne.",
+    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
+    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
+    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
+    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "web",
+    "windows"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-06T16:46:46Z",
+   "updatedAt": "2026-11-04T18:31:48Z",
+   "repoUrl": "https://github.com/carellice/hommaterial",
+   "webUrl": "https://carellice.github.io/hommaterial/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/hommaterial/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/hommaterial"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.49",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.49"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/hommaterial/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/hommaterial/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
+   ],
+   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
+   "release": {
+    "tag": "v1.49",
+    "name": "Hommaterial 1.49",
+    "date": "2026-11-04T18:31:48Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.49",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.48...v1.49",
+    "assets": [
+     {
+      "name": "Hommaterial-v1.49-windows-x64.zip",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.49/Hommaterial-v1.49-windows-x64.zip",
+      "size": 127151468,
+      "downloads": 1
+     },
+     {
+      "name": "Hommaterial-v1.49.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.49/Hommaterial-v1.49.apk",
+      "size": 3486305,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "app.hommaterial",
+   "dueffe": false
+  },
+  {
    "id": "money",
    "name": "Money",
    "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
@@ -60,7 +146,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-03T14:46:40Z",
+   "updatedAt": "2026-11-03T19:21:30Z",
    "repoUrl": "https://github.com/carellice/money",
    "webUrl": null,
    "links": [
@@ -71,8 +157,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.9.2",
-     "url": "https://github.com/carellice/money/releases/tag/v1.9.2"
+     "label": "Release v1.11.0",
+     "url": "https://github.com/carellice/money/releases/tag/v1.11.0"
     },
     {
      "type": "releases",
@@ -89,105 +175,23 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.9.2",
-    "name": "Money 1.9.2",
-    "date": "2026-11-03T14:46:44Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.9.2",
-    "notes": "## Novita'\n- Para i conti sempre aperto nel report e bolle entrate/uscite con i centesimi\n",
+    "tag": "v1.11.0",
+    "name": "Money 1.11.0",
+    "date": "2026-11-03T19:21:37Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.11.0",
+    "notes": "## Novita'\n- Tutti i bottom sheet diventano pagine a schermo intero (categorie, persone, metodi di pagamento, scelta del logo)\n- Spese fisse: filtri a chip con il numero di voci al posto del selettore con i testi tagliati\n- Metodi di pagamento delle spese fisse in una pagina separata\n",
     "assets": [
      {
-      "name": "Money-1.9.2.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.9.2/Money-1.9.2.apk",
-      "size": 6248685,
-      "downloads": 1
+      "name": "Money-1.11.0.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.11.0/Money-1.11.0.apk",
+      "size": 6207505,
+      "downloads": 4
      }
     ]
    },
    "featured": true,
-   "dueffe": false
-  },
-  {
-   "id": "hommaterial",
-   "name": "Hommaterial",
-   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
-   "about": "Android · Web · Windows 11 (anteprima) · Gratuita · Open source\n\nGuida di configurazione web · Guida Windows",
-   "features": [
-    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
-    "Un tocco accende o spegne.",
-    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
-    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
-    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
-    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
-   ],
-   "category": "android",
-   "platforms": [
-    "android",
-    "web",
-    "windows"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-03T12:03:57Z",
-   "repoUrl": "https://github.com/carellice/hommaterial",
-   "webUrl": "https://carellice.github.io/hommaterial/",
-   "links": [
-    {
-     "type": "web",
-     "label": "Apri online",
-     "url": "https://carellice.github.io/hommaterial/"
-    },
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/hommaterial"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.41",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.41"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/hommaterial/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/hommaterial/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
-   ],
-   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
-   "release": {
-    "tag": "v1.41",
-    "name": "Hommaterial 1.41",
-    "date": "2026-11-03T12:03:58Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.41",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.40...v1.41",
-    "assets": [
-     {
-      "name": "Hommaterial-v1.41-windows-x64.zip",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.41/Hommaterial-v1.41-windows-x64.zip",
-      "size": 127149919,
-      "downloads": 1
-     },
-     {
-      "name": "Hommaterial-v1.41.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.41/Hommaterial-v1.41.apk",
-      "size": 3079413,
-      "downloads": 2
-     }
-    ]
-   },
-   "featured": true,
+   "hidden": false,
+   "androidPackage": "com.money.app",
    "dueffe": false
   },
   {
@@ -264,7 +268,7 @@
       "name": "Chiarella-1.15.apk",
       "url": "https://github.com/carellice/chiarella/releases/download/v1.15/Chiarella-1.15.apk",
       "size": 25478732,
-      "downloads": 2
+      "downloads": 4
      },
      {
       "name": "Chiarella-Web-1.15.zip",
@@ -281,6 +285,8 @@
     ]
    },
    "featured": true,
+   "hidden": false,
+   "androidPackage": "it.chiarella.app",
    "dueffe": false
   },
   {
@@ -354,6 +360,8 @@
     ]
    },
    "featured": true,
+   "hidden": false,
+   "androidPackage": "com.brieffo.app",
    "dueffe": false
   },
   {
@@ -427,6 +435,88 @@
     ]
    },
    "featured": true,
+   "hidden": false,
+   "androidPackage": "it.piccolegioie.app",
+   "dueffe": false
+  },
+  {
+   "id": "jonica",
+   "name": "Jonica",
+   "description": "Jonica: app Android etica per scoprire la stagionalità dei prodotti e le botteghe di quartiere",
+   "about": "Mangia di stagione. Compra vicino. Scarica l'ultima versione\n\nJonica è un'app Android etica che aiuta a fare una spesa più consapevole: scoprire cosa è davvero di stagione, capire dove vanno i soldi della spesa e trovare le botteghe di quartiere (fruttivendoli, macellerie, forni, pescherie, mercati rionali) vicino a te.",
+   "features": [
+    "Oggi: la data, la stagione, cosa succede nei campi questo mese (olio nuovo al frantoio, vendemmia, castagne, fermo pesca…), frutta e verdura al meglio adesso, novità e prodotti agli sgoccioli, curiosità e la bottega più vicina.",
+    "Stagioni: calendario mese per mese di frutta, verdura, pesce del Tirreno e dispensa (olio, ricotta, miele, legumi…), con consigli d'acquisto per ogni prodotto.",
+    "Botteghe: mappa e lista di quasi 400 botteghe e piccoli produttori del Lazio (fruttivendoli, macellerie, forni, caseifici, frantoi, norcinerie, cantine, mulini, apicoltori…), con ricerca, filtri per categoria e distanza dalla tua posizione.",
+    "Filiera: dove va 1 € della spesa, perché la stagionalità conta, come leggere le etichette e una lista di piccoli impegni da spuntare.",
+    "Introduzione animata al primo avvio, rivedibile da Filiera, e"
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-04T19:47:39Z",
+   "updatedAt": "2026-11-05T09:47:51Z",
+   "repoUrl": "https://github.com/carellice/jonica",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/jonica"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.5.1",
+     "url": "https://github.com/carellice/jonica/releases/tag/v1.5.1"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/jonica/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/jonica/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/jonica/main/docs/logo.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb1.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/today.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/seasons.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/shops.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb2.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb3.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/aware.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/shops_full.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/today_dark.jpg"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.5.1",
+    "name": "Jonica 1.5.1",
+    "date": "2026-11-05T09:47:51Z",
+    "url": "https://github.com/carellice/jonica/releases/tag/v1.5.1",
+    "notes": "Introduzione più fluida.\n\n- I puntini delle pagine e il pulsante con la freccia ora restano fermi: niente più movimento che si contrae e torna a scatto\n- Il passaggio da una pagina all'altra è più fluido e la pagina vicina non si vede più ai bordi (ad esempio nell'ultima pagina)\n- Le animazioni di ogni pagina partono già mentre la stai raggiungendo\n\nPuoi aggiornare direttamente dall'app.",
+    "assets": [
+     {
+      "name": "Jonica-1.5.1.apk",
+      "url": "https://github.com/carellice/jonica/releases/download/v1.5.1/Jonica-1.5.1.apk",
+      "size": 3333586,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.jonica.app",
    "dueffe": false
   },
   {
@@ -482,6 +572,8 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": true
   },
   {
@@ -532,6 +624,8 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": true
   },
   {
@@ -575,6 +669,8 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": true
   },
   {
@@ -625,6 +721,8 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": true
   },
   {
@@ -675,6 +773,8 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": true
   },
   {
@@ -751,6 +851,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": "com.nd2.app",
    "dueffe": false
   },
   {
@@ -825,6 +927,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": "com.memshot.app",
    "dueffe": false
   },
   {
@@ -898,6 +1002,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": "com.simphotos.app",
    "dueffe": false
   },
   {
@@ -963,11 +1069,13 @@
       "name": "Topperia-1.1.5.apk",
       "url": "https://github.com/carellice/Topperia/releases/download/v1.1.5/Topperia-1.1.5.apk",
       "size": 616600,
-      "downloads": 3
+      "downloads": 5
      }
     ]
    },
    "featured": true,
+   "hidden": false,
+   "androidPackage": "it.topperia.game",
    "dueffe": false
   },
   {
@@ -1044,11 +1152,13 @@
       "name": "Arcadio.apk",
       "url": "https://github.com/carellice/arcade-classici/releases/download/v1.4.0/Arcadio.apk",
       "size": 1058948,
-      "downloads": 1
+      "downloads": 3
      }
     ]
    },
    "featured": true,
+   "hidden": false,
+   "androidPackage": "com.giochiclassici.arcade",
    "dueffe": false
   },
   {
@@ -1129,6 +1239,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -1198,6 +1310,8 @@
     ]
    },
    "featured": false,
+   "hidden": true,
+   "androidPackage": "com.funcouple.app",
    "dueffe": false
   },
   {
@@ -1268,6 +1382,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": "com.flaviocecca.ondalunga",
    "dueffe": false
   },
   {
@@ -1344,6 +1460,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -1409,7 +1527,7 @@
       "name": "IPTVISION-1.12.0.apk",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.0/IPTVISION-1.12.0.apk",
       "size": 2778579,
-      "downloads": 1
+      "downloads": 3
      },
      {
       "name": "IPTVISION-1.12.0.ipk",
@@ -1427,11 +1545,13 @@
       "name": "IPTVISION-Setup-1.12.0.exe",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.0/IPTVISION-Setup-1.12.0.exe",
       "size": 71476192,
-      "downloads": 1
+      "downloads": 4
      }
     ]
    },
    "featured": true,
+   "hidden": false,
+   "androidPackage": "com.carellice.iptvision",
    "dueffe": false
   },
   {
@@ -1511,6 +1631,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": "com.claudemonitor.app",
    "dueffe": false
   },
   {
@@ -1580,6 +1702,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -1672,6 +1796,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": "com.easycrypt.keyboard",
    "dueffe": false
   },
   {
@@ -1749,6 +1875,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -1825,6 +1953,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -1927,6 +2057,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": "com.flaviocecca.slideshower",
    "dueffe": false
   },
   {
@@ -1994,65 +2126,8 @@
     ]
    },
    "featured": false,
-   "dueffe": false
-  },
-  {
-   "id": "CeccaStore",
-   "name": "CeccaStore",
-   "description": "App, giochi e progetti di Flavio Ceccarelli in un app store React.",
-   "about": "La raccolta di app, giochi e progetti di Flavio Ceccarelli: un’interfaccia React per esplorare le idee del suo laboratorio, provarle nel browser o scaricarne le release ufficiali.\n\nI download puntano ai repository originali: CeccaStore non ospita gli installer. Librerie e componenti tecnici sono distinti dalle applicazioni installabili.",
-   "features": [
-    "47 schede visibili, tra progetti, skill per Claude e la raccolta personale di Gist su GitHub, con descrizioni, piattaforme e screenshot disponibili.",
-    "28 progetti scaricabili, con 42 pacchetti dalle release ufficiali GitHub.",
-    "Ricerca, categorie, filtri per piattaforma, vista griglia/elenco, caricamento automatico scorrendo la lista e preferiti salvati sul dispositivo.",
-    "Tema chiaro/scuro, navigazione responsive, animazioni e rispetto delle preferenze di movimento ridotto.",
-    "Un’area con PIN per un ulteriore progetto, conservato in un pacchetto cifrato separato."
-   ],
-   "category": "web",
-   "platforms": [
-    "web"
-   ],
-   "language": "JavaScript",
-   "topics": [
-    "app-store",
-    "github-pages",
-    "portfolio",
-    "react"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-29T16:20:30Z",
-   "updatedAt": "2026-10-31T11:53:18Z",
-   "repoUrl": "https://github.com/carellice/CeccaStore",
-   "webUrl": "https://carellice.github.io/CeccaStore/",
-   "links": [
-    {
-     "type": "web",
-     "label": "Apri online",
-     "url": "https://carellice.github.io/CeccaStore/"
-    },
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/CeccaStore"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/CeccaStore/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/CeccaStore/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/CeccaStore/main/public/favicon.svg",
-   "screenshots": [],
-   "video": null,
-   "release": null,
-   "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -2111,6 +2186,8 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -2164,6 +2241,8 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -2230,6 +2309,8 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -2278,6 +2359,8 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -2334,6 +2417,8 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -2386,53 +2471,55 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
-   "id": "alexa-notion",
-   "name": "Alexa → Notion",
-   "description": "Skill Alexa self-hosted per usare con la voce le note di Notion (Raspberry Pi + Tailscale Funnel)",
-   "about": "Usa le tue note di Notion con la voce, dal tuo Echo: leggi la todo, aggiungi cose, spuntale, leggi un'idea, aggiungi un film alla lista, sposta una scheda della bacheca.\n\nÈ una skill Alexa privata che gira sul tuo Raspberry Pi (o qualsiasi computer Linux sempre acceso). Nessun abbonamento, nessun servizio a pagamento: la skill resta in modalità sviluppo, visibile solo al tuo account Amazon.",
+   "id": "telegram-notify",
+   "name": "Telegram Notify",
+   "description": "Claude Code plugin: get recaps, links and attachments on Telegram, on demand or after every prompt",
+   "about": "Claude Code recaps, links and attachments, straight to your Telegram.\n\nA Claude Code plugin that sends recaps of Claude's work to your Telegram, with links and attachments. Use it on demand, or turn it on so a recap arrives after every prompt.",
    "features": [
-    "Un Echo impostato in italiano",
-    "Un Raspberry Pi o un computer Linux sempre acceso, con Docker (curl -fsSL https://get.docker.com sh)",
-    "Un account Tailscale gratuito, con Tailscale installato sul Raspberry (curl -fsSL https://tailscale.com/install.sh sh e poi sudo tailscale up)",
-    "Un account Notion",
-    "Il tuo account Amazon, lo stesso dell'Echo: durante l'installazione lo attivi come account sviluppatore, gratis"
+    "Claude Code with plugin support",
+    "Python 3.8+ (python3, python or py on PATH). No packages to install.",
+    "A POSIX sh (macOS/Linux built in; Git Bash on Windows, which Claude Code already uses)"
    ],
    "category": "sviluppo",
    "platforms": [],
-   "language": "JavaScript",
+   "language": "Python",
    "topics": [],
    "stars": 0,
    "forks": 0,
    "license": "MIT",
-   "createdAt": "2026-11-03T14:19:25Z",
-   "updatedAt": "2026-11-03T14:26:00Z",
-   "repoUrl": "https://github.com/carellice/alexa-notion",
+   "createdAt": "2026-11-05T09:38:35Z",
+   "updatedAt": "2026-11-05T10:17:00Z",
+   "repoUrl": "https://github.com/carellice/telegram-notify",
    "webUrl": null,
    "links": [
     {
      "type": "github",
      "label": "Codice sorgente",
-     "url": "https://github.com/carellice/alexa-notion"
+     "url": "https://github.com/carellice/telegram-notify"
     },
     {
      "type": "releases",
      "label": "Tutte le release",
-     "url": "https://github.com/carellice/alexa-notion/releases"
+     "url": "https://github.com/carellice/telegram-notify/releases"
     },
     {
      "type": "issues",
      "label": "Segnala un problema",
-     "url": "https://github.com/carellice/alexa-notion/issues"
+     "url": "https://github.com/carellice/telegram-notify/issues"
     }
    ],
-   "icon": null,
+   "icon": "https://raw.githubusercontent.com/carellice/telegram-notify/main/assets/icon.png",
    "screenshots": [],
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -2503,6 +2590,8 @@
     ]
    },
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -2565,6 +2654,8 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -2614,6 +2705,8 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -2662,23 +2755,41 @@
    "video": null,
    "release": null,
    "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   }
  ],
  "gists": [
   {
+   "id": "9ad261e36cb829fcb2eb936834597b9d",
+   "description": "Guida: app CasaOS / Raspberry Pi raggiungibili da fuori casa in HTTPS con Tailscale serve",
+   "url": "https://gist.github.com/carellice/9ad261e36cb829fcb2eb936834597b9d",
+   "createdAt": "2026-11-04T16:59:02Z",
+   "updatedAt": "2026-11-04T16:59:03Z",
+   "files": [
+    {
+     "name": "Tailscale-HTTPS-app-CasaOS.md",
+     "language": "Markdown",
+     "size": 5781,
+     "rawUrl": "https://gist.githubusercontent.com/carellice/9ad261e36cb829fcb2eb936834597b9d/raw/9237426cbba44c15fe2bbbfd7fea82c06a320bca/Tailscale-HTTPS-app-CasaOS.md",
+     "preview": "# App in HTTPS con Tailscale su CasaOS / Raspberry Pi\n\nGuida per raggiungere da fuori casa le app installate su un server domestico (Raspberry Pi con CasaOS, ma vale per qualsiasi Linux con Docker) usando link HTTPS come:\n\n```\nhttps://raspberry.tailXXXX.ts.net:10000\n```\n\nSenza aprire porte sul router, senza comprare un dominio e senza gestire certificati.\n\n---\n\n## Come funziona\n\n- **Tailscale** crea una rete privata cifrata (la *tailnet*) tra i tuoi dispositivi: server, telefono, PC.\n- **MagicDNS** dà a ogni dispositivo un nome fisso, ad esempio `raspberry.tailXXXX.ts.net`. Il dominio `tailXXXX.ts.net` è unico per la tua tailnet.\n- **`tailscale serve`** fa da reverse proxy: riceve le richieste HTTPS su una porta e le inoltra all'app che gira in locale sul server.\n- Il **certificato HTTPS** è valido (Let's Encrypt) e Tailscale lo crea e rinnova da solo, quindi il browser non mostra avvisi.\n\nPercorso di una richiesta:\n\n```\ntelefono (con Tailscale)\n   │  https://raspberry.tailXXXX.ts.net:10000\n   ▼\nTailscale sul server ── decifra l'HTTPS\n   │\n   ▼\napp locale  http://127.0.0.1:8080  (container Docker / app CasaOS)\n```\n\nI link funzionano **solo** dai dispositivi collegati alla tua tailnet. Da internet pubblico non sono raggiungibili, a meno che tu non attivi Funnel (vedi più sotto).\n\n---\n\n## 1. Installare Tailscale sul server\n\nSul server, via SSH:\n\n```bash"
+    }
+   ]
+  },
+  {
    "id": "434b24eae41c24d3d0f8eb15cf3f8120",
    "description": "Configurazione guidata (Windows .bat): il Raspberry Pi invia un messaggio Telegram a ogni avvio",
    "url": "https://gist.github.com/carellice/434b24eae41c24d3d0f8eb15cf3f8120",
    "createdAt": "2026-10-31T11:12:14Z",
-   "updatedAt": "2026-11-02T12:12:33Z",
+   "updatedAt": "2026-11-04T17:09:05Z",
    "files": [
     {
      "name": "Telegram-Notifica-Raspberry.bat",
      "language": "Batchfile",
-     "size": 12153,
-     "rawUrl": "https://gist.githubusercontent.com/carellice/434b24eae41c24d3d0f8eb15cf3f8120/raw/9562baf8d85edc0004aa0dfea309bb4fc2932864/Telegram-Notifica-Raspberry.bat",
-     "preview": "<# : batch\n@echo off\ntitle Notifica Telegram al riavvio del Raspberry Pi\npowershell -NoProfile -ExecutionPolicy Bypass -Command \"$f='%~f0'; iex ([IO.File]::ReadAllText($f, [Text.Encoding]::UTF8))\"\necho.\npause\nexit /b\n#>\n\n# ---------------------------------------------------------------------------\n# Configurazione guidata: il Raspberry Pi invia un messaggio Telegram\n# ogni volta che si avvia. Gira su Windows e configura il Pi via SSH.\n# ---------------------------------------------------------------------------\n\n$ErrorActionPreference = 'Stop'\n[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12\n\nfunction Titolo($n, $testo) {\n    Write-Host \"\"\n    Write-Host \"==================================================\" -ForegroundColor Cyan\n    Write-Host \" PASSO $n di 5 - $testo\" -ForegroundColor Cyan\n    Write-Host \"==================================================\" -ForegroundColor Cyan\n    Write-Host \"\"\n}\nfunction Ok($t)     { Write-Host \"[OK] $t\" -ForegroundColor Green }\nfunction Errore($t) { Write-Host \"[ERRORE] $t\" -ForegroundColor Red }\nfunction Avviso($t) { Write-Host $t -ForegroundColor Yellow }\n\nfunction Chiedi($domanda) {\n    do { $r = (Read-Host $domanda).Trim() } while (-not $r)\n    return $r\n}\nfunction SiNo($domanda, $default = 'S') {\n    $r = (Read-Host \"$domanda (S/N) [$default]\").Trim()\n    if (-not $r) { $r = $default }\n    return ($r -match '^[sSyY]')\n}\nfunction Pausa($t = 'Premi INVIO per continuare') { [void](Read-Host $t) }\n\nfunction Telegram($token, $metodo) {"
+     "size": 16902,
+     "rawUrl": "https://gist.githubusercontent.com/carellice/434b24eae41c24d3d0f8eb15cf3f8120/raw/6e6367c5bb3f13f52c7077a0449ad3b9dee7b2a4/Telegram-Notifica-Raspberry.bat",
+     "preview": "<# : batch\n@echo off\ntitle Notifica Telegram al riavvio del Raspberry Pi\npowershell -NoProfile -ExecutionPolicy Bypass -Command \"$f='%~f0'; iex ([IO.File]::ReadAllText($f, [Text.Encoding]::UTF8))\"\necho.\npause\nexit /b\n#>\n\n# ---------------------------------------------------------------------------\n# Configurazione guidata: il Raspberry Pi invia un messaggio Telegram\n# ogni volta che si avvia. Gira su Windows e configura il Pi via SSH.\n# Guida per pubblicare le app in HTTPS con Tailscale:\n# https://gist.github.com/carellice/9ad261e36cb829fcb2eb936834597b9d\n# ---------------------------------------------------------------------------\n\n$ErrorActionPreference = 'Stop'\n[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12\n\nfunction Titolo($n, $testo) {\n    Write-Host \"\"\n    Write-Host \"==================================================\" -ForegroundColor Cyan\n    Write-Host \" PASSO $n di 5 - $testo\" -ForegroundColor Cyan\n    Write-Host \"==================================================\" -ForegroundColor Cyan\n    Write-Host \"\"\n}\nfunction Ok($t)     { Write-Host \"[OK] $t\" -ForegroundColor Green }\nfunction Errore($t) { Write-Host \"[ERRORE] $t\" -ForegroundColor Red }\nfunction Avviso($t) { Write-Host $t -ForegroundColor Yellow }\n\nfunction Chiedi($domanda) {\n    do { $r = (Read-Host $domanda).Trim() } while (-not $r)\n    return $r\n}\nfunction SiNo($domanda, $default = 'S') {\n    $r = (Read-Host \"$domanda (S/N) [$default]\").Trim()\n    if (-not $r) { $r = $default }\n    return ($r -match '^[sSyY]')\n}\nfunction Pausa($t = 'Premi INVIO per continuare') { [void](Read-Host $t) }"
     }
    ]
   },

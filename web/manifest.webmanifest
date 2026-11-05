@@ -1,7 +1,7 @@
 {
   "name": "Dueffe Home",
   "short_name": "Dueffe Home",
-  "description": "Tutti i progetti di Flavio, in un solo posto.",
+  "description": "Tutti i progetti di Dueffe, in un solo posto.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

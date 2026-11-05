@@ -42,6 +42,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.ArrowForward
 import androidx.compose.material.icons.rounded.Close
 import androidx.compose.material.icons.rounded.Code
+import androidx.compose.material.icons.rounded.Info
 import androidx.compose.material.icons.rounded.NewReleases
 import androidx.compose.material.icons.rounded.SystemUpdate
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -111,7 +112,7 @@ fun HomeScreen(
             contentPadding = PaddingValues(bottom = bottomPadding),
         ) {
             item(key = "header") {
-                HomeHeader(catalog, headlineDelay, onInfo, Modifier.graphicsLayer {
+                HomeHeader(catalog, headlineDelay, vm.update is UpdateState.Available, onInfo, Modifier.graphicsLayer {
                     // Parallasse: l'intestazione scorre più lenta e sfuma.
                     if (listState.firstVisibleItemIndex == 0) {
                         val o = listState.firstVisibleItemScrollOffset.toFloat()
@@ -184,17 +185,21 @@ fun HomeScreen(
 }
 
 @Composable
-private fun HomeHeader(catalog: Catalog, headlineDelay: Long, onInfo: () -> Unit, modifier: Modifier) {
+private fun HomeHeader(catalog: Catalog, headlineDelay: Long, updateDot: Boolean, onInfo: () -> Unit, modifier: Modifier) {
     Column(modifier.statusBarsPadding().padding(horizontal = 20.dp).padding(top = 14.dp, bottom = 26.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             FfMark(Modifier.height(26.dp))
             Spacer(Modifier.width(10.dp))
             Text("Dueffe Home", style = MaterialTheme.typography.titleMedium, color = DF.Text, modifier = Modifier.weight(1f))
             Box(
-                Modifier.size(40.dp).pressScale(0.88f, onInfo).clip(CircleShape).background(DF.Bg).border(1.5.dp, DF.LineStrong, CircleShape),
+                Modifier.size(40.dp).pressScale(0.88f, onInfo),
                 contentAlignment = Alignment.Center,
             ) {
-                FfMark(Modifier.size(22.dp))
+                Box(
+                    Modifier.fillMaxSize().clip(CircleShape).background(DF.Bg).border(1.5.dp, DF.LineStrong, CircleShape),
+                    contentAlignment = Alignment.Center,
+                ) { Icon(Icons.Rounded.Info, "Info", tint = DF.Text, modifier = Modifier.size(22.dp)) }
+                if (updateDot) Box(Modifier.align(Alignment.TopEnd).size(10.dp).clip(CircleShape).background(DF.Error).border(2.dp, DF.Bg, CircleShape))
             }
         }
         VerticalGap(30.dp)

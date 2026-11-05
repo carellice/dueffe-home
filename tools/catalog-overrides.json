@@ -1,5 +1,5 @@
 {
-  "ownerName": "Flavio Ceccarelli",
+  "ownerName": "Dueffe",
   "exclude": [
     "android-app-releases",
     "iron-pump-images"
@@ -82,7 +82,8 @@
       "featured": true
     },
     "funcouple": {
-      "category": "giochi"
+      "category": "giochi",
+      "hidden": true
     },
     "ondalunga": {
       "category": "giochi"
@@ -141,6 +142,11 @@
     "alexa-home-mcp": {
       "category": "sviluppo",
       "name": "Claude → Alexa"
+    },
+    "telegram-notify": {
+      "category": "sviluppo",
+      "name": "Telegram Notify",
+      "platforms": []
     },
     "alexa-notion": {
       "category": "sviluppo",
