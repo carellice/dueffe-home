@@ -150,6 +150,20 @@
       "name": "Telegram Notify",
       "platforms": []
     },
+    "notion-todo": {
+      "category": "sviluppo",
+      "name": "Notion To-Do",
+      "platforms": [],
+      "about": "Una skill per Claude Code che svolge la tua to-do list di Notion al posto tuo, su più progetti in un colpo solo.\n\nScrivi in Notion le cose da fare con il prefisso del progetto (es. \"Money: aggiungi l'export CSV\"), poi in Claude lancia /notion-todo.",
+      "features": [
+        "📋 Legge gli elementi non spuntati della tua lista Notion",
+        "🏷️ Considera solo quelli con il prefisso di un progetto, ignora il resto",
+        "🛠️ Entra nella cartella del progetto e fa quello che c'è scritto",
+        "📤 Commit e push per ogni modifica",
+        "🚀 Rilascia una nuova versione con tag e GitHub Release",
+        "✅ Spunta l'elemento su Notion a lavoro finito"
+      ]
+    },
     "alexa-notion": {
       "category": "sviluppo",
       "name": "Alexa → Notion"

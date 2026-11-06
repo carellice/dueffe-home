@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-06T13:50:45.113Z",
+ "generatedAt": "2026-11-06T17:10:23.639Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -36,92 +36,6 @@
  ],
  "projects": [
   {
-   "id": "hommaterial",
-   "name": "Hommaterial",
-   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
-   "about": "Android · Server di casa (CasaOS) · Windows 11 (anteprima) · Gratuita · Open source\n\nWindows 11: scarica lo ZIP Windows dalle release GitHub, estrailo interamente in una cartella personale e avvia Hommaterial.Windows.exe. Gli aggiornamenti si scaricano dall'app, in Impostazioni → Controlla aggiornamenti. Per pubblicare Android e Windows da questo PC usa release.bat: guida al rilascio.",
-   "features": [
-    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
-    "Un tocco accende o spegne.",
-    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
-    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
-    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
-    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
-   ],
-   "category": "android",
-   "platforms": [
-    "android",
-    "web",
-    "windows"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-06T13:27:33Z",
-   "repoUrl": "https://github.com/carellice/hommaterial",
-   "webUrl": "https://carellice.github.io/hommaterial/",
-   "links": [
-    {
-     "type": "web",
-     "label": "Apri online",
-     "url": "https://carellice.github.io/hommaterial/"
-    },
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/hommaterial"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.54",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.54"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/hommaterial/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/hommaterial/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
-   ],
-   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
-   "release": {
-    "tag": "v1.54",
-    "name": "Hommaterial 1.54",
-    "date": "2026-11-06T13:27:33Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.54",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.53...v1.54",
-    "assets": [
-     {
-      "name": "Hommaterial-v1.54-windows-x64.zip",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.54/Hommaterial-v1.54-windows-x64.zip",
-      "size": 127151628,
-      "downloads": 1
-     },
-     {
-      "name": "Hommaterial-v1.54.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.54/Hommaterial-v1.54.apk",
-      "size": 3614008,
-      "downloads": 1
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "app.hommaterial",
-   "dueffe": false
-  },
-  {
    "id": "money",
    "name": "Money",
    "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
@@ -146,7 +60,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-06T13:22:22Z",
+   "updatedAt": "2026-11-06T17:09:38Z",
    "repoUrl": "https://github.com/carellice/money",
    "webUrl": null,
    "links": [
@@ -157,8 +71,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.12.2",
-     "url": "https://github.com/carellice/money/releases/tag/v1.12.2"
+     "label": "Release v1.12.3",
+     "url": "https://github.com/carellice/money/releases/tag/v1.12.3"
     },
     {
      "type": "releases",
@@ -175,17 +89,17 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.12.2",
-    "name": "Money 1.12.2",
-    "date": "2026-11-06T13:22:28Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.12.2",
-    "notes": "## Novita'\n- Modifica movimento: dopo l'importo si torna ai dettagli, la categoria si cambia solo toccando la sua pillola\n",
+    "tag": "v1.12.3",
+    "name": "Money 1.12.3",
+    "date": "2026-11-06T17:09:45Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.12.3",
+    "notes": "## Novita'\n- Spesa fissa: importo con il tastierino come dal +, annulla dopo lo swipe ripristina il movimento correttamente\n",
     "assets": [
      {
-      "name": "Money-1.12.2.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.12.2/Money-1.12.2.apk",
+      "name": "Money-1.12.3.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.12.3/Money-1.12.3.apk",
       "size": 6207505,
-      "downloads": 2
+      "downloads": 0
      }
     ]
    },
@@ -224,7 +138,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-21T09:30:02Z",
-   "updatedAt": "2026-11-06T12:13:05Z",
+   "updatedAt": "2026-11-06T17:09:00Z",
    "repoUrl": "https://github.com/carellice/chiarella",
    "webUrl": "https://carellice.github.io/chiarella/",
    "links": [
@@ -240,8 +154,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.16",
-     "url": "https://github.com/carellice/chiarella/releases/tag/v1.16"
+     "label": "Release v1.17",
+     "url": "https://github.com/carellice/chiarella/releases/tag/v1.17"
     },
     {
      "type": "releases",
@@ -258,35 +172,121 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.16",
-    "name": "Chiarella 1.16",
-    "date": "2026-11-06T12:13:19Z",
-    "url": "https://github.com/carellice/chiarella/releases/tag/v1.16",
-    "notes": "Nuovi suoni: Japanese Zen, Zen e Handpan (brano di Malte Marten), in loop continuo con dissolvenza.",
+    "tag": "v1.17",
+    "name": "Chiarella 1.17",
+    "date": "2026-11-06T17:10:03Z",
+    "url": "https://github.com/carellice/chiarella/releases/tag/v1.17",
+    "notes": "Nuovo avviso sul volume del dispositivo, più chiaro e coerente con il resto dell'app.",
     "assets": [
      {
-      "name": "Chiarella-1.16.apk",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.16/Chiarella-1.16.apk",
+      "name": "Chiarella-1.17.apk",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.17/Chiarella-1.17.apk",
       "size": 43318412,
-      "downloads": 3
+      "downloads": 0
      },
      {
-      "name": "Chiarella-Web-1.16.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.16/Chiarella-Web-1.16.zip",
-      "size": 39800218,
-      "downloads": 1
+      "name": "Chiarella-Web-1.17.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.17/Chiarella-Web-1.17.zip",
+      "size": 39800319,
+      "downloads": 0
      },
      {
-      "name": "Chiarella-Windows-1.16.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.16/Chiarella-Windows-1.16.zip",
-      "size": 105071013,
-      "downloads": 1
+      "name": "Chiarella-Windows-1.17.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.17/Chiarella-Windows-1.17.zip",
+      "size": 105071185,
+      "downloads": 0
      }
     ]
    },
    "featured": true,
    "hidden": false,
    "androidPackage": "it.chiarella.app",
+   "dueffe": false
+  },
+  {
+   "id": "hommaterial",
+   "name": "Hommaterial",
+   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
+   "about": "Android · Server di casa (CasaOS) · Windows 11 (anteprima) · Gratuita · Open source\n\nWindows 11: scarica lo ZIP Windows dalle release GitHub, estrailo interamente in una cartella personale e avvia Hommaterial.Windows.exe. Gli aggiornamenti si scaricano dall'app, in Impostazioni → Controlla aggiornamenti. Per pubblicare Android e Windows da questo PC usa release.bat: guida al rilascio.",
+   "features": [
+    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
+    "Un tocco accende o spegne.",
+    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
+    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
+    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
+    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "web",
+    "windows"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-06T16:46:46Z",
+   "updatedAt": "2026-11-06T14:15:11Z",
+   "repoUrl": "https://github.com/carellice/hommaterial",
+   "webUrl": "https://carellice.github.io/hommaterial/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/hommaterial/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/hommaterial"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.55",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.55"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/hommaterial/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/hommaterial/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
+   ],
+   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
+   "release": {
+    "tag": "v1.55",
+    "name": "Hommaterial 1.55",
+    "date": "2026-11-06T14:15:11Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.55",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.54...v1.55",
+    "assets": [
+     {
+      "name": "Hommaterial-v1.55-windows-x64.zip",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.55/Hommaterial-v1.55-windows-x64.zip",
+      "size": 127151634,
+      "downloads": 1
+     },
+     {
+      "name": "Hommaterial-v1.55.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.55/Hommaterial-v1.55.apk",
+      "size": 3700652,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "app.hommaterial",
    "dueffe": false
   },
   {
@@ -437,6 +437,85 @@
    "featured": true,
    "hidden": false,
    "androidPackage": "it.piccolegioie.app",
+   "dueffe": false
+  },
+  {
+   "id": "jonica",
+   "name": "Jonica",
+   "description": "Jonica: app Android etica per scoprire la stagionalità dei prodotti e le botteghe di quartiere",
+   "about": "Mangia di stagione. Compra vicino. Scarica l'ultima versione\n\nJonica è un'app Android etica che aiuta a fare una spesa più consapevole: scoprire cosa è davvero di stagione, capire dove vanno i soldi della spesa e trovare le botteghe di quartiere (fruttivendoli, macellerie, forni, pescherie, mercati rionali) vicino a te.",
+   "features": [
+    "Oggi: la data, la stagione, cosa succede nei campi questo mese (olio nuovo al frantoio, vendemmia, castagne, fermo pesca…), frutta e verdura al meglio adesso, novità e prodotti agli sgoccioli, curiosità e la bottega più vicina.",
+    "Stagioni: calendario mese per mese di frutta, verdura, pesce del Tirreno e dispensa (olio, ricotta, miele, legumi…), con consigli d'acquisto per ogni prodotto.",
+    "Filiera: dove va 1 € della spesa, perché la stagionalità conta, come leggere le etichette e una lista di piccoli impegni da spuntare.",
+    "Introduzione animata al primo avvio, rivedibile da Filiera, e"
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-04T19:47:39Z",
+   "updatedAt": "2026-11-06T17:05:28Z",
+   "repoUrl": "https://github.com/carellice/jonica",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/jonica"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.7.2",
+     "url": "https://github.com/carellice/jonica/releases/tag/v1.7.2"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/jonica/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/jonica/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/jonica/main/docs/logo.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb1.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/today.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/seasons.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/shops.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb2.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb3.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/aware.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/shops_full.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/today_dark.jpg"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.7.2",
+    "name": "Jonica 1.7.2",
+    "date": "2026-11-06T17:05:29Z",
+    "url": "https://github.com/carellice/jonica/releases/tag/v1.7.2",
+    "notes": "Interruttore delle botteghe più fluido.\n\n- Passando da Vicino a te a Online (e viceversa) la pillola dell'interruttore scivola sulla scelta\n- L'interruttore resta fermo: non si sposta più in basso cambiando modalità\n\nPuoi aggiornare direttamente dall'app.",
+    "assets": [
+     {
+      "name": "Jonica-1.7.2.apk",
+      "url": "https://github.com/carellice/jonica/releases/download/v1.7.2/Jonica-1.7.2.apk",
+      "size": 3399122,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.jonica.app",
    "dueffe": false
   },
   {
@@ -800,86 +879,6 @@
    "hidden": false,
    "androidPackage": "it.dueffe.garage",
    "dueffe": true
-  },
-  {
-   "id": "jonica",
-   "name": "Jonica",
-   "description": "Jonica: app Android etica per scoprire la stagionalità dei prodotti e le botteghe di quartiere",
-   "about": "Mangia di stagione. Compra vicino. Scarica l'ultima versione\n\nJonica è un'app Android etica che aiuta a fare una spesa più consapevole: scoprire cosa è davvero di stagione, capire dove vanno i soldi della spesa e trovare le botteghe di quartiere (fruttivendoli, macellerie, forni, pescherie, mercati rionali) vicino a te.",
-   "features": [
-    "Oggi: la data, la stagione, cosa succede nei campi questo mese (olio nuovo al frantoio, vendemmia, castagne, fermo pesca…), frutta e verdura al meglio adesso, novità e prodotti agli sgoccioli, curiosità e la bottega più vicina.",
-    "Stagioni: calendario mese per mese di frutta, verdura, pesce del Tirreno e dispensa (olio, ricotta, miele, legumi…), con consigli d'acquisto per ogni prodotto.",
-    "Botteghe: mappa e lista di oltre 500 botteghe e piccoli produttori di Roma e del Lazio, con un focus su Colle Salario e il quadrante nord (fruttivendoli, macellerie, forni, caseifici, frantoi, norcinerie, cantine, mulini, apicoltori…), con ricerca, filtri per categoria e distanza dalla tua posizione.",
-    "Filiera: dove va 1 € della spesa, perché la stagionalità conta, come leggere le etichette e una lista di piccoli impegni da spuntare.",
-    "Introduzione animata al primo avvio, rivedibile da Filiera, e"
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-11-04T19:47:39Z",
-   "updatedAt": "2026-11-05T11:00:49Z",
-   "repoUrl": "https://github.com/carellice/jonica",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/jonica"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.6.0",
-     "url": "https://github.com/carellice/jonica/releases/tag/v1.6.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/jonica/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/jonica/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/jonica/main/docs/logo.png",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb1.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/today.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/seasons.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/shops.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb2.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb3.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/aware.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/shops_full.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/today_dark.jpg"
-   ],
-   "video": null,
-   "release": {
-    "tag": "v1.6.0",
-    "name": "Jonica 1.6.0",
-    "date": "2026-11-05T11:00:50Z",
-    "url": "https://github.com/carellice/jonica/releases/tag/v1.6.0",
-    "notes": "Le botteghe di Roma, a partire da Colle Salario.\n\n- 148 nuove schede dalla mappatura di Roma: botteghe, forni, pescherie, macellerie, pasticcerie, torrefazioni, formaggerie e mercati, con priorità su Colle Salario, Fidene, Villa Spada, Porta di Roma e il quadrante nord\n- 527 botteghe in totale: 19 doppioni con le schede precedenti sono stati sostituiti dalla versione nuova, più completa\n- Schede con zona di Roma, prodotti, modi di acquisto, note di verifica, telefono e sito\n- \"Portami qui\" apre direttamente la scheda Maps del negozio quando disponibile\n\nPuoi aggiornare direttamente dall'app.",
-    "assets": [
-     {
-      "name": "Jonica-1.6.0.apk",
-      "url": "https://github.com/carellice/jonica/releases/download/v1.6.0/Jonica-1.6.0.apk",
-      "size": 3366358,
-      "downloads": 3
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "it.jonica.app",
-   "dueffe": false
   },
   {
    "id": "ND2.0",
@@ -1329,13 +1328,13 @@
       "name": "Niente-Zombie-Per-Favore-0.4.1.48.apk",
       "url": "https://github.com/carellice/niente-zombie-per-favore/releases/download/v0.4.1.48/Niente-Zombie-Per-Favore-0.4.1.48.apk",
       "size": 119354637,
-      "downloads": 0
+      "downloads": 2
      },
      {
       "name": "Niente-Zombie-Per-Favore-Setup-0.4.1.48.exe",
       "url": "https://github.com/carellice/niente-zombie-per-favore/releases/download/v0.4.1.48/Niente-Zombie-Per-Favore-Setup-0.4.1.48.exe",
       "size": 93462892,
-      "downloads": 0
+      "downloads": 2
      }
     ]
    },
@@ -1667,7 +1666,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-06T13:32:45Z",
+   "updatedAt": "2026-11-06T14:58:27Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -1678,8 +1677,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.13.0",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.13.0"
+     "label": "Release v1.14.0",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.14.0"
     },
     {
      "type": "releases",
@@ -1700,35 +1699,35 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.13.0",
-    "name": "IPTVISION 1.13.0",
-    "date": "2026-11-06T13:32:53Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.13.0",
-    "notes": "- Più liste IPTV con un nome e la loro scadenza\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.13.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.13.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.13.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.13.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.14.0",
+    "name": "IPTVISION 1.14.0",
+    "date": "2026-11-06T14:58:34Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.14.0",
+    "notes": "- Liste IPTV anche col server di casa, sincronizzate tra i dispositivi\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.14.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.14.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.14.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.14.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.13.0.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.13.0/IPTVISION-1.13.0.apk",
-      "size": 8706156,
+      "name": "IPTVISION-1.14.0.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.0/IPTVISION-1.14.0.apk",
+      "size": 8706160,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-1.13.0.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.13.0/IPTVISION-1.13.0.ipk",
-      "size": 134930,
+      "name": "IPTVISION-1.14.0.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.0/IPTVISION-1.14.0.ipk",
+      "size": 135284,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-1.13.0.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.13.0/IPTVISION-1.13.0.wgt",
-      "size": 151405,
+      "name": "IPTVISION-1.14.0.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.0/IPTVISION-1.14.0.wgt",
+      "size": 151862,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-Setup-1.13.0.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.13.0/IPTVISION-Setup-1.13.0.exe",
-      "size": 71491256,
-      "downloads": 2
+      "name": "IPTVISION-Setup-1.14.0.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.0/IPTVISION-Setup-1.14.0.exe",
+      "size": 71501440,
+      "downloads": 1
      }
     ]
    },
@@ -2650,6 +2649,56 @@
     }
    ],
    "icon": "https://raw.githubusercontent.com/carellice/devdex/main/public/pwa-512x512.png",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "hidden": false,
+   "androidPackage": null,
+   "dueffe": false
+  },
+  {
+   "id": "notion-todo",
+   "name": "Notion To-Do",
+   "description": "Claude Code skill: works through your Notion to-do list across multiple projects, commits, pushes, releases and checks items off",
+   "about": "Una skill per Claude Code che svolge la tua to-do list di Notion al posto tuo, su più progetti in un colpo solo.\n\nScrivi in Notion le cose da fare con il prefisso del progetto (es. \"Money: aggiungi l'export CSV\"), poi in Claude lancia /notion-todo.",
+   "features": [
+    "📋 Legge gli elementi non spuntati della tua lista Notion",
+    "🏷️ Considera solo quelli con il prefisso di un progetto, ignora il resto",
+    "🛠️ Entra nella cartella del progetto e fa quello che c'è scritto",
+    "📤 Commit e push per ogni modifica",
+    "🚀 Rilascia una nuova versione con tag e GitHub Release",
+    "✅ Spunta l'elemento su Notion a lavoro finito"
+   ],
+   "category": "sviluppo",
+   "platforms": [],
+   "language": null,
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-06T17:05:26Z",
+   "updatedAt": "2026-11-06T17:09:07Z",
+   "repoUrl": "https://github.com/carellice/notion-todo",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/notion-todo"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/notion-todo/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/notion-todo/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/notion-todo/main/logo.png",
    "screenshots": [],
    "video": null,
    "release": null,
