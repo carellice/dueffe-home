@@ -225,6 +225,19 @@
         "🧩 Widget per la home: risorse, stato del server e griglia delle app CasaOS",
         "⚡ Riquadro Impostazioni rapide per raggiungere le tue app dalla tendina"
       ]
+    },
+    "niente-zombie-per-favore": {
+      "name": "Niente Zombie Per Favore!",
+      "androidPackage": "org.rifugio07.nientezombieperfavore",
+      "about": "Un piccolo rifugio, una grande voglia di ricominciare. Gestionale e difesa in una città a spaccato laterale, realizzato in Godot con grafica cartoon dipinta: costruisci il rifugio, accogli i sopravvissuti e difendi il cancello dagli zombie.\n\nScarica dall'ultima release il setup per Windows o l'APK per Android.",
+      "features": [
+        "🧟 Difendi il cancello con pistola, fucile a pompa, fucile di precisione e mitragliatore",
+        "🕵️ Esamina i superstiti al cancello e cerca i segni del contagio prima di accoglierli",
+        "🏘️ Costruisci case, caffè, orti, officine, cliniche, panificio, depuratore e sartoria",
+        "☕ Assegna i cittadini alle attività e vendi 21 prodotti per guadagnare monete",
+        "🎒 Spedizioni in nove destinazioni per trovare materiali e scoperte",
+        "📔 Diario con 32 obiettivi e una storia in quattro capitoli, senza scadenze"
+      ]
     }
   }
 }

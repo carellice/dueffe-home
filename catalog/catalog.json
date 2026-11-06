@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-06T11:56:36.825Z",
+ "generatedAt": "2026-11-06T13:50:20.108Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -60,7 +60,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-06T07:50:17Z",
+   "updatedAt": "2026-11-06T13:27:33Z",
    "repoUrl": "https://github.com/carellice/hommaterial",
    "webUrl": "https://carellice.github.io/hommaterial/",
    "links": [
@@ -76,8 +76,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.52",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.52"
+     "label": "Release v1.54",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.54"
     },
     {
      "type": "releases",
@@ -96,23 +96,23 @@
    ],
    "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
    "release": {
-    "tag": "v1.52",
-    "name": "Hommaterial 1.52",
-    "date": "2026-11-06T07:50:18Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.52",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.51...v1.52",
+    "tag": "v1.54",
+    "name": "Hommaterial 1.54",
+    "date": "2026-11-06T13:27:33Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.54",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.53...v1.54",
     "assets": [
      {
-      "name": "Hommaterial-v1.52-windows-x64.zip",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.52/Hommaterial-v1.52-windows-x64.zip",
-      "size": 127151626,
-      "downloads": 2
+      "name": "Hommaterial-v1.54-windows-x64.zip",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.54/Hommaterial-v1.54-windows-x64.zip",
+      "size": 127151628,
+      "downloads": 1
      },
      {
-      "name": "Hommaterial-v1.52.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.52/Hommaterial-v1.52.apk",
+      "name": "Hommaterial-v1.54.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.54/Hommaterial-v1.54.apk",
       "size": 3614008,
-      "downloads": 3
+      "downloads": 1
      }
     ]
    },
@@ -146,7 +146,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-06T07:11:50Z",
+   "updatedAt": "2026-11-06T13:22:22Z",
    "repoUrl": "https://github.com/carellice/money",
    "webUrl": null,
    "links": [
@@ -157,8 +157,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.12.1",
-     "url": "https://github.com/carellice/money/releases/tag/v1.12.1"
+     "label": "Release v1.12.2",
+     "url": "https://github.com/carellice/money/releases/tag/v1.12.2"
     },
     {
      "type": "releases",
@@ -175,17 +175,17 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.12.1",
-    "name": "Money 1.12.1",
-    "date": "2026-11-06T07:11:56Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.12.1",
-    "notes": "## Novita'\n- Importi nascosti ovunque tranne spese fisse e abbonamenti, occhio spostato dentro la bolla del saldo\n",
+    "tag": "v1.12.2",
+    "name": "Money 1.12.2",
+    "date": "2026-11-06T13:22:28Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.12.2",
+    "notes": "## Novita'\n- Modifica movimento: dopo l'importo si torna ai dettagli, la categoria si cambia solo toccando la sua pillola\n",
     "assets": [
      {
-      "name": "Money-1.12.1.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.12.1/Money-1.12.1.apk",
+      "name": "Money-1.12.2.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.12.2/Money-1.12.2.apk",
       "size": 6207505,
-      "downloads": 4
+      "downloads": 2
      }
     ]
    },
@@ -224,7 +224,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-21T09:30:02Z",
-   "updatedAt": "2026-10-30T10:53:50Z",
+   "updatedAt": "2026-11-06T12:13:05Z",
    "repoUrl": "https://github.com/carellice/chiarella",
    "webUrl": "https://carellice.github.io/chiarella/",
    "links": [
@@ -240,8 +240,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.15",
-     "url": "https://github.com/carellice/chiarella/releases/tag/v1.15"
+     "label": "Release v1.16",
+     "url": "https://github.com/carellice/chiarella/releases/tag/v1.16"
     },
     {
      "type": "releases",
@@ -258,28 +258,28 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.15",
-    "name": "Chiarella 1.15",
-    "date": "2026-10-30T10:53:59Z",
-    "url": "https://github.com/carellice/chiarella/releases/tag/v1.15",
-    "notes": "- Nuove Impostazioni su Android, Windows e web, accessibili dal pulsante con l'ingranaggio.\n- L'avviso del volume si può disabilitare in modo permanente dalle Impostazioni o con Non mostrare più nell'avviso stesso.\n- Nuova opzione Animazioni ridotte: ferma sfondi, particelle e pulsazioni e riduce le transizioni, per un'interfaccia più leggera.\n- Audio, timer e istruzioni del respiro continuano a funzionare. Le preferenze restano salvate sul dispositivo e non vengono sovrascritte importando un backup.",
+    "tag": "v1.16",
+    "name": "Chiarella 1.16",
+    "date": "2026-11-06T12:13:19Z",
+    "url": "https://github.com/carellice/chiarella/releases/tag/v1.16",
+    "notes": "Nuovi suoni: Japanese Zen, Zen e Handpan (brano di Malte Marten), in loop continuo con dissolvenza.",
     "assets": [
      {
-      "name": "Chiarella-1.15.apk",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.15/Chiarella-1.15.apk",
-      "size": 25478732,
-      "downloads": 4
+      "name": "Chiarella-1.16.apk",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.16/Chiarella-1.16.apk",
+      "size": 43318412,
+      "downloads": 3
      },
      {
-      "name": "Chiarella-Web-1.15.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.15/Chiarella-Web-1.15.zip",
-      "size": 22328623,
+      "name": "Chiarella-Web-1.16.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.16/Chiarella-Web-1.16.zip",
+      "size": 39800218,
       "downloads": 1
      },
      {
-      "name": "Chiarella-Windows-1.15.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.15/Chiarella-Windows-1.15.zip",
-      "size": 87599213,
+      "name": "Chiarella-Windows-1.16.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.16/Chiarella-Windows-1.16.zip",
+      "size": 105071013,
       "downloads": 1
      }
     ]
@@ -440,6 +440,77 @@
    "dueffe": false
   },
   {
+   "id": "dueffe-streamwise",
+   "name": "StreamWise",
+   "description": "StreamWise per Android – cosa guardare, dove e quando",
+   "about": "Cosa guardare, dove e quando. Tieni traccia di film e serie, scopri le novità sulle piattaforme e ricevi un avviso quando escono nuovi episodi o nuovi titoli delle persone che segui. App nativa della famiglia Dueffe.",
+   "features": [
+    "Interfaccia Material 3 scura e cinematografica, animazioni Compose e navigazione ottimizzata per l'uso con una mano.",
+    "Home con “Da continuare”, “La mia lista”, “Già visti” e titoli nascosti.",
+    "Cataloghi Film e Serie, Top 10, generi preferiti, sezione True crime e caricamento di altre proposte.",
+    "Widget ridimensionabile “Prossimi episodi”: mostra le serie da continuare e permette di segnare gli episodi come visti; al termine della serie chiede Mi piace / Non mi piace. Aggiungilo tenendo premuto sulla schermata Home del telefono e scegliendo Widget → StreamWise.",
+    "Ricerca per titolo con anno facoltativo e ricerca per attore/attrice con filmografia. Per impostazione predefinita le filmografie nascondono late show, talk show, reality, telegiornali e apparizioni come sé stessi; si può disattivare da Impostazioni → “Filmografie senza talk show”.",
+    "“Segui” per attori e registi: dalla pagina della filmografia si ricevono notifiche quando a TMDB viene aggiunto un loro nuovo film o serie (recente o in arrivo). Le persone seguite compaiono in Home in “Persone che segui” e sono incluse nel backup."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "TypeScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:47Z",
+   "updatedAt": "2026-11-06T12:10:30Z",
+   "repoUrl": "https://github.com/carellice/dueffe-streamwise",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-streamwise"
+    },
+    {
+     "type": "release",
+     "label": "Release streamwise-v2.0.141",
+     "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.141"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-streamwise/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-streamwise/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-streamwise/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "streamwise-v2.0.141",
+    "name": "StreamWise 2.0.141",
+    "date": "2026-11-06T12:10:23Z",
+    "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.141",
+    "notes": "APK Android firmato di StreamWise. Versione 2.0.141, codice aggiornamento 148.",
+    "assets": [
+     {
+      "name": "StreamWise-2.0.141.apk",
+      "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.0.141/StreamWise-2.0.141.apk",
+      "size": 16784002,
+      "downloads": 3
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.dueffe.streamwise",
+   "dueffe": true
+  },
+  {
    "id": "CasaDeck",
    "name": "CasaDeck",
    "description": "App Android nativa per gestire il tuo home server CasaOS",
@@ -508,7 +579,7 @@
       "name": "CasaDeck.apk",
       "url": "https://github.com/carellice/CasaDeck/releases/download/v1.1/CasaDeck.apk",
       "size": 2712755,
-      "downloads": 0
+      "downloads": 2
      }
     ]
    },
@@ -657,77 +728,6 @@
    "featured": false,
    "hidden": false,
    "androidPackage": "it.dueffe.health",
-   "dueffe": true
-  },
-  {
-   "id": "dueffe-streamwise",
-   "name": "StreamWise",
-   "description": "StreamWise per Android – cosa guardare, dove e quando",
-   "about": "Cosa guardare, dove e quando. Tieni traccia di film e serie, scopri le novità sulle piattaforme e ricevi un avviso quando escono nuovi episodi o nuovi titoli delle persone che segui. App nativa della famiglia Dueffe.",
-   "features": [
-    "Interfaccia Material 3 scura e cinematografica, animazioni Compose e navigazione ottimizzata per l'uso con una mano.",
-    "Home con “Da continuare”, “La mia lista”, “Già visti” e titoli nascosti.",
-    "Cataloghi Film e Serie, Top 10, generi preferiti, sezione True crime e caricamento di altre proposte.",
-    "Widget ridimensionabile “Prossimi episodi”: mostra le serie da continuare e permette di segnare gli episodi come visti; al termine della serie chiede Mi piace / Non mi piace. Aggiungilo tenendo premuto sulla schermata Home del telefono e scegliendo Widget → StreamWise.",
-    "Ricerca per titolo con anno facoltativo e ricerca per attore/attrice con filmografia. Per impostazione predefinita le filmografie nascondono late show, talk show, reality, telegiornali e apparizioni come sé stessi; si può disattivare da Impostazioni → “Filmografie senza talk show”.",
-    "“Segui” per attori e registi: dalla pagina della filmografia si ricevono notifiche quando a TMDB viene aggiunto un loro nuovo film o serie (recente o in arrivo). Le persone seguite compaiono in Home in “Persone che segui” e sono incluse nel backup."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "TypeScript",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T20:43:47Z",
-   "updatedAt": "2026-11-05T15:14:19Z",
-   "repoUrl": "https://github.com/carellice/dueffe-streamwise",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/dueffe-streamwise"
-    },
-    {
-     "type": "release",
-     "label": "Release streamwise-v2.0.140",
-     "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.140"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/dueffe-streamwise/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/dueffe-streamwise/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-streamwise/main/docs/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "streamwise-v2.0.140",
-    "name": "StreamWise 2.0.140",
-    "date": "2026-11-05T15:13:45Z",
-    "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.140",
-    "notes": "APK Android firmato di StreamWise. Versione 2.0.140, codice aggiornamento 147.",
-    "assets": [
-     {
-      "name": "StreamWise-2.0.140.apk",
-      "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.0.140/StreamWise-2.0.140.apk",
-      "size": 16784002,
-      "downloads": 3
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "it.dueffe.streamwise",
    "dueffe": true
   },
   {
@@ -1267,6 +1267,84 @@
    "dueffe": false
   },
   {
+   "id": "niente-zombie-per-favore",
+   "name": "Niente Zombie Per Favore!",
+   "description": "Gioco Godot 2D: costruisci il rifugio, accogli i sopravvissuti e difendi il cancello.",
+   "about": "Un piccolo rifugio, una grande voglia di ricominciare. Gestionale e difesa in una città a spaccato laterale, realizzato in Godot con grafica cartoon dipinta: costruisci il rifugio, accogli i sopravvissuti e difendi il cancello dagli zombie.\n\nScarica dall'ultima release il setup per Windows o l'APK per Android.",
+   "features": [
+    "🧟 Difendi il cancello con pistola, fucile a pompa, fucile di precisione e mitragliatore",
+    "🕵️ Esamina i superstiti al cancello e cerca i segni del contagio prima di accoglierli",
+    "🏘️ Costruisci case, caffè, orti, officine, cliniche, panificio, depuratore e sartoria",
+    "☕ Assegna i cittadini alle attività e vendi 21 prodotti per guadagnare monete",
+    "🎒 Spedizioni in nove destinazioni per trovare materiali e scoperte",
+    "📔 Diario con 32 obiettivi e una storia in quattro capitoli, senza scadenze"
+   ],
+   "category": "giochi",
+   "platforms": [
+    "android",
+    "windows"
+   ],
+   "language": "GDScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-24T19:02:09Z",
+   "updatedAt": "2026-11-06T13:41:22Z",
+   "repoUrl": "https://github.com/carellice/niente-zombie-per-favore",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/niente-zombie-per-favore"
+    },
+    {
+     "type": "release",
+     "label": "Release v0.4.1.48",
+     "url": "https://github.com/carellice/niente-zombie-per-favore/releases/tag/v0.4.1.48"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/niente-zombie-per-favore/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/niente-zombie-per-favore/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/niente-zombie-per-favore/main/assets/icon.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v0.4.1.48",
+    "name": "Niente Zombie Per Favore! 0.4.1.48",
+    "date": "2026-11-06T13:41:22Z",
+    "url": "https://github.com/carellice/niente-zombie-per-favore/releases/tag/v0.4.1.48",
+    "notes": "## Novità\n- **Aggiornamenti dal gioco**: il menu principale mostra la versione installata e, quando esce una nuova release, il pulsante **Aggiorna** (Windows: scarica, verifica e installa il setup, poi riapre il gioco) o **Scarica** (Android: apre l'APK da installare sopra quello attuale).\n- Cielo del villaggio con sfumatura morbida al posto della banda scura.\n- Dialoghi su PC con sfondo a vetro smerigliato.\n- Menu principale con panorama in lento movimento e maggiore profondità.\n\n## Download\n- **Windows**: `Niente-Zombie-Per-Favore-Setup-0.4.1.48.exe` (installazione per utente, nessun permesso di amministratore).\n- **Android**: `Niente-Zombie-Per-Favore-0.4.1.48.apk`. Consenti l'installazione da origini sconosciute; i salvataggi restano.\n\nChecksum in `SHA256SUMS.txt`. Dettagli in [docs/AGGIORNAMENTI_0.4.1.48.md](https://github.com/carellice/niente-zombie-per-favore/blob/main/docs/AGGIORNAMENTI_0.4.1.48.md).\n",
+    "assets": [
+     {
+      "name": "Niente-Zombie-Per-Favore-0.4.1.48.apk",
+      "url": "https://github.com/carellice/niente-zombie-per-favore/releases/download/v0.4.1.48/Niente-Zombie-Per-Favore-0.4.1.48.apk",
+      "size": 119354637,
+      "downloads": 0
+     },
+     {
+      "name": "Niente-Zombie-Per-Favore-Setup-0.4.1.48.exe",
+      "url": "https://github.com/carellice/niente-zombie-per-favore/releases/download/v0.4.1.48/Niente-Zombie-Per-Favore-Setup-0.4.1.48.exe",
+      "size": 93462892,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "org.rifugio07.nientezombieperfavore",
+   "dueffe": false
+  },
+  {
    "id": "spariaps-game",
    "name": "SPARIAPS",
    "description": "Sparatutto arena in prima persona · Ondate · Zombie · Boss Salta, spara, sopravvivi. Un FPS frenetico che gira direttamente nel browser, senza installare nulla.",
@@ -1589,7 +1667,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-05T11:06:34Z",
+   "updatedAt": "2026-11-06T13:32:45Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -1600,8 +1678,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.12.1",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.12.1"
+     "label": "Release v1.13.0",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.13.0"
     },
     {
      "type": "releases",
@@ -1622,34 +1700,34 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.12.1",
-    "name": "IPTVISION 1.12.1",
-    "date": "2026-11-05T11:07:09Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.12.1",
-    "notes": "Audio sui canali del digitale terrestre.\n- Alcuni canali (per esempio Rai 1 FHD, Rai 2 4K/FHD, Italia 1 4K/FHD) hanno audio Dolby (AC-3/E-AC-3) o MPEG Layer II e si vedevano senza audio.\n- Android e Android TV: decoder FFmpeg incluso, ora questi canali si sentono.\n- TV LG: se il browser del TV non decodifica l'audio, il canale passa da solo al lettore del TV.\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.12.1.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.12.1.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.12.1.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.12.1.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.13.0",
+    "name": "IPTVISION 1.13.0",
+    "date": "2026-11-06T13:32:53Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.13.0",
+    "notes": "- Più liste IPTV con un nome e la loro scadenza\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.13.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.13.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.13.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.13.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.12.1.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.1/IPTVISION-1.12.1.apk",
-      "size": 8689776,
-      "downloads": 5
-     },
-     {
-      "name": "IPTVISION-1.12.1.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.1/IPTVISION-1.12.1.ipk",
-      "size": 134230,
+      "name": "IPTVISION-1.13.0.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.13.0/IPTVISION-1.13.0.apk",
+      "size": 8706156,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-1.12.1.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.1/IPTVISION-1.12.1.wgt",
-      "size": 150072,
+      "name": "IPTVISION-1.13.0.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.13.0/IPTVISION-1.13.0.ipk",
+      "size": 134930,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-Setup-1.12.1.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.12.1/IPTVISION-Setup-1.12.1.exe",
-      "size": 71488394,
+      "name": "IPTVISION-1.13.0.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.13.0/IPTVISION-1.13.0.wgt",
+      "size": 151405,
+      "downloads": 1
+     },
+     {
+      "name": "IPTVISION-Setup-1.13.0.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.13.0/IPTVISION-Setup-1.13.0.exe",
+      "size": 71491256,
       "downloads": 2
      }
     ]
@@ -2658,7 +2736,7 @@
     "mcp-server",
     "model-context-protocol"
    ],
-   "stars": 0,
+   "stars": 1,
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-27T15:41:22Z",
