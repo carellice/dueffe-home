@@ -213,6 +213,18 @@
         "Moduli guidati a passaggi per farmaci, visite e documenti.",
         "Dati solo sul dispositivo, con backup JSON da esportare e importare dalle Impostazioni."
       ]
+    },
+    "CasaDeck": {
+      "description": "App Android nativa per gestire il tuo home server CasaOS",
+      "about": "CasaDeck è l'app Android nativa per il tuo home server CasaOS: monitora le risorse, gestisci i file, apri le app e usa la shell, tutto dal telefono.\n\n1. Scarica CasaDeck.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da origini sconosciute. 3. Inserisci l'indirizzo di CasaOS (es. http://192.168.1.10) e le tue credenziali.",
+      "features": [
+        "📊 Dashboard in tempo reale: CPU, RAM, disco, temperatura, rete e grafico del carico degli ultimi 90 secondi",
+        "📱 App: vedi e apri le app installate su CasaOS, con il loro stato",
+        "📁 File manager: sfoglia il server e carica file e intere cartelle, anche in background",
+        "💻 Terminale SSH: la password resta in memoria solo mentre l'app è aperta",
+        "🧩 Widget per la home: risorse, stato del server e griglia delle app CasaOS",
+        "⚡ Riquadro Impostazioni rapide per raggiungere le tue app dalla tendina"
+      ]
     }
   }
 }

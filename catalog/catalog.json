@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-05T21:46:53.059Z",
+ "generatedAt": "2026-11-06T11:56:11.557Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -60,7 +60,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-04T18:31:48Z",
+   "updatedAt": "2026-11-06T07:50:17Z",
    "repoUrl": "https://github.com/carellice/hommaterial",
    "webUrl": "https://carellice.github.io/hommaterial/",
    "links": [
@@ -76,8 +76,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.49",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.49"
+     "label": "Release v1.52",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.52"
     },
     {
      "type": "releases",
@@ -96,23 +96,23 @@
    ],
    "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
    "release": {
-    "tag": "v1.49",
-    "name": "Hommaterial 1.49",
-    "date": "2026-11-04T18:31:48Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.49",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.48...v1.49",
+    "tag": "v1.52",
+    "name": "Hommaterial 1.52",
+    "date": "2026-11-06T07:50:18Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.52",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.51...v1.52",
     "assets": [
      {
-      "name": "Hommaterial-v1.49-windows-x64.zip",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.49/Hommaterial-v1.49-windows-x64.zip",
-      "size": 127151468,
-      "downloads": 1
+      "name": "Hommaterial-v1.52-windows-x64.zip",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.52/Hommaterial-v1.52-windows-x64.zip",
+      "size": 127151626,
+      "downloads": 2
      },
      {
-      "name": "Hommaterial-v1.49.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.49/Hommaterial-v1.49.apk",
-      "size": 3486305,
-      "downloads": 1
+      "name": "Hommaterial-v1.52.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.52/Hommaterial-v1.52.apk",
+      "size": 3614008,
+      "downloads": 3
      }
     ]
    },
@@ -146,7 +146,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-03T19:21:30Z",
+   "updatedAt": "2026-11-06T07:11:50Z",
    "repoUrl": "https://github.com/carellice/money",
    "webUrl": null,
    "links": [
@@ -157,8 +157,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.11.0",
-     "url": "https://github.com/carellice/money/releases/tag/v1.11.0"
+     "label": "Release v1.12.1",
+     "url": "https://github.com/carellice/money/releases/tag/v1.12.1"
     },
     {
      "type": "releases",
@@ -175,15 +175,15 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.11.0",
-    "name": "Money 1.11.0",
-    "date": "2026-11-03T19:21:37Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.11.0",
-    "notes": "## Novita'\n- Tutti i bottom sheet diventano pagine a schermo intero (categorie, persone, metodi di pagamento, scelta del logo)\n- Spese fisse: filtri a chip con il numero di voci al posto del selettore con i testi tagliati\n- Metodi di pagamento delle spese fisse in una pagina separata\n",
+    "tag": "v1.12.1",
+    "name": "Money 1.12.1",
+    "date": "2026-11-06T07:11:56Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.12.1",
+    "notes": "## Novita'\n- Importi nascosti ovunque tranne spese fisse e abbonamenti, occhio spostato dentro la bolla del saldo\n",
     "assets": [
      {
-      "name": "Money-1.11.0.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.11.0/Money-1.11.0.apk",
+      "name": "Money-1.12.1.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.12.1/Money-1.12.1.apk",
       "size": 6207505,
       "downloads": 4
      }
@@ -440,17 +440,95 @@
    "dueffe": false
   },
   {
+   "id": "CasaDeck",
+   "name": "CasaDeck",
+   "description": "App Android nativa per gestire il tuo home server CasaOS",
+   "about": "CasaDeck è l'app Android nativa per il tuo home server CasaOS: monitora le risorse, gestisci i file, apri le app e usa la shell, tutto dal telefono.\n\n1. Scarica CasaDeck.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da origini sconosciute. 3. Inserisci l'indirizzo di CasaOS (es. http://192.168.1.10) e le tue credenziali.",
+   "features": [
+    "📊 Dashboard in tempo reale: CPU, RAM, disco, temperatura, rete e grafico del carico degli ultimi 90 secondi",
+    "📱 App: vedi e apri le app installate su CasaOS, con il loro stato",
+    "📁 File manager: sfoglia il server e carica file e intere cartelle, anche in background",
+    "💻 Terminale SSH: la password resta in memoria solo mentre l'app è aperta",
+    "🧩 Widget per la home: risorse, stato del server e griglia delle app CasaOS",
+    "⚡ Riquadro Impostazioni rapide per raggiungere le tue app dalla tendina"
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-06T11:35:56Z",
+   "updatedAt": "2026-11-06T11:45:18Z",
+   "repoUrl": "https://github.com/carellice/CasaDeck",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/CasaDeck"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.1",
+     "url": "https://github.com/carellice/CasaDeck/releases/tag/v1.1"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/CasaDeck/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/CasaDeck/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/home-light.png",
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/home-dark.png",
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/files.png",
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/terminal.png",
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/settings.png",
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/widget.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.1",
+    "name": "CasaDeck 1.1",
+    "date": "2026-11-06T11:45:18Z",
+    "url": "https://github.com/carellice/CasaDeck/releases/tag/v1.1",
+    "notes": "New app icon inspired by the CasaOS logo, reimagined for Android (themed icon included). Download **CasaDeck.apk** below; it updates 1.0 in place.",
+    "assets": [
+     {
+      "name": "CasaDeck.apk",
+      "url": "https://github.com/carellice/CasaDeck/releases/download/v1.1/CasaDeck.apk",
+      "size": 2712755,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "dev.casadeck",
+   "dueffe": false
+  },
+  {
    "id": "MyExperience",
    "name": "MyExperience",
    "description": "Diario di viaggio per Android: globo 3D, album e pianificazione viaggi",
    "about": "MyExperience è un diario di viaggio per Android: un globo 3D con i luoghi che hai visitato, album-diario con foto, video e blocchi di testo, e la pianificazione dei prossimi viaggi.\n\n1. Scarica l'APK dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da origini sconosciute.",
    "features": [
-    "🌍 Globo 3D interattivo con i tuoi luoghi",
+    "🌍 Globo 3D interattivo con i tuoi luoghi, personalizzabile (luce, nuvole, riflessi, stelle…)",
+    "🏅 Bollini da collezione dei patrimoni UNESCO italiani: si raccolgono a meno di 200 m dal sito",
     "📔 Album-diario per ogni viaggio, con temi, foto e video",
     "🚐 Album \"on the road\" con più tappe, mappa e percorso disegnato nel diario",
     "🧳 Pianificazione dei viaggi con tappe e cose da fare: a viaggio concluso diventa da solo un unico album",
-    "👤 Profilo con statistiche (paesi, giorni, foto, video)",
-    "🔄 Aggiornamento in-app direttamente dalle GitHub Releases"
+    "👤 Profilo con statistiche (paesi, giorni, foto, video)"
    ],
    "category": "android",
    "platforms": [
@@ -462,7 +540,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-11-05T14:24:58Z",
-   "updatedAt": "2026-11-05T19:02:05Z",
+   "updatedAt": "2026-11-06T07:21:05Z",
    "repoUrl": "https://github.com/carellice/MyExperience",
    "webUrl": null,
    "links": [
@@ -473,8 +551,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.4.0",
-     "url": "https://github.com/carellice/MyExperience/releases/tag/v1.4.0"
+     "label": "Release v1.6.0",
+     "url": "https://github.com/carellice/MyExperience/releases/tag/v1.6.0"
     },
     {
      "type": "releases",
@@ -491,17 +569,17 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.4.0",
-    "name": "MyExperience v1.4.0",
-    "date": "2026-11-05T19:02:05Z",
-    "url": "https://github.com/carellice/MyExperience/releases/tag/v1.4.0",
-    "notes": "## Novità\n\n- **Icone al posto delle emoji** in tutta l'app: categorie, mood, mezzi di trasporto, temi del diario, elementi della pagina, schede e indicatori.\n- Le bandiere sono sostituite dalle sigle dei paesi (IT, FR, ES…).\n- Il blocco diario \"Sticker\" diventa **Icone**: 42 icone a tema viaggio, multicolore o in un solo colore. Gli sticker già presenti nei diari vengono convertiti in automatico.",
+    "tag": "v1.6.0",
+    "name": "MyExperience v1.6.0",
+    "date": "2026-11-06T07:21:05Z",
+    "url": "https://github.com/carellice/MyExperience/releases/tag/v1.6.0",
+    "notes": "Novità 1.6.0:\n- Barra di ricerca sopra il globo per volare su città, regioni e paesi\n- Zoom più profondo; oltre il limite si apre la mappa stradale della città\n- Animazioni di cambio pagina più fluide",
     "assets": [
      {
-      "name": "MyExperience-v1.4.0.apk",
-      "url": "https://github.com/carellice/MyExperience/releases/download/v1.4.0/MyExperience-v1.4.0.apk",
-      "size": 5341551,
-      "downloads": 2
+      "name": "MyExperience-v1.6.0.apk",
+      "url": "https://github.com/carellice/MyExperience/releases/download/v1.6.0/MyExperience-v1.6.0.apk",
+      "size": 5407307,
+      "downloads": 3
      }
     ]
    },
@@ -1040,9 +1118,10 @@
    "features": [
     "Sorprendimi: una scelta casuale animata che rispetta categoria e modalità, dà precedenza alle classifiche non completate ed evita ripetizioni durante il ciclo.",
     "Un benvenuto in tre scene: spiega il gioco al primo avvio; puoi saltarlo e rivederlo dalle impostazioni.",
-    "Grafica originale: logo creato con ImageGen, avorio, bosco e lime, carte che si girano, una barra flottante e coriandoli per le tue scoperte.",
-    "Movimenti curati: passaggi tra pagine senza lampeggi, pannelli che scorrono e si chiudono anche trascinandoli, pulsanti e interruttori animati. Le classifiche scorrono con inerzia e disegnano soltanto le schede visibili.",
-    "Controlli Android: tastiera nativa, suoni, feedback aptico, controlli per l’accessibilità e animazioni ridotte."
+    "Grafica notturna in 3D: cielo animato, schede con spessore che si inclinano verso il dito, pulsanti a rilievo che affondano quando li premi, icone sferiche e caselle che ruotano in prospettiva. Esplosioni di particelle e coriandoli per le tue scoperte. Il logo originale è stato creato con ImageGen.",
+    "Struttura chiara: tre sezioni, Gioca, Classifiche e Profilo. Ogni classifica apre una scheda con fonte, anno e i pulsanti per giocarla da soli o in due.",
+    "Movimenti curati: entrate scaglionate, passaggi tra pagine senza lampeggi, pannelli che scorrono e si chiudono anche trascinandoli, una barra di navigazione che compare e scompare. Le classifiche scorrono con inerzia e disegnano soltanto le schede visibili.",
+    "Profilo con livelli: ogni scoperta fa salire di livello, da Curioso a Leggenda, insieme a statistiche, classifiche esplorate e sei traguardi."
    ],
    "category": "giochi",
    "platforms": [
@@ -1054,7 +1133,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-10-28T11:44:14Z",
-   "updatedAt": "2026-10-28T21:35:40Z",
+   "updatedAt": "2026-11-06T07:19:21Z",
    "repoUrl": "https://github.com/carellice/Topperia",
    "webUrl": null,
    "links": [
@@ -1065,8 +1144,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.1.5",
-     "url": "https://github.com/carellice/Topperia/releases/tag/v1.1.5"
+     "label": "Release v1.1.8",
+     "url": "https://github.com/carellice/Topperia/releases/tag/v1.1.8"
     },
     {
      "type": "releases",
@@ -1085,17 +1164,17 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.1.5",
-    "name": "Topperia 1.1.5",
-    "date": "2026-10-28T21:35:50Z",
-    "url": "https://github.com/carellice/Topperia/releases/tag/v1.1.5",
-    "notes": "## Topperia 1.1.5\n\nCorretto il blocco dell’aggiornamento dall’app dopo il download.\n\n- Il pulsante **Installa** prosegue con la richiesta del permesso Android anche quando la finestra precedente si sta ancora chiudendo.\n- Le finestre di aggiornamento attendono il ritorno dell’app in primo piano; non vengono più perse durante il passaggio tra finestre e impostazioni Android.\n- Un APK scaricato non valido viene eliminato e può essere riscaricato, senza restare bloccati su Installa.\n\nSe la versione già installata rimane ferma su **Installa**, scarica e apri **Topperia-1.1.5.apk** da questa release una volta. La correzione entrerà così nell’app anche per gli aggiornamenti successivi. La firma resta la stessa: partite e preferenze vengono conservate. Richiede Android 8 o successivo.\n",
+    "tag": "v1.1.8",
+    "name": "Topperia 1.1.8",
+    "date": "2026-11-06T07:19:44Z",
+    "url": "https://github.com/carellice/Topperia/releases/tag/v1.1.8",
+    "notes": "## Topperia 1.1.8\n\nTopperia si veste da luna park: nuovi colori, musica e suoni.\n\n- **Nuova palette \"luna park al tramonto\":** notte color prugna, giallo girasole e mandarino per le scoperte, acquamarina e corallo per le sfide. Il secondo giocatore della sfida 1 contro 1 ora è acquamarina.\n- **Coriandoli nel cielo:** cerchi, triangoli, ghirigori e crocette fluttuano piano sullo sfondo di tutte le schermate.\n- **Musica di sottofondo:** un motivetto chiptune allegro in loop. Si spegne da Impostazioni → Musica e si mette in pausa quando esci dall'app.\n- **Suoni nuovi:** tocchi, risposta giusta, risposta sbagliata, busta sigillata, rullo di Sorprendimi, buste che si aprono nella resa dei conti e fanfara di fine partita. Si spengono da Impostazioni → Suoni.\n\nMusica e suoni sono generati dall'app: nessun file audio aggiuntivo. Firma invariata: partite, statistiche e preferenze vengono conservate. Richiede Android 8 o successivo.\n",
     "assets": [
      {
-      "name": "Topperia-1.1.5.apk",
-      "url": "https://github.com/carellice/Topperia/releases/download/v1.1.5/Topperia-1.1.5.apk",
-      "size": 616600,
-      "downloads": 5
+      "name": "Topperia-1.1.8.apk",
+      "url": "https://github.com/carellice/Topperia/releases/download/v1.1.8/Topperia-1.1.8.apk",
+      "size": 637592,
+      "downloads": 3
      }
     ]
    },
@@ -2635,7 +2714,7 @@
    ],
    "language": "TypeScript",
    "topics": [],
-   "stars": 0,
+   "stars": 1,
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-31T11:20:30Z",
