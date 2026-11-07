@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-06T17:10:49.589Z",
+ "generatedAt": "2026-11-07T10:23:51.690Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -60,7 +60,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-06T17:09:38Z",
+   "updatedAt": "2026-11-06T21:26:42Z",
    "repoUrl": "https://github.com/carellice/money",
    "webUrl": null,
    "links": [
@@ -71,8 +71,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.12.3",
-     "url": "https://github.com/carellice/money/releases/tag/v1.12.3"
+     "label": "Release v1.13.1",
+     "url": "https://github.com/carellice/money/releases/tag/v1.13.1"
     },
     {
      "type": "releases",
@@ -89,23 +89,109 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.12.3",
-    "name": "Money 1.12.3",
-    "date": "2026-11-06T17:09:45Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.12.3",
-    "notes": "## Novita'\n- Spesa fissa: importo con il tastierino come dal +, annulla dopo lo swipe ripristina il movimento correttamente\n",
+    "tag": "v1.13.1",
+    "name": "Money 1.13.1",
+    "date": "2026-11-06T21:26:46Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.13.1",
+    "notes": "## Novita'\n- Chiedi a Money: i movimenti dettati si preparano anche quando l'AI scrive importi con la virgola, nomi al posto degli id o una sottocategoria come categoria, e la persona non resta più vuota",
     "assets": [
      {
-      "name": "Money-1.12.3.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.12.3/Money-1.12.3.apk",
-      "size": 6207505,
-      "downloads": 0
+      "name": "Money-1.13.1.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.13.1/Money-1.13.1.apk",
+      "size": 6223889,
+      "downloads": 4
      }
     ]
    },
    "featured": true,
    "hidden": false,
    "androidPackage": "com.money.app",
+   "dueffe": false
+  },
+  {
+   "id": "hommaterial",
+   "name": "Hommaterial",
+   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
+   "about": "Android · Server di casa (CasaOS) · Windows 11 (anteprima) · Gratuita · Open source\n\nWindows 11: scarica lo ZIP Windows dalle release GitHub, estrailo interamente in una cartella personale e avvia Hommaterial.Windows.exe. Gli aggiornamenti si scaricano dall'app, in Impostazioni → Controlla aggiornamenti. Per pubblicare Android e Windows da questo PC usa release.bat: guida al rilascio.",
+   "features": [
+    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
+    "Un tocco accende o spegne.",
+    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
+    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
+    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
+    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "web",
+    "windows"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-06T16:46:46Z",
+   "updatedAt": "2026-11-06T17:22:50Z",
+   "repoUrl": "https://github.com/carellice/hommaterial",
+   "webUrl": "https://carellice.github.io/hommaterial/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/hommaterial/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/hommaterial"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.56",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.56"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/hommaterial/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/hommaterial/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
+   ],
+   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
+   "release": {
+    "tag": "v1.56",
+    "name": "Hommaterial 1.56",
+    "date": "2026-11-06T17:22:50Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.56",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.55...v1.56",
+    "assets": [
+     {
+      "name": "Hommaterial-v1.56-windows-x64.zip",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.56/Hommaterial-v1.56-windows-x64.zip",
+      "size": 127151627,
+      "downloads": 1
+     },
+     {
+      "name": "Hommaterial-v1.56.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.56/Hommaterial-v1.56.apk",
+      "size": 3753497,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "app.hommaterial",
    "dueffe": false
   },
   {
@@ -182,111 +268,25 @@
       "name": "Chiarella-1.17.apk",
       "url": "https://github.com/carellice/chiarella/releases/download/v1.17/Chiarella-1.17.apk",
       "size": 43318412,
-      "downloads": 0
+      "downloads": 3
      },
      {
       "name": "Chiarella-Web-1.17.zip",
       "url": "https://github.com/carellice/chiarella/releases/download/v1.17/Chiarella-Web-1.17.zip",
       "size": 39800319,
-      "downloads": 0
+      "downloads": 1
      },
      {
       "name": "Chiarella-Windows-1.17.zip",
       "url": "https://github.com/carellice/chiarella/releases/download/v1.17/Chiarella-Windows-1.17.zip",
       "size": 105071185,
-      "downloads": 0
+      "downloads": 1
      }
     ]
    },
    "featured": true,
    "hidden": false,
    "androidPackage": "it.chiarella.app",
-   "dueffe": false
-  },
-  {
-   "id": "hommaterial",
-   "name": "Hommaterial",
-   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
-   "about": "Android · Server di casa (CasaOS) · Windows 11 (anteprima) · Gratuita · Open source\n\nWindows 11: scarica lo ZIP Windows dalle release GitHub, estrailo interamente in una cartella personale e avvia Hommaterial.Windows.exe. Gli aggiornamenti si scaricano dall'app, in Impostazioni → Controlla aggiornamenti. Per pubblicare Android e Windows da questo PC usa release.bat: guida al rilascio.",
-   "features": [
-    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
-    "Un tocco accende o spegne.",
-    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
-    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
-    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
-    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
-   ],
-   "category": "android",
-   "platforms": [
-    "android",
-    "web",
-    "windows"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-06T14:15:11Z",
-   "repoUrl": "https://github.com/carellice/hommaterial",
-   "webUrl": "https://carellice.github.io/hommaterial/",
-   "links": [
-    {
-     "type": "web",
-     "label": "Apri online",
-     "url": "https://carellice.github.io/hommaterial/"
-    },
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/hommaterial"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.55",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.55"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/hommaterial/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/hommaterial/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
-   ],
-   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
-   "release": {
-    "tag": "v1.55",
-    "name": "Hommaterial 1.55",
-    "date": "2026-11-06T14:15:11Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.55",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.54...v1.55",
-    "assets": [
-     {
-      "name": "Hommaterial-v1.55-windows-x64.zip",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.55/Hommaterial-v1.55-windows-x64.zip",
-      "size": 127151634,
-      "downloads": 1
-     },
-     {
-      "name": "Hommaterial-v1.55.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.55/Hommaterial-v1.55.apk",
-      "size": 3700652,
-      "downloads": 2
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "app.hommaterial",
    "dueffe": false
   },
   {
@@ -440,6 +440,169 @@
    "dueffe": false
   },
   {
+   "id": "MemShot",
+   "name": "MemShot",
+   "description": "App Android che importa i tuoi screenshot, li legge con l'OCR e li cataloga in automatico (film, prompt AI, ricette…). Kotlin + Jetpack Compose, offline.",
+   "about": "Ogni screenshot entra da solo nell'app, viene letto e finisce nella categoria giusta: film, prompt per l'AI, ricette, chat, shopping e altre 17. Quando ti serve, lo ritrovi cercando qualsiasi parola scritta dentro.\n\nAndroid 10 o successivo · Gratuita · Senza pubblicità · Senza account · Funziona offline",
+   "features": [],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "jetpack-compose",
+    "kotlin",
+    "ml-kit",
+    "ocr",
+    "screenshots"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T14:40:24Z",
+   "updatedAt": "2026-11-06T22:53:41Z",
+   "repoUrl": "https://github.com/carellice/MemShot",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/MemShot"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.0.3",
+     "url": "https://github.com/carellice/MemShot/releases/tag/v1.0.3"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/MemShot/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/MemShot/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/MemShot/main/docs/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/home.png",
+    "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/categorie.png",
+    "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/dettaglio.png",
+    "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/tiktok.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.0.3",
+    "name": "MemShot v1.0.3",
+    "date": "2026-11-06T22:53:41Z",
+    "url": "https://github.com/carellice/MemShot/releases/tag/v1.0.3",
+    "notes": "Uno screenshot a cui togli tutti i tag finisce in Altro.\n\nATTENZIONE: questa versione è firmata con una chiave nuova. L'aggiornamento dall'app non si installa sopra la versione vecchia. Prima fai un backup (Impostazioni → Backup), poi disinstalla MemShot, installa questo APK e ripristina il backup. Dalla prossima versione gli aggiornamenti dall'app tornano a funzionare.",
+    "assets": [
+     {
+      "name": "MemShot-v1.0.3.apk",
+      "url": "https://github.com/carellice/MemShot/releases/download/v1.0.3/MemShot-v1.0.3.apk",
+      "size": 30862314,
+      "downloads": 3
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "com.memshot.app",
+   "dueffe": false
+  },
+  {
+   "id": "CasaDeck",
+   "name": "CasaDeck",
+   "description": "App Android nativa per gestire il tuo home server CasaOS",
+   "about": "CasaDeck è l'app Android nativa per il tuo home server CasaOS: monitora le risorse, gestisci i file, apri le app e usa la shell, tutto dal telefono.\n\n1. Scarica CasaDeck.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da origini sconosciute. 3. Inserisci l'indirizzo di CasaOS (es. http://192.168.1.10) e le tue credenziali.",
+   "features": [
+    "📊 Dashboard in tempo reale: CPU, RAM, disco, temperatura, rete e grafico del carico degli ultimi 90 secondi",
+    "📱 App: vedi e apri le app installate su CasaOS, con il loro stato",
+    "📁 File manager: sfoglia il server e carica file e intere cartelle, anche in background",
+    "💻 Terminale SSH: la password resta in memoria solo mentre l'app è aperta",
+    "🧩 Widget per la home: risorse, stato del server e griglia delle app CasaOS",
+    "⚡ Riquadro Impostazioni rapide per raggiungere le tue app dalla tendina"
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "windows"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-06T11:35:56Z",
+   "updatedAt": "2026-11-06T20:53:59Z",
+   "repoUrl": "https://github.com/carellice/CasaDeck",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/CasaDeck"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.3",
+     "url": "https://github.com/carellice/CasaDeck/releases/tag/v1.3"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/CasaDeck/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/CasaDeck/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/home-light.png",
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/home-dark.png",
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/files.png",
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/terminal.png",
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/settings.png",
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/widget.png",
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/windows-home.png",
+    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/windows-files.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.3",
+    "name": "v1.3",
+    "date": "2026-11-06T20:54:07Z",
+    "url": "https://github.com/carellice/CasaDeck/releases/tag/v1.3",
+    "notes": "- New: native Windows app (WinUI 3) with dashboard, apps, file manager with drag & drop uploads, SSH terminal and settings. It updates itself from GitHub releases.\n- Android: no changes, the version number follows the Windows release.\n\n**Windows:** download **CasaDeck-Windows.zip**, unzip it anywhere and run CasaDeck.exe (nothing else to install).\n**Android:** download **CasaDeck.apk**; it updates 1.2 in place.",
+    "assets": [
+     {
+      "name": "CasaDeck-Windows.zip",
+      "url": "https://github.com/carellice/CasaDeck/releases/download/v1.3/CasaDeck-Windows.zip",
+      "size": 64162365,
+      "downloads": 0
+     },
+     {
+      "name": "CasaDeck.apk",
+      "url": "https://github.com/carellice/CasaDeck/releases/download/v1.3/CasaDeck.apk",
+      "size": 2713203,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "dev.casadeck",
+   "dueffe": false
+  },
+  {
    "id": "jonica",
    "name": "Jonica",
    "description": "Jonica: app Android etica per scoprire la stagionalità dei prodotti e le botteghe di quartiere",
@@ -509,7 +672,7 @@
       "name": "Jonica-1.7.2.apk",
       "url": "https://github.com/carellice/jonica/releases/download/v1.7.2/Jonica-1.7.2.apk",
       "size": 3399122,
-      "downloads": 0
+      "downloads": 3
      }
     ]
    },
@@ -588,84 +751,6 @@
    "hidden": false,
    "androidPackage": "it.dueffe.streamwise",
    "dueffe": true
-  },
-  {
-   "id": "CasaDeck",
-   "name": "CasaDeck",
-   "description": "App Android nativa per gestire il tuo home server CasaOS",
-   "about": "CasaDeck è l'app Android nativa per il tuo home server CasaOS: monitora le risorse, gestisci i file, apri le app e usa la shell, tutto dal telefono.\n\n1. Scarica CasaDeck.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da origini sconosciute. 3. Inserisci l'indirizzo di CasaOS (es. http://192.168.1.10) e le tue credenziali.",
-   "features": [
-    "📊 Dashboard in tempo reale: CPU, RAM, disco, temperatura, rete e grafico del carico degli ultimi 90 secondi",
-    "📱 App: vedi e apri le app installate su CasaOS, con il loro stato",
-    "📁 File manager: sfoglia il server e carica file e intere cartelle, anche in background",
-    "💻 Terminale SSH: la password resta in memoria solo mentre l'app è aperta",
-    "🧩 Widget per la home: risorse, stato del server e griglia delle app CasaOS",
-    "⚡ Riquadro Impostazioni rapide per raggiungere le tue app dalla tendina"
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-11-06T11:35:56Z",
-   "updatedAt": "2026-11-06T11:45:18Z",
-   "repoUrl": "https://github.com/carellice/CasaDeck",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/CasaDeck"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.1",
-     "url": "https://github.com/carellice/CasaDeck/releases/tag/v1.1"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/CasaDeck/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/CasaDeck/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/icon.png",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/home-light.png",
-    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/home-dark.png",
-    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/files.png",
-    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/terminal.png",
-    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/settings.png",
-    "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/widget.png"
-   ],
-   "video": null,
-   "release": {
-    "tag": "v1.1",
-    "name": "CasaDeck 1.1",
-    "date": "2026-11-06T11:45:18Z",
-    "url": "https://github.com/carellice/CasaDeck/releases/tag/v1.1",
-    "notes": "New app icon inspired by the CasaOS logo, reimagined for Android (themed icon included). Download **CasaDeck.apk** below; it updates 1.0 in place.",
-    "assets": [
-     {
-      "name": "CasaDeck.apk",
-      "url": "https://github.com/carellice/CasaDeck/releases/download/v1.1/CasaDeck.apk",
-      "size": 2712755,
-      "downloads": 2
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "dev.casadeck",
-   "dueffe": false
   },
   {
    "id": "MyExperience",
@@ -956,82 +1041,6 @@
    "featured": false,
    "hidden": false,
    "androidPackage": "com.nd2.app",
-   "dueffe": false
-  },
-  {
-   "id": "MemShot",
-   "name": "MemShot",
-   "description": "App Android che importa i tuoi screenshot, li legge con l'OCR e li cataloga in automatico (film, prompt AI, ricette…). Kotlin + Jetpack Compose, offline.",
-   "about": "Ogni screenshot entra da solo nell'app, viene letto e finisce nella categoria giusta: film, prompt per l'AI, ricette, chat, shopping e altre 17. Quando ti serve, lo ritrovi cercando qualsiasi parola scritta dentro.\n\nAndroid 10 o successivo · Gratuita · Senza pubblicità · Senza account · Funziona offline",
-   "features": [],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "android",
-    "jetpack-compose",
-    "kotlin",
-    "ml-kit",
-    "ocr",
-    "screenshots"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T14:40:24Z",
-   "updatedAt": "2026-10-16T15:01:48Z",
-   "repoUrl": "https://github.com/carellice/MemShot",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/MemShot"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.0.2",
-     "url": "https://github.com/carellice/MemShot/releases/tag/v1.0.2"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/MemShot/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/MemShot/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/MemShot/main/docs/icon.png",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/home.png",
-    "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/categorie.png",
-    "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/dettaglio.png",
-    "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/tiktok.png"
-   ],
-   "video": null,
-   "release": {
-    "tag": "v1.0.2",
-    "name": "MemShot v1.0.2",
-    "date": "2026-10-16T15:01:49Z",
-    "url": "https://github.com/carellice/MemShot/releases/tag/v1.0.2",
-    "notes": "APK di MemShot v1.0.2. Se hai già MemShot, aggiorna da Impostazioni → Aggiornamenti. Altrimenti scarica il file sul telefono Android e aprilo per installarlo (va consentita l'installazione da origini sconosciute).",
-    "assets": [
-     {
-      "name": "MemShot-v1.0.2.apk",
-      "url": "https://github.com/carellice/MemShot/releases/download/v1.0.2/MemShot-v1.0.2.apk",
-      "size": 30862314,
-      "downloads": 1
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "com.memshot.app",
    "dueffe": false
   },
   {
@@ -1328,7 +1337,7 @@
       "name": "Niente-Zombie-Per-Favore-0.4.1.48.apk",
       "url": "https://github.com/carellice/niente-zombie-per-favore/releases/download/v0.4.1.48/Niente-Zombie-Per-Favore-0.4.1.48.apk",
       "size": 119354637,
-      "downloads": 2
+      "downloads": 3
      },
      {
       "name": "Niente-Zombie-Per-Favore-Setup-0.4.1.48.exe",
@@ -1416,7 +1425,7 @@
       "name": "Spariaps.exe",
       "url": "https://github.com/carellice/spariaps-game/releases/download/v2.1.0/Spariaps.exe",
       "size": 117690792,
-      "downloads": 2
+      "downloads": 3
      }
     ]
    },
@@ -1709,7 +1718,7 @@
       "name": "IPTVISION-1.14.0.apk",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.0/IPTVISION-1.14.0.apk",
       "size": 8706160,
-      "downloads": 1
+      "downloads": 4
      },
      {
       "name": "IPTVISION-1.14.0.ipk",
