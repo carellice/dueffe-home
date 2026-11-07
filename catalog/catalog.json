@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-07T10:23:51.690Z",
+ "generatedAt": "2026-11-07T21:33:38.832Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -36,79 +36,6 @@
  ],
  "projects": [
   {
-   "id": "money",
-   "name": "Money",
-   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
-   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
-   "features": [
-    "Font Bricolage Grotesque (SIL OFL).",
-    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "android",
-    "cloudflare-workers-ai",
-    "jetpack-compose",
-    "kotlin",
-    "personal-finance"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-06T21:26:42Z",
-   "repoUrl": "https://github.com/carellice/money",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/money"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.13.1",
-     "url": "https://github.com/carellice/money/releases/tag/v1.13.1"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/money/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/money/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.13.1",
-    "name": "Money 1.13.1",
-    "date": "2026-11-06T21:26:46Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.13.1",
-    "notes": "## Novita'\n- Chiedi a Money: i movimenti dettati si preparano anche quando l'AI scrive importi con la virgola, nomi al posto degli id o una sottocategoria come categoria, e la persona non resta più vuota",
-    "assets": [
-     {
-      "name": "Money-1.13.1.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.13.1/Money-1.13.1.apk",
-      "size": 6223889,
-      "downloads": 4
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "com.money.app",
-   "dueffe": false
-  },
-  {
    "id": "hommaterial",
    "name": "Hommaterial",
    "description": "Comanda la tua smart home Alexa, senza fronzoli.",
@@ -133,7 +60,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-06T17:22:50Z",
+   "updatedAt": "2026-11-07T21:25:55Z",
    "repoUrl": "https://github.com/carellice/hommaterial",
    "webUrl": "https://carellice.github.io/hommaterial/",
    "links": [
@@ -149,8 +76,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.56",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.56"
+     "label": "Release v1.59",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.59"
     },
     {
      "type": "releases",
@@ -169,29 +96,102 @@
    ],
    "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
    "release": {
-    "tag": "v1.56",
-    "name": "Hommaterial 1.56",
-    "date": "2026-11-06T17:22:50Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.56",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.55...v1.56",
+    "tag": "v1.59",
+    "name": "Hommaterial 1.59",
+    "date": "2026-11-07T21:25:55Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.59",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.58...v1.59",
     "assets": [
      {
-      "name": "Hommaterial-v1.56-windows-x64.zip",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.56/Hommaterial-v1.56-windows-x64.zip",
+      "name": "Hommaterial-v1.59-windows-x64.zip",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.59/Hommaterial-v1.59-windows-x64.zip",
       "size": 127151627,
-      "downloads": 1
+      "downloads": 0
      },
      {
-      "name": "Hommaterial-v1.56.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.56/Hommaterial-v1.56.apk",
-      "size": 3753497,
-      "downloads": 2
+      "name": "Hommaterial-v1.59.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.59/Hommaterial-v1.59.apk",
+      "size": 3757069,
+      "downloads": 0
      }
     ]
    },
    "featured": true,
    "hidden": false,
    "androidPackage": "app.hommaterial",
+   "dueffe": false
+  },
+  {
+   "id": "money",
+   "name": "Money",
+   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
+   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
+   "features": [
+    "Font Bricolage Grotesque (SIL OFL).",
+    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "cloudflare-workers-ai",
+    "jetpack-compose",
+    "kotlin",
+    "personal-finance"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-28T11:41:54Z",
+   "updatedAt": "2026-11-07T17:41:03Z",
+   "repoUrl": "https://github.com/carellice/money",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/money"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.15.1",
+     "url": "https://github.com/carellice/money/releases/tag/v1.15.1"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/money/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/money/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.15.1",
+    "name": "Money 1.15.1",
+    "date": "2026-11-07T17:41:08Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.15.1",
+    "notes": "## Novita'\n- Pagine dei conti: chiusura animata anche tornando indietro o salvando, senza scatti",
+    "assets": [
+     {
+      "name": "Money-1.15.1.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.15.1/Money-1.15.1.apk",
+      "size": 6305805,
+      "downloads": 6
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "com.money.app",
    "dueffe": false
   },
   {
@@ -440,6 +440,234 @@
    "dueffe": false
   },
   {
+   "id": "emMeDi",
+   "name": "emMeDi",
+   "description": "Lettore di file Markdown per Android, semplice e curato",
+   "about": "emMeDi è un lettore di file Markdown per Android: leggi i tuoi .md formattati, spunta le to-do con un tocco e, quando serve, modifica dal codice o direttamente dall'anteprima. Il file viene salvato da solo.\n\nScarica emMeDi-x.y.z.apk dall'ultima release e aprilo sul telefono (Android 8.0+). Dalla versione 1.1.0 gli aggiornamenti si installano direttamente dall'app.",
+   "features": [
+    "👁️ Due viste: anteprima formattata e codice con evidenziazione della sintassi",
+    "☑️ To-do interattive: tocca una casella per spuntarla, il file si salva subito",
+    "✏️ Modifica dal codice o direttamente dall'anteprima, blocco per blocco",
+    "🕘 File recenti e apertura da qualsiasi file manager con Apri con",
+    "📋 Tabelle, citazioni, liste, codice e link supportati",
+    "🔄 Aggiornamenti direttamente dall'app"
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-07T17:18:50Z",
+   "updatedAt": "2026-11-07T21:32:44Z",
+   "repoUrl": "https://github.com/carellice/emMeDi",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/emMeDi"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.1.0",
+     "url": "https://github.com/carellice/emMeDi/releases/tag/v1.1.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/emMeDi/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/emMeDi/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/emMeDi/main/docs/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/emMeDi/main/docs/home.png",
+    "https://raw.githubusercontent.com/carellice/emMeDi/main/docs/preview.png",
+    "https://raw.githubusercontent.com/carellice/emMeDi/main/docs/preview2.png",
+    "https://raw.githubusercontent.com/carellice/emMeDi/main/docs/code.png",
+    "https://raw.githubusercontent.com/carellice/emMeDi/main/docs/edit.png",
+    "https://raw.githubusercontent.com/carellice/emMeDi/main/docs/dark.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.1.0",
+    "name": "emMeDi 1.1.0",
+    "date": "2026-11-07T21:32:47Z",
+    "url": "https://github.com/carellice/emMeDi/releases/tag/v1.1.0",
+    "notes": "- **Aggiornamenti dall'app**: all'avvio emMeDi controlla se c'è una versione nuova e la mostra in Home; un tocco la scarica e la installa. In fondo alla Home c'è anche *Controlla aggiornamenti*.\n\nInstalla **emMeDi-1.1.0.apk** (Android 8.0+). Si installa sopra la versione precedente senza perdere i file recenti. Dalla prossima versione potrai aggiornare direttamente dall'app.",
+    "assets": [
+     {
+      "name": "emMeDi-1.1.0.apk",
+      "url": "https://github.com/carellice/emMeDi/releases/download/v1.1.0/emMeDi-1.1.0.apk",
+      "size": 1498144,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "com.emmdi.app",
+   "dueffe": false
+  },
+  {
+   "id": "jonica",
+   "name": "Jonica",
+   "description": "Jonica: app Android etica per scoprire la stagionalità dei prodotti e le botteghe di quartiere",
+   "about": "Mangia di stagione. Compra vicino. Scarica l'ultima versione\n\nJonica è un'app Android etica che aiuta a fare una spesa più consapevole: scoprire cosa è davvero di stagione, capire dove vanno i soldi della spesa e trovare le botteghe di quartiere (fruttivendoli, macellerie, forni, pescherie, mercati rionali) vicino a te.",
+   "features": [
+    "Oggi: la data, la stagione, cosa succede nei campi questo mese (olio nuovo al frantoio, vendemmia, castagne, fermo pesca…), frutta e verdura al meglio adesso, novità e prodotti agli sgoccioli, curiosità e la bottega più vicina.",
+    "Stagioni: calendario mese per mese di frutta, verdura, pesce del Tirreno e dispensa (olio, ricotta, miele, legumi…), con consigli d'acquisto per ogni prodotto.",
+    "Filiera: dove va 1 € della spesa, perché la stagionalità conta, come leggere le etichette e una lista di piccoli impegni da spuntare.",
+    "Introduzione animata al primo avvio, rivedibile da Filiera, e"
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-04T19:47:39Z",
+   "updatedAt": "2026-11-07T21:20:51Z",
+   "repoUrl": "https://github.com/carellice/jonica",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/jonica"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.8.3",
+     "url": "https://github.com/carellice/jonica/releases/tag/v1.8.3"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/jonica/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/jonica/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/jonica/main/docs/logo.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb1.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/today.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/seasons.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/shops.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb2.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb3.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/aware.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/shops_full.jpg",
+    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/today_dark.jpg"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.8.3",
+    "name": "v1.8.3",
+    "date": "2026-11-07T21:20:55Z",
+    "url": "https://github.com/carellice/jonica/releases/tag/v1.8.3",
+    "notes": "Cifre più chiare in Filiera.\n\n- In \"Dove va 1 € della tua spesa\" e nell'introduzione le cifre sono in euro: 0,20 € invece di 20¢\n\nPuoi aggiornare direttamente dall'app.",
+    "assets": [
+     {
+      "name": "Jonica-1.8.3.apk",
+      "url": "https://github.com/carellice/jonica/releases/download/v1.8.3/Jonica-1.8.3.apk",
+      "size": 12647920,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.jonica.app",
+   "dueffe": false
+  },
+  {
+   "id": "MyExperience",
+   "name": "MyExperience",
+   "description": "Diario di viaggio per Android: globo 3D, album e pianificazione viaggi",
+   "about": "MyExperience è un diario di viaggio per Android: un globo 3D con i luoghi che hai visitato, album-diario con foto, video e blocchi di testo, e la pianificazione dei prossimi viaggi.\n\n1. Scarica l'APK dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da origini sconosciute.",
+   "features": [
+    "🌍 Globo 3D interattivo con i tuoi luoghi, personalizzabile (luce, nuvole, riflessi, stelle…)",
+    "🏅 Bollini da collezione dei patrimoni UNESCO italiani: si raccolgono a meno di 200 m dal sito",
+    "📔 Album-diario per ogni viaggio, con temi, foto e video",
+    "🚐 Album \"on the road\" con più tappe, mappa e percorso disegnato nel diario",
+    "🧳 Pianificazione dei viaggi con tappe e cose da fare: a viaggio concluso diventa da solo un unico album",
+    "👤 Profilo con statistiche (paesi, giorni, foto, video)"
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-05T14:24:58Z",
+   "updatedAt": "2026-11-07T18:33:57Z",
+   "repoUrl": "https://github.com/carellice/MyExperience",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/MyExperience"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.7.1",
+     "url": "https://github.com/carellice/MyExperience/releases/tag/v1.7.1"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/MyExperience/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/MyExperience/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/MyExperience/main/branding/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.7.1",
+    "name": "MyExperience v1.7.1",
+    "date": "2026-11-07T18:33:57Z",
+    "url": "https://github.com/carellice/MyExperience/releases/tag/v1.7.1",
+    "notes": "- Mappe vettoriali in stile Google Maps (MapLibre + OpenFreeMap), chiare e scure con i nomi delle strade, senza API key\n- Risolto il messaggio \"API key required\" sulle mappe",
+    "assets": [
+     {
+      "name": "MyExperience-v1.7.1.apk",
+      "url": "https://github.com/carellice/MyExperience/releases/download/v1.7.1/MyExperience-v1.7.1.apk",
+      "size": 14402210,
+      "downloads": 3
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "com.myexperience.app",
+   "dueffe": false
+  },
+  {
    "id": "MemShot",
    "name": "MemShot",
    "description": "App Android che importa i tuoi screenshot, li legge con l'OCR e li cataloga in automatico (film, prompt AI, ricette…). Kotlin + Jetpack Compose, offline.",
@@ -462,7 +690,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-10-15T14:40:24Z",
-   "updatedAt": "2026-11-06T22:53:41Z",
+   "updatedAt": "2026-11-07T17:34:38Z",
    "repoUrl": "https://github.com/carellice/MemShot",
    "webUrl": null,
    "links": [
@@ -473,8 +701,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.0.3",
-     "url": "https://github.com/carellice/MemShot/releases/tag/v1.0.3"
+     "label": "Release v1.0.4",
+     "url": "https://github.com/carellice/MemShot/releases/tag/v1.0.4"
     },
     {
      "type": "releases",
@@ -496,17 +724,17 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.0.3",
-    "name": "MemShot v1.0.3",
-    "date": "2026-11-06T22:53:41Z",
-    "url": "https://github.com/carellice/MemShot/releases/tag/v1.0.3",
-    "notes": "Uno screenshot a cui togli tutti i tag finisce in Altro.\n\nATTENZIONE: questa versione è firmata con una chiave nuova. L'aggiornamento dall'app non si installa sopra la versione vecchia. Prima fai un backup (Impostazioni → Backup), poi disinstalla MemShot, installa questo APK e ripristina il backup. Dalla prossima versione gli aggiornamenti dall'app tornano a funzionare.",
+    "tag": "v1.0.4",
+    "name": "MemShot v1.0.4",
+    "date": "2026-11-07T17:34:39Z",
+    "url": "https://github.com/carellice/MemShot/releases/tag/v1.0.4",
+    "notes": "APK di MemShot v1.0.4. Se hai già MemShot, aggiorna da Impostazioni → Aggiornamenti. Altrimenti scarica il file sul telefono Android e aprilo per installarlo (va consentita l'installazione da origini sconosciute).\n\n- Corretto l'errore dell'aggiornamento dall'app: le release ora sono sempre firmate con la stessa chiave, e se la firma non combacia l'app lo spiega invece di fallire.",
     "assets": [
      {
-      "name": "MemShot-v1.0.3.apk",
-      "url": "https://github.com/carellice/MemShot/releases/download/v1.0.3/MemShot-v1.0.3.apk",
+      "name": "MemShot-v1.0.4.apk",
+      "url": "https://github.com/carellice/MemShot/releases/download/v1.0.4/MemShot-v1.0.4.apk",
       "size": 30862314,
-      "downloads": 3
+      "downloads": 2
      }
     ]
    },
@@ -603,85 +831,6 @@
    "dueffe": false
   },
   {
-   "id": "jonica",
-   "name": "Jonica",
-   "description": "Jonica: app Android etica per scoprire la stagionalità dei prodotti e le botteghe di quartiere",
-   "about": "Mangia di stagione. Compra vicino. Scarica l'ultima versione\n\nJonica è un'app Android etica che aiuta a fare una spesa più consapevole: scoprire cosa è davvero di stagione, capire dove vanno i soldi della spesa e trovare le botteghe di quartiere (fruttivendoli, macellerie, forni, pescherie, mercati rionali) vicino a te.",
-   "features": [
-    "Oggi: la data, la stagione, cosa succede nei campi questo mese (olio nuovo al frantoio, vendemmia, castagne, fermo pesca…), frutta e verdura al meglio adesso, novità e prodotti agli sgoccioli, curiosità e la bottega più vicina.",
-    "Stagioni: calendario mese per mese di frutta, verdura, pesce del Tirreno e dispensa (olio, ricotta, miele, legumi…), con consigli d'acquisto per ogni prodotto.",
-    "Filiera: dove va 1 € della spesa, perché la stagionalità conta, come leggere le etichette e una lista di piccoli impegni da spuntare.",
-    "Introduzione animata al primo avvio, rivedibile da Filiera, e"
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-11-04T19:47:39Z",
-   "updatedAt": "2026-11-06T17:05:28Z",
-   "repoUrl": "https://github.com/carellice/jonica",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/jonica"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.7.2",
-     "url": "https://github.com/carellice/jonica/releases/tag/v1.7.2"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/jonica/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/jonica/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/jonica/main/docs/logo.png",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb1.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/today.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/seasons.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/shops.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb2.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb3.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/aware.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/shops_full.jpg",
-    "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/today_dark.jpg"
-   ],
-   "video": null,
-   "release": {
-    "tag": "v1.7.2",
-    "name": "Jonica 1.7.2",
-    "date": "2026-11-06T17:05:29Z",
-    "url": "https://github.com/carellice/jonica/releases/tag/v1.7.2",
-    "notes": "Interruttore delle botteghe più fluido.\n\n- Passando da Vicino a te a Online (e viceversa) la pillola dell'interruttore scivola sulla scelta\n- L'interruttore resta fermo: non si sposta più in basso cambiando modalità\n\nPuoi aggiornare direttamente dall'app.",
-    "assets": [
-     {
-      "name": "Jonica-1.7.2.apk",
-      "url": "https://github.com/carellice/jonica/releases/download/v1.7.2/Jonica-1.7.2.apk",
-      "size": 3399122,
-      "downloads": 3
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "it.jonica.app",
-   "dueffe": false
-  },
-  {
    "id": "dueffe-streamwise",
    "name": "StreamWise",
    "description": "StreamWise per Android – cosa guardare, dove e quando",
@@ -751,77 +900,6 @@
    "hidden": false,
    "androidPackage": "it.dueffe.streamwise",
    "dueffe": true
-  },
-  {
-   "id": "MyExperience",
-   "name": "MyExperience",
-   "description": "Diario di viaggio per Android: globo 3D, album e pianificazione viaggi",
-   "about": "MyExperience è un diario di viaggio per Android: un globo 3D con i luoghi che hai visitato, album-diario con foto, video e blocchi di testo, e la pianificazione dei prossimi viaggi.\n\n1. Scarica l'APK dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da origini sconosciute.",
-   "features": [
-    "🌍 Globo 3D interattivo con i tuoi luoghi, personalizzabile (luce, nuvole, riflessi, stelle…)",
-    "🏅 Bollini da collezione dei patrimoni UNESCO italiani: si raccolgono a meno di 200 m dal sito",
-    "📔 Album-diario per ogni viaggio, con temi, foto e video",
-    "🚐 Album \"on the road\" con più tappe, mappa e percorso disegnato nel diario",
-    "🧳 Pianificazione dei viaggi con tappe e cose da fare: a viaggio concluso diventa da solo un unico album",
-    "👤 Profilo con statistiche (paesi, giorni, foto, video)"
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-11-05T14:24:58Z",
-   "updatedAt": "2026-11-06T07:21:05Z",
-   "repoUrl": "https://github.com/carellice/MyExperience",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/MyExperience"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.6.0",
-     "url": "https://github.com/carellice/MyExperience/releases/tag/v1.6.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/MyExperience/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/MyExperience/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/MyExperience/main/branding/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.6.0",
-    "name": "MyExperience v1.6.0",
-    "date": "2026-11-06T07:21:05Z",
-    "url": "https://github.com/carellice/MyExperience/releases/tag/v1.6.0",
-    "notes": "Novità 1.6.0:\n- Barra di ricerca sopra il globo per volare su città, regioni e paesi\n- Zoom più profondo; oltre il limite si apre la mappa stradale della città\n- Animazioni di cambio pagina più fluide",
-    "assets": [
-     {
-      "name": "MyExperience-v1.6.0.apk",
-      "url": "https://github.com/carellice/MyExperience/releases/download/v1.6.0/MyExperience-v1.6.0.apk",
-      "size": 5407307,
-      "downloads": 3
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "com.myexperience.app",
-   "dueffe": false
   },
   {
    "id": "dueffe-health",
@@ -1730,7 +1808,7 @@
       "name": "IPTVISION-1.14.0.wgt",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.0/IPTVISION-1.14.0.wgt",
       "size": 151862,
-      "downloads": 1
+      "downloads": 2
      },
      {
       "name": "IPTVISION-Setup-1.14.0.exe",

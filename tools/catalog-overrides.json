@@ -252,6 +252,20 @@
         "🎒 Spedizioni in nove destinazioni per trovare materiali e scoperte",
         "📔 Diario con 32 obiettivi e una storia in quattro capitoli, senza scadenze"
       ]
+    },
+    "emMeDi": {
+      "name": "emMeDi",
+      "androidPackage": "com.emmdi.app",
+      "description": "Lettore di file Markdown per Android, semplice e curato",
+      "about": "emMeDi è un lettore di file Markdown per Android: leggi i tuoi .md formattati, spunta le to-do con un tocco e, quando serve, modifica dal codice o direttamente dall'anteprima. Il file viene salvato da solo.\n\nScarica emMeDi-x.y.z.apk dall'ultima release e aprilo sul telefono (Android 8.0+). Dalla versione 1.1.0 gli aggiornamenti si installano direttamente dall'app.",
+      "features": [
+        "👁️ Due viste: anteprima formattata e codice con evidenziazione della sintassi",
+        "☑️ To-do interattive: tocca una casella per spuntarla, il file si salva subito",
+        "✏️ Modifica dal codice o direttamente dall'anteprima, blocco per blocco",
+        "🕘 File recenti e apertura da qualsiasi file manager con Apri con",
+        "📋 Tabelle, citazioni, liste, codice e link supportati",
+        "🔄 Aggiornamenti direttamente dall'app"
+      ]
     }
   }
 }
