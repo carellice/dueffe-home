@@ -685,7 +685,8 @@ function wireDetail(p) {
   $$('[data-accent]', root).forEach((el) => applyAccent(el, el.dataset.accent));
   $('#back').addEventListener('click', () => (history.length > 1 && state.cameFromApp ? history.back() : navigate('#/')));
   $('#share').addEventListener('click', async () => {
-    const url = `${location.origin}${location.pathname}#/p/${encodeURIComponent(p.id)}`;
+    // Sempre la scheda su GitHub Pages, anche se il sito è aperto da un altro indirizzo.
+    const url = `https://carellice.github.io/dueffe-home/#/p/${encodeURIComponent(p.id)}`;
     if (navigator.share) navigator.share({ title: p.name, text: p.description, url }).catch(() => {});
     else { await navigator.clipboard.writeText(url); toast('Link copiato negli appunti'); }
   });

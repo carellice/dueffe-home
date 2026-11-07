@@ -260,7 +260,8 @@ fun DetailScreen(opened: Opened, catalog: Catalog, vm: AppViewModel, scopes: Sha
                 modifier = Modifier.weight(1f).padding(horizontal = 12.dp).graphicsLayer { alpha = topAlpha; translationY = (1f - topAlpha) * 16f },
             )
             RoundIcon(Icons.Rounded.Share, "Condividi") {
-                shareText(context, p.name, "${p.name} — ${p.description}\n${p.webUrl ?: p.repoUrl}")
+                // La scheda del progetto sulla versione web, come il tasto Condividi del sito.
+                shareText(context, p.name, "${p.name} — ${p.description}\nhttps://carellice.github.io/dueffe-home/#/p/${android.net.Uri.encode(p.id)}")
             }
         }
 
