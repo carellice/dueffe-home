@@ -267,6 +267,21 @@
         "📔 Diario con 32 obiettivi e una storia in quattro capitoli, senza scadenze"
       ]
     },
+    "dueffoto": {
+      "name": "Dueffoto",
+      "androidPackage": "app.dueffoto",
+      "description": "Foto e video nello stile delle vecchie fotocamere a pellicola, con modo cinema",
+      "about": "Dueffoto mette nel telefono le fotocamere che non esistono più: scegli una Polaroid SX-70, una Olympus Trip 35 con Kodak Gold o una Contax T2 con CineStill e scatta. Il mirino è già sviluppato, quindi vedi pellicola, grana e cornice mentre inquadri. C'è anche un modo cinema con color grading e rapporti panoramici.\n\nScarica Dueffoto-x.y.z.apk dall'ultima release e aprilo sul telefono (Android 8.0+). Gli aggiornamenti si installano direttamente dall'app.",
+      "features": [
+        "🎞️ 19 fotocamere analogiche, ognuna con la sua pellicola",
+        "🎬 Modo cinema: 8 color grading, 16:9, 1.85 e 2.39",
+        "👁️ Mirino sviluppato dal vivo: vedi il risultato prima di scattare",
+        "🖼️ Cornici istantanee, bordo pellicola con perforazioni e data arancione",
+        "🧪 Scatta e scegli dopo in camera oscura, quante volte vuoi",
+        "📹 Video con la stessa pellicola",
+        "🔄 Aggiornamenti direttamente dall'app"
+      ]
+    },
     "emMeDi": {
       "name": "emMeDi",
       "androidPackage": "com.emmdi.app",

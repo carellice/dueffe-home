@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-08T11:12:41.771Z",
+ "generatedAt": "2026-11-08T12:13:02.834Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -99,7 +99,7 @@
       "name": "Money-1.16.0.apk",
       "url": "https://github.com/carellice/money/releases/download/v1.16.0/Money-1.16.0.apk",
       "size": 6322193,
-      "downloads": 4
+      "downloads": 5
      }
     ]
    },
@@ -437,6 +437,90 @@
    "featured": true,
    "hidden": false,
    "androidPackage": "it.piccolegioie.app",
+   "dueffe": false
+  },
+  {
+   "id": "dueffoto",
+   "name": "Dueffoto",
+   "description": "Foto e video nello stile delle vecchie fotocamere a pellicola, con modo cinema",
+   "about": "Dueffoto mette nel telefono le fotocamere che non esistono più: scegli una Polaroid SX-70, una Olympus Trip 35 con Kodak Gold o una Contax T2 con CineStill e scatta. Il mirino è già sviluppato, quindi vedi pellicola, grana e cornice mentre inquadri. C'è anche un modo cinema con color grading e rapporti panoramici.\n\nScarica Dueffoto-x.y.z.apk dall'ultima release e aprilo sul telefono (Android 8.0+). Gli aggiornamenti si installano direttamente dall'app.",
+   "features": [
+    "🎞️ 19 fotocamere analogiche, ognuna con la sua pellicola",
+    "🎬 Modo cinema: 8 color grading, 16:9, 1.85 e 2.39",
+    "👁️ Mirino sviluppato dal vivo: vedi il risultato prima di scattare",
+    "🖼️ Cornici istantanee, bordo pellicola con perforazioni e data arancione",
+    "🧪 Scatta e scegli dopo in camera oscura, quante volte vuoi",
+    "📹 Video con la stessa pellicola",
+    "🔄 Aggiornamenti direttamente dall'app"
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "camera",
+    "film-photography",
+    "jetpack-compose",
+    "kotlin"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-11-08T12:12:07Z",
+   "updatedAt": "2026-11-08T12:12:17Z",
+   "repoUrl": "https://github.com/carellice/dueffoto",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffoto"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.0.0",
+     "url": "https://github.com/carellice/dueffoto/releases/tag/v1.0.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffoto/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffoto/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/icon.png",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/camera.jpg",
+    "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/istantanea.jpg",
+    "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/pellicola.jpg",
+    "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/cinema.jpg",
+    "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/camera-oscura.jpg"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.0.0",
+    "name": "Dueffoto 1.0.0",
+    "date": "2026-11-08T12:12:20Z",
+    "url": "https://github.com/carellice/dueffoto/releases/tag/v1.0.0",
+    "notes": "Prima versione.\n- 19 fotocamere analogiche con la loro pellicola, cornici istantanee, bordo pellicola e data arancione\n- Modo cinema con 8 color grading e rapporti 16:9, 1.85, 2.39\n- Mirino già sviluppato dal vivo\n- Scegli la pellicola prima di scattare o dopo, in camera oscura\n- Video sviluppati con la stessa pellicola\n- Aggiornamenti dall'app",
+    "assets": [
+     {
+      "name": "Dueffoto-1.0.0.apk",
+      "url": "https://github.com/carellice/dueffoto/releases/download/v1.0.0/Dueffoto-1.0.0.apk",
+      "size": 2687316,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "app.dueffoto",
    "dueffe": false
   },
   {
