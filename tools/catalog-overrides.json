@@ -164,6 +164,20 @@
         "✅ Spunta l'elemento su Notion a lavoro finito"
       ]
     },
+    "confronto-spesa": {
+      "category": "sviluppo",
+      "name": "Confronto spesa",
+      "platforms": [],
+      "about": "Una skill per Claude Code: le dai la lista della spesa e il tuo CAP, lei ti dice in quale supermercato vicino a casa spendi meno.\n\nScrivi a Claude la lista come ti viene (anche una foto) e chiedi dove conviene fare la spesa: la skill parte da sola.",
+      "features": [
+        "🛒 Trova i supermercati vicini al tuo CAP: Conad, Coop, Lidl, Eurospin, Esselunga e altri",
+        "🔎 Cerca i prezzi nei cataloghi online, su Everli o nei volantini",
+        "🔗 Ogni prezzo ha fonte e link, i prodotti non trovati vengono segnalati",
+        "🏆 Classifica dei negozi, risparmio e consiglio se dividere la spesa",
+        "📝 Una lista da spuntare per ogni supermercato, divisa per reparto",
+        "📲 Resoconto su Telegram, email, chat o file"
+      ]
+    },
     "alexa-notion": {
       "category": "sviluppo",
       "name": "Alexa → Notion"

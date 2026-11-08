@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-07T21:34:04.047Z",
+ "generatedAt": "2026-11-08T11:12:13.002Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -35,6 +35,79 @@
   }
  ],
  "projects": [
+  {
+   "id": "money",
+   "name": "Money",
+   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
+   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
+   "features": [
+    "Font Bricolage Grotesque (SIL OFL).",
+    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "cloudflare-workers-ai",
+    "jetpack-compose",
+    "kotlin",
+    "personal-finance"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-28T11:41:54Z",
+   "updatedAt": "2026-11-07T22:09:26Z",
+   "repoUrl": "https://github.com/carellice/money",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/money"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.16.0",
+     "url": "https://github.com/carellice/money/releases/tag/v1.16.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/money/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/money/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.16.0",
+    "name": "Money 1.16.0",
+    "date": "2026-11-07T22:09:29Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.16.0",
+    "notes": "## Novita'\n- Metodi di pagamento predefiniti eliminabili: se ci sono movimenti, spese fisse o abbonamenti pagati cos├¼ si sceglie su quale altro metodo spostarli, anche per quelli personalizzati",
+    "assets": [
+     {
+      "name": "Money-1.16.0.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.16.0/Money-1.16.0.apk",
+      "size": 6322193,
+      "downloads": 4
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "com.money.app",
+   "dueffe": false
+  },
   {
    "id": "hommaterial",
    "name": "Hommaterial",
@@ -106,92 +179,19 @@
       "name": "Hommaterial-v1.59-windows-x64.zip",
       "url": "https://github.com/carellice/hommaterial/releases/download/v1.59/Hommaterial-v1.59-windows-x64.zip",
       "size": 127151627,
-      "downloads": 0
+      "downloads": 2
      },
      {
       "name": "Hommaterial-v1.59.apk",
       "url": "https://github.com/carellice/hommaterial/releases/download/v1.59/Hommaterial-v1.59.apk",
       "size": 3757069,
-      "downloads": 0
+      "downloads": 2
      }
     ]
    },
    "featured": true,
    "hidden": false,
    "androidPackage": "app.hommaterial",
-   "dueffe": false
-  },
-  {
-   "id": "money",
-   "name": "Money",
-   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
-   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
-   "features": [
-    "Font Bricolage Grotesque (SIL OFL).",
-    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "android",
-    "cloudflare-workers-ai",
-    "jetpack-compose",
-    "kotlin",
-    "personal-finance"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-07T17:41:03Z",
-   "repoUrl": "https://github.com/carellice/money",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/money"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.15.1",
-     "url": "https://github.com/carellice/money/releases/tag/v1.15.1"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/money/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/money/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.15.1",
-    "name": "Money 1.15.1",
-    "date": "2026-11-07T17:41:08Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.15.1",
-    "notes": "## Novita'\n- Pagine dei conti: chiusura animata anche tornando indietro o salvando, senza scatti",
-    "assets": [
-     {
-      "name": "Money-1.15.1.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.15.1/Money-1.15.1.apk",
-      "size": 6305805,
-      "downloads": 6
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "com.money.app",
    "dueffe": false
   },
   {
@@ -508,7 +508,7 @@
       "name": "emMeDi-1.1.0.apk",
       "url": "https://github.com/carellice/emMeDi/releases/download/v1.1.0/emMeDi-1.1.0.apk",
       "size": 1498144,
-      "downloads": 0
+      "downloads": 2
      }
     ]
    },
@@ -587,7 +587,7 @@
       "name": "Jonica-1.8.3.apk",
       "url": "https://github.com/carellice/jonica/releases/download/v1.8.3/Jonica-1.8.3.apk",
       "size": 12647920,
-      "downloads": 0
+      "downloads": 3
      }
     ]
    },
@@ -734,7 +734,7 @@
       "name": "MemShot-v1.0.4.apk",
       "url": "https://github.com/carellice/MemShot/releases/download/v1.0.4/MemShot-v1.0.4.apk",
       "size": 30862314,
-      "downloads": 2
+      "downloads": 3
      }
     ]
    },
@@ -2736,6 +2736,56 @@
     }
    ],
    "icon": "https://raw.githubusercontent.com/carellice/devdex/main/public/pwa-512x512.png",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "hidden": false,
+   "androidPackage": null,
+   "dueffe": false
+  },
+  {
+   "id": "confronto-spesa",
+   "name": "Confronto spesa",
+   "description": "Skill per Claude Code: confronta la spesa nei supermercati vicini al tuo CAP e ti dice dove costa meno",
+   "about": "Una skill per Claude Code: le dai la lista della spesa e il tuo CAP, lei ti dice in quale supermercato vicino a casa spendi meno.\n\nScrivi a Claude la lista come ti viene (anche una foto) e chiedi dove conviene fare la spesa: la skill parte da sola.",
+   "features": [
+    "🛒 Trova i supermercati vicini al tuo CAP: Conad, Coop, Lidl, Eurospin, Esselunga e altri",
+    "🔎 Cerca i prezzi nei cataloghi online, su Everli o nei volantini",
+    "🔗 Ogni prezzo ha fonte e link, i prodotti non trovati vengono segnalati",
+    "🏆 Classifica dei negozi, risparmio e consiglio se dividere la spesa",
+    "📝 Una lista da spuntare per ogni supermercato, divisa per reparto",
+    "📲 Resoconto su Telegram, email, chat o file"
+   ],
+   "category": "sviluppo",
+   "platforms": [],
+   "language": null,
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-08T11:07:52Z",
+   "updatedAt": "2026-11-08T11:07:58Z",
+   "repoUrl": "https://github.com/carellice/confronto-spesa",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/confronto-spesa"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/confronto-spesa/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/confronto-spesa/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/confronto-spesa/main/assets/icon.png",
    "screenshots": [],
    "video": null,
    "release": null,
