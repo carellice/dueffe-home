@@ -229,7 +229,7 @@ private fun InstalledRow(app: InstalledApp, vm: AppViewModel, scopes: SharedScop
 
 /** Il cestino: Android chiede conferma prima di disinstallare. */
 @Composable
-private fun UninstallButton(app: InstalledApp, vm: AppViewModel, modifier: Modifier = Modifier) {
+internal fun UninstallButton(app: InstalledApp, vm: AppViewModel, modifier: Modifier = Modifier) {
     Box(
         modifier.size(40.dp).pressScale(0.9f) { vm.uninstallApp(app) }.clip(CircleShape),
         contentAlignment = Alignment.Center,

@@ -311,7 +311,14 @@ private fun Actions(p: Project, vm: AppViewModel, accent: Color, modifier: Modif
         val download = p.primaryDownload
         Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
             when {
-                p.apk != null -> AppActionButton(p, vm, Modifier.weight(1f), accent = accent)
+                p.apk != null -> {
+                    AppActionButton(p, vm, Modifier.weight(1f), accent = accent)
+                    // Disinstalla accanto ad Apri, solo se l'app è sul telefono.
+                    vm.installedOf(p)?.let { app ->
+                        val shape = RoundedCornerShape(18.dp)
+                        UninstallButton(app, vm, Modifier.size(50.dp).background(DF.Surface, shape).border(1.dp, DF.LineStrong, shape))
+                    }
+                }
                 download != null -> GoldButton(
                     if (download.name.endsWith(".apk", true)) "Scarica APK" else "Scarica",
                     Icons.Rounded.Download, Modifier.weight(1f), accent = accent,
