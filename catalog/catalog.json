@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-10T14:45:21.948Z",
+ "generatedAt": "2026-11-10T16:03:26.168Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -60,7 +60,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-10T09:19:12Z",
+   "updatedAt": "2026-11-10T16:00:12Z",
    "repoUrl": "https://github.com/carellice/hommaterial",
    "webUrl": "https://carellice.github.io/hommaterial/",
    "links": [
@@ -76,8 +76,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.65",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.65"
+     "label": "Release v1.66",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.66"
     },
     {
      "type": "releases",
@@ -96,29 +96,103 @@
    ],
    "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
    "release": {
-    "tag": "v1.65",
-    "name": "Hommaterial 1.65",
-    "date": "2026-11-10T09:18:35Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.65",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.64...v1.65",
+    "tag": "v1.66",
+    "name": "Hommaterial 1.66",
+    "date": "2026-11-10T15:59:50Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.66",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.65...v1.66",
     "assets": [
      {
-      "name": "Hommaterial-v1.65-windows-x64.zip",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.65/Hommaterial-v1.65-windows-x64.zip",
-      "size": 127151622,
-      "downloads": 1
+      "name": "Hommaterial-v1.66-windows-x64.zip",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.66/Hommaterial-v1.66-windows-x64.zip",
+      "size": 127151638,
+      "downloads": 0
      },
      {
-      "name": "Hommaterial-v1.65.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.65/Hommaterial-v1.65.apk",
-      "size": 4709585,
-      "downloads": 1
+      "name": "Hommaterial-v1.66.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.66/Hommaterial-v1.66.apk",
+      "size": 4711093,
+      "downloads": 0
      }
     ]
    },
    "featured": true,
    "hidden": false,
    "androidPackage": "app.hommaterial",
+   "dueffe": false
+  },
+  {
+   "id": "money",
+   "name": "Money",
+   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
+   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
+   "features": [
+    "Font Bricolage Grotesque (SIL OFL).",
+    "Texture della pelle dello stile skeuomorfico generata con ChatGPT.",
+    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "cloudflare-workers-ai",
+    "jetpack-compose",
+    "kotlin",
+    "personal-finance"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-28T11:41:54Z",
+   "updatedAt": "2026-11-10T14:54:43Z",
+   "repoUrl": "https://github.com/carellice/money",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/money"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.19.0",
+     "url": "https://github.com/carellice/money/releases/tag/v1.19.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/money/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/money/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.19.0",
+    "name": "Money 1.19.0",
+    "date": "2026-11-10T14:54:34Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.19.0",
+    "notes": "## Novita'\n- PWA su desktop e schermi grandi: l'app riempie la finestra, contenuti e barre in una colonna centrata, barra delle schede come un dock, schede di inserimento, chat, accesso e introduzione in colonna",
+    "assets": [
+     {
+      "name": "Money-1.19.0.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.19.0/Money-1.19.0.apk",
+      "size": 6489757,
+      "downloads": 4
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "com.money.app",
    "dueffe": false
   },
   {
@@ -214,80 +288,6 @@
    "featured": true,
    "hidden": false,
    "androidPackage": "it.chiarella.app",
-   "dueffe": false
-  },
-  {
-   "id": "money",
-   "name": "Money",
-   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
-   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
-   "features": [
-    "Font Bricolage Grotesque (SIL OFL).",
-    "Texture della pelle dello stile skeuomorfico generata con ChatGPT.",
-    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "android",
-    "cloudflare-workers-ai",
-    "jetpack-compose",
-    "kotlin",
-    "personal-finance"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-08T17:26:34Z",
-   "repoUrl": "https://github.com/carellice/money",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/money"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.18.0",
-     "url": "https://github.com/carellice/money/releases/tag/v1.18.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/money/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/money/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.18.0",
-    "name": "Money 1.18.0",
-    "date": "2026-11-08T17:26:39Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.18.0",
-    "notes": "## Novita'\n- Stile skeuomorfico a scelta: da Impostazioni → Stile si passa dalla grafica classica a quella con lino, carta, pelle cucita e bottoni lucidi\n- Aggiornamento dal server di casa: legge versione e sorgenti dall'ultimo commit, non dalla cache di GitHub che dava ancora la versione vecchia\n- Server PWA 1.11.0: saldi dei conti nascondibili da soli",
-    "assets": [
-     {
-      "name": "Money-1.18.0.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.18.0/Money-1.18.0.apk",
-      "size": 6489757,
-      "downloads": 4
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "com.money.app",
    "dueffe": false
   },
   {
@@ -441,6 +441,77 @@
    "dueffe": false
   },
   {
+   "id": "dueffe-streamwise",
+   "name": "StreamWise",
+   "description": "StreamWise per Android – cosa guardare, dove e quando",
+   "about": "Cosa guardare, dove e quando. Tieni traccia di film e serie, scopri le novità sulle piattaforme e ricevi un avviso quando escono nuovi episodi o nuovi titoli delle persone che segui. App nativa della famiglia Dueffe.",
+   "features": [
+    "Interfaccia Material 3 scura e cinematografica, animazioni Compose e navigazione ottimizzata per l'uso con una mano.",
+    "Home con “Da continuare”, “La mia lista”, “Già visti” e titoli nascosti.",
+    "Cataloghi Film e Serie, Top 10, generi preferiti, sezione True crime e caricamento di altre proposte.",
+    "Widget ridimensionabile “Prossimi episodi”: mostra le serie da continuare e permette di segnare gli episodi come visti; al termine della serie chiede Mi piace / Non mi piace. Aggiungilo tenendo premuto sulla schermata Home del telefono e scegliendo Widget → StreamWise.",
+    "Ricerca per titolo con anno facoltativo e ricerca per attore/attrice con filmografia. Per impostazione predefinita le filmografie nascondono late show, talk show, reality, telegiornali e apparizioni come sé stessi; si può disattivare da Impostazioni → “Filmografie senza talk show”.",
+    "“Segui” per attori e registi: dalla pagina della filmografia si ricevono notifiche quando a TMDB viene aggiunto un loro nuovo film o serie (recente o in arrivo). Le persone seguite compaiono in Home in “Persone che segui” e sono incluse nel backup."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "TypeScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:47Z",
+   "updatedAt": "2026-11-10T15:01:45Z",
+   "repoUrl": "https://github.com/carellice/dueffe-streamwise",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-streamwise"
+    },
+    {
+     "type": "release",
+     "label": "Release streamwise-v2.0.143",
+     "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.143"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-streamwise/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-streamwise/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-streamwise/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "streamwise-v2.0.143",
+    "name": "StreamWise 2.0.143",
+    "date": "2026-11-10T15:01:33Z",
+    "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.143",
+    "notes": "APK Android firmato di StreamWise. Versione 2.0.143, codice aggiornamento 150.",
+    "assets": [
+     {
+      "name": "StreamWise-2.0.143.apk",
+      "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.0.143/StreamWise-2.0.143.apk",
+      "size": 16784002,
+      "downloads": 3
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.dueffe.streamwise",
+   "dueffe": true
+  },
+  {
    "id": "jonica",
    "name": "Jonica",
    "description": "Jonica: app Android etica per scoprire la stagionalità dei prodotti e le botteghe di quartiere",
@@ -516,7 +587,7 @@
       "name": "Jonica-1.9.1.apk",
       "url": "https://github.com/carellice/jonica/releases/download/v1.9.1/Jonica-1.9.1.apk",
       "size": 12647916,
-      "downloads": 0
+      "downloads": 3
      }
     ]
    },
@@ -587,7 +658,7 @@
       "name": "garage-v1.0.50.apk",
       "url": "https://github.com/carellice/dueffe-garage/releases/download/garage-v1.0.50/garage-v1.0.50.apk",
       "size": 9609640,
-      "downloads": 2
+      "downloads": 3
      }
     ]
    },
@@ -665,77 +736,6 @@
    "featured": false,
    "hidden": false,
    "androidPackage": "it.dueffe.health",
-   "dueffe": true
-  },
-  {
-   "id": "dueffe-streamwise",
-   "name": "StreamWise",
-   "description": "StreamWise per Android – cosa guardare, dove e quando",
-   "about": "Cosa guardare, dove e quando. Tieni traccia di film e serie, scopri le novità sulle piattaforme e ricevi un avviso quando escono nuovi episodi o nuovi titoli delle persone che segui. App nativa della famiglia Dueffe.",
-   "features": [
-    "Interfaccia Material 3 scura e cinematografica, animazioni Compose e navigazione ottimizzata per l'uso con una mano.",
-    "Home con “Da continuare”, “La mia lista”, “Già visti” e titoli nascosti.",
-    "Cataloghi Film e Serie, Top 10, generi preferiti, sezione True crime e caricamento di altre proposte.",
-    "Widget ridimensionabile “Prossimi episodi”: mostra le serie da continuare e permette di segnare gli episodi come visti; al termine della serie chiede Mi piace / Non mi piace. Aggiungilo tenendo premuto sulla schermata Home del telefono e scegliendo Widget → StreamWise.",
-    "Ricerca per titolo con anno facoltativo e ricerca per attore/attrice con filmografia. Per impostazione predefinita le filmografie nascondono late show, talk show, reality, telegiornali e apparizioni come sé stessi; si può disattivare da Impostazioni → “Filmografie senza talk show”.",
-    "“Segui” per attori e registi: dalla pagina della filmografia si ricevono notifiche quando a TMDB viene aggiunto un loro nuovo film o serie (recente o in arrivo). Le persone seguite compaiono in Home in “Persone che segui” e sono incluse nel backup."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "TypeScript",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T20:43:47Z",
-   "updatedAt": "2026-11-10T10:07:07Z",
-   "repoUrl": "https://github.com/carellice/dueffe-streamwise",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/dueffe-streamwise"
-    },
-    {
-     "type": "release",
-     "label": "Release streamwise-v2.0.142",
-     "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.142"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/dueffe-streamwise/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/dueffe-streamwise/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-streamwise/main/docs/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "streamwise-v2.0.142",
-    "name": "StreamWise 2.0.142",
-    "date": "2026-11-10T10:06:43Z",
-    "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.142",
-    "notes": "APK Android firmato di StreamWise. Versione 2.0.142, codice aggiornamento 149.",
-    "assets": [
-     {
-      "name": "StreamWise-2.0.142.apk",
-      "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.0.142/StreamWise-2.0.142.apk",
-      "size": 16784002,
-      "downloads": 3
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "it.dueffe.streamwise",
    "dueffe": true
   },
   {
@@ -885,7 +885,7 @@
       "name": "Dueffoto-1.1.1.apk",
       "url": "https://github.com/carellice/dueffoto/releases/download/v1.1.1/Dueffoto-1.1.1.apk",
       "size": 3397788,
-      "downloads": 2
+      "downloads": 3
      }
     ]
    },
@@ -1362,7 +1362,7 @@
       "name": "Arcadio.apk",
       "url": "https://github.com/carellice/arcade-classici/releases/download/v1.5.0/Arcadio.apk",
       "size": 1058948,
-      "downloads": 3
+      "downloads": 4
      }
     ]
    },
@@ -1435,7 +1435,7 @@
       "name": "Topperia-1.1.9.apk",
       "url": "https://github.com/carellice/Topperia/releases/download/v1.1.9/Topperia-1.1.9.apk",
       "size": 641904,
-      "downloads": 3
+      "downloads": 4
      }
     ]
    },
@@ -1845,7 +1845,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-10T09:32:06Z",
+   "updatedAt": "2026-11-10T15:59:30Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -1888,7 +1888,7 @@
       "name": "IPTVISION-1.15.0.apk",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.15.0/IPTVISION-1.15.0.apk",
       "size": 8671288,
-      "downloads": 2
+      "downloads": 3
      },
      {
       "name": "IPTVISION-1.15.0.ipk",
@@ -1906,7 +1906,7 @@
       "name": "IPTVISION-Setup-1.15.0.exe",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.15.0/IPTVISION-Setup-1.15.0.exe",
       "size": 71500301,
-      "downloads": 1
+      "downloads": 2
      }
     ]
    },
@@ -2650,6 +2650,53 @@
    "dueffe": false
   },
   {
+   "id": "telegram-notify",
+   "name": "Telegram Notify",
+   "description": "Plugin per Claude Code: ricevi riepiloghi, link e allegati su Telegram, quando vuoi o dopo ogni prompt.",
+   "about": "Riepiloghi, link e allegati di Claude Code, direttamente sul tuo Telegram.\n\nUn plugin per Claude Code che invia su Telegram i riepiloghi del lavoro di Claude, con link e allegati. Usalo quando ti serve, oppure attivalo perché arrivi un riepilogo dopo ogni prompt.",
+   "features": [
+    "Claude Code con il supporto ai plugin",
+    "Python 3.8 o successivo (python3, python o py nel PATH). Nessun pacchetto da installare.",
+    "Una shell POSIX sh (già presente su macOS e Linux; su Windows Git Bash, che Claude Code usa già)"
+   ],
+   "category": "sviluppo",
+   "platforms": [],
+   "language": "Python",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-11-05T09:38:35Z",
+   "updatedAt": "2026-11-10T15:45:27Z",
+   "repoUrl": "https://github.com/carellice/telegram-notify",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/telegram-notify"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/telegram-notify/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/telegram-notify/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/telegram-notify/main/assets/icon.png",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "hidden": false,
+   "androidPackage": null,
+   "dueffe": false
+  },
+  {
    "id": "notion-todo",
    "name": "Notion To-Do",
    "description": "Claude Code skill: works through your Notion to-do list across multiple projects, commits, pushes, releases and checks items off",
@@ -2930,53 +2977,6 @@
      }
     ]
    },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": false
-  },
-  {
-   "id": "telegram-notify",
-   "name": "Telegram Notify",
-   "description": "Plugin per Claude Code: ricevi riepiloghi, link e allegati su Telegram, quando vuoi o dopo ogni prompt.",
-   "about": "Riepiloghi, link e allegati di Claude Code, direttamente sul tuo Telegram.\n\nUn plugin per Claude Code che invia su Telegram i riepiloghi del lavoro di Claude, con link e allegati. Usalo quando ti serve, oppure attivalo perché arrivi un riepilogo dopo ogni prompt.",
-   "features": [
-    "Claude Code con il supporto ai plugin",
-    "Python 3.8 o successivo (python3, python o py nel PATH). Nessun pacchetto da installare.",
-    "Una shell POSIX sh (già presente su macOS e Linux; su Windows Git Bash, che Claude Code usa già)"
-   ],
-   "category": "sviluppo",
-   "platforms": [],
-   "language": "Python",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-11-05T09:38:35Z",
-   "updatedAt": "2026-11-05T14:48:27Z",
-   "repoUrl": "https://github.com/carellice/telegram-notify",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/telegram-notify"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/telegram-notify/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/telegram-notify/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/telegram-notify/main/assets/icon.png",
-   "screenshots": [],
-   "video": null,
-   "release": null,
    "featured": false,
    "hidden": false,
    "androidPackage": null,
