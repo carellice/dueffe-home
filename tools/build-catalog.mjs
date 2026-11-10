@@ -183,6 +183,10 @@ async function buildProject(repo) {
       if (hit) { icon = rawUrl(repo.name, branch, hit); break; }
     }
   }
+  // A new icon often keeps the same path: the hash of the file in the address makes apps fetch it again.
+  const own = rawUrl(repo.name, branch, '');
+  const iconBlob = icon?.startsWith(own) && tree?.tree?.find((t) => t.type === 'blob' && t.path === decodeURIComponent(icon.slice(own.length)));
+  if (iconBlob) icon += `?v=${iconBlob.sha.slice(0, 8)}`;
 
   let shots = imgs.filter((i) => i !== iconImg && IMG_EXT.test(i.src.split('?')[0]) && !isIconLike(i))
     .map((i) => resolveAsset(repo.name, branch, i.src)).filter(Boolean);
@@ -191,7 +195,7 @@ async function buildProject(repo) {
       .filter((p) => !/icon|logo|favicon/i.test(p)).slice(0, 8).map((p) => rawUrl(repo.name, branch, p));
     shots = [...shots, ...fromTree];
   }
-  shots = [...new Set(shots)].filter((s) => s !== icon).slice(0, 10);
+  shots = [...new Set(shots)].filter((s) => s !== icon?.split('?v=')[0]).slice(0, 10);
   const video = md.match(/(?:src|href)=["']([^"']+\.mp4)["']|\]\(([^)]+\.mp4)\)/i);
 
   // Package Android: serve all'app per riconoscere le app già installate e aprirle.
