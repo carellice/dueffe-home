@@ -111,27 +111,27 @@ svg.i { width: 24px; height: 24px; fill: currentColor; flex: none; }
 @property --hole { syntax: "<length>"; inherits: false; initial-value: 0px; }
 #splash { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; background: radial-gradient(circle at 50% 50%, #ffb80047 0, transparent 70vmin), var(--bg);
   -webkit-mask: radial-gradient(circle at 50% 50%, transparent var(--hole), #000 calc(var(--hole) + 1px)); mask: radial-gradient(circle at 50% 50%, transparent var(--hole), #000 calc(var(--hole) + 1px)); }
-#splash.out { animation: hole .72s var(--ease-reveal) .12s forwards; }
+#splash.out { animation: hole .36s var(--ease-reveal) .06s forwards; }
 @keyframes hole { to { --hole: 75vmax; } }
 #splash.gone { display: none; }
 .lockup { text-align: center; }
-#splash.out .lockup { animation: lockup-out .26s var(--ease-std) forwards; }
+#splash.out .lockup { animation: lockup-out .13s var(--ease-std) forwards; }
 @keyframes lockup-out { to { opacity: 0; transform: translateY(-10px) scale(.985); } }
 .word { white-space: nowrap; text-align: center; font: 400 clamp(1.9rem, 11vw, 3.4rem)/1.35 "font-dueffe", var(--display); color: var(--text); }
 .word > span { display: inline-block; }
-.word .due { animation: due 1.25s var(--ease-reveal) both; clip-path: inset(0 0 0 0); }
-.word .e { animation: e 1.25s var(--ease-reveal) both; }
+.word .due { animation: due .625s var(--ease-reveal) both; clip-path: inset(0 0 0 0); }
+.word .e { animation: e .625s var(--ease-reveal) both; }
 @keyframes due { from { opacity: 0; transform: translateX(.5em); clip-path: inset(0 0 0 100%); } }
 @keyframes e { from { opacity: 0; transform: translateX(-.5em); clip-path: inset(0 100% 0 0); } }
 /* Le "ff" del font compaiono per prime, poi si aprono "Due", "e" e "Home". */
-.word .ff { animation: ff 1.275s var(--ease-mark) both; }
+.word .ff { animation: ff .64s var(--ease-mark) both; }
 @keyframes ff { 0% { opacity: 0; transform: translateY(-.72em) scale(.44) rotate(-9deg); } 40% { opacity: 1; } 100% { transform: none; } }
 /* Lo spazio tra Dueffe e Home è quello del font (gli a capo nell'HTML), non un elemento. */
 .word .gap { display: none; }
 .word .home { color: var(--primary); display: inline-flex; }
-.word .home i { font-style: normal; display: inline-block; transform-origin: 50% 100%; animation: letter .62s var(--ease-spring) both; animation-delay: calc(480ms + var(--i) * 70ms); }
+.word .home i { font-style: normal; display: inline-block; transform-origin: 50% 100%; animation: letter .31s var(--ease-spring) both; animation-delay: calc(240ms + var(--i) * 35ms); }
 @keyframes letter { from { opacity: 0; transform: translateY(.72em) rotate(5deg) scale(.82); } }
-.tagline { margin: 14px 0 0; font: 500 16px/24px var(--display); color: var(--muted); animation: tag .42s var(--ease-letter) 1.19s both; }
+.tagline { margin: 14px 0 0; font: 500 16px/24px var(--display); color: var(--muted); animation: tag .21s var(--ease-letter) .595s both; }
 @keyframes tag { from { opacity: 0; transform: translateY(10px); } }
 
 /* ---------- navigazione ---------- */

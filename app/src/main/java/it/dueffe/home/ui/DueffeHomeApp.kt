@@ -224,7 +224,7 @@ private fun MainTabs(
             when (t) {
                 Tab.Home -> HomeScreen(
                     catalog, vm, homeList, pager, scopes,
-                    headlineDelay = if (splashDone) 0L else 2300L,
+                    headlineDelay = if (splashDone) 0L else 1150L,
                     bottomPadding = bottomPadding,
                     onOpen = onOpen, onCategory = onCategory,
                     onGists = { onTab(Tab.Gist) }, onInfo = { onTab(Tab.Info) },

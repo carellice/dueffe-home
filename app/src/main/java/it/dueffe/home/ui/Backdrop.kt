@@ -127,23 +127,25 @@ fun SplashOverlay(onFinished: () -> Unit) {
             onFinished()
             return@LaunchedEffect
         }
-        launch { mark.animateTo(1f, tween(1275, easing = Motion.Mark)) }
-        launch { sides.animateTo(1f, tween(1250, easing = Motion.Reveal)) }
-        launch { glow.animateTo(1f, tween(1600, easing = Motion.Standard)) }
+        // Tempi dimezzati: l'apertura dura circa un secondo e mezzo.
+        launch { mark.animateTo(1f, tween(640, easing = Motion.Mark)) }
+        launch { sides.animateTo(1f, tween(625, easing = Motion.Reveal)) }
+        launch { glow.animateTo(1f, tween(800, easing = Motion.Standard)) }
         letters.forEachIndexed { i, l ->
             launch {
-                delay(480L + i * 70L)
-                l.animateTo(1f, spring(dampingRatio = 0.45f, stiffness = 420f))
+                delay(240L + i * 35L)
+                // Una molla quattro volte più rigida oscilla in metà tempo.
+                l.animateTo(1f, spring(dampingRatio = 0.45f, stiffness = 1680f))
             }
         }
         launch {
-            delay(1190)
-            tagline.animateTo(1f, tween(420, easing = Motion.Letter))
+            delay(595)
+            tagline.animateTo(1f, tween(210, easing = Motion.Letter))
         }
-        delay(2150)
-        launch { exit.animateTo(1f, tween(260, easing = Motion.Standard)) }
-        delay(120)
-        hole.animateTo(1f, tween(720, easing = Motion.Reveal))
+        delay(1075)
+        launch { exit.animateTo(1f, tween(130, easing = Motion.Standard)) }
+        delay(60)
+        hole.animateTo(1f, tween(360, easing = Motion.Reveal))
         onFinished()
     }
 

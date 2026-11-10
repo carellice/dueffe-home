@@ -308,7 +308,7 @@ const sectionHead = (title, sub, action, href) => `<div class="section-head"><di
 // ---------- Home ----------
 function home() {
   const c = state.catalog;
-  const d = state.splashDone ? 0 : 2300;
+  const d = state.splashDone ? 0 : 1150;
   const words = [['Tutti', 'i', 'miei'], ['progetti,', 'in', 'un'], ['solo', 'posto.']];
   let i = 0;
   const headline = words.map((line) => `<div>${line.map((w, wi) => {
@@ -372,7 +372,7 @@ function wireHome() {
   // Conteggio animato dei numeri.
   $$('[data-count]').forEach((el) => {
     const target = Number(el.dataset.count);
-    const start = performance.now() + (state.splashDone ? 300 : 2600);
+    const start = performance.now() + (state.splashDone ? 300 : 1300);
     const step = (t) => {
       const k = Math.min(1, Math.max(0, (t - start) / 1400));
       el.textContent = Math.round(target * (1 - Math.pow(1 - k, 3)));
@@ -796,8 +796,9 @@ function splash() {
   const done = () => { s.classList.add('gone'); state.splashDone = true; };
   if (reduced || sessionStorage.getItem('splash')) { done(); return; }
   sessionStorage.setItem('splash', '1');
-  setTimeout(() => s.classList.add('out'), 2150);
-  setTimeout(done, 2150 + 860);
+  // Tempi dimezzati, come nell'app: l'apertura dura circa un secondo e mezzo.
+  setTimeout(() => s.classList.add('out'), 1075);
+  setTimeout(done, 1075 + 430);
 }
 
 document.addEventListener('click', (e) => {
