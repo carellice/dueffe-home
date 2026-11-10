@@ -270,6 +270,7 @@ function render(r = parseRoute(), prev = null, top = scrollY) {
     nav.classList.add('hidden');
     view.innerHTML = `<div class="page detail-in">${detail(p)}</div>`;
     wireDetail(p);
+    requestAnimationFrame(() => fitLabels());
     scrollTo(0, top);
     return;
   }
@@ -289,8 +290,24 @@ function render(r = parseRoute(), prev = null, top = scrollY) {
   const html = { home, explore, gist, apps, info }[r.name]();
   view.innerHTML = `<div class="page ${dirClass}">${html}</div>`;
   ({ home: wireHome, explore: wireExplore, gist: wireGist, apps: wireApps, info: wireInfo })[r.name]();
+  requestAnimationFrame(() => fitLabels());
   scrollTo(0, top);
 }
+
+/** Shrinks the label of each button and tab until it fits, instead of being cut (as FitText on Android). */
+function fitLabels(root = document) {
+  for (const el of root.querySelectorAll('.btn, #nav a span')) {
+    el.style.fontSize = '';
+    let size = parseFloat(getComputedStyle(el).fontSize);
+    const box = el.matches('#nav a span') ? el.parentElement : el;
+    while (box.scrollWidth > box.clientWidth + 0.5 && size > 8) {
+      size -= 0.5;
+      el.style.fontSize = `${size}px`;
+    }
+  }
+}
+addEventListener('resize', () => fitLabels());
+document.fonts?.ready.then(() => fitLabels());
 
 function moveIndicator(idx) {
   const ind = $('.nav-indicator');

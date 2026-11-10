@@ -50,6 +50,8 @@ import androidx.compose.material.icons.rounded.Widgets
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.foundation.text.TextAutoSize
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -243,8 +245,17 @@ fun GoldButton(
             Icon(icon, null, tint = fg, modifier = Modifier.size(20.dp))
             Spacer(Modifier.width(8.dp))
         }
-        Text(text, style = MaterialTheme.typography.labelLarge.copy(fontSize = if (dense) 13.sp else 15.sp), color = fg, maxLines = 1)
+        FitText(text, MaterialTheme.typography.labelLarge.copy(fontSize = if (dense) 13.sp else 15.sp), fg)
     }
+}
+
+/** One line of text that gets smaller until it fits its space, instead of being cut: for the labels of buttons and tabs. */
+@Composable
+fun FitText(text: String, style: TextStyle, color: Color, modifier: Modifier = Modifier) {
+    Text(
+        text, modifier, color = color, style = style, maxLines = 1, softWrap = false,
+        autoSize = TextAutoSize.StepBased(minFontSize = 8.sp, maxFontSize = style.fontSize, stepSize = 0.5.sp),
+    )
 }
 
 @Composable

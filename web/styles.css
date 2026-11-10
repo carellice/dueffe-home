@@ -91,7 +91,7 @@ img { display: block; }
 .chip.on { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
 .chip:active { transform: scale(.92); }
 .card { border-radius: 26px; background: linear-gradient(180deg, var(--surface-high), var(--surface)); border: 1px solid var(--line); padding: 18px; }
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 18px; border-radius: 18px; font: 600 15px/18px var(--body); white-space: nowrap;
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 18px; border-radius: 18px; font: 600 15px/18px var(--body); white-space: nowrap; min-width: 0; overflow: hidden;
   background: linear-gradient(135deg, var(--accent, var(--primary)), color-mix(in srgb, var(--accent, var(--primary)) 65%, var(--primary-strong))); color: var(--on-accent, var(--on-primary)); }
 .btn.ghost { background: var(--surface); border: 1px solid var(--line-strong); color: var(--text); }
 .btn svg { width: 20px; height: 20px; fill: currentColor; }
@@ -141,7 +141,8 @@ svg.i { width: 24px; height: 24px; fill: currentColor; flex: none; }
 #nav.hidden { transform: translate(-50%, 140%); opacity: 0; }
 #nav a { position: relative; z-index: 1; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; color: var(--muted); transition: color .25s; }
 #nav a svg { width: 24px; height: 24px; fill: currentColor; }
-#nav a span { font: 500 11px/14px var(--body); letter-spacing: .04em; }
+#nav a span { font: 500 11px/14px var(--body); letter-spacing: .04em; white-space: nowrap; }
+#nav a { min-width: 0; overflow: hidden; }
 #nav a.on { color: var(--on-primary); }
 #nav a.on svg { animation: nav-bounce .7s var(--ease-spring); }
 @keyframes nav-bounce { 0% { transform: scale(.6) rotate(-14deg); } 60% { transform: scale(1.12) rotate(4deg); } 100% { transform: none; } }

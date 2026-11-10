@@ -310,6 +310,6 @@ private fun NavItem(tab: Tab, selected: Boolean, dot: Boolean, modifier: Modifie
             )
             if (dot) Box(Modifier.align(Alignment.TopEnd).size(8.dp).clip(RoundedCornerShape(4.dp)).background(DF.Error))
         }
-        Text(tab.label, style = MaterialTheme.typography.labelSmall, color = color, maxLines = 1)
+        FitText(tab.label, MaterialTheme.typography.labelSmall, color)
     }
 }
