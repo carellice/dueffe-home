@@ -315,8 +315,7 @@ private fun Actions(p: Project, vm: AppViewModel, accent: Color, modifier: Modif
                     AppActionButton(p, vm, Modifier.weight(1f), accent = accent)
                     // Disinstalla accanto ad Apri, solo se l'app è sul telefono.
                     vm.installedOf(p)?.let { app ->
-                        val shape = RoundedCornerShape(18.dp)
-                        UninstallButton(app, vm, Modifier.size(50.dp).background(DF.Surface, shape).border(1.dp, DF.LineStrong, shape))
+                        GoldButton("Disinstalla", null, Modifier.weight(1f), filled = false) { vm.uninstallApp(app) }
                     }
                 }
                 download != null -> GoldButton(

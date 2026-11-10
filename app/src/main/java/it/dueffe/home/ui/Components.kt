@@ -20,6 +20,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsPressedAsState
 import androidx.compose.foundation.layout.Arrangement
@@ -96,7 +97,10 @@ import kotlin.math.abs
 // ---------- Interazioni e movimento ----------
 
 /** Click con "molla": l'elemento si comprime mentre è premuto e rimbalza al rilascio. */
-fun Modifier.pressScale(pressedScale: Float = 0.94f, onClick: () -> Unit): Modifier = composed {
+fun Modifier.pressScale(pressedScale: Float = 0.94f, onClick: () -> Unit): Modifier = pressScale(pressedScale, null, onClick)
+
+/** Come sopra, con [onLongClick] se tenuto premuto. */
+fun Modifier.pressScale(pressedScale: Float, onLongClick: (() -> Unit)?, onClick: () -> Unit): Modifier = composed {
     val source = remember { MutableInteractionSource() }
     val pressed by source.collectIsPressedAsState()
     val scale by animateFloatAsState(
@@ -105,7 +109,7 @@ fun Modifier.pressScale(pressedScale: Float = 0.94f, onClick: () -> Unit): Modif
         label = "press",
     )
     graphicsLayer { scaleX = scale; scaleY = scale }
-        .clickable(interactionSource = source, indication = null, onClick = onClick)
+        .combinedClickable(interactionSource = source, indication = null, onLongClick = onLongClick, onClick = onClick)
 }
 
 /** Entrata a cascata: dissolvenza, salita e leggero zoom con ritardo per indice. */

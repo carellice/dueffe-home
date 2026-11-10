@@ -1,5 +1,19 @@
 package it.dueffe.home.ui
 
+import androidx.activity.compose.BackHandler
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.scaleIn
+import androidx.compose.animation.scaleOut
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutVertically
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.remember
 import android.content.Context
 import android.content.Intent
 import android.provider.Settings
@@ -30,7 +44,7 @@ import androidx.compose.material.icons.automirrored.rounded.OpenInNew
 import androidx.compose.material.icons.automirrored.rounded.Sort
 import androidx.compose.material.icons.automirrored.rounded.ViewList
 import androidx.compose.material.icons.rounded.Apps
-import androidx.compose.material.icons.rounded.DeleteOutline
+import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material.icons.rounded.Download
 import androidx.compose.material.icons.rounded.Explore
 import androidx.compose.material.icons.rounded.GridView
@@ -77,8 +91,17 @@ fun AppsScreen(
     val apps = sortedApps(vm.installed.filter { a -> catalog.projects.any { it.id == a.project.id } }, vm)
     val updates = apps.filter { it.hasUpdate }
     val upToDate = apps.filterNot { it.hasUpdate }
-    val open: (InstalledApp) -> Unit = { a -> onOpen(Opened(a.project, "apps")) }
-    LazyColumn(state = listState, modifier = Modifier.fillMaxSize(), contentPadding = PaddingValues(bottom = bottomPadding)) {
+    // Tenendo premuta un'app la si seleziona; con qualcosa di selezionato un tocco aggiunge o toglie.
+    val selected = remember { mutableStateListOf<String>() }
+    // Un'app disinstallata esce anche dalla selezione.
+    val names = apps.map { it.packageName }
+    LaunchedEffect(names) { selected.retainAll { it in names } }
+    val toggle: (InstalledApp) -> Unit = { a -> if (!selected.remove(a.packageName)) selected += a.packageName }
+    BackHandler(selected.isNotEmpty()) { selected.clear() }
+    val open: (InstalledApp) -> Unit = { a -> if (selected.isNotEmpty()) toggle(a) else onOpen(Opened(a.project, "apps")) }
+    val pick = Pick(selected, toggle)
+    Box(Modifier.fillMaxSize()) {
+    LazyColumn(state = listState, modifier = Modifier.fillMaxSize(), contentPadding = PaddingValues(bottom = bottomPadding + if (selected.isEmpty()) 0.dp else 84.dp)) {
         item(key = "head") {
             Column(Modifier.statusBarsPadding().padding(top = 18.dp, bottom = 10.dp)) {
                 Column(Modifier.padding(horizontal = 20.dp)) {
@@ -116,16 +139,41 @@ fun AppsScreen(
                     VerticalGap(4.dp)
                 }
             }
-            appsSection("u", updates, vm, scopes, open)
+            appsSection("u", updates, vm, scopes, open, pick)
         }
         if (upToDate.isNotEmpty()) {
             item(key = "installed-head") {
                 SectionHeader("Installate", if (upToDate.size == 1) "1 app aggiornata" else "${upToDate.size} app aggiornate", Modifier.padding(top = 18.dp))
             }
-            appsSection("i", upToDate, vm, scopes, open)
+            appsSection("i", upToDate, vm, scopes, open, pick)
         }
     }
+    AnimatedVisibility(
+        selected.isNotEmpty(),
+        modifier = Modifier.align(Alignment.BottomCenter).padding(bottom = bottomPadding + 12.dp).padding(horizontal = 20.dp),
+        enter = slideInVertically { it } + fadeIn(),
+        exit = slideOutVertically { it } + fadeOut(),
+    ) {
+        // Il numero resta quello di prima mentre il tasto se ne va.
+        val count = remember { mutableIntStateOf(1) }
+        if (selected.isNotEmpty()) count.intValue = selected.size
+        Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+            GoldButton("Annulla", null, filled = false) { selected.clear() }
+            GoldButton(
+                if (count.intValue == 1) "Disinstalla app selezionata" else "Disinstalla ${count.intValue} app selezionate",
+                null, Modifier.weight(1f),
+            ) {
+                // Android chiede conferma per ognuna, una finestra dopo l'altra.
+                apps.filter { it.packageName in selected }.forEach(vm::uninstallApp)
+                selected.clear()
+            }
+        }
+    }
+    }
 }
+
+/** Le app selezionate tenendole premute, e come aggiungerne o toglierne una. */
+private class Pick(val selected: List<String>, val toggle: (InstalledApp) -> Unit)
 
 /** Ordina per nome, per ultimo aggiornamento sul telefono o per tempo d'uso (o aperture da qui, senza accesso all'utilizzo). */
 private fun sortedApps(apps: List<InstalledApp>, vm: AppViewModel): List<InstalledApp> {
@@ -142,19 +190,21 @@ private fun sortedApps(apps: List<InstalledApp>, vm: AppViewModel): List<Install
     }
 }
 
-private fun LazyListScope.appsSection(prefix: String, apps: List<InstalledApp>, vm: AppViewModel, scopes: SharedScopes?, onOpen: (InstalledApp) -> Unit) {
+private fun LazyListScope.appsSection(prefix: String, apps: List<InstalledApp>, vm: AppViewModel, scopes: SharedScopes?, onOpen: (InstalledApp) -> Unit, pick: Pick) {
     if (vm.appsGrid) {
         itemsIndexed(apps.chunked(GRID_COLUMNS), key = { _, row -> "$prefix/g/${row.joinToString { it.project.id }}" }) { i, row ->
             Row(
                 Modifier.fillMaxWidth().padding(horizontal = 14.dp).reveal(i),
                 horizontalArrangement = Arrangement.spacedBy(6.dp),
             ) {
-                row.forEach { a -> InstalledTile(a, vm, scopes, Modifier.weight(1f)) { onOpen(a) } }
+                row.forEach { a -> InstalledTile(a, vm, scopes, Modifier.weight(1f), a.packageName in pick.selected, { pick.toggle(a) }) { onOpen(a) } }
                 repeat(GRID_COLUMNS - row.size) { Spacer(Modifier.weight(1f)) }
             }
         }
     } else {
-        itemsIndexed(apps, key = { _, a -> "$prefix/${a.project.id}" }) { i, a -> InstalledRow(a, vm, scopes, Modifier.reveal(i)) { onOpen(a) } }
+        itemsIndexed(apps, key = { _, a -> "$prefix/${a.project.id}" }) { i, a ->
+            InstalledRow(a, vm, scopes, Modifier.reveal(i), a.packageName in pick.selected, { pick.toggle(a) }) { onOpen(a) }
+        }
     }
 }
 
@@ -206,13 +256,17 @@ private fun openUsageSettings(context: Context) {
 }
 
 @Composable
-private fun InstalledRow(app: InstalledApp, vm: AppViewModel, scopes: SharedScopes?, modifier: Modifier, onClick: () -> Unit) {
+private fun InstalledRow(
+    app: InstalledApp, vm: AppViewModel, scopes: SharedScopes?, modifier: Modifier,
+    selected: Boolean, onLongClick: () -> Unit, onClick: () -> Unit,
+) {
     val p = app.project
     Row(
-        modifier.fillMaxWidth().pressScale(0.97f, onClick).padding(horizontal = 20.dp, vertical = 10.dp),
+        modifier.fillMaxWidth().pressScale(0.97f, onLongClick, onClick).background(selectedTint(selected))
+            .padding(horizontal = 20.dp, vertical = 10.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        ProjectIcon(p, 54.dp, Modifier.sharedIcon(scopes, "apps", p.id))
+        SelectedMark(selected) { ProjectIcon(p, 54.dp, Modifier.sharedIcon(scopes, "apps", p.id)) }
         Spacer(Modifier.width(14.dp))
         Column(Modifier.weight(1f)) {
             Text(p.name, style = MaterialTheme.typography.titleMedium, color = DF.Text, maxLines = 1, overflow = TextOverflow.Ellipsis)
@@ -221,32 +275,49 @@ private fun InstalledRow(app: InstalledApp, vm: AppViewModel, scopes: SharedScop
                 style = MaterialTheme.typography.bodySmall, color = if (app.hasUpdate) DF.Primary else DF.Muted, maxLines = 1,
             )
         }
-        UninstallButton(app, vm)
-        Spacer(Modifier.width(4.dp))
+        Spacer(Modifier.width(10.dp))
         AppActionButton(p, vm, Modifier.width(112.dp), compact = true)
     }
 }
 
-/** Il cestino: Android chiede conferma prima di disinstallare. */
 @Composable
-internal fun UninstallButton(app: InstalledApp, vm: AppViewModel, modifier: Modifier = Modifier) {
-    Box(
-        modifier.size(40.dp).pressScale(0.9f) { vm.uninstallApp(app) }.clip(CircleShape),
-        contentAlignment = Alignment.Center,
-    ) {
-        Icon(Icons.Rounded.DeleteOutline, "Disinstalla ${app.project.name}", tint = DF.Muted, modifier = Modifier.size(22.dp))
+private fun selectedTint(selected: Boolean): Color {
+    val tint by animateColorAsState(if (selected) DF.Primary.copy(alpha = 0.14f) else Color.Transparent, label = "selected")
+    return tint
+}
+
+/** L'icona dell'app, con un segno di spunta sopra quando è selezionata. */
+@Composable
+private fun SelectedMark(selected: Boolean, icon: @Composable () -> Unit) {
+    Box {
+        icon()
+        AnimatedVisibility(
+            selected, modifier = Modifier.align(Alignment.BottomEnd),
+            enter = scaleIn() + fadeIn(), exit = scaleOut() + fadeOut(),
+        ) {
+            Box(
+                Modifier.size(24.dp).clip(CircleShape).background(DF.Primary).border(2.dp, DF.Bg, CircleShape),
+                contentAlignment = Alignment.Center,
+            ) {
+                Icon(Icons.Rounded.Check, "Selezionata", tint = DF.OnPrimary, modifier = Modifier.size(16.dp))
+            }
+        }
     }
 }
 
 @Composable
-private fun InstalledTile(app: InstalledApp, vm: AppViewModel, scopes: SharedScopes?, modifier: Modifier, onClick: () -> Unit) {
+private fun InstalledTile(
+    app: InstalledApp, vm: AppViewModel, scopes: SharedScopes?, modifier: Modifier,
+    selected: Boolean, onLongClick: () -> Unit, onClick: () -> Unit,
+) {
     val p = app.project
     Box(modifier) {
         Column(
-            Modifier.clip(RoundedCornerShape(20.dp)).pressScale(0.96f, onClick).padding(horizontal = 4.dp, vertical = 10.dp),
+            Modifier.clip(RoundedCornerShape(20.dp)).pressScale(0.96f, onLongClick, onClick).background(selectedTint(selected))
+                .padding(horizontal = 4.dp, vertical = 10.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            ProjectIcon(p, 64.dp, Modifier.sharedIcon(scopes, "apps", p.id))
+            SelectedMark(selected) { ProjectIcon(p, 64.dp, Modifier.sharedIcon(scopes, "apps", p.id)) }
             VerticalGap(8.dp)
             Text(
                 p.name, style = MaterialTheme.typography.titleSmall, color = DF.Text,
@@ -260,7 +331,6 @@ private fun InstalledTile(app: InstalledApp, vm: AppViewModel, scopes: SharedSco
             VerticalGap(8.dp)
             AppActionButton(p, vm, Modifier.fillMaxWidth(), compact = true, dense = true)
         }
-        UninstallButton(app, vm, Modifier.align(Alignment.TopEnd))
     }
 }
 
