@@ -77,6 +77,12 @@ class AppManager(private val context: Context) {
 
     fun install(file: File): Boolean = Updater.install(context, file)
 
+    /** Chiede ad Android di disinstallare l'app: conferma l'utente nella finestra di sistema. */
+    fun uninstall(packageName: String): Boolean {
+        val intent = android.content.Intent(android.content.Intent.ACTION_DELETE, android.net.Uri.fromParts("package", packageName, null))
+        return runCatching { context.startActivity(intent.addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)) }.isSuccess
+    }
+
     fun open(packageName: String): Boolean {
         val intent = context.packageManager.getLaunchIntentForPackage(packageName) ?: return false
         context.startActivity(intent.addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK))

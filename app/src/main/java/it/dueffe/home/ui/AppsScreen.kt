@@ -30,6 +30,7 @@ import androidx.compose.material.icons.automirrored.rounded.OpenInNew
 import androidx.compose.material.icons.automirrored.rounded.Sort
 import androidx.compose.material.icons.automirrored.rounded.ViewList
 import androidx.compose.material.icons.rounded.Apps
+import androidx.compose.material.icons.rounded.DeleteOutline
 import androidx.compose.material.icons.rounded.Download
 import androidx.compose.material.icons.rounded.Explore
 import androidx.compose.material.icons.rounded.GridView
@@ -220,31 +221,46 @@ private fun InstalledRow(app: InstalledApp, vm: AppViewModel, scopes: SharedScop
                 style = MaterialTheme.typography.bodySmall, color = if (app.hasUpdate) DF.Primary else DF.Muted, maxLines = 1,
             )
         }
-        Spacer(Modifier.width(10.dp))
+        UninstallButton(app, vm)
+        Spacer(Modifier.width(4.dp))
         AppActionButton(p, vm, Modifier.width(112.dp), compact = true)
+    }
+}
+
+/** Il cestino: Android chiede conferma prima di disinstallare. */
+@Composable
+private fun UninstallButton(app: InstalledApp, vm: AppViewModel, modifier: Modifier = Modifier) {
+    Box(
+        modifier.size(40.dp).pressScale(0.9f) { vm.uninstallApp(app) }.clip(CircleShape),
+        contentAlignment = Alignment.Center,
+    ) {
+        Icon(Icons.Rounded.DeleteOutline, "Disinstalla ${app.project.name}", tint = DF.Muted, modifier = Modifier.size(22.dp))
     }
 }
 
 @Composable
 private fun InstalledTile(app: InstalledApp, vm: AppViewModel, scopes: SharedScopes?, modifier: Modifier, onClick: () -> Unit) {
     val p = app.project
-    Column(
-        modifier.clip(RoundedCornerShape(20.dp)).pressScale(0.96f, onClick).padding(horizontal = 4.dp, vertical = 10.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-    ) {
-        ProjectIcon(p, 64.dp, Modifier.sharedIcon(scopes, "apps", p.id))
-        VerticalGap(8.dp)
-        Text(
-            p.name, style = MaterialTheme.typography.titleSmall, color = DF.Text,
-            maxLines = 1, overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center,
-        )
-        Text(
-            if (app.hasUpdate) "${app.version} → ${app.latest}" else app.version,
-            style = MaterialTheme.typography.bodySmall, color = if (app.hasUpdate) DF.Primary else DF.Muted,
-            maxLines = 1, overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center,
-        )
-        VerticalGap(8.dp)
-        AppActionButton(p, vm, Modifier.fillMaxWidth(), compact = true, dense = true)
+    Box(modifier) {
+        Column(
+            Modifier.clip(RoundedCornerShape(20.dp)).pressScale(0.96f, onClick).padding(horizontal = 4.dp, vertical = 10.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            ProjectIcon(p, 64.dp, Modifier.sharedIcon(scopes, "apps", p.id))
+            VerticalGap(8.dp)
+            Text(
+                p.name, style = MaterialTheme.typography.titleSmall, color = DF.Text,
+                maxLines = 1, overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center,
+            )
+            Text(
+                if (app.hasUpdate) "${app.version} → ${app.latest}" else app.version,
+                style = MaterialTheme.typography.bodySmall, color = if (app.hasUpdate) DF.Primary else DF.Muted,
+                maxLines = 1, overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center,
+            )
+            VerticalGap(8.dp)
+            AppActionButton(p, vm, Modifier.fillMaxWidth(), compact = true, dense = true)
+        }
+        UninstallButton(app, vm, Modifier.align(Alignment.TopEnd))
     }
 }
 

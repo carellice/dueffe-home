@@ -297,6 +297,11 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         if (!apps.install(ready.file)) toast("Consenti l'installazione per Dueffe Home, poi tocca di nuovo Installa")
     }
 
+    /** Al ritorno in Dueffe Home [onResume] rilegge le app installate: quella tolta sparisce dall'elenco. */
+    fun uninstallApp(app: InstalledApp) {
+        if (!apps.uninstall(app.packageName)) toast("${app.project.name} non si può disinstallare da qui")
+    }
+
     fun openApp(app: InstalledApp) {
         prefs.edit().putInt("opens/${app.project.id}", opens(app) + 1).apply()
         if (!apps.open(app.packageName)) toast("${app.project.name} non si può aprire da qui")
