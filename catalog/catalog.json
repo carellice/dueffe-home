@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-10T16:03:26.168Z",
+ "generatedAt": "2026-11-10T17:01:37.994Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -60,7 +60,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-10T16:00:12Z",
+   "updatedAt": "2026-11-10T16:54:18Z",
    "repoUrl": "https://github.com/carellice/hommaterial",
    "webUrl": "https://carellice.github.io/hommaterial/",
    "links": [
@@ -90,7 +90,7 @@
      "url": "https://github.com/carellice/hommaterial/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png?v=a785ba32",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
    ],
@@ -106,13 +106,13 @@
       "name": "Hommaterial-v1.66-windows-x64.zip",
       "url": "https://github.com/carellice/hommaterial/releases/download/v1.66/Hommaterial-v1.66-windows-x64.zip",
       "size": 127151638,
-      "downloads": 0
+      "downloads": 1
      },
      {
       "name": "Hommaterial-v1.66.apk",
       "url": "https://github.com/carellice/hommaterial/releases/download/v1.66/Hommaterial-v1.66.apk",
       "size": 4711093,
-      "downloads": 0
+      "downloads": 2
      }
     ]
    },
@@ -172,7 +172,7 @@
      "url": "https://github.com/carellice/money/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png",
+   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png?v=36cdeefd",
    "screenshots": [],
    "video": null,
    "release": {
@@ -255,7 +255,7 @@
      "url": "https://github.com/carellice/chiarella/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/chiarella/main/branding/chiarella_icon_512.png",
+   "icon": "https://raw.githubusercontent.com/carellice/chiarella/main/branding/chiarella_icon_512.png?v=e5d21728",
    "screenshots": [],
    "video": null,
    "release": {
@@ -335,7 +335,7 @@
      "url": "https://github.com/carellice/brieffo/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/brieffo/main/docs/logo.png",
+   "icon": "https://raw.githubusercontent.com/carellice/brieffo/main/docs/logo.png?v=7ed851fa",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/brieffo/main/docs/video/brieffo_presentazione.jpg",
     "https://raw.githubusercontent.com/carellice/brieffo/main/docs/screenshots/benvenuto.png",
@@ -413,7 +413,7 @@
      "url": "https://github.com/carellice/piccole-gioie/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/piccole-gioie/main/artifacts/icon/piccole-gioie-icon-source.png",
+   "icon": "https://raw.githubusercontent.com/carellice/piccole-gioie/main/artifacts/icon/piccole-gioie-icon-source.png?v=c39d2d95",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/piccole-gioie/main/artifacts/onboarding-1.png",
     "https://raw.githubusercontent.com/carellice/piccole-gioie/main/artifacts/onboarding-2.png",
@@ -463,7 +463,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-10-15T20:43:47Z",
-   "updatedAt": "2026-11-10T15:01:45Z",
+   "updatedAt": "2026-11-10T16:08:10Z",
    "repoUrl": "https://github.com/carellice/dueffe-streamwise",
    "webUrl": null,
    "links": [
@@ -474,8 +474,8 @@
     },
     {
      "type": "release",
-     "label": "Release streamwise-v2.0.143",
-     "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.143"
+     "label": "Release streamwise-v2.0.144",
+     "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.144"
     },
     {
      "type": "releases",
@@ -488,21 +488,21 @@
      "url": "https://github.com/carellice/dueffe-streamwise/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-streamwise/main/docs/logo.png",
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-streamwise/main/docs/logo.png?v=4580aad4",
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "streamwise-v2.0.143",
-    "name": "StreamWise 2.0.143",
-    "date": "2026-11-10T15:01:33Z",
-    "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.143",
-    "notes": "APK Android firmato di StreamWise. Versione 2.0.143, codice aggiornamento 150.",
+    "tag": "streamwise-v2.0.144",
+    "name": "StreamWise 2.0.144",
+    "date": "2026-11-10T16:07:46Z",
+    "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.144",
+    "notes": "APK Android firmato di StreamWise. Versione 2.0.144, codice aggiornamento 151.",
     "assets": [
      {
-      "name": "StreamWise-2.0.143.apk",
-      "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.0.143/StreamWise-2.0.143.apk",
+      "name": "StreamWise-2.0.144.apk",
+      "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.0.144/StreamWise-2.0.144.apk",
       "size": 16784002,
-      "downloads": 3
+      "downloads": 2
      }
     ]
    },
@@ -563,7 +563,7 @@
      "url": "https://github.com/carellice/jonica/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/jonica/main/docs/logo.png",
+   "icon": "https://raw.githubusercontent.com/carellice/jonica/main/docs/logo.png?v=09c55ed5",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/onb1.jpg",
     "https://raw.githubusercontent.com/carellice/jonica/main/docs/screenshots/today.jpg",
@@ -644,7 +644,7 @@
      "url": "https://github.com/carellice/dueffe-garage/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-garage/main/docs/logo.png",
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-garage/main/docs/logo.png?v=e7f5c60b",
    "screenshots": [],
    "video": null,
    "release": {
@@ -715,7 +715,7 @@
      "url": "https://github.com/carellice/dueffe-health/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-health/main/docs/logo.png",
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-health/main/docs/logo.png?v=6fcb77f2",
    "screenshots": [],
    "video": null,
    "release": {
@@ -786,7 +786,7 @@
      "url": "https://github.com/carellice/MyExperience/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/MyExperience/main/branding/logo.png",
+   "icon": "https://raw.githubusercontent.com/carellice/MyExperience/main/branding/logo.png?v=7fad5024",
    "screenshots": [],
    "video": null,
    "release": {
@@ -864,7 +864,7 @@
      "url": "https://github.com/carellice/dueffoto/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/icon.png?v=f47d5e60",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/camera.jpg",
     "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/moody-camera.jpg",
@@ -942,7 +942,7 @@
      "url": "https://github.com/carellice/emMeDi/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/emMeDi/main/docs/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/emMeDi/main/docs/icon.png?v=59fc9a17",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/emMeDi/main/docs/home.png",
     "https://raw.githubusercontent.com/carellice/emMeDi/main/docs/preview.png",
@@ -1020,7 +1020,7 @@
      "url": "https://github.com/carellice/MemShot/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/MemShot/main/docs/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/MemShot/main/docs/icon.png?v=e4c51870",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/home.png",
     "https://raw.githubusercontent.com/carellice/MemShot/main/docs/screenshots/categorie.png",
@@ -1097,7 +1097,7 @@
      "url": "https://github.com/carellice/CasaDeck/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/icon.png?v=695a599d",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/home-light.png",
     "https://raw.githubusercontent.com/carellice/CasaDeck/main/art/screenshots/home-dark.png",
@@ -1187,7 +1187,7 @@
      "url": "https://github.com/carellice/ND2.0/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/ND2.0/main/docs/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/ND2.0/main/docs/icon.png?v=06e3ce01",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/ND2.0/main/docs/screenshot-spenta.png",
     "https://raw.githubusercontent.com/carellice/ND2.0/main/docs/screenshot-attiva.png"
@@ -1261,7 +1261,7 @@
      "url": "https://github.com/carellice/SimPhotos/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/SimPhotos/main/docs/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/SimPhotos/main/docs/icon.png?v=82ef9a25",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/SimPhotos/main/docs/home.png",
     "https://raw.githubusercontent.com/carellice/SimPhotos/main/docs/results.png",
@@ -1346,7 +1346,7 @@
      "url": "https://github.com/carellice/arcade-classici/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/icon.svg",
+   "icon": "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/icon.svg?v=f8b9e1a9",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/trailer-poster.jpg"
    ],
@@ -1419,7 +1419,7 @@
      "url": "https://github.com/carellice/Topperia/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/Topperia/main/branding/topperia-logo.png",
+   "icon": "https://raw.githubusercontent.com/carellice/Topperia/main/branding/topperia-logo.png?v=34566582",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/Topperia/main/docs/images/home.png"
    ],
@@ -1493,7 +1493,7 @@
      "url": "https://github.com/carellice/niente-zombie-per-favore/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/niente-zombie-per-favore/main/assets/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/niente-zombie-per-favore/main/assets/icon.png?v=e518a765",
    "screenshots": [],
    "video": null,
    "release": {
@@ -1577,7 +1577,7 @@
      "url": "https://github.com/carellice/spariaps-game/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/spariaps-game/main/Spariaps-icona.png",
+   "icon": "https://raw.githubusercontent.com/carellice/spariaps-game/main/Spariaps-icona.png?v=a71b6702",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/spariaps-game/main/screenshots/piazza.jpg",
     "https://raw.githubusercontent.com/carellice/spariaps-game/main/screenshots/zombie-notte.jpg",
@@ -1652,7 +1652,7 @@
      "url": "https://github.com/carellice/funcouple/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/funcouple/main/docs/icon.svg",
+   "icon": "https://raw.githubusercontent.com/carellice/funcouple/main/docs/icon.svg?v=5a92ecd0",
    "screenshots": [],
    "video": null,
    "release": {
@@ -1724,7 +1724,7 @@
      "url": "https://github.com/carellice/ondalunga/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/ondalunga/main/docs/icon.svg",
+   "icon": "https://raw.githubusercontent.com/carellice/ondalunga/main/docs/icon.svg?v=3d2b220b",
    "screenshots": [],
    "video": null,
    "release": {
@@ -1795,7 +1795,7 @@
      "url": "https://github.com/carellice/il-sognatore/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/il-sognatore/main/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/il-sognatore/main/icon.png?v=0930f8ab",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/il-sognatore/main/docs/img/title.png",
     "https://raw.githubusercontent.com/carellice/il-sognatore/main/docs/img/w1.png",
@@ -1845,7 +1845,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-10T15:59:30Z",
+   "updatedAt": "2026-11-10T16:05:52Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -1856,8 +1856,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.15.0",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.15.0"
+     "label": "Release v1.16.0",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.16.0"
     },
     {
      "type": "releases",
@@ -1870,7 +1870,7 @@
      "url": "https://github.com/carellice/IPTVISION/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/IPTVISION/main/src/IPTVISION/Assets/logo.png",
+   "icon": "https://raw.githubusercontent.com/carellice/IPTVISION/main/src/IPTVISION/Assets/logo.png?v=e1118d71",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/IPTVISION/main/docs/screenshots/principale.png",
     "https://raw.githubusercontent.com/carellice/IPTVISION/main/docs/screenshots/ricerca.png",
@@ -1878,34 +1878,34 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.15.0",
-    "name": "IPTVISION 1.15.0",
-    "date": "2026-11-10T09:31:38Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.15.0",
-    "notes": "Pulsante Prossimo episodio nell'ultimo minuto (Android e Windows); ora di fine durante film ed episodi; liste di film e serie più veloci su Android e Android TV.\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.15.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.15.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.15.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.15.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.16.0",
+    "name": "IPTVISION 1.16.0",
+    "date": "2026-11-10T16:04:47Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.16.0",
+    "notes": "- Android: film e serie si aprono subito dalla copia salvata e si aggiornano in sottofondo; al primo download una barra con i megabyte arrivati, senza più interruzioni dopo 3 minuti\n- Windows: il pulsante Prossimo episodio risponde al clic su tutta la sua superficie, non più coperto dalla barra dei comandi\n- Server PWA 2.4.0: allineato alla release 1.15.0\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.16.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.16.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.16.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.16.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.15.0.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.15.0/IPTVISION-1.15.0.apk",
+      "name": "IPTVISION-1.16.0.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.16.0/IPTVISION-1.16.0.apk",
       "size": 8671288,
-      "downloads": 3
+      "downloads": 2
      },
      {
-      "name": "IPTVISION-1.15.0.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.15.0/IPTVISION-1.15.0.ipk",
-      "size": 135344,
+      "name": "IPTVISION-1.16.0.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.16.0/IPTVISION-1.16.0.ipk",
+      "size": 135340,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-1.15.0.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.15.0/IPTVISION-1.15.0.wgt",
+      "name": "IPTVISION-1.16.0.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.16.0/IPTVISION-1.16.0.wgt",
       "size": 152137,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-Setup-1.15.0.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.15.0/IPTVISION-Setup-1.15.0.exe",
-      "size": 71500301,
+      "name": "IPTVISION-Setup-1.16.0.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.16.0/IPTVISION-Setup-1.16.0.exe",
+      "size": 71490411,
       "downloads": 2
      }
     ]
@@ -1963,7 +1963,7 @@
      "url": "https://github.com/carellice/claude-monitor/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/logo.svg",
+   "icon": "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/logo.svg?v=f31e2314",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/windows.png",
     "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/android-app.png",
@@ -2044,7 +2044,7 @@
      "url": "https://github.com/carellice/timer-spegnimento/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/timer-spegnimento/main/assets/logo.png",
+   "icon": "https://raw.githubusercontent.com/carellice/timer-spegnimento/main/assets/logo.png?v=8724975c",
    "screenshots": [],
    "video": null,
    "release": {
@@ -2114,7 +2114,7 @@
      "url": "https://github.com/carellice/easy-crypt/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/easy-crypt/main/EasyCrypt-Mac-PC/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/easy-crypt/main/EasyCrypt-Mac-PC/icon.png?v=567f57e2",
    "screenshots": [],
    "video": null,
    "release": {
@@ -2209,7 +2209,7 @@
      "url": "https://github.com/carellice/MonitorSwitch/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/MonitorSwitch/main/assets/monitor-switch.png",
+   "icon": "https://raw.githubusercontent.com/carellice/MonitorSwitch/main/assets/monitor-switch.png?v=4978ed4d",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/MonitorSwitch/main/docs/screenshot.png"
    ],
@@ -2295,7 +2295,7 @@
      "url": "https://github.com/carellice/Castino/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/Castino/main/docs/castino-icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/Castino/main/docs/castino-icon.png?v=53ef9484",
    "screenshots": [],
    "video": null,
    "release": {
@@ -2378,7 +2378,7 @@
      "url": "https://github.com/carellice/slideshower/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/slideshower/main/build/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/slideshower/main/build/icon.png?v=86d14247",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/slideshower/main/docs/home.png",
     "https://raw.githubusercontent.com/carellice/slideshower/main/docs/impostazioni.png"
@@ -2470,7 +2470,7 @@
      "url": "https://github.com/carellice/aiming/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/aiming/main/dist/favicon.svg",
+   "icon": "https://raw.githubusercontent.com/carellice/aiming/main/dist/favicon.svg?v=21352ebe",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/aiming/main/docs/screenshots/home.png",
     "https://raw.githubusercontent.com/carellice/aiming/main/docs/screenshots/lavagna.png"
@@ -2528,7 +2528,7 @@
      "url": "https://github.com/carellice/LoopingSounds/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/LoopingSounds/main/icon.svg",
+   "icon": "https://raw.githubusercontent.com/carellice/LoopingSounds/main/icon.svg?v=cece30e1",
    "screenshots": [],
    "video": null,
    "release": null,
@@ -2586,7 +2586,7 @@
      "url": "https://github.com/carellice/pillole-poetiche/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/pillole-poetiche/main/public/logo512.png",
+   "icon": "https://raw.githubusercontent.com/carellice/pillole-poetiche/main/public/logo512.png?v=5533ff2b",
    "screenshots": [],
    "video": null,
    "release": null,
@@ -2640,7 +2640,7 @@
      "url": "https://github.com/carellice/devdex/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/devdex/main/public/pwa-512x512.png",
+   "icon": "https://raw.githubusercontent.com/carellice/devdex/main/public/pwa-512x512.png?v=7493f053",
    "screenshots": [],
    "video": null,
    "release": null,
@@ -2687,7 +2687,7 @@
      "url": "https://github.com/carellice/telegram-notify/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/telegram-notify/main/assets/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/telegram-notify/main/assets/icon.png?v=0acf9c56",
    "screenshots": [],
    "video": null,
    "release": null,
@@ -2737,7 +2737,7 @@
      "url": "https://github.com/carellice/notion-todo/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/notion-todo/main/logo.png",
+   "icon": "https://raw.githubusercontent.com/carellice/notion-todo/main/logo.png?v=9c03e1d2",
    "screenshots": [],
    "video": null,
    "release": null,
@@ -2787,7 +2787,7 @@
      "url": "https://github.com/carellice/confronto-spesa/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/confronto-spesa/main/assets/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/confronto-spesa/main/assets/icon.png?v=1ca746c9",
    "screenshots": [],
    "video": null,
    "release": null,
@@ -2837,7 +2837,7 @@
      "url": "https://github.com/carellice/java-strings-matcher/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/java-strings-matcher/main/assets/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/java-strings-matcher/main/assets/icon.png?v=d2c24ac9",
    "screenshots": [],
    "video": null,
    "release": null,
@@ -2898,7 +2898,7 @@
      "url": "https://github.com/carellice/chatgpt-image-mcp/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/chatgpt-image-mcp/main/assets/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/chatgpt-image-mcp/main/assets/icon.png?v=0f479451",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/chatgpt-image-mcp/main/assets/example-generate.jpg",
     "https://raw.githubusercontent.com/carellice/chatgpt-image-mcp/main/assets/example-edit.jpg"
@@ -2959,7 +2959,7 @@
      "url": "https://github.com/carellice/app-to-pwa-casaos/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/app-to-pwa-casaos/main/assets/icon.png",
+   "icon": "https://raw.githubusercontent.com/carellice/app-to-pwa-casaos/main/assets/icon.png?v=ad6389bd",
    "screenshots": [],
    "video": null,
    "release": {
@@ -3024,7 +3024,7 @@
      "url": "https://github.com/carellice/alexa-home-mcp/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/alexa-home-mcp/main/logo.svg",
+   "icon": "https://raw.githubusercontent.com/carellice/alexa-home-mcp/main/logo.svg?v=fd997a6c",
    "screenshots": [],
    "video": null,
    "release": null,
