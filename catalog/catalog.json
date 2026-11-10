@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-10T17:01:37.994Z",
+ "generatedAt": "2026-11-10T17:31:54.607Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -60,7 +60,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-10T16:54:18Z",
+   "updatedAt": "2026-11-10T17:11:50Z",
    "repoUrl": "https://github.com/carellice/hommaterial",
    "webUrl": "https://carellice.github.io/hommaterial/",
    "links": [
@@ -76,8 +76,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.66",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.66"
+     "label": "Release v1.67",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.67"
     },
     {
      "type": "releases",
@@ -96,21 +96,21 @@
    ],
    "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
    "release": {
-    "tag": "v1.66",
-    "name": "Hommaterial 1.66",
-    "date": "2026-11-10T15:59:50Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.66",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.65...v1.66",
+    "tag": "v1.67",
+    "name": "Hommaterial 1.67",
+    "date": "2026-11-10T17:02:55Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.67",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.66...v1.67",
     "assets": [
      {
-      "name": "Hommaterial-v1.66-windows-x64.zip",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.66/Hommaterial-v1.66-windows-x64.zip",
-      "size": 127151638,
+      "name": "Hommaterial-v1.67-windows-x64.zip",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.67/Hommaterial-v1.67-windows-x64.zip",
+      "size": 127151636,
       "downloads": 1
      },
      {
-      "name": "Hommaterial-v1.66.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.66/Hommaterial-v1.66.apk",
+      "name": "Hommaterial-v1.67.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.67/Hommaterial-v1.67.apk",
       "size": 4711093,
       "downloads": 2
      }
@@ -502,7 +502,7 @@
       "name": "StreamWise-2.0.144.apk",
       "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.0.144/StreamWise-2.0.144.apk",
       "size": 16784002,
-      "downloads": 2
+      "downloads": 3
      }
     ]
    },
@@ -2641,6 +2641,62 @@
     }
    ],
    "icon": "https://raw.githubusercontent.com/carellice/devdex/main/public/pwa-512x512.png?v=7493f053",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "hidden": false,
+   "androidPackage": null,
+   "dueffe": false
+  },
+  {
+   "id": "app-utility-prompts",
+   "name": "App Utility Prompts",
+   "description": "Skill per Claude Code: prompt pronti per ridisegnare da cima a fondo le tue app native, anche in stile skeuomorfico o Windows Phone.",
+   "about": "Una skill per Claude Code con prompt già pronti per ridisegnare completamente le tue app native: Android, iOS, Flutter, React Native e desktop.\n\nIn Claude lancia /app-utility-prompts seguito dal comando, ad esempio /app-utility-prompts skeu.",
+   "features": [
+    "🎨 restyle: grafica rifatta, animazioni curate e app più comoda da usare",
+    "🪵 skeumorphism: ridisegno in stile skeuomorfico",
+    "🟦 modern-ui: ridisegno in stile Modern UI / Windows Phone",
+    "🌿 Lavora su un branch a parte, il vecchio design si ripristina subito",
+    "✋ Niente commit, push o release finché non approvi il risultato",
+    "📲 Screenshot del risultato su Telegram, email o nella sessione"
+   ],
+   "category": "sviluppo",
+   "platforms": [],
+   "language": null,
+   "topics": [
+    "claude-code",
+    "claude-skill",
+    "prompts",
+    "skeuomorphism",
+    "windows-phone"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-11-10T17:28:47Z",
+   "updatedAt": "2026-11-10T17:28:54Z",
+   "repoUrl": "https://github.com/carellice/app-utility-prompts",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/app-utility-prompts"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/app-utility-prompts/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/app-utility-prompts/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/app-utility-prompts/main/icon.png?v=b0134eb6",
    "screenshots": [],
    "video": null,
    "release": null,

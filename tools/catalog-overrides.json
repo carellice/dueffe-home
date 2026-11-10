@@ -202,6 +202,21 @@
         "📲 Resoconto su Telegram, email, chat o file"
       ]
     },
+    "app-utility-prompts": {
+      "category": "sviluppo",
+      "name": "App Utility Prompts",
+      "platforms": [],
+      "description": "Skill per Claude Code: prompt pronti per ridisegnare da cima a fondo le tue app native, anche in stile skeuomorfico o Windows Phone.",
+      "about": "Una skill per Claude Code con prompt già pronti per ridisegnare completamente le tue app native: Android, iOS, Flutter, React Native e desktop.\n\nIn Claude lancia /app-utility-prompts seguito dal comando, ad esempio /app-utility-prompts skeu.",
+      "features": [
+        "🎨 restyle: grafica rifatta, animazioni curate e app più comoda da usare",
+        "🪵 skeumorphism: ridisegno in stile skeuomorfico",
+        "🟦 modern-ui: ridisegno in stile Modern UI / Windows Phone",
+        "🌿 Lavora su un branch a parte, il vecchio design si ripristina subito",
+        "✋ Niente commit, push o release finché non approvi il risultato",
+        "📲 Screenshot del risultato su Telegram, email o nella sessione"
+      ]
+    },
     "alexa-notion": {
       "category": "sviluppo",
       "name": "Alexa → Notion"
