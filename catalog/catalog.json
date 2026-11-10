@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-10T17:32:34.546Z",
+ "generatedAt": "2026-11-10T22:50:15.746Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -60,7 +60,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-10T17:11:50Z",
+   "updatedAt": "2026-11-10T22:49:04Z",
    "repoUrl": "https://github.com/carellice/hommaterial",
    "webUrl": "https://carellice.github.io/hommaterial/",
    "links": [
@@ -76,8 +76,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.67",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.67"
+     "label": "Release v1.72",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.72"
     },
     {
      "type": "releases",
@@ -96,23 +96,23 @@
    ],
    "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
    "release": {
-    "tag": "v1.67",
-    "name": "Hommaterial 1.67",
-    "date": "2026-11-10T17:02:55Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.67",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.66...v1.67",
+    "tag": "v1.72",
+    "name": "Hommaterial 1.72",
+    "date": "2026-11-10T22:48:36Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.72",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.71...v1.72",
     "assets": [
      {
-      "name": "Hommaterial-v1.67-windows-x64.zip",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.67/Hommaterial-v1.67-windows-x64.zip",
-      "size": 127151636,
-      "downloads": 1
+      "name": "Hommaterial-v1.72-windows-x64.zip",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.72/Hommaterial-v1.72-windows-x64.zip",
+      "size": 127160214,
+      "downloads": 0
      },
      {
-      "name": "Hommaterial-v1.67.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.67/Hommaterial-v1.67.apk",
-      "size": 4711093,
-      "downloads": 2
+      "name": "Hommaterial-v1.72.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.72/Hommaterial-v1.72.apk",
+      "size": 4748113,
+      "downloads": 0
      }
     ]
    },
@@ -463,7 +463,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-10-15T20:43:47Z",
-   "updatedAt": "2026-11-10T16:08:10Z",
+   "updatedAt": "2026-11-10T17:37:28Z",
    "repoUrl": "https://github.com/carellice/dueffe-streamwise",
    "webUrl": null,
    "links": [
@@ -474,8 +474,8 @@
     },
     {
      "type": "release",
-     "label": "Release streamwise-v2.0.144",
-     "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.144"
+     "label": "Release streamwise-v2.0.145",
+     "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.145"
     },
     {
      "type": "releases",
@@ -492,15 +492,15 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "streamwise-v2.0.144",
-    "name": "StreamWise 2.0.144",
-    "date": "2026-11-10T16:07:46Z",
-    "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.144",
-    "notes": "APK Android firmato di StreamWise. Versione 2.0.144, codice aggiornamento 151.",
+    "tag": "streamwise-v2.0.145",
+    "name": "StreamWise 2.0.145",
+    "date": "2026-11-10T17:36:52Z",
+    "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.145",
+    "notes": "APK Android firmato di StreamWise. Versione 2.0.145, codice aggiornamento 152.",
     "assets": [
      {
-      "name": "StreamWise-2.0.144.apk",
-      "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.0.144/StreamWise-2.0.144.apk",
+      "name": "StreamWise-2.0.145.apk",
+      "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.0.145/StreamWise-2.0.145.apk",
       "size": 16784002,
       "downloads": 3
      }
@@ -885,7 +885,7 @@
       "name": "Dueffoto-1.1.1.apk",
       "url": "https://github.com/carellice/dueffoto/releases/download/v1.1.1/Dueffoto-1.1.1.apk",
       "size": 3397788,
-      "downloads": 3
+      "downloads": 4
      }
     ]
    },
@@ -1292,7 +1292,7 @@
    "id": "arcade-classici",
    "name": "Arcadio",
    "description": "Snake, Campo Minato, Breakout e Invasori rivisitati in chiave neon/3D per Android (Kotlin + Jetpack Compose)",
-   "about": "Sette giochi classici rivisitati in chiave neon/synthwave e 3D, per Android.\n\n▶ Guarda il video di presentazione (53 s, musica originale)",
+   "about": "Otto giochi classici rivisitati in chiave neon/synthwave e 3D, per Android.\n\n▶ Guarda il video di presentazione (53 s, musica originale)",
    "features": [
     "Snake – movimento fluido, bordi attraversabili, stella bonus",
     "Campo Minato – tre difficoltà, prima mossa sicura, apertura rapida sui numeri",
@@ -1321,7 +1321,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-16T10:13:54Z",
-   "updatedAt": "2026-11-10T10:10:43Z",
+   "updatedAt": "2026-11-10T22:31:56Z",
    "repoUrl": "https://github.com/carellice/arcade-classici",
    "webUrl": null,
    "links": [
@@ -1332,8 +1332,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.5.0",
-     "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.5.0"
+     "label": "Release v1.6.0",
+     "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.6.0"
     },
     {
      "type": "releases",
@@ -1352,17 +1352,17 @@
    ],
    "video": "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/trailer.mp4",
    "release": {
-    "tag": "v1.5.0",
-    "name": "Arcadio 1.5.0",
-    "date": "2026-11-10T10:10:39Z",
-    "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.5.0",
-    "notes": "Nuovo gioco: Sudoku, con tre difficoltà, schemi a soluzione unica e record del tempo. In tutti i giochi il record da battere compare durante la partita.\n\n---\nScarica **Arcadio.apk** qui sotto e installalo, oppure aggiorna direttamente dall'app: **Impostazioni → Aggiornamenti**.",
+    "tag": "v1.6.0",
+    "name": "Arcadio 1.6.0",
+    "date": "2026-11-10T22:31:53Z",
+    "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.6.0",
+    "notes": "- Nuovo gioco: Tris, 1vCPU con tre difficoltà o 1v1 sullo stesso telefono\n- Sudoku: tutorial più chiaro per chi non ha mai giocato\n- Menu: tieni premuta una scheda e trascinala per riordinare i giochi\n\n---\nScarica **Arcadio.apk** qui sotto e installalo, oppure aggiorna direttamente dall'app: **Impostazioni → Aggiornamenti**.",
     "assets": [
      {
       "name": "Arcadio.apk",
-      "url": "https://github.com/carellice/arcade-classici/releases/download/v1.5.0/Arcadio.apk",
-      "size": 1058948,
-      "downloads": 4
+      "url": "https://github.com/carellice/arcade-classici/releases/download/v1.6.0/Arcadio.apk",
+      "size": 1075328,
+      "downloads": 2
      }
     ]
    },
@@ -1845,7 +1845,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-10T16:05:52Z",
+   "updatedAt": "2026-11-10T17:56:29Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -1856,8 +1856,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.16.0",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.16.0"
+     "label": "Release v1.17.0",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.17.0"
     },
     {
      "type": "releases",
@@ -1878,34 +1878,34 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.16.0",
-    "name": "IPTVISION 1.16.0",
-    "date": "2026-11-10T16:04:47Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.16.0",
-    "notes": "- Android: film e serie si aprono subito dalla copia salvata e si aggiornano in sottofondo; al primo download una barra con i megabyte arrivati, senza più interruzioni dopo 3 minuti\n- Windows: il pulsante Prossimo episodio risponde al clic su tutta la sua superficie, non più coperto dalla barra dei comandi\n- Server PWA 2.4.0: allineato alla release 1.15.0\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.16.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.16.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.16.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.16.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.17.0",
+    "name": "IPTVISION 1.17.0",
+    "date": "2026-11-10T17:56:13Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.17.0",
+    "notes": "- La mia lista: film e serie da tenere da parte su Android, Android TV, Windows, browser e TV LG e Samsung, uguale su ogni dispositivo col server di casa; finito il film o l'ultimo episodio della serie, il titolo esce da solo\n- Server PWA 2.5.0: allineato alla release 1.16.0\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.17.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.17.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.17.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.17.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.16.0.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.16.0/IPTVISION-1.16.0.apk",
+      "name": "IPTVISION-1.17.0.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.0/IPTVISION-1.17.0.apk",
       "size": 8671288,
-      "downloads": 2
+      "downloads": 3
      },
      {
-      "name": "IPTVISION-1.16.0.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.16.0/IPTVISION-1.16.0.ipk",
-      "size": 135340,
+      "name": "IPTVISION-1.17.0.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.0/IPTVISION-1.17.0.ipk",
+      "size": 135930,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-1.16.0.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.16.0/IPTVISION-1.16.0.wgt",
-      "size": 152137,
+      "name": "IPTVISION-1.17.0.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.0/IPTVISION-1.17.0.wgt",
+      "size": 153012,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-Setup-1.16.0.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.16.0/IPTVISION-Setup-1.16.0.exe",
-      "size": 71490411,
+      "name": "IPTVISION-Setup-1.17.0.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.0/IPTVISION-Setup-1.17.0.exe",
+      "size": 71506226,
       "downloads": 2
      }
     ]
@@ -2676,7 +2676,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-11-10T17:28:47Z",
-   "updatedAt": "2026-11-10T17:28:54Z",
+   "updatedAt": "2026-11-10T18:22:47Z",
    "repoUrl": "https://github.com/carellice/app-utility-prompts",
    "webUrl": null,
    "links": [
