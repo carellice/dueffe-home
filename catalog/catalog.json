@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-08T12:13:30.640Z",
+ "generatedAt": "2026-11-10T09:19:59.237Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -36,79 +36,6 @@
  ],
  "projects": [
   {
-   "id": "money",
-   "name": "Money",
-   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
-   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
-   "features": [
-    "Font Bricolage Grotesque (SIL OFL).",
-    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "android",
-    "cloudflare-workers-ai",
-    "jetpack-compose",
-    "kotlin",
-    "personal-finance"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-07T22:09:26Z",
-   "repoUrl": "https://github.com/carellice/money",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/money"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.16.0",
-     "url": "https://github.com/carellice/money/releases/tag/v1.16.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/money/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/money/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.16.0",
-    "name": "Money 1.16.0",
-    "date": "2026-11-07T22:09:29Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.16.0",
-    "notes": "## Novita'\n- Metodi di pagamento predefiniti eliminabili: se ci sono movimenti, spese fisse o abbonamenti pagati cos├¼ si sceglie su quale altro metodo spostarli, anche per quelli personalizzati",
-    "assets": [
-     {
-      "name": "Money-1.16.0.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.16.0/Money-1.16.0.apk",
-      "size": 6322193,
-      "downloads": 5
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "com.money.app",
-   "dueffe": false
-  },
-  {
    "id": "hommaterial",
    "name": "Hommaterial",
    "description": "Comanda la tua smart home Alexa, senza fronzoli.",
@@ -133,7 +60,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-07T21:25:55Z",
+   "updatedAt": "2026-11-10T09:19:12Z",
    "repoUrl": "https://github.com/carellice/hommaterial",
    "webUrl": "https://carellice.github.io/hommaterial/",
    "links": [
@@ -149,8 +76,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.59",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.59"
+     "label": "Release v1.65",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.65"
     },
     {
      "type": "releases",
@@ -169,23 +96,23 @@
    ],
    "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
    "release": {
-    "tag": "v1.59",
-    "name": "Hommaterial 1.59",
-    "date": "2026-11-07T21:25:55Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.59",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.58...v1.59",
+    "tag": "v1.65",
+    "name": "Hommaterial 1.65",
+    "date": "2026-11-10T09:18:35Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.65",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.64...v1.65",
     "assets": [
      {
-      "name": "Hommaterial-v1.59-windows-x64.zip",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.59/Hommaterial-v1.59-windows-x64.zip",
-      "size": 127151627,
-      "downloads": 2
+      "name": "Hommaterial-v1.65-windows-x64.zip",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.65/Hommaterial-v1.65-windows-x64.zip",
+      "size": 127151622,
+      "downloads": 0
      },
      {
-      "name": "Hommaterial-v1.59.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.59/Hommaterial-v1.59.apk",
-      "size": 3757069,
-      "downloads": 2
+      "name": "Hommaterial-v1.65.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.65/Hommaterial-v1.65.apk",
+      "size": 4709585,
+      "downloads": 0
      }
     ]
    },
@@ -224,7 +151,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-21T09:30:02Z",
-   "updatedAt": "2026-11-06T17:09:00Z",
+   "updatedAt": "2026-11-08T21:52:20Z",
    "repoUrl": "https://github.com/carellice/chiarella",
    "webUrl": "https://carellice.github.io/chiarella/",
    "links": [
@@ -240,8 +167,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.17",
-     "url": "https://github.com/carellice/chiarella/releases/tag/v1.17"
+     "label": "Release v1.19",
+     "url": "https://github.com/carellice/chiarella/releases/tag/v1.19"
     },
     {
      "type": "releases",
@@ -258,28 +185,28 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.17",
-    "name": "Chiarella 1.17",
-    "date": "2026-11-06T17:10:03Z",
-    "url": "https://github.com/carellice/chiarella/releases/tag/v1.17",
-    "notes": "Nuovo avviso sul volume del dispositivo, più chiaro e coerente con il resto dell'app.",
+    "tag": "v1.19",
+    "name": "Chiarella 1.19",
+    "date": "2026-11-08T21:52:33Z",
+    "url": "https://github.com/carellice/chiarella/releases/tag/v1.19",
+    "notes": "Nuovo stile grafico Metro, ispirato a Windows Phone: nero assoluto, testi sottili, suoni come live tile, player come application bar e le animazioni turnstile, swivel e tilt. Si sceglie da Impostazioni > Stile grafico (Classico, Skeuomorfico o Metro).",
     "assets": [
      {
-      "name": "Chiarella-1.17.apk",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.17/Chiarella-1.17.apk",
-      "size": 43318412,
-      "downloads": 3
+      "name": "Chiarella-1.19.apk",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.19/Chiarella-1.19.apk",
+      "size": 43464796,
+      "downloads": 4
      },
      {
-      "name": "Chiarella-Web-1.17.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.17/Chiarella-Web-1.17.zip",
+      "name": "Chiarella-Web-1.19.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.19/Chiarella-Web-1.19.zip",
       "size": 39800319,
-      "downloads": 1
+      "downloads": 0
      },
      {
-      "name": "Chiarella-Windows-1.17.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.17/Chiarella-Windows-1.17.zip",
-      "size": 105071185,
+      "name": "Chiarella-Windows-1.19.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.19/Chiarella-Windows-1.19.zip",
+      "size": 105071180,
       "downloads": 1
      }
     ]
@@ -287,6 +214,80 @@
    "featured": true,
    "hidden": false,
    "androidPackage": "it.chiarella.app",
+   "dueffe": false
+  },
+  {
+   "id": "money",
+   "name": "Money",
+   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
+   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
+   "features": [
+    "Font Bricolage Grotesque (SIL OFL).",
+    "Texture della pelle dello stile skeuomorfico generata con ChatGPT.",
+    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "cloudflare-workers-ai",
+    "jetpack-compose",
+    "kotlin",
+    "personal-finance"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-28T11:41:54Z",
+   "updatedAt": "2026-11-08T17:26:34Z",
+   "repoUrl": "https://github.com/carellice/money",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/money"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.18.0",
+     "url": "https://github.com/carellice/money/releases/tag/v1.18.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/money/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/money/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.18.0",
+    "name": "Money 1.18.0",
+    "date": "2026-11-08T17:26:39Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.18.0",
+    "notes": "## Novita'\n- Stile skeuomorfico a scelta: da Impostazioni → Stile si passa dalla grafica classica a quella con lino, carta, pelle cucita e bottoni lucidi\n- Aggiornamento dal server di casa: legge versione e sorgenti dall'ultimo commit, non dalla cache di GitHub che dava ancora la versione vecchia\n- Server PWA 1.11.0: saldi dei conti nascondibili da soli",
+    "assets": [
+     {
+      "name": "Money-1.18.0.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.18.0/Money-1.18.0.apk",
+      "size": 6489757,
+      "downloads": 4
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "com.money.app",
    "dueffe": false
   },
   {
@@ -469,7 +470,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-11-08T12:12:07Z",
-   "updatedAt": "2026-11-08T12:12:17Z",
+   "updatedAt": "2026-11-08T13:20:04Z",
    "repoUrl": "https://github.com/carellice/dueffoto",
    "webUrl": null,
    "links": [
@@ -480,8 +481,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.0.0",
-     "url": "https://github.com/carellice/dueffoto/releases/tag/v1.0.0"
+     "label": "Release v1.1.0",
+     "url": "https://github.com/carellice/dueffoto/releases/tag/v1.1.0"
     },
     {
      "type": "releases",
@@ -497,24 +498,25 @@
    "icon": "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/icon.png",
    "screenshots": [
     "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/camera.jpg",
-    "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/istantanea.jpg",
+    "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/moody-camera.jpg",
+    "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/frigo.jpg",
     "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/pellicola.jpg",
-    "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/cinema.jpg",
-    "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/camera-oscura.jpg"
+    "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/camera-oscura.jpg",
+    "https://raw.githubusercontent.com/carellice/dueffoto/main/docs/moody-prima-dopo.jpg"
    ],
    "video": null,
    "release": {
-    "tag": "v1.0.0",
-    "name": "Dueffoto 1.0.0",
-    "date": "2026-11-08T12:12:20Z",
-    "url": "https://github.com/carellice/dueffoto/releases/tag/v1.0.0",
-    "notes": "Prima versione.\n- 19 fotocamere analogiche con la loro pellicola, cornici istantanee, bordo pellicola e data arancione\n- Modo cinema con 8 color grading e rapporti 16:9, 1.85, 2.39\n- Mirino già sviluppato dal vivo\n- Scegli la pellicola prima di scattare o dopo, in camera oscura\n- Video sviluppati con la stessa pellicola\n- Aggiornamenti dall'app",
+    "tag": "v1.1.0",
+    "name": "Dueffoto 1.1.0",
+    "date": "2026-11-08T13:20:07Z",
+    "url": "https://github.com/carellice/dueffoto/releases/tag/v1.1.0",
+    "notes": "- Nuovo modo Moody: 6 look scuri e cinematografici calibrati sulle foto di riferimento (Dusk, Oak Shade, Canyon, Last Light, Teal Room, Coastline)\n- 44 pellicole in tutto: 8 nuove fotocamere analogiche e 3 nuovi look cinema\n- Rullini, scatole, latte e filtri illustrati\n- Ogni rullino mostra la tua inquadratura già sviluppata\n- Il frigo dei rullini: tutte le pellicole sugli scaffali\n- Camera oscura: tieni premuto per vedere l'originale\n- Regolazioni (EV, dose, formato) raccolte sotto una manopola",
     "assets": [
      {
-      "name": "Dueffoto-1.0.0.apk",
-      "url": "https://github.com/carellice/dueffoto/releases/download/v1.0.0/Dueffoto-1.0.0.apk",
-      "size": 2687316,
-      "downloads": 0
+      "name": "Dueffoto-1.1.0.apk",
+      "url": "https://github.com/carellice/dueffoto/releases/download/v1.1.0/Dueffoto-1.1.0.apk",
+      "size": 3511512,
+      "downloads": 7
      }
     ]
    },
@@ -899,7 +901,7 @@
       "name": "CasaDeck-Windows.zip",
       "url": "https://github.com/carellice/CasaDeck/releases/download/v1.3/CasaDeck-Windows.zip",
       "size": 64162365,
-      "downloads": 0
+      "downloads": 1
      },
      {
       "name": "CasaDeck.apk",
@@ -1587,7 +1589,7 @@
       "name": "Spariaps.exe",
       "url": "https://github.com/carellice/spariaps-game/releases/download/v2.1.0/Spariaps.exe",
       "size": 117690792,
-      "downloads": 3
+      "downloads": 4
      }
     ]
    },
@@ -1837,7 +1839,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-06T14:58:27Z",
+   "updatedAt": "2026-11-08T14:58:40Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -1848,8 +1850,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.14.0",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.14.0"
+     "label": "Release v1.14.1",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.14.1"
     },
     {
      "type": "releases",
@@ -1870,35 +1872,35 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.14.0",
-    "name": "IPTVISION 1.14.0",
-    "date": "2026-11-06T14:58:34Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.14.0",
-    "notes": "- Liste IPTV anche col server di casa, sincronizzate tra i dispositivi\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.14.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.14.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.14.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.14.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.14.1",
+    "name": "IPTVISION 1.14.1",
+    "date": "2026-11-08T14:47:30Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.14.1",
+    "notes": "- Browser: film ed episodi con video che il browser non decodifica (Xvid/DivX, MPEG-2, VC-1, H.264 a 10 bit, HEVC sui telefoni senza) convertiti in H.264 dal server, anche quando si vedeva solo l'audio\n- TV Samsung: la diretta non si blocca più (niente salti in avanti continui sul lettore del TV) e il cambio canale veloce non riapre il lettore più volte al secondo\n- Icona Android adattata ai telefoni: sfondo blu a tutto campo e solo la TV bianca, anche nelle icone a tema\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.14.1.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.14.1.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.14.1.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.14.1.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.14.0.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.0/IPTVISION-1.14.0.apk",
-      "size": 8706160,
+      "name": "IPTVISION-1.14.1.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.1/IPTVISION-1.14.1.apk",
+      "size": 8671288,
       "downloads": 4
      },
      {
-      "name": "IPTVISION-1.14.0.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.0/IPTVISION-1.14.0.ipk",
-      "size": 135284,
-      "downloads": 1
-     },
-     {
-      "name": "IPTVISION-1.14.0.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.0/IPTVISION-1.14.0.wgt",
-      "size": 151862,
+      "name": "IPTVISION-1.14.1.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.1/IPTVISION-1.14.1.ipk",
+      "size": 135326,
       "downloads": 2
      },
      {
-      "name": "IPTVISION-Setup-1.14.0.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.0/IPTVISION-Setup-1.14.0.exe",
-      "size": 71501440,
+      "name": "IPTVISION-1.14.1.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.1/IPTVISION-1.14.1.wgt",
+      "size": 152137,
       "downloads": 1
+     },
+     {
+      "name": "IPTVISION-Setup-1.14.1.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.14.1/IPTVISION-Setup-1.14.1.exe",
+      "size": 71494368,
+      "downloads": 2
      }
     ]
    },
@@ -2156,8 +2158,8 @@
   {
    "id": "MonitorSwitch",
    "name": "MonitorSwitch",
-   "description": "Lightweight Windows monitor profiles, per-display resolutions and tray shortcuts.",
-   "about": "MonitorSwitch Remember your monitors. Choose your screens. Keep your resolution.\n\nDownload portable ZIP · Download standalone EXE",
+   "description": "Profili dei monitor per Windows, leggeri: risoluzione per ogni schermo e scorciatoie nell'area di notifica.",
+   "about": "MonitorSwitch Ricorda i tuoi monitor. Scegli i tuoi schermi. Mantieni la tua risoluzione.\n\nScarica lo ZIP portatile · Scarica l'EXE autonomo",
    "features": [],
    "category": "desktop",
    "platforms": [
@@ -2235,7 +2237,7 @@
   {
    "id": "Castino",
    "name": "Castino",
-   "description": "Android screen mirroring and control over Wi-Fi. Native Windows app built with WinUI 3 and .NET.",
+   "description": "Mirroring e controllo dello schermo Android via Wi-Fi. App nativa per Windows realizzata con WinUI 3 e .NET.",
    "about": "Castino Il tuo Android, sul tuo PC. Mirroring Wi-Fi e controllo da Windows.\n\nCastino è un'app desktop open source per Windows, realizzata con WinUI 3 e .NET 8. Mostra lo schermo di Android sul computer e permette di controllarlo con mouse, tastiera e touch.",
    "features": [
     "Video H.264 con decodifica Media Foundation e rendering Direct3D 11.",
@@ -2415,75 +2417,6 @@
    "dueffe": false
   },
   {
-   "id": "sweep",
-   "name": "Sweep",
-   "description": "Pulizia consapevole per macOS, open source. Sweep trova quello che occupa spazio inutilmente sul tuo Mac, ti spiega cos'è e ti lascia decidere cosa rimuovere.",
-   "about": "Servono macOS 14+ e Xcode 15+ (o la toolchain Swift 5.10+).\n\nPer lo sviluppo: swift run Sweep e swift test.",
-   "features": [
-    "Pulizia — cache delle app, log e report di crash, dati temporanei di Xcode, cache di npm/pnpm/Bun/Gradle/Cargo, allegati di Mail, installer nei Download, archivi di Xcode, backup di iPhone/iPad, Cestino. Ogni categoria spiega cosa contiene e cosa succede se la elimini.",
-    "Disinstalla app — rimuove un'app insieme a preferenze, cache, container, file di supporto, agenti di avvio e stato salvato. Se l'app è aperta ti chiede prima di chiuderla.",
-    "File grandi — elenca i file (e, se richiesto, le cartelle intere) oltre una soglia (da 50 MB a 1 GB) in una cartella a tua scelta.",
-    "Panoramica — spazio usato e libero sul disco."
-   ],
-   "category": "desktop",
-   "platforms": [
-    "macos"
-   ],
-   "language": "Swift",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-01T19:46:38Z",
-   "updatedAt": "2026-10-08T10:30:44Z",
-   "repoUrl": "https://github.com/carellice/sweep",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/sweep"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.0.0",
-     "url": "https://github.com/carellice/sweep/releases/tag/v1.0.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/sweep/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/sweep/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/sweep/main/Resources/AppIcon.png",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.0.0",
-    "name": "Sweep 1.0.0",
-    "date": "2026-10-01T20:00:15Z",
-    "url": "https://github.com/carellice/sweep/releases/tag/v1.0.0",
-    "notes": "## Installazione\n\n1. Scarica `Sweep-1.0.0.zip`, decomprimilo e sposta **Sweep** in Applicazioni.\n2. L'app non è notarizzata da Apple: al primo avvio macOS la blocca. Apri\n   Impostazioni di Sistema → Privacy e sicurezza e premi **Apri comunque**, oppure esegui:\n\n   ```bash\n   xattr -dr com.apple.quarantine /Applications/Sweep.app\n   ```\n\nRichiede macOS 14 o successivo, Apple silicon o Intel.\n\nSHA-256: `0538e785cf9501c707f94903fce9c99f2b9dd728ddd6795dc645cb85315c7251`\n\n\n**Full Changelog**: https://github.com/carellice/sweep/commits/v1.0.0",
-    "assets": [
-     {
-      "name": "Sweep-1.0.0.zip",
-      "url": "https://github.com/carellice/sweep/releases/download/v1.0.0/Sweep-1.0.0.zip",
-      "size": 1947586,
-      "downloads": 4
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": false
-  },
-  {
    "id": "aiming",
    "name": "Aiming",
    "description": "Aiming: lavagne infinite, testi liberi, post-it e backup cifrati. Dati salvati localmente nel browser.",
@@ -2590,124 +2523,6 @@
     }
    ],
    "icon": "https://raw.githubusercontent.com/carellice/LoopingSounds/main/icon.svg",
-   "screenshots": [],
-   "video": null,
-   "release": null,
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": false
-  },
-  {
-   "id": "appunto",
-   "name": "Appunto",
-   "description": "Appunto La tua prossima app per Mac, Windows e Android. Un catalogo personale di applicazioni utili, curate e piacevoli da usare, presentato come un piccolo desktop macOS dentro il",
-   "about": "Appunto è una raccolta di app scelte personalmente da Flavio: piccoli strumenti che risolvono un problema preciso e lo fanno bene. Niente classifiche e niente pubblicità: ogni scheda spiega in poche righe cosa fa l’app, quando torna utile e dove scaricarla dal sito ufficiale.\n\nNon serve installare nulla né registrarsi: si apre nel browser, da computer, tablet o telefono.",
-   "features": [
-    "Computer: un desktop con finestra, Dock e menu, come su macOS. La finestra si può trascinare ed espandere.",
-    "Tablet: lo stesso catalogo, con un layout pensato per lo schermo più ampio.",
-    "Telefono: una Home a pagine orizzontali in stile iOS, con Dock e ricerca Spotlight. Le schede salgono dal basso a tutto schermo."
-   ],
-   "category": "web",
-   "platforms": [
-    "android",
-    "windows",
-    "macos",
-    "web"
-   ],
-   "language": "TypeScript",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-09-14T21:16:21Z",
-   "updatedAt": "2026-10-18T10:08:39Z",
-   "repoUrl": "https://github.com/carellice/appunto",
-   "webUrl": "https://carellice.github.io/appunto/",
-   "links": [
-    {
-     "type": "web",
-     "label": "Apri online",
-     "url": "https://carellice.github.io/appunto/"
-    },
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/appunto"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/appunto/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/appunto/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/appunto/main/public/favicon.svg",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/rectangle.png",
-    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/maccy.png",
-    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/keka.png",
-    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/amphetamine.png",
-    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/coteditor.png",
-    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/pearcleaner.png",
-    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/linearmouse.png",
-    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/marktext.png",
-    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/sublime-text.png",
-    "https://raw.githubusercontent.com/carellice/appunto/main/public/icons/stirling-pdf.png"
-   ],
-   "video": null,
-   "release": null,
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": false
-  },
-  {
-   "id": "mutuo-roma-nord",
-   "name": "Mutuo Roma Nord",
-   "description": "Simulatore mutuo prima casa per Roma nord",
-   "about": "Sito: https://carellice.github.io/mutuo-roma-nord/\n\nSimulatore di mutuo prima casa per le zone di Roma nord (Porta di Roma, Casal Boccone, Bufalotta, Fidene, Colle Salario, Settebagni, Serpentara): rata, spese accessorie, prezzo massimo approvabile, scenari, confronto fisso/variabile e offerte delle banche (dati di ottobre 2026).",
-   "features": [],
-   "category": "web",
-   "platforms": [
-    "web"
-   ],
-   "language": "HTML",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-14T15:28:00Z",
-   "updatedAt": "2026-10-14T15:35:16Z",
-   "repoUrl": "https://github.com/carellice/mutuo-roma-nord",
-   "webUrl": "https://carellice.github.io/mutuo-roma-nord/",
-   "links": [
-    {
-     "type": "web",
-     "label": "Apri online",
-     "url": "https://carellice.github.io/mutuo-roma-nord/"
-    },
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/mutuo-roma-nord"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/mutuo-roma-nord/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/mutuo-roma-nord/issues"
-    }
-   ],
-   "icon": null,
    "screenshots": [],
    "video": null,
    "release": null,
@@ -2829,6 +2644,56 @@
    "dueffe": false
   },
   {
+   "id": "notion-todo",
+   "name": "Notion To-Do",
+   "description": "Claude Code skill: works through your Notion to-do list across multiple projects, commits, pushes, releases and checks items off",
+   "about": "Una skill per Claude Code che svolge la tua to-do list di Notion al posto tuo, su più progetti in un colpo solo.\n\nScrivi in Notion le cose da fare con il prefisso del progetto (es. \"Money: aggiungi l'export CSV\"), poi in Claude lancia /notion-todo.",
+   "features": [
+    "📋 Legge gli elementi non spuntati della tua lista Notion",
+    "🏷️ Considera solo quelli con il prefisso di un progetto, ignora il resto",
+    "🛠️ Entra nella cartella del progetto e fa quello che c'è scritto",
+    "📤 Commit e push per ogni modifica",
+    "🚀 Rilascia una nuova versione con tag e GitHub Release",
+    "✅ Spunta l'elemento su Notion a lavoro finito"
+   ],
+   "category": "sviluppo",
+   "platforms": [],
+   "language": null,
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-06T17:05:26Z",
+   "updatedAt": "2026-11-08T15:05:22Z",
+   "repoUrl": "https://github.com/carellice/notion-todo",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/notion-todo"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/notion-todo/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/notion-todo/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/notion-todo/main/logo.png",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "hidden": false,
+   "androidPackage": null,
+   "dueffe": false
+  },
+  {
    "id": "confronto-spesa",
    "name": "Confronto spesa",
    "description": "Skill per Claude Code: confronta la spesa nei supermercati vicini al tuo CAP e ti dice dove costa meno",
@@ -2870,56 +2735,6 @@
     }
    ],
    "icon": "https://raw.githubusercontent.com/carellice/confronto-spesa/main/assets/icon.png",
-   "screenshots": [],
-   "video": null,
-   "release": null,
-   "featured": false,
-   "hidden": false,
-   "androidPackage": null,
-   "dueffe": false
-  },
-  {
-   "id": "notion-todo",
-   "name": "Notion To-Do",
-   "description": "Claude Code skill: works through your Notion to-do list across multiple projects, commits, pushes, releases and checks items off",
-   "about": "Una skill per Claude Code che svolge la tua to-do list di Notion al posto tuo, su più progetti in un colpo solo.\n\nScrivi in Notion le cose da fare con il prefisso del progetto (es. \"Money: aggiungi l'export CSV\"), poi in Claude lancia /notion-todo.",
-   "features": [
-    "📋 Legge gli elementi non spuntati della tua lista Notion",
-    "🏷️ Considera solo quelli con il prefisso di un progetto, ignora il resto",
-    "🛠️ Entra nella cartella del progetto e fa quello che c'è scritto",
-    "📤 Commit e push per ogni modifica",
-    "🚀 Rilascia una nuova versione con tag e GitHub Release",
-    "✅ Spunta l'elemento su Notion a lavoro finito"
-   ],
-   "category": "sviluppo",
-   "platforms": [],
-   "language": null,
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-11-06T17:05:26Z",
-   "updatedAt": "2026-11-06T17:09:07Z",
-   "repoUrl": "https://github.com/carellice/notion-todo",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/notion-todo"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/notion-todo/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/notion-todo/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/notion-todo/main/logo.png",
    "screenshots": [],
    "video": null,
    "release": null,
@@ -2981,15 +2796,15 @@
   {
    "id": "chatgpt-image-mcp",
    "name": "ChatGPT Image MCP",
-   "description": "MCP server that lets Claude generate and edit images with ChatGPT through the locally installed ChatGPT/Codex app. No API key needed.",
-   "about": "Let Claude generate and edit images with ChatGPT, using the ChatGPT app already on your computer. No API key and no extra billing: images are generated with your ChatGPT subscription.\n\n\"a cute minimalist flat illustration of a fox reading a book\", landscape \"give the fox a small pair of round glasses\"",
+   "description": "Server MCP che permette a Claude di generare e modificare immagini con ChatGPT, tramite l'app ChatGPT/Codex installata sul computer. Senza chiave API.",
+   "about": "Claude genera e modifica immagini con ChatGPT, usando l'app ChatGPT già installata sul tuo computer. Nessuna chiave API e nessun costo in più: le immagini si generano con il tuo abbonamento a ChatGPT.\n\n«un'illustrazione piatta e minimalista di una volpe che legge un libro», orizzontale · «dai alla volpe un paio di occhialini rotondi»",
    "features": [
-    "🖼️ Generate images from a text prompt, optionally guided by reference images",
-    "✏️ Edit existing images (change backgrounds or colors, add or remove objects) without touching the original",
-    "🔑 No API key: uses the Codex CLI bundled with the ChatGPT desktop app, signed in with your ChatGPT account",
-    "👀 Previews: the client gets the image back inline, so Claude can look at the result and iterate",
-    "💾 Saved to disk wherever you want, with safe file names and no overwrites",
-    "🧩 Works with Claude Code, Claude Desktop and any other MCP client"
+    "🖼️ Genera immagini da una descrizione, anche partendo da immagini di riferimento",
+    "✏️ Modifica immagini esistenti (cambia sfondo o colori, aggiungi o togli oggetti) senza toccare l'originale",
+    "🔑 Nessuna chiave API: usa la Codex CLI inclusa nell'app desktop di ChatGPT, con il tuo account ChatGPT",
+    "👀 Anteprime: l'immagine torna al client, così Claude può guardare il risultato e migliorarlo",
+    "💾 Salvata sul disco dove vuoi, con nomi dei file sicuri e senza sovrascrivere nulla",
+    "🧩 Funziona con Claude Code, Claude Desktop e qualsiasi altro client MCP"
    ],
    "category": "sviluppo",
    "platforms": [
@@ -3045,14 +2860,14 @@
   {
    "id": "app-to-pwa-casaos",
    "name": "App to PWA · CasaOS",
-   "description": "Claude skill: turn your native app into an identical PWA and self-host it on CasaOS with a one-command installer and nightly auto-updates",
-   "about": "A Claude skill that turns your native mobile app into a Progressive Web App that looks, animates and behaves exactly like the original, with a small backend you host yourself on CasaOS (or any Docker box, Raspberry Pi included), installed with one command and updated every night.\n\n🇮🇹 Una skill per Claude che converte la tua app nativa (Android, iOS, Flutter, React Native) in una PWA identica per grafica, animazioni e utilizzo, con un piccolo server da ospitare sul tuo CasaOS: installazione guidata con un solo comando, account per ogni persona di famiglia, notifiche push e aggiornamenti automatici ogni notte.",
+   "description": "Skill per Claude: trasforma la tua app nativa in una PWA identica e ospitala su CasaOS, con installazione in un solo comando e aggiornamenti automatici ogni notte.",
+   "about": "Una skill per Claude che converte la tua app nativa (Android, iOS, Flutter, React Native) in una PWA identica per grafica, animazioni e utilizzo, con un piccolo server da ospitare sul tuo CasaOS (o su qualsiasi macchina con Docker, Raspberry Pi compreso): installazione guidata con un solo comando, account per ogni persona di famiglia, notifiche push e aggiornamenti automatici ogni notte.",
    "features": [
-    "Identical UI: same colors, fonts, shapes, copy. Compose/SwiftUI springs and easings converted exactly, Kotlin's Random(seed) reproduced bit for bit so generated shapes match, Material icons from the same set.",
-    "Accounts: username and password, no email. Each person gets private data (their own SQLite file).",
-    "Native features mapped: notifications → Web Push, background workers → server jobs, biometric lock → WebAuthn passkey, camera, voice, PDF/share, backups compatible with the native app.",
-    "One-command install on the server, with HTTPS through Tailscale, a local certificate or your reverse proxy; the app appears in the CasaOS dashboard. Several apps can share one server: each gets its own Tailscale HTTPS port automatically (443, then 8443, 10000...), without taking over the others' links.",
-    "Nightly auto-update: when you bump the version on GitHub, servers rebuild, back up every database, switch over and roll back by themselves if the new version doesn't start."
+    "Interfaccia identica: stessi colori, font, forme e testi. Molle e curve di Compose/SwiftUI convertite esattamente, Random(seed) di Kotlin riprodotto bit per bit perché le forme generate coincidano, icone Material dallo stesso set.",
+    "Account: nome utente e password, senza email. Ogni persona ha i propri dati privati (un suo file SQLite).",
+    "Funzioni native convertite: notifiche → Web Push, lavori in sottofondo → processi del server, sblocco biometrico → passkey WebAuthn, fotocamera, voce, PDF e condivisione, backup compatibili con l'app nativa.",
+    "Installazione sul server con un solo comando, in HTTPS tramite Tailscale, un certificato locale o il tuo reverse proxy; l'app compare nella dashboard di CasaOS. Più app possono condividere lo stesso server: ognuna riceve in automatico la sua porta HTTPS di Tailscale (443, poi 8443, 10000...), senza prendere i link delle altre.",
+    "Aggiornamento automatico ogni notte: quando alzi la versione su GitHub, i server ricompilano, fanno il backup di ogni database, passano alla nuova versione e tornano indietro da soli se non si avvia."
    ],
    "category": "sviluppo",
    "platforms": [
@@ -3117,12 +2932,12 @@
   {
    "id": "telegram-notify",
    "name": "Telegram Notify",
-   "description": "Claude Code plugin: get recaps, links and attachments on Telegram, on demand or after every prompt",
-   "about": "Claude Code recaps, links and attachments, straight to your Telegram.\n\nA Claude Code plugin that sends recaps of Claude's work to your Telegram, with links and attachments. Use it on demand, or turn it on so a recap arrives after every prompt.",
+   "description": "Plugin per Claude Code: ricevi riepiloghi, link e allegati su Telegram, quando vuoi o dopo ogni prompt.",
+   "about": "Riepiloghi, link e allegati di Claude Code, direttamente sul tuo Telegram.\n\nUn plugin per Claude Code che invia su Telegram i riepiloghi del lavoro di Claude, con link e allegati. Usalo quando ti serve, oppure attivalo perché arrivi un riepilogo dopo ogni prompt.",
    "features": [
-    "Claude Code with plugin support",
-    "Python 3.8+ (python3, python or py on PATH). No packages to install.",
-    "A POSIX sh (macOS/Linux built in; Git Bash on Windows, which Claude Code already uses)"
+    "Claude Code con il supporto ai plugin",
+    "Python 3.8 o successivo (python3, python o py nel PATH). Nessun pacchetto da installare.",
+    "Una shell POSIX sh (già presente su macOS e Linux; su Windows Git Bash, che Claude Code usa già)"
    ],
    "category": "sviluppo",
    "platforms": [],
