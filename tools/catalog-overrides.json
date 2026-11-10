@@ -4,7 +4,10 @@
     "android-app-releases",
     "iron-pump-images",
     "dueffe-since",
-    "dueffe-subber"
+    "dueffe-subber",
+    "mutuo-roma-nord",
+    "appunto",
+    "sweep"
   ],
   "categories": [
     {
@@ -57,18 +60,13 @@
         "android"
       ]
     },
-    "sweep": {
-      "category": "desktop",
-      "platforms": [
-        "macos"
-      ]
-    },
     "Castino": {
       "category": "desktop",
       "platforms": [
         "windows",
         "android"
-      ]
+      ],
+      "description": "Mirroring e controllo dello schermo Android via Wi-Fi. App nativa per Windows realizzata con WinUI 3 e .NET."
     },
     "hommaterial": {
       "category": "android",
@@ -135,11 +133,30 @@
     },
     "app-to-pwa-casaos": {
       "category": "sviluppo",
-      "name": "App to PWA · CasaOS"
+      "name": "App to PWA · CasaOS",
+      "description": "Skill per Claude: trasforma la tua app nativa in una PWA identica e ospitala su CasaOS, con installazione in un solo comando e aggiornamenti automatici ogni notte.",
+      "about": "Una skill per Claude che converte la tua app nativa (Android, iOS, Flutter, React Native) in una PWA identica per grafica, animazioni e utilizzo, con un piccolo server da ospitare sul tuo CasaOS (o su qualsiasi macchina con Docker, Raspberry Pi compreso): installazione guidata con un solo comando, account per ogni persona di famiglia, notifiche push e aggiornamenti automatici ogni notte.",
+      "features": [
+        "Interfaccia identica: stessi colori, font, forme e testi. Molle e curve di Compose/SwiftUI convertite esattamente, Random(seed) di Kotlin riprodotto bit per bit perché le forme generate coincidano, icone Material dallo stesso set.",
+        "Account: nome utente e password, senza email. Ogni persona ha i propri dati privati (un suo file SQLite).",
+        "Funzioni native convertite: notifiche → Web Push, lavori in sottofondo → processi del server, sblocco biometrico → passkey WebAuthn, fotocamera, voce, PDF e condivisione, backup compatibili con l'app nativa.",
+        "Installazione sul server con un solo comando, in HTTPS tramite Tailscale, un certificato locale o il tuo reverse proxy; l'app compare nella dashboard di CasaOS. Più app possono condividere lo stesso server: ognuna riceve in automatico la sua porta HTTPS di Tailscale (443, poi 8443, 10000...), senza prendere i link delle altre.",
+        "Aggiornamento automatico ogni notte: quando alzi la versione su GitHub, i server ricompilano, fanno il backup di ogni database, passano alla nuova versione e tornano indietro da soli se non si avvia."
+      ]
     },
     "chatgpt-image-mcp": {
       "category": "sviluppo",
-      "name": "ChatGPT Image MCP"
+      "name": "ChatGPT Image MCP",
+      "description": "Server MCP che permette a Claude di generare e modificare immagini con ChatGPT, tramite l'app ChatGPT/Codex installata sul computer. Senza chiave API.",
+      "about": "Claude genera e modifica immagini con ChatGPT, usando l'app ChatGPT già installata sul tuo computer. Nessuna chiave API e nessun costo in più: le immagini si generano con il tuo abbonamento a ChatGPT.\n\n«un'illustrazione piatta e minimalista di una volpe che legge un libro», orizzontale · «dai alla volpe un paio di occhialini rotondi»",
+      "features": [
+        "🖼️ Genera immagini da una descrizione, anche partendo da immagini di riferimento",
+        "✏️ Modifica immagini esistenti (cambia sfondo o colori, aggiungi o togli oggetti) senza toccare l'originale",
+        "🔑 Nessuna chiave API: usa la Codex CLI inclusa nell'app desktop di ChatGPT, con il tuo account ChatGPT",
+        "👀 Anteprime: l'immagine torna al client, così Claude può guardare il risultato e migliorarlo",
+        "💾 Salvata sul disco dove vuoi, con nomi dei file sicuri e senza sovrascrivere nulla",
+        "🧩 Funziona con Claude Code, Claude Desktop e qualsiasi altro client MCP"
+      ]
     },
     "alexa-home-mcp": {
       "category": "sviluppo",
@@ -148,7 +165,14 @@
     "telegram-notify": {
       "category": "sviluppo",
       "name": "Telegram Notify",
-      "platforms": []
+      "platforms": [],
+      "description": "Plugin per Claude Code: ricevi riepiloghi, link e allegati su Telegram, quando vuoi o dopo ogni prompt.",
+      "about": "Riepiloghi, link e allegati di Claude Code, direttamente sul tuo Telegram.\n\nUn plugin per Claude Code che invia su Telegram i riepiloghi del lavoro di Claude, con link e allegati. Usalo quando ti serve, oppure attivalo perché arrivi un riepilogo dopo ogni prompt.",
+      "features": [
+        "Claude Code con il supporto ai plugin",
+        "Python 3.8 o successivo (python3, python o py nel PATH). Nessun pacchetto da installare.",
+        "Una shell POSIX sh (già presente su macOS e Linux; su Windows Git Bash, che Claude Code usa già)"
+      ]
     },
     "notion-todo": {
       "category": "sviluppo",
@@ -193,15 +217,6 @@
       "category": "web"
     },
     "LoopingSounds": {
-      "category": "web"
-    },
-    "mutuo-roma-nord": {
-      "category": "web",
-      "platforms": [
-        "web"
-      ]
-    },
-    "appunto": {
       "category": "web"
     },
     "pillole-poetiche": {
@@ -295,6 +310,10 @@
         "📋 Tabelle, citazioni, liste, codice e link supportati",
         "🔄 Aggiornamenti direttamente dall'app"
       ]
+    },
+    "MonitorSwitch": {
+      "description": "Profili dei monitor per Windows, leggeri: risoluzione per ogni schermo e scorciatoie nell'area di notifica.",
+      "about": "MonitorSwitch Ricorda i tuoi monitor. Scegli i tuoi schermi. Mantieni la tua risoluzione.\n\nScarica lo ZIP portatile · Scarica l'EXE autonomo"
     }
   }
 }
