@@ -371,6 +371,41 @@ svg.i { width: 24px; height: 24px; fill: currentColor; flex: none; }
   #frame { border-left: 1px solid #ffdc800f; border-right: 1px solid #ffdc800f; }
 }
 
+/* ---------- PC e schermi grandi: la colonna si allarga e le liste vanno su più colonne ---------- */
+@media (min-width: 1000px) {
+  :root { --frame: 1180px; }
+  .pad, .home-head, .page-head, .section-head { padding-left: 32px; padding-right: 32px; }
+  #nav { width: 520px; }
+  #toast { max-width: 480px; }
+  .home-head .body-l { max-width: 640px; }
+  .stats { max-width: 560px; }
+  .banner { margin-left: 32px; margin-right: 32px; }
+  .hscroll, .chips { padding-left: 32px; padding-right: 32px; }
+  .carousel { padding-left: 32px; padding-right: 32px; scroll-snap-type: x proximity; }
+  .feat { flex-basis: 440px; scroll-snap-align: start; }
+  .car-btn.prev { left: 12px; } .car-btn.next { right: 12px; }
+  .search { margin-left: 32px; margin-right: 32px; max-width: 640px; }
+  .result-bar { padding-left: 32px; padding-right: 32px; }
+  /* Righe affiancate: ultime release, le tue app, risultati di Esplora. */
+  .section:has(> .row-item) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 12px; padding: 0 12px; }
+  .section:has(> .row-item) > .section-head { grid-column: 1 / -1; padding-left: 20px; padding-right: 20px; }
+  .row-item { border-radius: 20px; transition: background .2s; }
+  .row-item:hover, .x-row:hover { background: var(--surface); }
+  #results { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); column-gap: 12px; padding: 0 12px; }
+  .x-row { border-radius: 20px; }
+  /* Gist su due colonne, ognuno alto quanto il suo codice. */
+  .page:has(> .gist) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; padding: 0 12px; }
+  .page:has(> .gist) > .page-head { grid-column: 1 / -1; padding-left: 20px; }
+  .gist { margin: 8px; }
+  .info { max-width: 680px; margin: 0 auto; }
+  .detail, .topbar { max-width: 900px; margin-left: auto; margin-right: auto; }
+  .detail .hero { padding-left: 32px; padding-right: 32px; }
+  .features, .links, .topics { padding-left: 32px; padding-right: 32px; }
+}
+@media (min-width: 1400px) {
+  .section:has(> .row-item) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 1ms !important; animation-delay: 0ms !important; transition-duration: 1ms !important; }
 }
