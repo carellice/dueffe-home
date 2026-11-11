@@ -56,6 +56,7 @@ In **Info → Controlla aggiornamenti** l'app legge l'ultima release di questa r
 | `tools/catalog-overrides.json` | Categorie, progetti in evidenza, nomi e piattaforme corretti a mano |
 | `catalog/catalog.json` | Copia del catalogo inclusa nell'APK |
 | `rilascia.bat` | Pubblica una nuova release |
+| `DS.md` | Design system Dueffe: token, tipografia, movimento e componenti da riusare in altre app |
 
 ## Pubblicare una release
 
