@@ -397,8 +397,9 @@ fun categoryIcon(id: String): ImageVector = when (id) {
 
 private val italian = Locale.ITALIAN
 
-fun relativeDate(iso: String?): String {
-    val instant = runCatching { Instant.parse(iso) }.getOrNull() ?: return ""
+fun relativeDate(iso: String?): String = runCatching { Instant.parse(iso) }.getOrNull()?.let(::relativeDate).orEmpty()
+
+fun relativeDate(instant: Instant): String {
     val days = Duration.between(instant, Instant.now()).toDays()
     return when {
         days < 1 -> "oggi"

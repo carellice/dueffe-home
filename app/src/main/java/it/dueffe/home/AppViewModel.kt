@@ -77,6 +77,10 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     var usage by mutableStateOf<Map<String, Long>?>(null)
         private set
 
+    /** Ultimo utilizzo per package secondo Android; null finché non concede l'accesso ai dati di utilizzo. */
+    var lastUsed by mutableStateOf<Map<String, Long>?>(null)
+        private set
+
     var update by mutableStateOf<UpdateState>(UpdateState.Idle)
         private set
     var updateBannerDismissed by mutableStateOf(false)
@@ -190,6 +194,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
         val projects = catalog?.projects ?: return
         installed = apps.installed(projects)
         usage = apps.usage()
+        lastUsed = apps.lastUsed()
         // Un download già installato non serve più.
         installed.forEach { a -> if (downloads[a.project.id] is AppDownload.Ready && !a.hasUpdate) downloads.remove(a.project.id) }
     }
@@ -303,12 +308,22 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     fun openApp(app: InstalledApp) {
-        prefs.edit().putInt("opens/${app.project.id}", opens(app) + 1).apply()
+        prefs.edit().putInt("opens/${app.project.id}", opens(app) + 1).putLong("opened/${app.project.id}", System.currentTimeMillis()).apply()
         if (!apps.open(app.packageName)) toast("${app.project.name} non si può aprire da qui")
     }
 
     /** Quante volte l'app è stata aperta da qui: ordina per utilizzo quando Android non dà i suoi dati. */
     fun opens(app: InstalledApp): Int = prefs.getInt("opens/${app.project.id}", 0)
+
+    /**
+     * Quando l'app è stata usata l'ultima volta: da Android, o dall'ultima apertura da qui senza accesso
+     * ai dati di utilizzo. 0 se non risulta mai usata; null se non si può sapere.
+     */
+    fun lastUsed(app: InstalledApp): Long? {
+        val here = prefs.getLong("opened/${app.project.id}", 0L)
+        val android = lastUsed ?: return here.takeIf { it > 0 }
+        return maxOf(android[app.packageName] ?: 0L, here)
+    }
 
     fun hasUsageAccess(): Boolean = apps.hasUsageAccess()
 

@@ -64,6 +64,15 @@ class AppManager(private val context: Context) {
         usm.queryAndAggregateUsageStats(now - 30L * 24 * 60 * 60 * 1000, now).mapValues { it.value.totalTimeInForeground }
     }
 
+    /** Ultimo utilizzo per package negli ultimi due anni; null se manca l'accesso ai dati di utilizzo. */
+    suspend fun lastUsed(): Map<String, Long>? = withContext(Dispatchers.IO) {
+        if (!hasUsageAccess()) return@withContext null
+        val usm = context.getSystemService(Context.USAGE_STATS_SERVICE) as UsageStatsManager
+        val now = System.currentTimeMillis()
+        usm.queryAndAggregateUsageStats(now - 2 * 365L * 24 * 60 * 60 * 1000, now)
+            .mapValues { it.value.lastTimeUsed }.filterValues { it > 0 }
+    }
+
     fun hasUsageAccess(): Boolean {
         val ops = context.getSystemService(Context.APP_OPS_SERVICE) as AppOpsManager
         val mode = if (Build.VERSION.SDK_INT >= 29) {

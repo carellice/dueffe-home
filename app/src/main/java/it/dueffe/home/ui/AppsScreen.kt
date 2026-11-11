@@ -241,7 +241,7 @@ private fun UsageHint(modifier: Modifier, onGrant: () -> Unit) {
     CardSurface(modifier.fillMaxWidth(), padding = PaddingValues(16.dp)) {
         Column {
             Text(
-                "Per ordinare in base a quanto usi le app, consenti a Dueffe Home l'accesso ai dati di utilizzo. Finché non lo fai conto le aperture da qui.",
+                "Per ordinare in base a quanto usi le app e vedere quando le hai usate l'ultima volta, consenti a Dueffe Home l'accesso ai dati di utilizzo. Finché non lo fai conto le aperture da qui.",
                 style = MaterialTheme.typography.bodyMedium, color = DF.Muted,
             )
             VerticalGap(12.dp)
@@ -274,10 +274,20 @@ private fun InstalledRow(
                 if (app.hasUpdate) "${app.version} → ${app.latest}" else "Versione ${app.version}",
                 style = MaterialTheme.typography.bodySmall, color = if (app.hasUpdate) DF.Primary else DF.Muted, maxLines = 1,
             )
+            lastUsedLabel(app, vm)?.let {
+                Text(it, style = MaterialTheme.typography.bodySmall, color = DF.Muted, maxLines = 1, overflow = TextOverflow.Ellipsis)
+            }
         }
         Spacer(Modifier.width(10.dp))
         AppActionButton(p, vm, Modifier.width(112.dp), compact = true)
     }
+}
+
+/** "Usata 3 giorni fa", "Mai usata", o null se non si sa (nessun accesso ai dati di utilizzo e mai aperta da qui). */
+private fun lastUsedLabel(app: InstalledApp, vm: AppViewModel): String? = when (val at = vm.lastUsed(app)) {
+    null -> null
+    0L -> "Mai usata"
+    else -> "Usata ${relativeDate(java.time.Instant.ofEpochMilli(at))}"
 }
 
 @Composable
@@ -326,6 +336,11 @@ private fun InstalledTile(
             Text(
                 if (app.hasUpdate) "${app.version} → ${app.latest}" else app.version,
                 style = MaterialTheme.typography.bodySmall, color = if (app.hasUpdate) DF.Primary else DF.Muted,
+                maxLines = 1, overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center,
+            )
+            Text(
+                // Una riga anche vuota, così le tessere della stessa fila restano allineate.
+                lastUsedLabel(app, vm).orEmpty(), style = MaterialTheme.typography.labelSmall, color = DF.Muted,
                 maxLines = 1, overflow = TextOverflow.Ellipsis, textAlign = TextAlign.Center,
             )
             VerticalGap(8.dp)
