@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-11T09:18:00.967Z",
+ "generatedAt": "2026-11-11T20:09:07.648Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -35,6 +35,86 @@
   }
  ],
  "projects": [
+  {
+   "id": "hommaterial",
+   "name": "Hommaterial",
+   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
+   "about": "Android · Server di casa (CasaOS) · Gratuita · Open source\n\nPer pubblicare una nuova versione da questo PC usa release.bat: guida al rilascio.",
+   "features": [
+    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
+    "Un tocco accende o spegne.",
+    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
+    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
+    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
+    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "web",
+    "windows"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-06T16:46:46Z",
+   "updatedAt": "2026-11-11T20:04:53Z",
+   "repoUrl": "https://github.com/carellice/hommaterial",
+   "webUrl": "https://carellice.github.io/hommaterial/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/hommaterial/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/hommaterial"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.82",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.82"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/hommaterial/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/hommaterial/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png?v=a785ba32",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
+   ],
+   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
+   "release": {
+    "tag": "v1.82",
+    "name": "Hommaterial 1.82",
+    "date": "2026-11-11T20:04:40Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.82",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.81...v1.82",
+    "assets": [
+     {
+      "name": "Hommaterial-v1.82.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.82/Hommaterial-v1.82.apk",
+      "size": 4829582,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "app.hommaterial",
+   "dueffe": false
+  },
   {
    "id": "money",
    "name": "Money",
@@ -100,99 +180,13 @@
       "name": "Money-1.21.0.apk",
       "url": "https://github.com/carellice/money/releases/download/v1.21.0/Money-1.21.0.apk",
       "size": 6522525,
-      "downloads": 0
+      "downloads": 3
      }
     ]
    },
    "featured": true,
    "hidden": false,
    "androidPackage": "com.money.app",
-   "dueffe": false
-  },
-  {
-   "id": "hommaterial",
-   "name": "Hommaterial",
-   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
-   "about": "Android · Server di casa (CasaOS) · Windows 11 (anteprima) · Gratuita · Open source\n\nWindows 11: scarica lo ZIP Windows dalle release GitHub, estrailo interamente in una cartella personale e avvia Hommaterial.Windows.exe. Gli aggiornamenti si scaricano dall'app, in Impostazioni → Controlla aggiornamenti. Per pubblicare Android e Windows da questo PC usa release.bat: guida al rilascio.",
-   "features": [
-    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
-    "Un tocco accende o spegne.",
-    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
-    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
-    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
-    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
-   ],
-   "category": "android",
-   "platforms": [
-    "android",
-    "web",
-    "windows"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-10T22:49:04Z",
-   "repoUrl": "https://github.com/carellice/hommaterial",
-   "webUrl": "https://carellice.github.io/hommaterial/",
-   "links": [
-    {
-     "type": "web",
-     "label": "Apri online",
-     "url": "https://carellice.github.io/hommaterial/"
-    },
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/hommaterial"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.72",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.72"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/hommaterial/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/hommaterial/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png?v=a785ba32",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
-   ],
-   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
-   "release": {
-    "tag": "v1.72",
-    "name": "Hommaterial 1.72",
-    "date": "2026-11-10T22:48:36Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.72",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.71...v1.72",
-    "assets": [
-     {
-      "name": "Hommaterial-v1.72-windows-x64.zip",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.72/Hommaterial-v1.72-windows-x64.zip",
-      "size": 127160214,
-      "downloads": 1
-     },
-     {
-      "name": "Hommaterial-v1.72.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.72/Hommaterial-v1.72.apk",
-      "size": 4748113,
-      "downloads": 2
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "app.hommaterial",
    "dueffe": false
   },
   {
@@ -441,6 +435,77 @@
    "dueffe": false
   },
   {
+   "id": "dueffe-garage",
+   "name": "Garage",
+   "description": "Garage per Android – auto, interventi, scadenze e documenti",
+   "about": "Auto, interventi, scadenze e documenti in un unico posto. Per ogni auto tieni lo storico dei lavori, i costi e i promemoria per tagliandi, revisioni e assicurazioni. I dati restano sul telefono. App nativa della famiglia Dueffe.",
+   "features": [
+    "Schede auto con foto, targa, chilometri, carburante facoltativo, note e archivio delle auto vendute o rottamate. Il carburante si può scegliere da un elenco o specificare con «Altro».",
+    "Interventi con costi e promemoria per data, intervallo, chilometri o prima condizione raggiunta.",
+    "Documenti locali: importazione, fotocamera, galleria, apertura, condivisione, rinomina ed eliminazione.",
+    "Scadenze nell'app e notifiche opzionali tramite un controllo giornaliero di WorkManager. L'orario delle notifiche dipende da Android.",
+    "Tema chiaro, scuro o automatico; blocco all'apertura con le credenziali del dispositivo.",
+    "Importazione dei vecchi backup JSON della PWA e dei backup dell'app. I nuovi file sono identificati come Garage; includono foto e documenti. L'importazione valida il file prima della sostituzione e usa una transazione SQLite."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "TypeScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:27Z",
+   "updatedAt": "2026-11-11T19:42:40Z",
+   "repoUrl": "https://github.com/carellice/dueffe-garage",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-garage"
+    },
+    {
+     "type": "release",
+     "label": "Release garage-v1.0.51",
+     "url": "https://github.com/carellice/dueffe-garage/releases/tag/garage-v1.0.51"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-garage/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-garage/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-garage/main/docs/logo.png?v=e7f5c60b",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "garage-v1.0.51",
+    "name": "Garage 1.0.51",
+    "date": "2026-11-11T19:42:29Z",
+    "url": "https://github.com/carellice/dueffe-garage/releases/tag/garage-v1.0.51",
+    "notes": "APK Android nativo di Garage. Versione 1.0.51 (code 52).",
+    "assets": [
+     {
+      "name": "garage-v1.0.51.apk",
+      "url": "https://github.com/carellice/dueffe-garage/releases/download/garage-v1.0.51/garage-v1.0.51.apk",
+      "size": 9612108,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.dueffe.garage",
+   "dueffe": true
+  },
+  {
    "id": "dueffe-streamwise",
    "name": "StreamWise",
    "description": "StreamWise per Android – cosa guardare, dove e quando",
@@ -502,7 +567,7 @@
       "name": "StreamWise-2.1.1.apk",
       "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.1.1/StreamWise-2.1.1.apk",
       "size": 16801354,
-      "downloads": 0
+      "downloads": 3
      }
     ]
    },
@@ -595,77 +660,6 @@
    "hidden": false,
    "androidPackage": "it.jonica.app",
    "dueffe": false
-  },
-  {
-   "id": "dueffe-garage",
-   "name": "Garage",
-   "description": "Garage per Android – auto, interventi, scadenze e documenti",
-   "about": "Auto, interventi, scadenze e documenti in un unico posto. Per ogni auto tieni lo storico dei lavori, i costi e i promemoria per tagliandi, revisioni e assicurazioni. I dati restano sul telefono. App nativa della famiglia Dueffe.",
-   "features": [
-    "Schede auto con foto, targa, chilometri, carburante facoltativo, note e archivio delle auto vendute o rottamate. Il carburante si può scegliere da un elenco o specificare con «Altro».",
-    "Interventi con costi e promemoria per data, intervallo, chilometri o prima condizione raggiunta.",
-    "Documenti locali: importazione, fotocamera, galleria, apertura, condivisione, rinomina ed eliminazione.",
-    "Scadenze nell'app e notifiche opzionali tramite un controllo giornaliero di WorkManager. L'orario delle notifiche dipende da Android.",
-    "Tema chiaro, scuro o automatico; blocco all'apertura con le credenziali del dispositivo.",
-    "Importazione dei vecchi backup JSON della PWA e dei backup dell'app. I nuovi file sono identificati come Garage; includono foto e documenti. L'importazione valida il file prima della sostituzione e usa una transazione SQLite."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "TypeScript",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T20:43:27Z",
-   "updatedAt": "2026-11-10T10:51:49Z",
-   "repoUrl": "https://github.com/carellice/dueffe-garage",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/dueffe-garage"
-    },
-    {
-     "type": "release",
-     "label": "Release garage-v1.0.50",
-     "url": "https://github.com/carellice/dueffe-garage/releases/tag/garage-v1.0.50"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/dueffe-garage/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/dueffe-garage/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-garage/main/docs/logo.png?v=e7f5c60b",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "garage-v1.0.50",
-    "name": "Garage 1.0.50",
-    "date": "2026-11-10T10:51:39Z",
-    "url": "https://github.com/carellice/dueffe-garage/releases/tag/garage-v1.0.50",
-    "notes": "APK Android nativo di Garage. Versione 1.0.50 (code 51).",
-    "assets": [
-     {
-      "name": "garage-v1.0.50.apk",
-      "url": "https://github.com/carellice/dueffe-garage/releases/download/garage-v1.0.50/garage-v1.0.50.apk",
-      "size": 9609640,
-      "downloads": 3
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "it.dueffe.garage",
-   "dueffe": true
   },
   {
    "id": "dueffe-health",
@@ -1289,6 +1283,79 @@
    "dueffe": false
   },
   {
+   "id": "Topperia",
+   "name": "Topperia",
+   "description": "Topperia: il trivia Android delle Top 10. Classifiche reali, sfide locali e nuove curiosità.",
+   "about": "Il mondo è una Top 10. Quanto in alto riesci ad arrivare?\n\nScarica Topperia per Android · Come si gioca · Pubblicare una versione · Privacy",
+   "features": [
+    "Sorprendimi: una scelta casuale animata che rispetta categoria e modalità, dà precedenza alle classifiche non completate ed evita ripetizioni durante il ciclo.",
+    "Un benvenuto in tre scene: spiega il gioco al primo avvio; puoi saltarlo e rivederlo dalle impostazioni.",
+    "Grafica notturna in 3D: cielo animato, schede con spessore che si inclinano verso il dito, pulsanti a rilievo che affondano quando li premi, icone sferiche e caselle che ruotano in prospettiva. Esplosioni di particelle e coriandoli per le tue scoperte. Il logo originale è stato creato con ImageGen.",
+    "Struttura chiara: tre sezioni, Gioca, Classifiche e Profilo. Ogni classifica apre una scheda con fonte, anno e i pulsanti per giocarla da soli o in due.",
+    "Movimenti curati: entrate scaglionate, passaggi tra pagine senza lampeggi, pannelli che scorrono e si chiudono anche trascinandoli, una barra di navigazione che compare e scompare. Le classifiche scorrono con inerzia e disegnano soltanto le schede visibili.",
+    "Profilo con livelli: ogni scoperta fa salire di livello, da Curioso a Leggenda, insieme a statistiche, classifiche esplorate e sei traguardi."
+   ],
+   "category": "giochi",
+   "platforms": [
+    "android"
+   ],
+   "language": "Java",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-28T11:44:14Z",
+   "updatedAt": "2026-11-11T15:28:40Z",
+   "repoUrl": "https://github.com/carellice/Topperia",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/Topperia"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.1.11",
+     "url": "https://github.com/carellice/Topperia/releases/tag/v1.1.11"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/Topperia/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/Topperia/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/Topperia/main/branding/topperia-logo.png?v=34566582",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/Topperia/main/docs/images/home.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.1.11",
+    "name": "Topperia 1.1.11",
+    "date": "2026-11-11T15:28:51Z",
+    "url": "https://github.com/carellice/Topperia/releases/tag/v1.1.11",
+    "notes": "## Topperia 1.1.11\n\nTrivia nativo Android: 30 classifiche, 300 risposte e sfide locali.\n\n### Installa o aggiorna\n\nScarica **Topperia-1.1.11.apk** e aprilo sul dispositivo (Android 8+). La firma mantiene compatibili gli aggiornamenti e i salvataggi esistenti.\n\nIl controllo aggiornamenti integrato legge le release stabili di questa repository. Android richiede la conferma prima di installare l'APK.\n\n### Integrita\n\nSHA-256: `e72b0d4f579ef9451b1a7a771ec6607eb94851b188ec4c34d2a33bf4ab64901a`\n\nIn questa release sono inclusi anche update.json e il checksum dell'APK.\n",
+    "assets": [
+     {
+      "name": "Topperia-1.1.11.apk",
+      "url": "https://github.com/carellice/Topperia/releases/download/v1.1.11/Topperia-1.1.11.apk",
+      "size": 721044,
+      "downloads": 4
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "it.topperia.game",
+   "dueffe": false
+  },
+  {
    "id": "arcade-classici",
    "name": "Arcadio",
    "description": "Snake, Campo Minato, Breakout e Invasori rivisitati in chiave neon/3D per Android (Kotlin + Jetpack Compose)",
@@ -1321,7 +1388,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-16T10:13:54Z",
-   "updatedAt": "2026-11-11T09:06:38Z",
+   "updatedAt": "2026-11-11T10:34:20Z",
    "repoUrl": "https://github.com/carellice/arcade-classici",
    "webUrl": null,
    "links": [
@@ -1332,8 +1399,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.6.1",
-     "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.6.1"
+     "label": "Release v1.7.0",
+     "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.7.0"
     },
     {
      "type": "releases",
@@ -1352,96 +1419,23 @@
    ],
    "video": "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/trailer.mp4",
    "release": {
-    "tag": "v1.6.1",
-    "name": "Arcadio 1.6.1",
-    "date": "2026-11-11T09:06:36Z",
-    "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.6.1",
-    "notes": "- Tris: a fine partita Ancora e Cambia modalità uno sopra l'altro, la scritta non va più a capo\n- Sudoku: il trucco 2 del tutorial mostra riga e colonna della casella e cancella i numeri già presenti finché resta quello giusto\n\n---\nScarica **Arcadio.apk** qui sotto e installalo, oppure aggiorna direttamente dall'app: **Impostazioni → Aggiornamenti**.",
+    "tag": "v1.7.0",
+    "name": "Arcadio 1.7.0",
+    "date": "2026-11-11T10:34:17Z",
+    "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.7.0",
+    "notes": "Sudoku: tieni premuto un numero in basso per sbarrarlo nella casella vuota scelta\n\n---\nScarica **Arcadio.apk** qui sotto e installalo, oppure aggiorna direttamente dall'app: **Impostazioni → Aggiornamenti**.",
     "assets": [
      {
       "name": "Arcadio.apk",
-      "url": "https://github.com/carellice/arcade-classici/releases/download/v1.6.1/Arcadio.apk",
-      "size": 1075332,
-      "downloads": 0
+      "url": "https://github.com/carellice/arcade-classici/releases/download/v1.7.0/Arcadio.apk",
+      "size": 1091716,
+      "downloads": 3
      }
     ]
    },
    "featured": true,
    "hidden": false,
    "androidPackage": "com.giochiclassici.arcade",
-   "dueffe": false
-  },
-  {
-   "id": "Topperia",
-   "name": "Topperia",
-   "description": "Topperia: il trivia Android delle Top 10. Classifiche reali, sfide locali e nuove curiosità.",
-   "about": "Il mondo è una Top 10. Quanto in alto riesci ad arrivare?\n\nScarica Topperia per Android · Come si gioca · Pubblicare una versione · Privacy",
-   "features": [
-    "Sorprendimi: una scelta casuale animata che rispetta categoria e modalità, dà precedenza alle classifiche non completate ed evita ripetizioni durante il ciclo.",
-    "Un benvenuto in tre scene: spiega il gioco al primo avvio; puoi saltarlo e rivederlo dalle impostazioni.",
-    "Grafica notturna in 3D: cielo animato, schede con spessore che si inclinano verso il dito, pulsanti a rilievo che affondano quando li premi, icone sferiche e caselle che ruotano in prospettiva. Esplosioni di particelle e coriandoli per le tue scoperte. Il logo originale è stato creato con ImageGen.",
-    "Struttura chiara: tre sezioni, Gioca, Classifiche e Profilo. Ogni classifica apre una scheda con fonte, anno e i pulsanti per giocarla da soli o in due.",
-    "Movimenti curati: entrate scaglionate, passaggi tra pagine senza lampeggi, pannelli che scorrono e si chiudono anche trascinandoli, una barra di navigazione che compare e scompare. Le classifiche scorrono con inerzia e disegnano soltanto le schede visibili.",
-    "Profilo con livelli: ogni scoperta fa salire di livello, da Curioso a Leggenda, insieme a statistiche, classifiche esplorate e sei traguardi."
-   ],
-   "category": "giochi",
-   "platforms": [
-    "android"
-   ],
-   "language": "Java",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-28T11:44:14Z",
-   "updatedAt": "2026-11-10T09:23:27Z",
-   "repoUrl": "https://github.com/carellice/Topperia",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/Topperia"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.1.9",
-     "url": "https://github.com/carellice/Topperia/releases/tag/v1.1.9"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/Topperia/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/Topperia/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/Topperia/main/branding/topperia-logo.png?v=34566582",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/Topperia/main/docs/images/home.png"
-   ],
-   "video": null,
-   "release": {
-    "tag": "v1.1.9",
-    "name": "Topperia 1.1.9",
-    "date": "2026-11-10T09:23:36Z",
-    "url": "https://github.com/carellice/Topperia/releases/tag/v1.1.9",
-    "notes": "## Topperia 1.1.9\n\nTrivia nativo Android: 30 classifiche, 300 risposte e sfide locali.\n\n### Installa o aggiorna\n\nScarica **Topperia-1.1.9.apk** e aprilo sul dispositivo (Android 8+). La firma mantiene compatibili gli aggiornamenti e i salvataggi esistenti.\n\nIl controllo aggiornamenti integrato legge le release stabili di questa repository. Android richiede la conferma prima di installare l'APK.\n\n### Integrita\n\nSHA-256: `29463dc6af29f2e34003ac3564806132f62dc86f6570e96f9c0b28cfa4517897`\n\nIn questa release sono inclusi anche update.json e il checksum dell'APK.\n",
-    "assets": [
-     {
-      "name": "Topperia-1.1.9.apk",
-      "url": "https://github.com/carellice/Topperia/releases/download/v1.1.9/Topperia-1.1.9.apk",
-      "size": 641904,
-      "downloads": 4
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "it.topperia.game",
    "dueffe": false
   },
   {
@@ -1888,13 +1882,13 @@
       "name": "IPTVISION-1.17.0.apk",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.0/IPTVISION-1.17.0.apk",
       "size": 8671288,
-      "downloads": 4
+      "downloads": 5
      },
      {
       "name": "IPTVISION-1.17.0.ipk",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.0/IPTVISION-1.17.0.ipk",
       "size": 135930,
-      "downloads": 1
+      "downloads": 2
      },
      {
       "name": "IPTVISION-1.17.0.wgt",
@@ -1906,7 +1900,7 @@
       "name": "IPTVISION-Setup-1.17.0.exe",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.0/IPTVISION-Setup-1.17.0.exe",
       "size": 71506226,
-      "downloads": 2
+      "downloads": 3
      }
     ]
    },
@@ -2676,7 +2670,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-11-10T17:28:47Z",
-   "updatedAt": "2026-11-10T18:22:47Z",
+   "updatedAt": "2026-11-11T13:38:51Z",
    "repoUrl": "https://github.com/carellice/app-utility-prompts",
    "webUrl": null,
    "links": [
