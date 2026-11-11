@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-10T22:50:15.746Z",
+ "generatedAt": "2026-11-11T09:18:00.967Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -35,6 +35,80 @@
   }
  ],
  "projects": [
+  {
+   "id": "money",
+   "name": "Money",
+   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
+   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
+   "features": [
+    "Font Bricolage Grotesque (SIL OFL).",
+    "Texture della pelle dello stile skeuomorfico generata con ChatGPT.",
+    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "cloudflare-workers-ai",
+    "jetpack-compose",
+    "kotlin",
+    "personal-finance"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-28T11:41:54Z",
+   "updatedAt": "2026-11-11T09:14:13Z",
+   "repoUrl": "https://github.com/carellice/money",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/money"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.21.0",
+     "url": "https://github.com/carellice/money/releases/tag/v1.21.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/money/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/money/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png?v=36cdeefd",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.21.0",
+    "name": "Money 1.21.0",
+    "date": "2026-11-11T09:13:56Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.21.0",
+    "notes": "## Novita'\n- Modern UI: quando la tile del saldo si gira resta visibile il saldo del mese, su app e PWA\n- Ultime modifiche incluse nella release",
+    "assets": [
+     {
+      "name": "Money-1.21.0.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.21.0/Money-1.21.0.apk",
+      "size": 6522525,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "com.money.app",
+   "dueffe": false
+  },
   {
    "id": "hommaterial",
    "name": "Hommaterial",
@@ -106,93 +180,19 @@
       "name": "Hommaterial-v1.72-windows-x64.zip",
       "url": "https://github.com/carellice/hommaterial/releases/download/v1.72/Hommaterial-v1.72-windows-x64.zip",
       "size": 127160214,
-      "downloads": 0
+      "downloads": 1
      },
      {
       "name": "Hommaterial-v1.72.apk",
       "url": "https://github.com/carellice/hommaterial/releases/download/v1.72/Hommaterial-v1.72.apk",
       "size": 4748113,
-      "downloads": 0
+      "downloads": 2
      }
     ]
    },
    "featured": true,
    "hidden": false,
    "androidPackage": "app.hommaterial",
-   "dueffe": false
-  },
-  {
-   "id": "money",
-   "name": "Money",
-   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
-   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
-   "features": [
-    "Font Bricolage Grotesque (SIL OFL).",
-    "Texture della pelle dello stile skeuomorfico generata con ChatGPT.",
-    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "android",
-    "cloudflare-workers-ai",
-    "jetpack-compose",
-    "kotlin",
-    "personal-finance"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-10T14:54:43Z",
-   "repoUrl": "https://github.com/carellice/money",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/money"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.19.0",
-     "url": "https://github.com/carellice/money/releases/tag/v1.19.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/money/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/money/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png?v=36cdeefd",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.19.0",
-    "name": "Money 1.19.0",
-    "date": "2026-11-10T14:54:34Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.19.0",
-    "notes": "## Novita'\n- PWA su desktop e schermi grandi: l'app riempie la finestra, contenuti e barre in una colonna centrata, barra delle schede come un dock, schede di inserimento, chat, accesso e introduzione in colonna",
-    "assets": [
-     {
-      "name": "Money-1.19.0.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.19.0/Money-1.19.0.apk",
-      "size": 6489757,
-      "downloads": 4
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "com.money.app",
    "dueffe": false
   },
   {
@@ -269,7 +269,7 @@
       "name": "Chiarella-1.19.apk",
       "url": "https://github.com/carellice/chiarella/releases/download/v1.19/Chiarella-1.19.apk",
       "size": 43464796,
-      "downloads": 4
+      "downloads": 5
      },
      {
       "name": "Chiarella-Web-1.19.zip",
@@ -463,7 +463,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-10-15T20:43:47Z",
-   "updatedAt": "2026-11-10T17:37:28Z",
+   "updatedAt": "2026-11-11T09:10:06Z",
    "repoUrl": "https://github.com/carellice/dueffe-streamwise",
    "webUrl": null,
    "links": [
@@ -474,8 +474,8 @@
     },
     {
      "type": "release",
-     "label": "Release streamwise-v2.0.145",
-     "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.145"
+     "label": "Release streamwise-v2.1.1",
+     "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.1.1"
     },
     {
      "type": "releases",
@@ -492,17 +492,17 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "streamwise-v2.0.145",
-    "name": "StreamWise 2.0.145",
-    "date": "2026-11-10T17:36:52Z",
-    "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.0.145",
-    "notes": "APK Android firmato di StreamWise. Versione 2.0.145, codice aggiornamento 152.",
+    "tag": "streamwise-v2.1.1",
+    "name": "StreamWise 2.1.1",
+    "date": "2026-11-11T09:09:47Z",
+    "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.1.1",
+    "notes": "APK Android firmato di StreamWise. Versione 2.1.1, codice aggiornamento 154.",
     "assets": [
      {
-      "name": "StreamWise-2.0.145.apk",
-      "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.0.145/StreamWise-2.0.145.apk",
-      "size": 16784002,
-      "downloads": 3
+      "name": "StreamWise-2.1.1.apk",
+      "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.1.1/StreamWise-2.1.1.apk",
+      "size": 16801354,
+      "downloads": 0
      }
     ]
    },
@@ -1321,7 +1321,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-16T10:13:54Z",
-   "updatedAt": "2026-11-10T22:31:56Z",
+   "updatedAt": "2026-11-11T09:06:38Z",
    "repoUrl": "https://github.com/carellice/arcade-classici",
    "webUrl": null,
    "links": [
@@ -1332,8 +1332,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.6.0",
-     "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.6.0"
+     "label": "Release v1.6.1",
+     "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.6.1"
     },
     {
      "type": "releases",
@@ -1352,17 +1352,17 @@
    ],
    "video": "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/trailer.mp4",
    "release": {
-    "tag": "v1.6.0",
-    "name": "Arcadio 1.6.0",
-    "date": "2026-11-10T22:31:53Z",
-    "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.6.0",
-    "notes": "- Nuovo gioco: Tris, 1vCPU con tre difficoltà o 1v1 sullo stesso telefono\n- Sudoku: tutorial più chiaro per chi non ha mai giocato\n- Menu: tieni premuta una scheda e trascinala per riordinare i giochi\n\n---\nScarica **Arcadio.apk** qui sotto e installalo, oppure aggiorna direttamente dall'app: **Impostazioni → Aggiornamenti**.",
+    "tag": "v1.6.1",
+    "name": "Arcadio 1.6.1",
+    "date": "2026-11-11T09:06:36Z",
+    "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.6.1",
+    "notes": "- Tris: a fine partita Ancora e Cambia modalità uno sopra l'altro, la scritta non va più a capo\n- Sudoku: il trucco 2 del tutorial mostra riga e colonna della casella e cancella i numeri già presenti finché resta quello giusto\n\n---\nScarica **Arcadio.apk** qui sotto e installalo, oppure aggiorna direttamente dall'app: **Impostazioni → Aggiornamenti**.",
     "assets": [
      {
       "name": "Arcadio.apk",
-      "url": "https://github.com/carellice/arcade-classici/releases/download/v1.6.0/Arcadio.apk",
-      "size": 1075328,
-      "downloads": 2
+      "url": "https://github.com/carellice/arcade-classici/releases/download/v1.6.1/Arcadio.apk",
+      "size": 1075332,
+      "downloads": 0
      }
     ]
    },
@@ -1888,7 +1888,7 @@
       "name": "IPTVISION-1.17.0.apk",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.0/IPTVISION-1.17.0.apk",
       "size": 8671288,
-      "downloads": 3
+      "downloads": 4
      },
      {
       "name": "IPTVISION-1.17.0.ipk",
