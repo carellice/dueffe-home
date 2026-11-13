@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-13T15:54:22.925Z",
+ "generatedAt": "2026-11-13T23:21:48.185Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -35,6 +35,101 @@
   }
  ],
  "projects": [
+  {
+   "id": "chiarella",
+   "name": "Chiarella",
+   "description": "Chiarella — app Android open source di suoni rilassanti da mescolare, con timer, profili, Live Update e widget",
+   "about": "Suoni della natura da mescolare per rilassarti, concentrarti e dormire. App nativa Android e Windows, più una versione web. Open source.\n\nApp nativa WinUI 3 (Windows App SDK, .NET 8) in windows/Chiarella.Windows, con le stesse funzioni dell'app Android: suoni con volume e scene animate, sfondo \"aurora\", profili, timer con dissolvenza, «Un momento per te». L'audio passa da un unico flusso WASAPI (NAudio) e i file Vorbis vengono riletti a livello di campione (NVorbis), quindi i loop restano senza giunture. I suoni sono gli stessi dell'app Android (app/src/main/res/raw), non duplicati. Dati e profili sono in %LOCALAPPDATA%\\Chiarella.",
+   "features": [
+    "Android: scarica Chiarella-X.apk e installalo (Android 8.0 o successivo). Gli aggiornamenti successivi arrivano direttamente dall'app.",
+    "Windows: scarica Chiarella-Windows-X.zip, estrailo dove preferisci e avvia Chiarella.exe (Windows 10 1809 o successivo, 64 bit). Non serve installare nulla.",
+    "Web: apri carellice.github.io/chiarella. Si installa anche come app dal browser e funziona offline. In alternativa Chiarella-Web-X.zip si può pubblicare su un qualsiasi hosting statico."
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "windows",
+    "web"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "ambient-sounds",
+    "android",
+    "jetpack-compose",
+    "kotlin",
+    "relaxing-sounds",
+    "sleep",
+    "white-noise"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-21T09:30:02Z",
+   "updatedAt": "2026-11-13T23:15:44Z",
+   "repoUrl": "https://github.com/carellice/chiarella",
+   "webUrl": "https://carellice.github.io/chiarella/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/chiarella/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/chiarella"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.21",
+     "url": "https://github.com/carellice/chiarella/releases/tag/v1.21"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/chiarella/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/chiarella/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/chiarella/main/branding/chiarella_icon_512.png?v=e5d21728",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.21",
+    "name": "Chiarella 1.21",
+    "date": "2026-11-13T23:17:04Z",
+    "url": "https://github.com/carellice/chiarella/releases/tag/v1.21",
+    "notes": "Nuovo stile grafico Dueffe: nero caldo, testo avorio e un solo accento oro, nebulose dorate con pulviscolo, titoli in Bricolage Grotesque e testi in Inter. Player, tasti, volume generale, chat e respiro guidato si vestono d'oro. Si sceglie da Impostazioni > Stile grafico.",
+    "assets": [
+     {
+      "name": "Chiarella-1.21.apk",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.21/Chiarella-1.21.apk",
+      "size": 44364560,
+      "downloads": 0
+     },
+     {
+      "name": "Chiarella-Web-1.21.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.21/Chiarella-Web-1.21.zip",
+      "size": 39800319,
+      "downloads": 0
+     },
+     {
+      "name": "Chiarella-Windows-1.21.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.21/Chiarella-Windows-1.21.zip",
+      "size": 105071162,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "it.chiarella.app",
+   "dueffe": false
+  },
   {
    "id": "hommaterial",
    "name": "Hommaterial",
@@ -190,101 +285,6 @@
    "dueffe": false
   },
   {
-   "id": "chiarella",
-   "name": "Chiarella",
-   "description": "Chiarella — app Android open source di suoni rilassanti da mescolare, con timer, profili, Live Update e widget",
-   "about": "Suoni della natura da mescolare per rilassarti, concentrarti e dormire. App nativa Android e Windows, più una versione web. Open source.\n\nApp nativa WinUI 3 (Windows App SDK, .NET 8) in windows/Chiarella.Windows, con le stesse funzioni dell'app Android: suoni con volume e scene animate, sfondo \"aurora\", profili, timer con dissolvenza, «Un momento per te». L'audio passa da un unico flusso WASAPI (NAudio) e i file Vorbis vengono riletti a livello di campione (NVorbis), quindi i loop restano senza giunture. I suoni sono gli stessi dell'app Android (app/src/main/res/raw), non duplicati. Dati e profili sono in %LOCALAPPDATA%\\Chiarella.",
-   "features": [
-    "Android: scarica Chiarella-X.apk e installalo (Android 8.0 o successivo). Gli aggiornamenti successivi arrivano direttamente dall'app.",
-    "Windows: scarica Chiarella-Windows-X.zip, estrailo dove preferisci e avvia Chiarella.exe (Windows 10 1809 o successivo, 64 bit). Non serve installare nulla.",
-    "Web: apri carellice.github.io/chiarella. Si installa anche come app dal browser e funziona offline. In alternativa Chiarella-Web-X.zip si può pubblicare su un qualsiasi hosting statico."
-   ],
-   "category": "android",
-   "platforms": [
-    "android",
-    "windows",
-    "web"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "ambient-sounds",
-    "android",
-    "jetpack-compose",
-    "kotlin",
-    "relaxing-sounds",
-    "sleep",
-    "white-noise"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-21T09:30:02Z",
-   "updatedAt": "2026-11-08T21:52:20Z",
-   "repoUrl": "https://github.com/carellice/chiarella",
-   "webUrl": "https://carellice.github.io/chiarella/",
-   "links": [
-    {
-     "type": "web",
-     "label": "Apri online",
-     "url": "https://carellice.github.io/chiarella/"
-    },
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/chiarella"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.19",
-     "url": "https://github.com/carellice/chiarella/releases/tag/v1.19"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/chiarella/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/chiarella/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/chiarella/main/branding/chiarella_icon_512.png?v=e5d21728",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.19",
-    "name": "Chiarella 1.19",
-    "date": "2026-11-08T21:52:33Z",
-    "url": "https://github.com/carellice/chiarella/releases/tag/v1.19",
-    "notes": "Nuovo stile grafico Metro, ispirato a Windows Phone: nero assoluto, testi sottili, suoni come live tile, player come application bar e le animazioni turnstile, swivel e tilt. Si sceglie da Impostazioni > Stile grafico (Classico, Skeuomorfico o Metro).",
-    "assets": [
-     {
-      "name": "Chiarella-1.19.apk",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.19/Chiarella-1.19.apk",
-      "size": 43464796,
-      "downloads": 5
-     },
-     {
-      "name": "Chiarella-Web-1.19.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.19/Chiarella-Web-1.19.zip",
-      "size": 39800319,
-      "downloads": 0
-     },
-     {
-      "name": "Chiarella-Windows-1.19.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.19/Chiarella-Windows-1.19.zip",
-      "size": 105071180,
-      "downloads": 1
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "it.chiarella.app",
-   "dueffe": false
-  },
-  {
    "id": "brieffo",
    "name": "Brieffo",
    "description": "Meteo, agenda, spostamenti, salute, notizie e la tua squadra in un'unica schermata che cambia con l'ora del giorno.",
@@ -435,6 +435,159 @@
    "dueffe": false
   },
   {
+   "id": "declutty",
+   "name": "Declutty",
+   "description": "Decluttering digitale: disinstalla più app insieme, categorie automatiche e contatti doppioni da unire",
+   "about": "Declutty aiuta a fare ordine sul telefono. Selezioni le app che non ti servono e le disinstalli in serie, ordinandole per nome, dimensione, data o ultimo utilizzo; le app vengono divise da sole per categoria e quelle che non vuoi vedere si nascondono. In rubrica trova i doppioni, li unisce in un tocco ed elimina più contatti insieme.\n\nScarica Declutty-vX.Y.Z.apk dall'ultima release e aprilo sul telefono. Gli aggiornamenti si installano da Impostazioni → Aggiornamenti.",
+   "features": [
+    "🧹 Disinstalla più app insieme e vedi quanto spazio liberi",
+    "↕️ Ordina per nome, dimensione, installazione, aggiornamento o ultimo utilizzo",
+    "🗂️ Categorie automatiche, ordinabili, con app spostabili a mano",
+    "🙈 Nascondi da Declutty le app che non vuoi vedere",
+    "👥 Elimina più contatti insieme e unisci i doppioni",
+    "🔄 Aggiornamenti direttamente dall'app"
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "declutter",
+    "jetpack-compose",
+    "kotlin"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-11-13T23:21:05Z",
+   "updatedAt": "2026-11-13T23:21:14Z",
+   "repoUrl": "https://github.com/carellice/declutty",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/declutty"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.0.0",
+     "url": "https://github.com/carellice/declutty/releases/tag/v1.0.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/declutty/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/declutty/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/declutty/main/docs/icon.png?v=a7ae889b",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/home.jpg",
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/app.jpg",
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/categorie.jpg",
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/doppioni.jpg",
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/pulizia.jpg"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.0.0",
+    "name": "Declutty 1.0.0",
+    "date": "2026-11-13T23:21:17Z",
+    "url": "https://github.com/carellice/declutty/releases/tag/v1.0.0",
+    "notes": "## Declutty 1.0.0\n\nPrima versione.\n\n- Disinstalla più app insieme, ordinandole per nome, dimensione, installazione, aggiornamento o ultimo utilizzo\n- Filtro per le app non usate da 30 giorni\n- Categorie automatiche, ordinabili, con spostamento manuale delle app\n- App nascoste da Declutty\n- Contatti: eliminazione multipla, filtri senza numero/senza nome, unione dei doppioni\n- Aggiornamenti direttamente dall'app (Impostazioni > Aggiornamenti)\n\nScarica **Declutty-v1.0.0.apk** e installalo. Android 8.0 o successivo.\n",
+    "assets": [
+     {
+      "name": "Declutty-v1.0.0.apk",
+      "url": "https://github.com/carellice/declutty/releases/download/v1.0.0/Declutty-v1.0.0.apk",
+      "size": 2222729,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "app.declutty",
+   "dueffe": false
+  },
+  {
+   "id": "dueffe-health",
+   "name": "Health",
+   "description": "Health per Android – terapie, visite e documenti sanitari",
+   "about": "Terapie, visite e documenti sanitari, solo sul tuo dispositivo. Organizza i farmaci con orari e promemoria, tieni traccia delle visite e conserva referti e ricette in un unico posto. App nativa della famiglia Dueffe.",
+   "features": [
+    "Terapie con frequenza, giorni e orari scelti con semplici selettori, e promemoria per ogni dose.",
+    "Terapie al bisogno senza avvisi automatici: le assunzioni si segnano dalla lista Terapie.",
+    "Storico delle dosi assunte.",
+    "Visite mediche e documenti sanitari, con allegati salvati nello spazio privato dell'app.",
+    "Moduli guidati a passaggi per farmaci, visite e documenti.",
+    "Dati solo sul dispositivo, con backup JSON da esportare e importare dalle Impostazioni."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:34Z",
+   "updatedAt": "2026-11-13T16:34:11Z",
+   "repoUrl": "https://github.com/carellice/dueffe-health",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-health"
+    },
+    {
+     "type": "release",
+     "label": "Release health-v1.0.30",
+     "url": "https://github.com/carellice/dueffe-health/releases/tag/health-v1.0.30"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-health/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-health/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-health/main/docs/logo.png?v=6fcb77f2",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "health-v1.0.30",
+    "name": "Health 1.0.30",
+    "date": "2026-11-13T16:33:59Z",
+    "url": "https://github.com/carellice/dueffe-health/releases/tag/health-v1.0.30",
+    "notes": "APK Android Health 1.0.30",
+    "assets": [
+     {
+      "name": "health-1.0.30.apk",
+      "url": "https://github.com/carellice/dueffe-health/releases/download/health-v1.0.30/health-1.0.30.apk",
+      "size": 13216638,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.dueffe.health",
+   "dueffe": true
+  },
+  {
    "id": "sonora",
    "name": "Sonora",
    "description": "Sonora: YouTube Music in streaming dal tuo server di casa (CasaOS) - web app e app Android",
@@ -458,7 +611,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-11-12T16:58:43Z",
-   "updatedAt": "2026-11-13T12:00:07Z",
+   "updatedAt": "2026-11-13T16:24:50Z",
    "repoUrl": "https://github.com/carellice/sonora",
    "webUrl": null,
    "links": [
@@ -469,8 +622,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.2.4",
-     "url": "https://github.com/carellice/sonora/releases/tag/v1.2.4"
+     "label": "Release v1.2.5",
+     "url": "https://github.com/carellice/sonora/releases/tag/v1.2.5"
     },
     {
      "type": "releases",
@@ -487,17 +640,17 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.2.4",
-    "name": "Sonora 1.2.4",
-    "date": "2026-11-13T12:00:07Z",
-    "url": "https://github.com/carellice/sonora/releases/tag/v1.2.4",
-    "notes": "App Android di Sonora 1.2.4.\n\nInstallala dal tuo server (Impostazioni → Scarica l'app Android) oppure scarica Sonora.apk qui sotto.\nI server con sonora-aggiorna si aggiornano a questa versione (ogni notte o con sudo sonora-aggiorna).",
+    "tag": "v1.2.5",
+    "name": "Sonora 1.2.5",
+    "date": "2026-11-13T16:24:51Z",
+    "url": "https://github.com/carellice/sonora/releases/tag/v1.2.5",
+    "notes": "App Android di Sonora 1.2.5.\n\nInstallala dal tuo server (Impostazioni → Scarica l'app Android) oppure scarica Sonora.apk qui sotto.\nI server con sonora-aggiorna si aggiornano a questa versione (ogni notte o con sudo sonora-aggiorna).",
     "assets": [
      {
       "name": "Sonora.apk",
-      "url": "https://github.com/carellice/sonora/releases/download/v1.2.4/Sonora.apk",
+      "url": "https://github.com/carellice/sonora/releases/download/v1.2.5/Sonora.apk",
       "size": 2612938,
-      "downloads": 3
+      "downloads": 4
      }
     ]
    },
@@ -734,77 +887,6 @@
    "dueffe": false
   },
   {
-   "id": "dueffe-health",
-   "name": "Health",
-   "description": "Health per Android – terapie, visite e documenti sanitari",
-   "about": "Terapie, visite e documenti sanitari, solo sul tuo dispositivo. Organizza i farmaci con orari e promemoria, tieni traccia delle visite e conserva referti e ricette in un unico posto. App nativa della famiglia Dueffe.",
-   "features": [
-    "Terapie con frequenza, giorni e orari scelti con semplici selettori, e promemoria per ogni dose.",
-    "Terapie al bisogno senza avvisi automatici: le assunzioni si segnano dalla lista Terapie.",
-    "Storico delle dosi assunte.",
-    "Visite mediche e documenti sanitari, con allegati salvati nello spazio privato dell'app.",
-    "Moduli guidati a passaggi per farmaci, visite e documenti.",
-    "Dati solo sul dispositivo, con backup JSON da esportare e importare dalle Impostazioni."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T20:43:34Z",
-   "updatedAt": "2026-11-10T10:17:02Z",
-   "repoUrl": "https://github.com/carellice/dueffe-health",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/dueffe-health"
-    },
-    {
-     "type": "release",
-     "label": "Release health-v1.0.29",
-     "url": "https://github.com/carellice/dueffe-health/releases/tag/health-v1.0.29"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/dueffe-health/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/dueffe-health/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-health/main/docs/logo.png?v=6fcb77f2",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "health-v1.0.29",
-    "name": "Health 1.0.29",
-    "date": "2026-11-10T10:16:34Z",
-    "url": "https://github.com/carellice/dueffe-health/releases/tag/health-v1.0.29",
-    "notes": "APK Android Health 1.0.29",
-    "assets": [
-     {
-      "name": "health-1.0.29.apk",
-      "url": "https://github.com/carellice/dueffe-health/releases/download/health-v1.0.29/health-1.0.29.apk",
-      "size": 13200046,
-      "downloads": 3
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "it.dueffe.health",
-   "dueffe": true
-  },
-  {
    "id": "MyExperience",
    "name": "MyExperience",
    "description": "Diario di viaggio per Android: globo 3D, album e pianificazione viaggi",
@@ -866,7 +948,7 @@
       "name": "MyExperience-v1.8.0.apk",
       "url": "https://github.com/carellice/MyExperience/releases/download/v1.8.0/MyExperience-v1.8.0.apk",
       "size": 14563062,
-      "downloads": 2
+      "downloads": 3
      }
     ]
    },
@@ -1911,7 +1993,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-13T15:54:16Z",
+   "updatedAt": "2026-11-13T22:46:24Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -1922,8 +2004,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.17.7",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.17.7"
+     "label": "Release v1.18.0",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.18.0"
     },
     {
      "type": "releases",
@@ -1944,35 +2026,35 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.17.7",
-    "name": "IPTVISION 1.17.7",
-    "date": "2026-11-13T15:42:20Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.17.7",
-    "notes": "- PWA: Safari non riavvia più la conversione HLS a ogni ricarica della playlist\n- Server PWA 2.6.6: allineato alla release 1.17.6\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.17.7.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.17.7.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.17.7.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.17.7.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.18.0",
+    "name": "IPTVISION 1.18.0",
+    "date": "2026-11-13T22:45:40Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.18.0",
+    "notes": "- Stile skeuomorfico opzionale su tutte le app\n- Server PWA 2.6.9: allineato alla release 1.17.9\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.18.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.18.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.18.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.18.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.17.7.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.7/IPTVISION-1.17.7.apk",
-      "size": 8671308,
-      "downloads": 0
+      "name": "IPTVISION-1.18.0.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.18.0/IPTVISION-1.18.0.apk",
+      "size": 8777304,
+      "downloads": 3
      },
      {
-      "name": "IPTVISION-1.17.7.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.7/IPTVISION-1.17.7.ipk",
-      "size": 135908,
-      "downloads": 0
+      "name": "IPTVISION-1.18.0.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.18.0/IPTVISION-1.18.0.ipk",
+      "size": 267164,
+      "downloads": 1
      },
      {
-      "name": "IPTVISION-1.17.7.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.7/IPTVISION-1.17.7.wgt",
-      "size": 153012,
-      "downloads": 0
+      "name": "IPTVISION-1.18.0.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.18.0/IPTVISION-1.18.0.wgt",
+      "size": 282908,
+      "downloads": 1
      },
      {
-      "name": "IPTVISION-Setup-1.17.7.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.7/IPTVISION-Setup-1.17.7.exe",
-      "size": 71505376,
-      "downloads": 0
+      "name": "IPTVISION-Setup-1.18.0.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.18.0/IPTVISION-Setup-1.18.0.exe",
+      "size": 71674256,
+      "downloads": 1
      }
     ]
    },
