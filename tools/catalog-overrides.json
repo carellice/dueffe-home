@@ -7,7 +7,8 @@
     "dueffe-subber",
     "mutuo-roma-nord",
     "appunto",
-    "sweep"
+    "sweep",
+    "nimbo"
   ],
   "categories": [
     {
@@ -295,21 +296,6 @@
         "☕ Assegna i cittadini alle attività e vendi 21 prodotti per guadagnare monete",
         "🎒 Spedizioni in nove destinazioni per trovare materiali e scoperte",
         "📔 Diario con 32 obiettivi e una storia in quattro capitoli, senza scadenze"
-      ]
-    },
-    "nimbo": {
-      "name": "Nimbo",
-      "category": "android",
-      "androidPackage": "app.nimbo",
-      "description": "Client Telegram alternativo con animazioni, trascrizione e traduzione offline e chat nascoste",
-      "about": "Nimbo è un client Telegram per Android con una grafica tutta sua e animazioni ovunque. In più rispetto a Telegram trascrive vocali e videomessaggi e traduce le chat direttamente sul telefono, senza mandare nulla in rete, e nasconde le chat che vuoi dietro impronta o PIN.\n\nScarica nimbo-arm64-v8a.apk dall'ultima release e aprilo sul telefono. Gli aggiornamenti si installano da Impostazioni → Aggiornamenti.",
-      "features": [
-        "💬 Cartelle, chat fissate, archivio, ricerca e accesso con QR code",
-        "🎙️ Trascrizione offline di vocali e videomessaggi",
-        "🌍 Traduzione della chat sul telefono, lingua a scelta",
-        "🔒 Chat nascoste dietro impronta o PIN",
-        "🖼️ Foto, video, GIF, sticker animati, sondaggi e reazioni",
-        "🔄 Aggiornamenti direttamente dall'app"
       ]
     },
     "dueffoto": {

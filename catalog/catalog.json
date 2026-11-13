@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-13T10:43:11.827Z",
+ "generatedAt": "2026-11-13T15:53:53.804Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -36,6 +36,86 @@
  ],
  "projects": [
   {
+   "id": "hommaterial",
+   "name": "Hommaterial",
+   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
+   "about": "Android · Server di casa (CasaOS) · Gratuita · Open source\n\nPer pubblicare una nuova versione da questo PC usa release.bat: guida al rilascio.",
+   "features": [
+    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
+    "Un tocco accende o spegne.",
+    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
+    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
+    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
+    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "web",
+    "windows"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-06T16:46:46Z",
+   "updatedAt": "2026-11-13T15:17:08Z",
+   "repoUrl": "https://github.com/carellice/hommaterial",
+   "webUrl": "https://carellice.github.io/hommaterial/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/hommaterial/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/hommaterial"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.85",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.85"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/hommaterial/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/hommaterial/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png?v=a785ba32",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
+   ],
+   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
+   "release": {
+    "tag": "v1.85",
+    "name": "Hommaterial 1.85",
+    "date": "2026-11-13T15:16:50Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.85",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.84...v1.85",
+    "assets": [
+     {
+      "name": "Hommaterial-v1.85.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.85/Hommaterial-v1.85.apk",
+      "size": 4834298,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "app.hommaterial",
+   "dueffe": false
+  },
+  {
    "id": "money",
    "name": "Money",
    "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
@@ -61,7 +141,7 @@
    "forks": 0,
    "license": null,
    "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-13T09:36:55Z",
+   "updatedAt": "2026-11-13T11:56:41Z",
    "repoUrl": "https://github.com/carellice/money",
    "webUrl": null,
    "links": [
@@ -72,8 +152,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.23.1",
-     "url": "https://github.com/carellice/money/releases/tag/v1.23.1"
+     "label": "Release v1.25.0",
+     "url": "https://github.com/carellice/money/releases/tag/v1.25.0"
     },
     {
      "type": "releases",
@@ -90,103 +170,23 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.23.1",
-    "name": "Money 1.23.1",
-    "date": "2026-11-13T09:36:12Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.23.1",
-    "notes": "## Novita'\n- Nuovo movimento: scegliere una sottocategoria non porta pi├╣ da solo al passo successivo, si va avanti con Avanti, su app e PWA\n- Server PWA 1.16.0: filtro dei movimenti per metodo di pagamento",
+    "tag": "v1.25.0",
+    "name": "Money 1.25.0",
+    "date": "2026-11-13T11:56:44Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.25.0",
+    "notes": "## Novita'\n- Stile Dueffe a scelta: da Impostazioni → Stile la grafica scura con superfici calde, testo avorio e accento oro, titoli Bricolage e testo Inter, card a gradiente con bordo oro, tasti oro, icone squircle, aurora sullo sfondo e barra flottante, su app e PWA\n- Server PWA 1.17.0: stile Nothing\n",
     "assets": [
      {
-      "name": "Money-1.23.1.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.23.1/Money-1.23.1.apk",
-      "size": 6538909,
-      "downloads": 1
+      "name": "Money-1.25.0.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.25.0/Money-1.25.0.apk",
+      "size": 7202521,
+      "downloads": 3
      }
     ]
    },
    "featured": true,
    "hidden": false,
    "androidPackage": "com.money.app",
-   "dueffe": false
-  },
-  {
-   "id": "hommaterial",
-   "name": "Hommaterial",
-   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
-   "about": "Android · Server di casa (CasaOS) · Gratuita · Open source\n\nPer pubblicare una nuova versione da questo PC usa release.bat: guida al rilascio.",
-   "features": [
-    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
-    "Un tocco accende o spegne.",
-    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
-    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
-    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
-    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
-   ],
-   "category": "android",
-   "platforms": [
-    "android",
-    "web",
-    "windows"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-12T08:52:50Z",
-   "repoUrl": "https://github.com/carellice/hommaterial",
-   "webUrl": "https://carellice.github.io/hommaterial/",
-   "links": [
-    {
-     "type": "web",
-     "label": "Apri online",
-     "url": "https://carellice.github.io/hommaterial/"
-    },
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/hommaterial"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.84",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.84"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/hommaterial/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/hommaterial/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png?v=a785ba32",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
-   ],
-   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
-   "release": {
-    "tag": "v1.84",
-    "name": "Hommaterial 1.84",
-    "date": "2026-11-12T08:52:35Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.84",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.83...v1.84",
-    "assets": [
-     {
-      "name": "Hommaterial-v1.84.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.84/Hommaterial-v1.84.apk",
-      "size": 4830222,
-      "downloads": 2
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "app.hommaterial",
    "dueffe": false
   },
   {
@@ -435,86 +435,75 @@
    "dueffe": false
   },
   {
-   "id": "nimbo",
-   "name": "Nimbo",
-   "description": "Client Telegram alternativo con animazioni, trascrizione e traduzione offline e chat nascoste",
-   "about": "Nimbo è un client Telegram per Android con una grafica tutta sua e animazioni ovunque. In più rispetto a Telegram trascrive vocali e videomessaggi e traduce le chat direttamente sul telefono, senza mandare nulla in rete, e nasconde le chat che vuoi dietro impronta o PIN.\n\nScarica nimbo-arm64-v8a.apk dall'ultima release e aprilo sul telefono. Gli aggiornamenti si installano da Impostazioni → Aggiornamenti.",
+   "id": "sonora",
+   "name": "Sonora",
+   "description": "Sonora: YouTube Music in streaming dal tuo server di casa (CasaOS) - web app e app Android",
+   "about": "La tua musica da YouTube Music, in streaming dal tuo server di casa (CasaOS, Raspberry Pi o qualsiasi Linux con Docker) verso telefono e browser.\n\nLo script ti guida: controlla Docker e CasaOS, chiede cartella dati, porta (predefinita 8110) e fuso orario, controlla Tailscale e, se manca, si offre di installarlo e collegarlo; poi costruisce Sonora, la aggiunge alla dashboard di CasaOS, la pubblica su Tailscale e ti chiede se vuoi gli aggiornamenti automatici ogni notte.",
    "features": [
-    "💬 Cartelle, chat fissate, archivio, ricerca e accesso con QR code",
-    "🎙️ Trascrizione offline di vocali e videomessaggi",
-    "🌍 Traduzione della chat sul telefono, lingua a scelta",
-    "🔒 Chat nascoste dietro impronta o PIN",
-    "🖼️ Foto, video, GIF, sticker animati, sondaggi e reazioni",
-    "🔄 Aggiornamenti direttamente dall'app"
+    "Web app (PWA) con lo stesso stile dell'app Android, adattata anche a PC e tablet: si apre dall'icona di CasaOS e si installa come app dal browser.",
+    "App Android nativa, scaricabile direttamente dal tuo server.",
+    "Profili separati: ognuno ha la sua libreria (brani, album, artisti) e le sue playlist.",
+    "Ricerca di brani, album, artisti e playlist; radio automatica dopo un brano; coda, ripetizione, riproduzione casuale; controlli dalla schermata di blocco.",
+    "Accesso da fuori casa con Tailscale (HTTPS vero, solo i tuoi dispositivi)."
    ],
    "category": "android",
    "platforms": [
-    "android"
+    "android",
+    "windows",
+    "web"
    ],
-   "language": "Java",
+   "language": "Kotlin",
    "topics": [],
    "stars": 0,
    "forks": 0,
    "license": null,
-   "createdAt": "2026-11-13T00:23:46Z",
-   "updatedAt": "2026-11-13T10:41:16Z",
-   "repoUrl": "https://github.com/carellice/nimbo",
+   "createdAt": "2026-11-12T16:58:43Z",
+   "updatedAt": "2026-11-13T12:00:07Z",
+   "repoUrl": "https://github.com/carellice/sonora",
    "webUrl": null,
    "links": [
     {
      "type": "github",
      "label": "Codice sorgente",
-     "url": "https://github.com/carellice/nimbo"
+     "url": "https://github.com/carellice/sonora"
     },
     {
      "type": "release",
-     "label": "Release v0.2.0",
-     "url": "https://github.com/carellice/nimbo/releases/tag/v0.2.0"
+     "label": "Release v1.2.4",
+     "url": "https://github.com/carellice/sonora/releases/tag/v1.2.4"
     },
     {
      "type": "releases",
      "label": "Tutte le release",
-     "url": "https://github.com/carellice/nimbo/releases"
+     "url": "https://github.com/carellice/sonora/releases"
     },
     {
      "type": "issues",
      "label": "Segnala un problema",
-     "url": "https://github.com/carellice/nimbo/issues"
+     "url": "https://github.com/carellice/sonora/issues"
     }
    ],
-   "icon": "https://raw.githubusercontent.com/carellice/nimbo/main/app/src/main/res/drawable-nodpi/nimbo_icon.png?v=2832e047",
+   "icon": null,
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v0.2.0",
-    "name": "Nimbo 0.2.0",
-    "date": "2026-11-13T00:26:04Z",
-    "url": "https://github.com/carellice/nimbo/releases/tag/v0.2.0",
-    "notes": "Prima versione pubblica di Nimbo.\n\n**Quale APK scaricare:** `nimbo-arm64-v8a.apk` va bene per quasi tutti i telefoni recenti. `armeabi-v7a` per telefoni vecchi a 32 bit, `x86_64` per emulatori.\n\nDa questa versione in poi gli aggiornamenti si installano da *Impostazioni → Aggiornamenti* dentro l'app.\n\n### Novità\n- Grafica nuova \"Midnight\": colori pieni, niente gradienti, icone disegnate apposta\n- Videomessaggi rotondi (registrazione e invio), album di foto, creazione sondaggi\n- Ricerca, nuova chat dai contatti, inoltro, reazioni\n- Lettore video interno, sticker animati\n- Notifiche con servizio in background\n- Archivio nascondibile come su Telegram\n- Chat nascoste con impronta o PIN, trascrizione e traduzione offline\n",
+    "tag": "v1.2.4",
+    "name": "Sonora 1.2.4",
+    "date": "2026-11-13T12:00:07Z",
+    "url": "https://github.com/carellice/sonora/releases/tag/v1.2.4",
+    "notes": "App Android di Sonora 1.2.4.\n\nInstallala dal tuo server (Impostazioni → Scarica l'app Android) oppure scarica Sonora.apk qui sotto.\nI server con sonora-aggiorna si aggiornano a questa versione (ogni notte o con sudo sonora-aggiorna).",
     "assets": [
      {
-      "name": "nimbo-arm64-v8a.apk",
-      "url": "https://github.com/carellice/nimbo/releases/download/v0.2.0/nimbo-arm64-v8a.apk",
-      "size": 76062404,
-      "downloads": 1
-     },
-     {
-      "name": "nimbo-armeabi-v7a.apk",
-      "url": "https://github.com/carellice/nimbo/releases/download/v0.2.0/nimbo-armeabi-v7a.apk",
-      "size": 67221770,
-      "downloads": 1
-     },
-     {
-      "name": "nimbo-x86_64.apk",
-      "url": "https://github.com/carellice/nimbo/releases/download/v0.2.0/nimbo-x86_64.apk",
-      "size": 82104851,
-      "downloads": 1
+      "name": "Sonora.apk",
+      "url": "https://github.com/carellice/sonora/releases/download/v1.2.4/Sonora.apk",
+      "size": 2612938,
+      "downloads": 3
      }
     ]
    },
    "featured": false,
    "hidden": false,
-   "androidPackage": "app.nimbo",
+   "androidPackage": "it.casa.sonora",
    "dueffe": false
   },
   {
@@ -1922,7 +1911,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-13T10:40:38Z",
+   "updatedAt": "2026-11-13T15:42:29Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -1933,8 +1922,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.17.1",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.17.1"
+     "label": "Release v1.17.7",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.17.7"
     },
     {
      "type": "releases",
@@ -1955,35 +1944,35 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.17.1",
-    "name": "IPTVISION 1.17.1",
-    "date": "2026-11-13T09:44:45Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.17.1",
-    "notes": "- Android: menu laterale scorrevole e senza orologio sul telefono in orizzontale; su Android TV si scorre il menu e si entra nella sezione solo con OK\n- Android TV: scorrere a griglia film, serie e canali tenendo premuto il telecomando resta fluido e non salta pi├╣ a destra\n- Android: nel dialog Cosa guardo? le liste si accorciano per far stare sempre in vista i pulsanti, anche sulla TV\n- Server PWA 2.6.0: allineato alla release 1.17.0\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.17.1.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.17.1.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.17.1.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.17.1.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.17.7",
+    "name": "IPTVISION 1.17.7",
+    "date": "2026-11-13T15:42:20Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.17.7",
+    "notes": "- PWA: Safari non riavvia più la conversione HLS a ogni ricarica della playlist\n- Server PWA 2.6.6: allineato alla release 1.17.6\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.17.7.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.17.7.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.17.7.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.17.7.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.17.1.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.1/IPTVISION-1.17.1.apk",
-      "size": 8671288,
-      "downloads": 1
+      "name": "IPTVISION-1.17.7.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.7/IPTVISION-1.17.7.apk",
+      "size": 8671308,
+      "downloads": 0
      },
      {
-      "name": "IPTVISION-1.17.1.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.1/IPTVISION-1.17.1.ipk",
-      "size": 135916,
-      "downloads": 1
+      "name": "IPTVISION-1.17.7.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.7/IPTVISION-1.17.7.ipk",
+      "size": 135908,
+      "downloads": 0
      },
      {
-      "name": "IPTVISION-1.17.1.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.1/IPTVISION-1.17.1.wgt",
+      "name": "IPTVISION-1.17.7.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.7/IPTVISION-1.17.7.wgt",
       "size": 153012,
-      "downloads": 1
+      "downloads": 0
      },
      {
-      "name": "IPTVISION-Setup-1.17.1.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.1/IPTVISION-Setup-1.17.1.exe",
-      "size": 71499401,
-      "downloads": 1
+      "name": "IPTVISION-Setup-1.17.7.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.17.7/IPTVISION-Setup-1.17.7.exe",
+      "size": 71505376,
+      "downloads": 0
      }
     ]
    },
@@ -2753,7 +2742,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-11-10T17:28:47Z",
-   "updatedAt": "2026-11-12T17:37:23Z",
+   "updatedAt": "2026-11-13T11:06:02Z",
    "repoUrl": "https://github.com/carellice/app-utility-prompts",
    "webUrl": null,
    "links": [
