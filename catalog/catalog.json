@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-13T15:53:53.804Z",
+ "generatedAt": "2026-11-13T15:54:22.925Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -1911,7 +1911,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-13T15:42:29Z",
+   "updatedAt": "2026-11-13T15:54:16Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
