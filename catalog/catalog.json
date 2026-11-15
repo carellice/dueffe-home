@@ -436,7 +436,7 @@
   },
   {
    "id": "kanso",
-   "name": "Kanso",
+   "name": "Kanso Launcher",
    "description": "Launcher minimalista per il benessere digitale: tre schermate, ricerca universale e un respiro prima delle app che distraggono",
    "about": "Kanso è un launcher Android che toglie il superfluo. Al centro la Home con pochi riquadri essenziali e una barra di ricerca per app, contatti, indirizzi e web; a destra la Libreria con tutte le altre app divise per categoria; a sinistra la Consapevolezza con agenda, tempo schermo, sblocchi e riassunto AI delle notifiche. Prima di aprire un'app non essenziale Kanso chiede se vuoi davvero aprirla.\n\nScarica Kanso-vX.Y.Z.apk dall'ultima release, installalo e sceglilo come app Home.",
    "features": [

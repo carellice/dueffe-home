@@ -347,7 +347,7 @@
       ]
     },
     "kanso": {
-      "name": "Kanso",
+      "name": "Kanso Launcher",
       "category": "android",
       "androidPackage": "app.kanso",
       "description": "Launcher minimalista per il benessere digitale: tre schermate, ricerca universale e un respiro prima delle app che distraggono",
