@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-15T15:04:31.290Z",
+ "generatedAt": "2026-11-15T20:29:52.949Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -459,7 +459,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-11-15T15:01:57Z",
-   "updatedAt": "2026-11-15T15:03:13Z",
+   "updatedAt": "2026-11-15T20:29:19Z",
    "repoUrl": "https://github.com/carellice/kanso",
    "webUrl": null,
    "links": [
@@ -470,8 +470,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.0.0",
-     "url": "https://github.com/carellice/kanso/releases/tag/v1.0.0"
+     "label": "Release v1.5.1",
+     "url": "https://github.com/carellice/kanso/releases/tag/v1.5.1"
     },
     {
      "type": "releases",
@@ -494,16 +494,16 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.0.0",
-    "name": "Kanso 1.0.0",
-    "date": "2026-11-15T15:03:17Z",
-    "url": "https://github.com/carellice/kanso/releases/tag/v1.0.0",
-    "notes": "## Kanso 1.0.0\n\nScarica **Kanso-v1.0.0.apk** e installalo.\n\nAndroid 9 o successivo.",
+    "tag": "v1.5.1",
+    "name": "Kanso 1.5.1",
+    "date": "2026-11-15T20:29:23Z",
+    "url": "https://github.com/carellice/kanso/releases/tag/v1.5.1",
+    "notes": "## Kanso 1.5.1\n\n### Novita\n- Riassunto notifiche solo con quelle ancora nel pannello, rifatto quando cambiano\n- Timer e cronometro in Home anche quando il tempo non si legge dalla notifica dell'Orologio\n\nScarica **Kanso-v1.5.1.apk** e installalo.\n\nAndroid 9 o successivo.",
     "assets": [
      {
-      "name": "Kanso-v1.0.0.apk",
-      "url": "https://github.com/carellice/kanso/releases/download/v1.0.0/Kanso-v1.0.0.apk",
-      "size": 3276833,
+      "name": "Kanso-v1.5.1.apk",
+      "url": "https://github.com/carellice/kanso/releases/download/v1.5.1/Kanso-v1.5.1.apk",
+      "size": 3359985,
       "downloads": 0
      }
     ]
@@ -2115,7 +2115,7 @@
       "name": "IPTVISION-1.21.0.apk",
       "url": "https://github.com/carellice/IPTVISION/releases/download/v1.21.0/IPTVISION-1.21.0.apk",
       "size": 9645474,
-      "downloads": 5
+      "downloads": 7
      },
      {
       "name": "IPTVISION-1.21.0.ipk",
@@ -2140,6 +2140,61 @@
    "featured": true,
    "hidden": false,
    "androidPackage": "com.carellice.iptvision",
+   "dueffe": false
+  },
+  {
+   "id": "buste-paga",
+   "name": "Buste Paga",
+   "description": "Analisi locale dei cedolini PDF nel browser",
+   "about": "Apri l’app, poi seleziona più PDF, trascinali nella pagina oppure scegli una cartella. L’analisi parte automaticamente.\n\nI cedolini sono letti in memoria nel browser. GitHub Pages distribuisce solo i file dell’app. Il lettore supporta i cedolini PDF con testo selezionabile nel layout TeamSystem previsto dall’app. Le scansioni e gli altri formati vengono segnalati. Quando più cedolini appartengono allo stesso mese, il netto è sommato. Le mensilità aggiuntive restano visibili nello storico.",
+   "features": [
+    "Riepilogo e aumenti mostrano il lordo fisso, le variazioni e il netto ordinario stimato da un cedolino confrontabile.",
+    "Voci del cedolino spiega i singoli importi e mostra quali voci cambiano rispetto al mese precedente disponibile.",
+    "Scarica report PDF raccoglie risultati, storico e glossario."
+   ],
+   "category": "desktop",
+   "platforms": [
+    "windows",
+    "web"
+   ],
+   "language": "Python",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-15T19:38:41Z",
+   "updatedAt": "2026-11-15T19:38:47Z",
+   "repoUrl": "https://github.com/carellice/buste-paga",
+   "webUrl": "https://carellice.github.io/buste-paga/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/buste-paga/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/buste-paga"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/buste-paga/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/buste-paga/issues"
+    }
+   ],
+   "icon": null,
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
@@ -2458,7 +2513,7 @@
       "name": "MonitorSwitch.exe",
       "url": "https://github.com/carellice/MonitorSwitch/releases/download/v3.0.1/MonitorSwitch.exe",
       "size": 249344,
-      "downloads": 2
+      "downloads": 3
      }
     ]
    },
