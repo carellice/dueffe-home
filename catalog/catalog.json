@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-13T23:21:48.185Z",
+ "generatedAt": "2026-11-15T15:04:00.404Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -36,6 +36,86 @@
  ],
  "projects": [
   {
+   "id": "hommaterial",
+   "name": "Hommaterial",
+   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
+   "about": "Android · Server di casa (CasaOS) · Gratuita · Open source\n\nPer pubblicare una nuova versione da questo PC usa release.bat: guida al rilascio.",
+   "features": [
+    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
+    "Un tocco accende o spegne.",
+    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
+    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
+    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
+    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "web",
+    "windows"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-06T16:46:46Z",
+   "updatedAt": "2026-11-15T12:44:01Z",
+   "repoUrl": "https://github.com/carellice/hommaterial",
+   "webUrl": "https://carellice.github.io/hommaterial/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/hommaterial/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/hommaterial"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.88",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.88"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/hommaterial/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/hommaterial/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png?v=a785ba32",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
+   ],
+   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
+   "release": {
+    "tag": "v1.88",
+    "name": "Hommaterial 1.88",
+    "date": "2026-11-15T12:43:47Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.88",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.87...v1.88",
+    "assets": [
+     {
+      "name": "Hommaterial-v1.88.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.88/Hommaterial-v1.88.apk",
+      "size": 5734802,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "app.hommaterial",
+   "dueffe": false
+  },
+  {
    "id": "chiarella",
    "name": "Chiarella",
    "description": "Chiarella — app Android open source di suoni rilassanti da mescolare, con timer, profili, Live Update e widget",
@@ -65,7 +145,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-21T09:30:02Z",
-   "updatedAt": "2026-11-13T23:15:44Z",
+   "updatedAt": "2026-11-14T10:25:15Z",
    "repoUrl": "https://github.com/carellice/chiarella",
    "webUrl": "https://carellice.github.io/chiarella/",
    "links": [
@@ -81,8 +161,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.21",
-     "url": "https://github.com/carellice/chiarella/releases/tag/v1.21"
+     "label": "Release v1.22",
+     "url": "https://github.com/carellice/chiarella/releases/tag/v1.22"
     },
     {
      "type": "releases",
@@ -99,115 +179,35 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.21",
-    "name": "Chiarella 1.21",
-    "date": "2026-11-13T23:17:04Z",
-    "url": "https://github.com/carellice/chiarella/releases/tag/v1.21",
-    "notes": "Nuovo stile grafico Dueffe: nero caldo, testo avorio e un solo accento oro, nebulose dorate con pulviscolo, titoli in Bricolage Grotesque e testi in Inter. Player, tasti, volume generale, chat e respiro guidato si vestono d'oro. Si sceglie da Impostazioni > Stile grafico.",
+    "tag": "v1.22",
+    "name": "Chiarella 1.22",
+    "date": "2026-11-14T10:26:33Z",
+    "url": "https://github.com/carellice/chiarella/releases/tag/v1.22",
+    "notes": "Stile Nothing: le icone di «Un momento per te» e «Parla con Chiarella» ora si vedono sullo sfondo nero.",
     "assets": [
      {
-      "name": "Chiarella-1.21.apk",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.21/Chiarella-1.21.apk",
+      "name": "Chiarella-1.22.apk",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.22/Chiarella-1.22.apk",
       "size": 44364560,
-      "downloads": 0
+      "downloads": 3
      },
      {
-      "name": "Chiarella-Web-1.21.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.21/Chiarella-Web-1.21.zip",
+      "name": "Chiarella-Web-1.22.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.22/Chiarella-Web-1.22.zip",
       "size": 39800319,
-      "downloads": 0
+      "downloads": 1
      },
      {
-      "name": "Chiarella-Windows-1.21.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.21/Chiarella-Windows-1.21.zip",
-      "size": 105071162,
-      "downloads": 0
+      "name": "Chiarella-Windows-1.22.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.22/Chiarella-Windows-1.22.zip",
+      "size": 105071175,
+      "downloads": 1
      }
     ]
    },
    "featured": true,
    "hidden": false,
    "androidPackage": "it.chiarella.app",
-   "dueffe": false
-  },
-  {
-   "id": "hommaterial",
-   "name": "Hommaterial",
-   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
-   "about": "Android · Server di casa (CasaOS) · Gratuita · Open source\n\nPer pubblicare una nuova versione da questo PC usa release.bat: guida al rilascio.",
-   "features": [
-    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
-    "Un tocco accende o spegne.",
-    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
-    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
-    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
-    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
-   ],
-   "category": "android",
-   "platforms": [
-    "android",
-    "web",
-    "windows"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-13T15:17:08Z",
-   "repoUrl": "https://github.com/carellice/hommaterial",
-   "webUrl": "https://carellice.github.io/hommaterial/",
-   "links": [
-    {
-     "type": "web",
-     "label": "Apri online",
-     "url": "https://carellice.github.io/hommaterial/"
-    },
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/hommaterial"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.85",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.85"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/hommaterial/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/hommaterial/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png?v=a785ba32",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
-   ],
-   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
-   "release": {
-    "tag": "v1.85",
-    "name": "Hommaterial 1.85",
-    "date": "2026-11-13T15:16:50Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.85",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.84...v1.85",
-    "assets": [
-     {
-      "name": "Hommaterial-v1.85.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.85/Hommaterial-v1.85.apk",
-      "size": 4834298,
-      "downloads": 2
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "app.hommaterial",
    "dueffe": false
   },
   {
@@ -435,6 +435,228 @@
    "dueffe": false
   },
   {
+   "id": "kanso",
+   "name": "Kanso",
+   "description": "Launcher minimalista per il benessere digitale: tre schermate, ricerca universale e un respiro prima delle app che distraggono",
+   "about": "Kanso è un launcher Android che toglie il superfluo. Al centro la Home con pochi riquadri essenziali e una barra di ricerca per app, contatti, indirizzi e web; a destra la Libreria con tutte le altre app divise per categoria; a sinistra la Consapevolezza con agenda, tempo schermo, sblocchi e riassunto AI delle notifiche. Prima di aprire un'app non essenziale Kanso chiede se vuoi davvero aprirla.\n\nScarica Kanso-vX.Y.Z.apk dall'ultima release, installalo e sceglilo come app Home.",
+   "features": [
+    "🏠 Home senza distrazioni: riquadri tutti uguali e orologio facoltativo",
+    "🔎 Ricerca universale: app, contatti, indirizzi su Maps e web",
+    "🌬️ Attrito consapevole: un respiro prima delle app che distraggono",
+    "🗂️ Libreria con le app divise da sole per categoria",
+    "📅 Agenda, tempo schermo e sblocchi di oggi",
+    "✨ Riassunto delle notifiche con Cloudflare Workers AI",
+    "🔒 Impostazioni bloccabili con PIN o gesto"
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "web"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-11-15T15:01:57Z",
+   "updatedAt": "2026-11-15T15:03:13Z",
+   "repoUrl": "https://github.com/carellice/kanso",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/kanso"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.0.0",
+     "url": "https://github.com/carellice/kanso/releases/tag/v1.0.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/kanso/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/kanso/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/kanso/main/docs/icon.png?v=8fad40ff",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/orologio.jpg",
+    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/agenda.jpg",
+    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/libreria.jpg",
+    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/attrito.jpg",
+    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/ricerca.jpg"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.0.0",
+    "name": "Kanso 1.0.0",
+    "date": "2026-11-15T15:03:17Z",
+    "url": "https://github.com/carellice/kanso/releases/tag/v1.0.0",
+    "notes": "## Kanso 1.0.0\n\nScarica **Kanso-v1.0.0.apk** e installalo.\n\nAndroid 9 o successivo.",
+    "assets": [
+     {
+      "name": "Kanso-v1.0.0.apk",
+      "url": "https://github.com/carellice/kanso/releases/download/v1.0.0/Kanso-v1.0.0.apk",
+      "size": 3276833,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "app.kanso",
+   "dueffe": false
+  },
+  {
+   "id": "sonora",
+   "name": "Sonora",
+   "description": "Sonora: YouTube Music in streaming dal tuo server di casa (CasaOS) - web app e app Android",
+   "about": "La tua musica da YouTube Music, in streaming dal tuo server di casa (CasaOS, Raspberry Pi o qualsiasi Linux con Docker) verso telefono e browser.\n\nLo script ti guida: controlla Docker e CasaOS, chiede cartella dati, porta (predefinita 8110) e fuso orario, controlla Tailscale e, se manca, si offre di installarlo e collegarlo; poi costruisce Sonora, la aggiunge alla dashboard di CasaOS, la pubblica su Tailscale e ti chiede se vuoi gli aggiornamenti automatici ogni notte.",
+   "features": [
+    "Web app (PWA) con lo stesso stile dell'app Android, adattata anche a PC e tablet: si apre dall'icona di CasaOS e si installa come app dal browser.",
+    "App Android nativa, scaricabile direttamente dal tuo server.",
+    "Profili separati: ognuno ha la sua libreria (brani, album, artisti) e le sue playlist.",
+    "Ricerca di brani, album, artisti e playlist; radio automatica dopo un brano; coda, ripetizione, riproduzione casuale; controlli dalla schermata di blocco.",
+    "Accesso da fuori casa con Tailscale (HTTPS vero, solo i tuoi dispositivi)."
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "windows",
+    "web"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-12T16:58:43Z",
+   "updatedAt": "2026-11-14T15:55:22Z",
+   "repoUrl": "https://github.com/carellice/sonora",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/sonora"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.6.0",
+     "url": "https://github.com/carellice/sonora/releases/tag/v1.6.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/sonora/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/sonora/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/sonora/main/web/public/icon-512.png?v=a73fada7",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.6.0",
+    "name": "Sonora 1.6.0",
+    "date": "2026-11-14T15:55:22Z",
+    "url": "https://github.com/carellice/sonora/releases/tag/v1.6.0",
+    "notes": "App Android di Sonora 1.6.0.\n\nInstallala dal tuo server (Impostazioni → Scarica l'app Android) oppure scarica Sonora.apk qui sotto.\nI server con sonora-aggiorna si aggiornano a questa versione (ogni notte o con sudo sonora-aggiorna).",
+    "assets": [
+     {
+      "name": "Sonora.apk",
+      "url": "https://github.com/carellice/sonora/releases/download/v1.6.0/Sonora.apk",
+      "size": 3545546,
+      "downloads": 4
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.casa.sonora",
+   "dueffe": false
+  },
+  {
+   "id": "dueffe-health",
+   "name": "Health",
+   "description": "Health per Android – terapie, visite e documenti sanitari",
+   "about": "Terapie, visite e documenti sanitari, solo sul tuo dispositivo. Organizza i farmaci con orari e promemoria, tieni traccia delle visite e conserva referti e ricette in un unico posto. App nativa della famiglia Dueffe.",
+   "features": [
+    "Terapie con frequenza, giorni e orari scelti con semplici selettori, e promemoria per ogni dose.",
+    "Terapie al bisogno senza avvisi automatici: le assunzioni si segnano dalla lista Terapie.",
+    "Storico delle dosi assunte.",
+    "Visite mediche e documenti sanitari, con allegati salvati nello spazio privato dell'app.",
+    "Moduli guidati a passaggi per farmaci, visite e documenti.",
+    "Dati solo sul dispositivo, con backup JSON da esportare e importare dalle Impostazioni."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-15T20:43:34Z",
+   "updatedAt": "2026-11-14T10:26:22Z",
+   "repoUrl": "https://github.com/carellice/dueffe-health",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/dueffe-health"
+    },
+    {
+     "type": "release",
+     "label": "Release health-v1.0.31",
+     "url": "https://github.com/carellice/dueffe-health/releases/tag/health-v1.0.31"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/dueffe-health/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/dueffe-health/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/dueffe-health/main/docs/logo.png?v=6fcb77f2",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "health-v1.0.31",
+    "name": "Health 1.0.31",
+    "date": "2026-11-14T10:26:02Z",
+    "url": "https://github.com/carellice/dueffe-health/releases/tag/health-v1.0.31",
+    "notes": "APK Android Health 1.0.31",
+    "assets": [
+     {
+      "name": "health-1.0.31.apk",
+      "url": "https://github.com/carellice/dueffe-health/releases/download/health-v1.0.31/health-1.0.31.apk",
+      "size": 13200254,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.dueffe.health",
+   "dueffe": true
+  },
+  {
    "id": "declutty",
    "name": "Declutty",
    "description": "Decluttering digitale: disinstalla più app insieme, categorie automatiche e contatti doppioni da unire",
@@ -507,156 +729,13 @@
       "name": "Declutty-v1.0.0.apk",
       "url": "https://github.com/carellice/declutty/releases/download/v1.0.0/Declutty-v1.0.0.apk",
       "size": 2222729,
-      "downloads": 0
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "app.declutty",
-   "dueffe": false
-  },
-  {
-   "id": "dueffe-health",
-   "name": "Health",
-   "description": "Health per Android – terapie, visite e documenti sanitari",
-   "about": "Terapie, visite e documenti sanitari, solo sul tuo dispositivo. Organizza i farmaci con orari e promemoria, tieni traccia delle visite e conserva referti e ricette in un unico posto. App nativa della famiglia Dueffe.",
-   "features": [
-    "Terapie con frequenza, giorni e orari scelti con semplici selettori, e promemoria per ogni dose.",
-    "Terapie al bisogno senza avvisi automatici: le assunzioni si segnano dalla lista Terapie.",
-    "Storico delle dosi assunte.",
-    "Visite mediche e documenti sanitari, con allegati salvati nello spazio privato dell'app.",
-    "Moduli guidati a passaggi per farmaci, visite e documenti.",
-    "Dati solo sul dispositivo, con backup JSON da esportare e importare dalle Impostazioni."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T20:43:34Z",
-   "updatedAt": "2026-11-13T16:34:11Z",
-   "repoUrl": "https://github.com/carellice/dueffe-health",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/dueffe-health"
-    },
-    {
-     "type": "release",
-     "label": "Release health-v1.0.30",
-     "url": "https://github.com/carellice/dueffe-health/releases/tag/health-v1.0.30"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/dueffe-health/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/dueffe-health/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-health/main/docs/logo.png?v=6fcb77f2",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "health-v1.0.30",
-    "name": "Health 1.0.30",
-    "date": "2026-11-13T16:33:59Z",
-    "url": "https://github.com/carellice/dueffe-health/releases/tag/health-v1.0.30",
-    "notes": "APK Android Health 1.0.30",
-    "assets": [
-     {
-      "name": "health-1.0.30.apk",
-      "url": "https://github.com/carellice/dueffe-health/releases/download/health-v1.0.30/health-1.0.30.apk",
-      "size": 13216638,
-      "downloads": 2
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "it.dueffe.health",
-   "dueffe": true
-  },
-  {
-   "id": "sonora",
-   "name": "Sonora",
-   "description": "Sonora: YouTube Music in streaming dal tuo server di casa (CasaOS) - web app e app Android",
-   "about": "La tua musica da YouTube Music, in streaming dal tuo server di casa (CasaOS, Raspberry Pi o qualsiasi Linux con Docker) verso telefono e browser.\n\nLo script ti guida: controlla Docker e CasaOS, chiede cartella dati, porta (predefinita 8110) e fuso orario, controlla Tailscale e, se manca, si offre di installarlo e collegarlo; poi costruisce Sonora, la aggiunge alla dashboard di CasaOS, la pubblica su Tailscale e ti chiede se vuoi gli aggiornamenti automatici ogni notte.",
-   "features": [
-    "Web app (PWA) con lo stesso stile dell'app Android, adattata anche a PC e tablet: si apre dall'icona di CasaOS e si installa come app dal browser.",
-    "App Android nativa, scaricabile direttamente dal tuo server.",
-    "Profili separati: ognuno ha la sua libreria (brani, album, artisti) e le sue playlist.",
-    "Ricerca di brani, album, artisti e playlist; radio automatica dopo un brano; coda, ripetizione, riproduzione casuale; controlli dalla schermata di blocco.",
-    "Accesso da fuori casa con Tailscale (HTTPS vero, solo i tuoi dispositivi)."
-   ],
-   "category": "android",
-   "platforms": [
-    "android",
-    "windows",
-    "web"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-11-12T16:58:43Z",
-   "updatedAt": "2026-11-13T16:24:50Z",
-   "repoUrl": "https://github.com/carellice/sonora",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/sonora"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.2.5",
-     "url": "https://github.com/carellice/sonora/releases/tag/v1.2.5"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/sonora/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/sonora/issues"
-    }
-   ],
-   "icon": null,
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.2.5",
-    "name": "Sonora 1.2.5",
-    "date": "2026-11-13T16:24:51Z",
-    "url": "https://github.com/carellice/sonora/releases/tag/v1.2.5",
-    "notes": "App Android di Sonora 1.2.5.\n\nInstallala dal tuo server (Impostazioni → Scarica l'app Android) oppure scarica Sonora.apk qui sotto.\nI server con sonora-aggiorna si aggiornano a questa versione (ogni notte o con sudo sonora-aggiorna).",
-    "assets": [
-     {
-      "name": "Sonora.apk",
-      "url": "https://github.com/carellice/sonora/releases/download/v1.2.5/Sonora.apk",
-      "size": 2612938,
       "downloads": 4
      }
     ]
    },
    "featured": false,
    "hidden": false,
-   "androidPackage": "it.casa.sonora",
+   "androidPackage": "app.declutty",
    "dueffe": false
   },
   {
@@ -1437,6 +1516,89 @@
    "dueffe": false
   },
   {
+   "id": "arcade-classici",
+   "name": "Arcadio",
+   "description": "Snake, Campo Minato, Breakout e Invasori rivisitati in chiave neon/3D per Android (Kotlin + Jetpack Compose)",
+   "about": "Nove giochi classici rivisitati in chiave neon/synthwave e 3D, per Android.\n\n▶ Guarda il video di presentazione (53 s, musica originale)",
+   "features": [
+    "Snake – movimento fluido, bordi attraversabili, stella bonus",
+    "Campo Minato – tre difficoltà, prima mossa sicura, apertura rapida sui numeri",
+    "Breakout – sei livelli, mattoni resistenti e d'acciaio, potenziamenti e combo",
+    "Invasori – in stile Space Invaders: alieni voxel, scudi distruttibili, UFO e potenziamenti",
+    "Blocchi – in stile Tetris: rotazione con un tocco, caduta istantanea, ombra di atterraggio e livelli sempre più veloci",
+    "PONG – duello a 11 punti, 1vCPU con tre difficoltà o 1v1 locale con controlli touch simultanei; supporta anche W/S e frecce sulla tastiera"
+   ],
+   "category": "giochi",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "arcade",
+    "breakout",
+    "game",
+    "jetpack-compose",
+    "kotlin",
+    "minesweeper",
+    "snake",
+    "space-invaders"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-16T10:13:54Z",
+   "updatedAt": "2026-11-14T10:34:39Z",
+   "repoUrl": "https://github.com/carellice/arcade-classici",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/arcade-classici"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.8.0",
+     "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.8.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/arcade-classici/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/arcade-classici/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/icon.svg?v=f8b9e1a9",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/trailer-poster.jpg"
+   ],
+   "video": "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/trailer.mp4",
+   "release": {
+    "tag": "v1.8.0",
+    "name": "Arcadio 1.8.0",
+    "date": "2026-11-14T10:34:37Z",
+    "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.8.0",
+    "notes": "Nuovo gioco: Rigori. Tira toccando la porta o tuffati per parare, in partita a cinque rigori contro la CPU o nelle sfide da dieci tiri come tiratore o portiere.\n\n---\nScarica **Arcadio.apk** qui sotto e installalo, oppure aggiorna direttamente dall'app: **Impostazioni → Aggiornamenti**.",
+    "assets": [
+     {
+      "name": "Arcadio.apk",
+      "url": "https://github.com/carellice/arcade-classici/releases/download/v1.8.0/Arcadio.apk",
+      "size": 1091716,
+      "downloads": 3
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "com.giochiclassici.arcade",
+   "dueffe": false
+  },
+  {
    "id": "Topperia",
    "name": "Topperia",
    "description": "Topperia: il trivia Android delle Top 10. Classifiche reali, sfide locali e nuove curiosità.",
@@ -1507,89 +1669,6 @@
    "featured": true,
    "hidden": false,
    "androidPackage": "it.topperia.game",
-   "dueffe": false
-  },
-  {
-   "id": "arcade-classici",
-   "name": "Arcadio",
-   "description": "Snake, Campo Minato, Breakout e Invasori rivisitati in chiave neon/3D per Android (Kotlin + Jetpack Compose)",
-   "about": "Otto giochi classici rivisitati in chiave neon/synthwave e 3D, per Android.\n\n▶ Guarda il video di presentazione (53 s, musica originale)",
-   "features": [
-    "Snake – movimento fluido, bordi attraversabili, stella bonus",
-    "Campo Minato – tre difficoltà, prima mossa sicura, apertura rapida sui numeri",
-    "Breakout – sei livelli, mattoni resistenti e d'acciaio, potenziamenti e combo",
-    "Invasori – in stile Space Invaders: alieni voxel, scudi distruttibili, UFO e potenziamenti",
-    "Blocchi – in stile Tetris: rotazione con un tocco, caduta istantanea, ombra di atterraggio e livelli sempre più veloci",
-    "PONG – duello a 11 punti, 1vCPU con tre difficoltà o 1v1 locale con controlli touch simultanei; supporta anche W/S e frecce sulla tastiera"
-   ],
-   "category": "giochi",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "android",
-    "arcade",
-    "breakout",
-    "game",
-    "jetpack-compose",
-    "kotlin",
-    "minesweeper",
-    "snake",
-    "space-invaders"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-16T10:13:54Z",
-   "updatedAt": "2026-11-11T10:34:20Z",
-   "repoUrl": "https://github.com/carellice/arcade-classici",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/arcade-classici"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.7.0",
-     "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.7.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/arcade-classici/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/arcade-classici/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/icon.svg?v=f8b9e1a9",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/trailer-poster.jpg"
-   ],
-   "video": "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/trailer.mp4",
-   "release": {
-    "tag": "v1.7.0",
-    "name": "Arcadio 1.7.0",
-    "date": "2026-11-11T10:34:17Z",
-    "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.7.0",
-    "notes": "Sudoku: tieni premuto un numero in basso per sbarrarlo nella casella vuota scelta\n\n---\nScarica **Arcadio.apk** qui sotto e installalo, oppure aggiorna direttamente dall'app: **Impostazioni → Aggiornamenti**.",
-    "assets": [
-     {
-      "name": "Arcadio.apk",
-      "url": "https://github.com/carellice/arcade-classici/releases/download/v1.7.0/Arcadio.apk",
-      "size": 1091716,
-      "downloads": 3
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "com.giochiclassici.arcade",
    "dueffe": false
   },
   {
@@ -1987,13 +2066,13 @@
    "platforms": [
     "windows"
    ],
-   "language": "C#",
+   "language": "Kotlin",
    "topics": [],
    "stars": 0,
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-13T22:46:24Z",
+   "updatedAt": "2026-11-15T00:06:49Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -2004,8 +2083,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.18.0",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.18.0"
+     "label": "Release v1.21.0",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.21.0"
     },
     {
      "type": "releases",
@@ -2026,34 +2105,34 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.18.0",
-    "name": "IPTVISION 1.18.0",
-    "date": "2026-11-13T22:45:40Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.18.0",
-    "notes": "- Stile skeuomorfico opzionale su tutte le app\n- Server PWA 2.6.9: allineato alla release 1.17.9\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.18.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.18.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.18.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.18.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.21.0",
+    "name": "IPTVISION 1.21.0",
+    "date": "2026-11-15T00:06:34Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.21.0",
+    "notes": "- Nuovo stile grafico Nothing su tutte le app, da scegliere in Impostazioni > Aspetto\n- Server PWA 2.9.0: allineato alla release 1.20.0 (stile Dueffe)\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.21.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.21.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.21.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.21.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.18.0.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.18.0/IPTVISION-1.18.0.apk",
-      "size": 8777304,
-      "downloads": 3
+      "name": "IPTVISION-1.21.0.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.21.0/IPTVISION-1.21.0.apk",
+      "size": 9645474,
+      "downloads": 5
      },
      {
-      "name": "IPTVISION-1.18.0.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.18.0/IPTVISION-1.18.0.ipk",
-      "size": 267164,
+      "name": "IPTVISION-1.21.0.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.21.0/IPTVISION-1.21.0.ipk",
+      "size": 803462,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-1.18.0.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.18.0/IPTVISION-1.18.0.wgt",
-      "size": 282908,
+      "name": "IPTVISION-1.21.0.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.21.0/IPTVISION-1.21.0.wgt",
+      "size": 821004,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-Setup-1.18.0.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.18.0/IPTVISION-Setup-1.18.0.exe",
-      "size": 71674256,
+      "name": "IPTVISION-Setup-1.21.0.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.21.0/IPTVISION-Setup-1.21.0.exe",
+      "size": 72090219,
       "downloads": 1
      }
     ]
@@ -2373,7 +2452,7 @@
       "name": "MonitorSwitch-portable-win-x64.zip",
       "url": "https://github.com/carellice/MonitorSwitch/releases/download/v3.0.1/MonitorSwitch-portable-win-x64.zip",
       "size": 154470,
-      "downloads": 0
+      "downloads": 1
      },
      {
       "name": "MonitorSwitch.exe",
