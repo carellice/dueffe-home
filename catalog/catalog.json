@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-15T20:29:52.949Z",
+ "generatedAt": "2026-11-17T19:59:21.996Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -36,86 +36,6 @@
  ],
  "projects": [
   {
-   "id": "hommaterial",
-   "name": "Hommaterial",
-   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
-   "about": "Android · Server di casa (CasaOS) · Gratuita · Open source\n\nPer pubblicare una nuova versione da questo PC usa release.bat: guida al rilascio.",
-   "features": [
-    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
-    "Un tocco accende o spegne.",
-    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
-    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
-    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
-    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
-   ],
-   "category": "android",
-   "platforms": [
-    "android",
-    "web",
-    "windows"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-10-06T16:46:46Z",
-   "updatedAt": "2026-11-15T12:44:01Z",
-   "repoUrl": "https://github.com/carellice/hommaterial",
-   "webUrl": "https://carellice.github.io/hommaterial/",
-   "links": [
-    {
-     "type": "web",
-     "label": "Apri online",
-     "url": "https://carellice.github.io/hommaterial/"
-    },
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/hommaterial"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.88",
-     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.88"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/hommaterial/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/hommaterial/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png?v=a785ba32",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
-   ],
-   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
-   "release": {
-    "tag": "v1.88",
-    "name": "Hommaterial 1.88",
-    "date": "2026-11-15T12:43:47Z",
-    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.88",
-    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.87...v1.88",
-    "assets": [
-     {
-      "name": "Hommaterial-v1.88.apk",
-      "url": "https://github.com/carellice/hommaterial/releases/download/v1.88/Hommaterial-v1.88.apk",
-      "size": 5734802,
-      "downloads": 1
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "app.hommaterial",
-   "dueffe": false
-  },
-  {
    "id": "chiarella",
    "name": "Chiarella",
    "description": "Chiarella — app Android open source di suoni rilassanti da mescolare, con timer, profili, Live Update e widget",
@@ -145,7 +65,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-21T09:30:02Z",
-   "updatedAt": "2026-11-14T10:25:15Z",
+   "updatedAt": "2026-11-17T19:39:48Z",
    "repoUrl": "https://github.com/carellice/chiarella",
    "webUrl": "https://carellice.github.io/chiarella/",
    "links": [
@@ -161,8 +81,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.22",
-     "url": "https://github.com/carellice/chiarella/releases/tag/v1.22"
+     "label": "Release v1.24",
+     "url": "https://github.com/carellice/chiarella/releases/tag/v1.24"
     },
     {
      "type": "releases",
@@ -179,28 +99,28 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.22",
-    "name": "Chiarella 1.22",
-    "date": "2026-11-14T10:26:33Z",
-    "url": "https://github.com/carellice/chiarella/releases/tag/v1.22",
-    "notes": "Stile Nothing: le icone di «Un momento per te» e «Parla con Chiarella» ora si vedono sullo sfondo nero.",
+    "tag": "v1.24",
+    "name": "Chiarella 1.24",
+    "date": "2026-11-17T19:40:39Z",
+    "url": "https://github.com/carellice/chiarella/releases/tag/v1.24",
+    "notes": "Stile Nothing: interruttori spenti ben visibili sullo sfondo nero",
     "assets": [
      {
-      "name": "Chiarella-1.22.apk",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.22/Chiarella-1.22.apk",
-      "size": 44364560,
-      "downloads": 3
-     },
-     {
-      "name": "Chiarella-Web-1.22.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.22/Chiarella-Web-1.22.zip",
-      "size": 39800319,
+      "name": "Chiarella-1.24.apk",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.24/Chiarella-1.24.apk",
+      "size": 44381876,
       "downloads": 1
      },
      {
-      "name": "Chiarella-Windows-1.22.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.22/Chiarella-Windows-1.22.zip",
-      "size": 105071175,
+      "name": "Chiarella-Web-1.24.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.24/Chiarella-Web-1.24.zip",
+      "size": 39800319,
+      "downloads": 0
+     },
+     {
+      "name": "Chiarella-Windows-1.24.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.24/Chiarella-Windows-1.24.zip",
+      "size": 105071174,
       "downloads": 1
      }
     ]
@@ -208,6 +128,86 @@
    "featured": true,
    "hidden": false,
    "androidPackage": "it.chiarella.app",
+   "dueffe": false
+  },
+  {
+   "id": "hommaterial",
+   "name": "Hommaterial",
+   "description": "Comanda la tua smart home Alexa, senza fronzoli.",
+   "about": "Android · Server di casa (CasaOS) · Gratuita · Open source\n\nPer pubblicare una nuova versione da questo PC usa release.bat: guida al rilascio.",
+   "features": [
+    "Mostra i dispositivi raggruppati per stanza, come configurati in Alexa.",
+    "Un tocco accende o spegne.",
+    "Nell'angolo di ogni riquadro un simbolo dice come risponde: se un tocco accende e spegne, esegue delle azioni o apre il pannello, e se tenendolo premuto si apre il resto. La legenda è in fondo alla lista e nelle Impostazioni.",
+    "Dal menu, \"Riordina\" apre l'elenco dei riquadri di ogni sezione, da mettere in ordine con le frecce.",
+    "Nelle Impostazioni, in Aspetto, i dispositivi si mostrano a griglia o a elenco.",
+    "La lente in alto cerca i dispositivi mentre si scrive: il primo trovato è evidenziato, e Invio lo accende o spegne, esegue un dispositivo personalizzato o apre il pannello di un sensore o di un telecomando."
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "web",
+    "windows"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-10-06T16:46:46Z",
+   "updatedAt": "2026-11-17T12:18:05Z",
+   "repoUrl": "https://github.com/carellice/hommaterial",
+   "webUrl": "https://carellice.github.io/hommaterial/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/hommaterial/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/hommaterial"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.90",
+     "url": "https://github.com/carellice/hommaterial/releases/tag/v1.90"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/hommaterial/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/hommaterial/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/icon.png?v=a785ba32",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/anteprima.gif"
+   ],
+   "video": "https://raw.githubusercontent.com/carellice/hommaterial/main/docs/video/hommaterial-promo.mp4",
+   "release": {
+    "tag": "v1.90",
+    "name": "Hommaterial 1.90",
+    "date": "2026-11-17T12:17:56Z",
+    "url": "https://github.com/carellice/hommaterial/releases/tag/v1.90",
+    "notes": "**Full Changelog**: https://github.com/carellice/hommaterial/compare/v1.89...v1.90",
+    "assets": [
+     {
+      "name": "Hommaterial-v1.90.apk",
+      "url": "https://github.com/carellice/hommaterial/releases/download/v1.90/Hommaterial-v1.90.apk",
+      "size": 5736118,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "app.hommaterial",
    "dueffe": false
   },
   {
@@ -459,7 +459,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-11-15T15:01:57Z",
-   "updatedAt": "2026-11-15T20:29:19Z",
+   "updatedAt": "2026-11-17T19:36:38Z",
    "repoUrl": "https://github.com/carellice/kanso",
    "webUrl": null,
    "links": [
@@ -470,8 +470,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.5.1",
-     "url": "https://github.com/carellice/kanso/releases/tag/v1.5.1"
+     "label": "Release v1.16.1",
+     "url": "https://github.com/carellice/kanso/releases/tag/v1.16.1"
     },
     {
      "type": "releases",
@@ -494,17 +494,17 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.5.1",
-    "name": "Kanso 1.5.1",
-    "date": "2026-11-15T20:29:23Z",
-    "url": "https://github.com/carellice/kanso/releases/tag/v1.5.1",
-    "notes": "## Kanso 1.5.1\n\n### Novita\n- Riassunto notifiche solo con quelle ancora nel pannello, rifatto quando cambiano\n- Timer e cronometro in Home anche quando il tempo non si legge dalla notifica dell'Orologio\n\nScarica **Kanso-v1.5.1.apk** e installalo.\n\nAndroid 9 o successivo.",
+    "tag": "v1.16.1",
+    "name": "Kanso 1.16.1",
+    "date": "2026-11-17T19:36:42Z",
+    "url": "https://github.com/carellice/kanso/releases/tag/v1.16.1",
+    "notes": "## Kanso 1.16.1\n\n### Novita\n- Home: il pulsante suoneria alterna solo suoneria e vibrazione, senza accendere il Non disturbare\n\nScarica **Kanso-v1.16.1.apk** e installalo.\n\nAndroid 9 o successivo.",
     "assets": [
      {
-      "name": "Kanso-v1.5.1.apk",
-      "url": "https://github.com/carellice/kanso/releases/download/v1.5.1/Kanso-v1.5.1.apk",
-      "size": 3359985,
-      "downloads": 0
+      "name": "Kanso-v1.16.1.apk",
+      "url": "https://github.com/carellice/kanso/releases/download/v1.16.1/Kanso-v1.16.1.apk",
+      "size": 4050501,
+      "downloads": 2
      }
     ]
    },
@@ -576,7 +576,7 @@
       "name": "Sonora.apk",
       "url": "https://github.com/carellice/sonora/releases/download/v1.6.0/Sonora.apk",
       "size": 3545546,
-      "downloads": 4
+      "downloads": 6
      }
     ]
    },
@@ -647,7 +647,7 @@
       "name": "health-1.0.31.apk",
       "url": "https://github.com/carellice/dueffe-health/releases/download/health-v1.0.31/health-1.0.31.apk",
       "size": 13200254,
-      "downloads": 2
+      "downloads": 3
      }
     ]
    },
@@ -1519,7 +1519,7 @@
    "id": "arcade-classici",
    "name": "Arcadio",
    "description": "Snake, Campo Minato, Breakout e Invasori rivisitati in chiave neon/3D per Android (Kotlin + Jetpack Compose)",
-   "about": "Nove giochi classici rivisitati in chiave neon/synthwave e 3D, per Android.\n\n▶ Guarda il video di presentazione (53 s, musica originale)",
+   "about": "Otto giochi classici rivisitati in chiave neon/synthwave e 3D, per Android.\n\n▶ Guarda il video di presentazione (53 s, musica originale)",
    "features": [
     "Snake – movimento fluido, bordi attraversabili, stella bonus",
     "Campo Minato – tre difficoltà, prima mossa sicura, apertura rapida sui numeri",
@@ -1548,7 +1548,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-16T10:13:54Z",
-   "updatedAt": "2026-11-14T10:34:39Z",
+   "updatedAt": "2026-11-16T22:13:42Z",
    "repoUrl": "https://github.com/carellice/arcade-classici",
    "webUrl": null,
    "links": [
@@ -1559,8 +1559,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.8.0",
-     "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.8.0"
+     "label": "Release v1.9.0",
+     "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.9.0"
     },
     {
      "type": "releases",
@@ -1579,17 +1579,17 @@
    ],
    "video": "https://raw.githubusercontent.com/carellice/arcade-classici/main/docs/trailer.mp4",
    "release": {
-    "tag": "v1.8.0",
-    "name": "Arcadio 1.8.0",
-    "date": "2026-11-14T10:34:37Z",
-    "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.8.0",
-    "notes": "Nuovo gioco: Rigori. Tira toccando la porta o tuffati per parare, in partita a cinque rigori contro la CPU o nelle sfide da dieci tiri come tiratore o portiere.\n\n---\nScarica **Arcadio.apk** qui sotto e installalo, oppure aggiorna direttamente dall'app: **Impostazioni → Aggiornamenti**.",
+    "tag": "v1.9.0",
+    "name": "Arcadio 1.9.0",
+    "date": "2026-11-16T22:13:40Z",
+    "url": "https://github.com/carellice/arcade-classici/releases/tag/v1.9.0",
+    "notes": "Rimosso il gioco Rigori\n\n---\nScarica **Arcadio.apk** qui sotto e installalo, oppure aggiorna direttamente dall'app: **Impostazioni → Aggiornamenti**.",
     "assets": [
      {
       "name": "Arcadio.apk",
-      "url": "https://github.com/carellice/arcade-classici/releases/download/v1.8.0/Arcadio.apk",
-      "size": 1091716,
-      "downloads": 3
+      "url": "https://github.com/carellice/arcade-classici/releases/download/v1.9.0/Arcadio.apk",
+      "size": 1091712,
+      "downloads": 4
      }
     ]
    },
@@ -2072,7 +2072,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-15T00:06:49Z",
+   "updatedAt": "2026-11-17T19:42:09Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -2083,8 +2083,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.21.0",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.21.0"
+     "label": "Release v1.27.3",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.27.3"
     },
     {
      "type": "releases",
@@ -2105,34 +2105,34 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.21.0",
-    "name": "IPTVISION 1.21.0",
-    "date": "2026-11-15T00:06:34Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.21.0",
-    "notes": "- Nuovo stile grafico Nothing su tutte le app, da scegliere in Impostazioni > Aspetto\n- Server PWA 2.9.0: allineato alla release 1.20.0 (stile Dueffe)\r\n\r\n---\r\n**Windows:** scarica `IPTVISION-Setup-1.21.0.exe` e avvialo (non servono permessi di amministratore).\r\n**Android e Android TV:** scarica `IPTVISION-1.21.0.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\r\n**TV LG (webOS):** installa `IPTVISION-1.21.0.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\r\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.21.0.wgt`, lo firma e lo installa (guida nel README).\r\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.27.3",
+    "name": "IPTVISION 1.27.3",
+    "date": "2026-11-17T19:42:17Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.27.3",
+    "notes": "- Film e serie: niente più carosello in cima su nessuna app (Android, iOS, Windows, PWA)\n\n---\n**Windows:** scarica `IPTVISION-Setup-1.27.3.exe` e avvialo (non servono permessi di amministratore).\n**Android e Android TV:** scarica `IPTVISION-1.27.3.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\n**TV LG (webOS):** installa `IPTVISION-1.27.3.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.27.3.wgt`, lo firma e lo installa (guida nel README).\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.21.0.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.21.0/IPTVISION-1.21.0.apk",
-      "size": 9645474,
-      "downloads": 7
-     },
-     {
-      "name": "IPTVISION-1.21.0.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.21.0/IPTVISION-1.21.0.ipk",
-      "size": 803462,
+      "name": "IPTVISION-1.27.3.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.27.3/IPTVISION-1.27.3.apk",
+      "size": 9711014,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-1.21.0.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.21.0/IPTVISION-1.21.0.wgt",
-      "size": 821004,
+      "name": "IPTVISION-1.27.3.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.27.3/IPTVISION-1.27.3.ipk",
+      "size": 809942,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-Setup-1.21.0.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.21.0/IPTVISION-Setup-1.21.0.exe",
-      "size": 72090219,
+      "name": "IPTVISION-1.27.3.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.27.3/IPTVISION-1.27.3.wgt",
+      "size": 832340,
+      "downloads": 1
+     },
+     {
+      "name": "IPTVISION-Setup-1.27.3.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.27.3/IPTVISION-Setup-1.27.3.exe",
+      "size": 72166245,
       "downloads": 1
      }
     ]
@@ -2140,6 +2140,88 @@
    "featured": true,
    "hidden": false,
    "androidPackage": "com.carellice.iptvision",
+   "dueffe": false
+  },
+  {
+   "id": "claude-monitor",
+   "name": "Claude Monitor",
+   "description": "Limiti di utilizzo Claude (5 ore e settimanali) su Windows e Android, con widget",
+   "about": "Controlla i limiti di utilizzo dei tuoi account Claude (sessione di 5 ore e settimanale) da Windows e Android, gratis, in un'app leggera a tema Claude.\n\n⬇ Windows (.exe) · ⬇ Android (.apk) · Tutte le release",
+   "features": [
+    "Più account: collega tutti gli account Claude (Pro/Max) che vuoi e vedi i limiti uno sotto l'altro.",
+    "Limiti: sessione di 5 ore, settimana e, quando presenti, i limiti settimanali Sonnet e Opus, con percentuale, barra e orario di reset. La barra diventa rossa dal 90%.",
+    "Windows: un solo .exe da ~45 KB, nessuna installazione. Resta nell'area di notifica, con le percentuali nel tooltip. Opzioni: sempre in primo piano, avvio con Windows (anche ridotta nel tray).",
+    "Android: app da ~60 KB con widget per la home ridimensionabile. Aggiornamento automatico ogni 15 minuti, anche dopo il riavvio.",
+    "Notifica al reset: se la attivi (Android: interruttore nella schermata principale; Windows: menu ⚙ o tray), ricevi una notifica quando un limite in uso si azzera.",
+    "Aggiornamenti integrati: entrambe le app controllano le nuove versioni nelle release di questo repository e si aggiornano con un clic."
+   ],
+   "category": "desktop",
+   "platforms": [
+    "windows",
+    "android"
+   ],
+   "language": "C#",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-11-02T15:27:55Z",
+   "updatedAt": "2026-11-16T22:15:26Z",
+   "repoUrl": "https://github.com/carellice/claude-monitor",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/claude-monitor"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.1.0",
+     "url": "https://github.com/carellice/claude-monitor/releases/tag/v1.1.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/claude-monitor/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/claude-monitor/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/logo.svg?v=f31e2314",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/windows.png",
+    "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/android-app.png",
+    "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/android-widget.png"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.1.0",
+    "name": "Claude Monitor v1.1.0",
+    "date": "2026-11-16T22:15:30Z",
+    "url": "https://github.com/carellice/claude-monitor/releases/tag/v1.1.0",
+    "notes": "Notifica quando un limite si azzera (attivabile su Windows e Android)",
+    "assets": [
+     {
+      "name": "ClaudeMonitor.apk",
+      "url": "https://github.com/carellice/claude-monitor/releases/download/v1.1.0/ClaudeMonitor.apk",
+      "size": 60632,
+      "downloads": 2
+     },
+     {
+      "name": "ClaudeMonitor.exe",
+      "url": "https://github.com/carellice/claude-monitor/releases/download/v1.1.0/ClaudeMonitor.exe",
+      "size": 51200,
+      "downloads": 1
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "com.claudemonitor.app",
    "dueffe": false
   },
   {
@@ -2195,87 +2277,6 @@
    "featured": false,
    "hidden": false,
    "androidPackage": null,
-   "dueffe": false
-  },
-  {
-   "id": "claude-monitor",
-   "name": "Claude Monitor",
-   "description": "Limiti di utilizzo Claude (5 ore e settimanali) su Windows e Android, con widget",
-   "about": "Controlla i limiti di utilizzo dei tuoi account Claude (sessione di 5 ore e settimanale) da Windows e Android, gratis, in un'app leggera a tema Claude.\n\n⬇ Windows (.exe) · ⬇ Android (.apk) · Tutte le release",
-   "features": [
-    "Più account: collega tutti gli account Claude (Pro/Max) che vuoi e vedi i limiti uno sotto l'altro.",
-    "Limiti: sessione di 5 ore, settimana e, quando presenti, i limiti settimanali Sonnet e Opus, con percentuale, barra e orario di reset. La barra diventa rossa dal 90%.",
-    "Windows: un solo .exe da ~45 KB, nessuna installazione. Resta nell'area di notifica, con le percentuali nel tooltip. Opzioni: sempre in primo piano, avvio con Windows (anche ridotta nel tray).",
-    "Android: app da ~60 KB con widget per la home ridimensionabile. Aggiornamento automatico ogni 15 minuti, anche dopo il riavvio.",
-    "Aggiornamenti integrati: entrambe le app controllano le nuove versioni nelle release di questo repository e si aggiornano con un clic."
-   ],
-   "category": "desktop",
-   "platforms": [
-    "windows",
-    "android"
-   ],
-   "language": "C#",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-11-02T15:27:55Z",
-   "updatedAt": "2026-11-02T15:28:29Z",
-   "repoUrl": "https://github.com/carellice/claude-monitor",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/claude-monitor"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.0.0",
-     "url": "https://github.com/carellice/claude-monitor/releases/tag/v1.0.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/claude-monitor/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/claude-monitor/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/logo.svg?v=f31e2314",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/windows.png",
-    "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/android-app.png",
-    "https://raw.githubusercontent.com/carellice/claude-monitor/main/docs/android-widget.png"
-   ],
-   "video": null,
-   "release": {
-    "tag": "v1.0.0",
-    "name": "Claude Monitor v1.0.0",
-    "date": "2026-11-02T15:28:33Z",
-    "url": "https://github.com/carellice/claude-monitor/releases/tag/v1.0.0",
-    "notes": "Prima versione: app Windows (.exe) e Android (.apk) con widget, multi-account, aggiornamenti integrati.",
-    "assets": [
-     {
-      "name": "ClaudeMonitor.apk",
-      "url": "https://github.com/carellice/claude-monitor/releases/download/v1.0.0/ClaudeMonitor.apk",
-      "size": 59348,
-      "downloads": 2
-     },
-     {
-      "name": "ClaudeMonitor.exe",
-      "url": "https://github.com/carellice/claude-monitor/releases/download/v1.0.0/ClaudeMonitor.exe",
-      "size": 49152,
-      "downloads": 2
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "com.claudemonitor.app",
    "dueffe": false
   },
   {
@@ -2507,13 +2508,13 @@
       "name": "MonitorSwitch-portable-win-x64.zip",
       "url": "https://github.com/carellice/MonitorSwitch/releases/download/v3.0.1/MonitorSwitch-portable-win-x64.zip",
       "size": 154470,
-      "downloads": 1
+      "downloads": 2
      },
      {
       "name": "MonitorSwitch.exe",
       "url": "https://github.com/carellice/MonitorSwitch/releases/download/v3.0.1/MonitorSwitch.exe",
       "size": 249344,
-      "downloads": 3
+      "downloads": 6
      }
     ]
    },
