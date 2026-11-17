@@ -560,13 +560,46 @@ async function onGistClick(e) {
   }
 }
 
+// ---------- File da scaricare per il sistema di chi visita ----------
+const OS = (() => {
+  const ua = navigator.userAgent;
+  if (/android/i.test(ua)) return 'android';
+  // iPad si presenta come Mac: con il touch non è un computer.
+  if (/iphone|ipad|ipod/i.test(ua) || (/macintosh/i.test(ua) && navigator.maxTouchPoints > 1)) return 'ios';
+  if (/windows/i.test(ua)) return 'windows';
+  if (/macintosh|mac os x/i.test(ua)) return 'macos';
+  if (/linux|cros/i.test(ua)) return 'linux';
+  return null;
+})();
+// In ordine di preferenza: l'installer prima dello zip.
+// shortcut: su macOS non si distingue Apple Silicon da Intel dal browser, vince il primo file Mac della release.
+const OS_ASSETS = {
+  android: [/\.apk$/],
+  windows: [/setup.*\.exe$|\.msi$/, /\.exe$/, /(win|windows|pc)[^/]*\.zip$/],
+  macos: [/\.dmg$|\.pkg$/, /(mac|osx|darwin)[^/]*\.zip$/],
+  linux: [/\.appimage$/, /\.deb$|\.rpm$/, /linux[^/]*\.(zip|tar\.gz)$/],
+};
+const OS_LABEL = { android: 'Scarica APK', windows: 'Scarica per Windows', macos: 'Scarica per macOS', linux: 'Scarica per Linux' };
+function pickAsset(assets = []) {
+  const find = (os) => {
+    for (const re of OS_ASSETS[os]) {
+      const a = assets.find((x) => re.test(x.name.toLowerCase()));
+      if (a) return { asset: a, label: OS_LABEL[os] };
+    }
+    return null;
+  };
+  // Nessun file per questo sistema: il primo degli altri, APK in testa, con la sua etichetta.
+  const a = (OS_ASSETS[OS] && find(OS)) || Object.keys(OS_ASSETS).map(find).find(Boolean);
+  return a || (assets[0] ? { asset: assets[0], label: 'Scarica' } : null);
+}
+
 // ---------- Le tue app ----------
 function apps() {
   const list = myAppList();
   const updates = list.filter(hasUpdate);
   const rest = list.filter((p) => !hasUpdate(p));
   const row = (p, k) => {
-    const dl = p.release?.assets?.find((a) => a.name.toLowerCase().endsWith('.apk')) || p.release?.assets?.[0];
+    const dl = pickAsset(p.release?.assets)?.asset;
     const action = hasUpdate(p) && dl ? `<a class="btn press small" href="${esc(dl.url)}" data-update="${esc(p.id)}">Aggiorna</a>`
       : p.webUrl ? `<a class="btn ghost press small" href="${esc(p.webUrl)}" target="_blank" rel="noopener">Apri</a>`
         : '<span class="label-m gold">Aggiornata</span>';
@@ -662,8 +695,9 @@ const LINK_ICON = { web: 'web', github: 'code', release: 'release', releases: 'r
 function detail(p) {
   const c = state.catalog;
   const origin = pendingShared?.dataset.icon?.split('/')[0] || 'detail';
-  const dl = p.release?.assets?.find((a) => a.name.toLowerCase().endsWith('.apk')) || p.release?.assets?.[0];
-  const primary = dl ? `<a class="btn press" href="${esc(dl.url)}" data-get="${esc(p.id)}">${svg('download')}${dl.name.toLowerCase().endsWith('.apk') ? 'Scarica APK' : 'Scarica'}</a>`
+  const pick = pickAsset(p.release?.assets);
+  const dl = pick?.asset;
+  const primary = dl ? `<a class="btn press" href="${esc(dl.url)}" data-get="${esc(p.id)}">${svg('download')}${pick.label}</a>`
     : p.webUrl ? `<a class="btn press" href="${esc(p.webUrl)}" target="_blank" rel="noopener">${svg('web')}Apri</a>`
       : `<a class="btn press" href="${esc(p.repoUrl)}" target="_blank" rel="noopener">${svg('code')}Vedi su GitHub</a>`;
   const secondary = dl && p.webUrl ? `<a class="btn ghost press" href="${esc(p.webUrl)}" target="_blank" rel="noopener">${svg('web')}Apri</a>`
