@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-17T19:59:21.996Z",
+ "generatedAt": "2026-11-18T16:30:58.897Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -109,7 +109,7 @@
       "name": "Chiarella-1.24.apk",
       "url": "https://github.com/carellice/chiarella/releases/download/v1.24/Chiarella-1.24.apk",
       "size": 44381876,
-      "downloads": 1
+      "downloads": 3
      },
      {
       "name": "Chiarella-Web-1.24.zip",
@@ -435,6 +435,89 @@
    "dueffe": false
   },
   {
+   "id": "declutty",
+   "name": "Declutty",
+   "description": "Decluttering digitale: disinstalla più app insieme, elimina le foto simili, categorie automatiche e contatti doppioni da unire",
+   "about": "Declutty aiuta a fare ordine sul telefono. Selezioni le app che non ti servono e le disinstalli in serie, ordinandole per nome, dimensione, data o ultimo utilizzo; le app vengono divise da sole per categoria e quelle che non vuoi vedere si nascondono. Nella galleria trova le foto doppie o quasi uguali, tiene quella venuta meglio e sposta le altre nel cestino. In rubrica trova i doppioni, li unisce in un tocco ed elimina più contatti insieme.\n\nScarica Declutty-vX.Y.Z.apk dall'ultima release e aprilo sul telefono. Gli aggiornamenti si installano da Impostazioni → Aggiornamenti.",
+   "features": [
+    "🧹 Disinstalla più app insieme e vedi quanto spazio liberi",
+    "↕️ Ordina per nome, dimensione, installazione, aggiornamento o ultimo utilizzo",
+    "🗂️ Categorie automatiche, ordinabili, con app spostabili a mano",
+    "🙈 Nascondi da Declutty le app che non vuoi vedere",
+    "🖼️ Trova le foto simili e le copie identiche, tiene la migliore ed elimina le altre",
+    "👥 Elimina più contatti insieme e unisci i doppioni",
+    "🔄 Aggiornamenti direttamente dall'app"
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "declutter",
+    "jetpack-compose",
+    "kotlin"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-11-13T23:21:05Z",
+   "updatedAt": "2026-11-18T16:29:39Z",
+   "repoUrl": "https://github.com/carellice/declutty",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/declutty"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.1.0",
+     "url": "https://github.com/carellice/declutty/releases/tag/v1.1.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/declutty/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/declutty/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/declutty/main/docs/icon.png?v=a7ae889b",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/home.jpg",
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/app.jpg",
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/categorie.jpg",
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/doppioni.jpg",
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/pulizia.jpg"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.1.0",
+    "name": "Declutty 1.1.0",
+    "date": "2026-11-18T16:29:42Z",
+    "url": "https://github.com/carellice/declutty/releases/tag/v1.1.0",
+    "notes": "## Declutty 1.1.0\n\n### Novita\n- Foto simili: trova foto doppie o quasi uguali, tiene la migliore ed elimina le altre\n\nScarica **Declutty-v1.1.0.apk** e installalo, oppure aggiorna da **Impostazioni > Aggiornamenti** dentro l'app.\n\nAndroid 8.0 o successivo.",
+    "assets": [
+     {
+      "name": "Declutty-v1.1.0.apk",
+      "url": "https://github.com/carellice/declutty/releases/download/v1.1.0/Declutty-v1.1.0.apk",
+      "size": 2321149,
+      "downloads": 0
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "app.declutty",
+   "dueffe": false
+  },
+  {
    "id": "kanso",
    "name": "Kanso Launcher",
    "description": "Launcher minimalista per il benessere digitale: tre schermate, ricerca universale e un respiro prima delle app che distraggono",
@@ -459,7 +542,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-11-15T15:01:57Z",
-   "updatedAt": "2026-11-17T19:36:38Z",
+   "updatedAt": "2026-11-18T14:04:20Z",
    "repoUrl": "https://github.com/carellice/kanso",
    "webUrl": null,
    "links": [
@@ -470,8 +553,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.16.1",
-     "url": "https://github.com/carellice/kanso/releases/tag/v1.16.1"
+     "label": "Release v1.20.1",
+     "url": "https://github.com/carellice/kanso/releases/tag/v1.20.1"
     },
     {
      "type": "releases",
@@ -494,17 +577,17 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.16.1",
-    "name": "Kanso 1.16.1",
-    "date": "2026-11-17T19:36:42Z",
-    "url": "https://github.com/carellice/kanso/releases/tag/v1.16.1",
-    "notes": "## Kanso 1.16.1\n\n### Novita\n- Home: il pulsante suoneria alterna solo suoneria e vibrazione, senza accendere il Non disturbare\n\nScarica **Kanso-v1.16.1.apk** e installalo.\n\nAndroid 9 o successivo.",
+    "tag": "v1.20.1",
+    "name": "Kanso 1.20.1",
+    "date": "2026-11-18T14:04:24Z",
+    "url": "https://github.com/carellice/kanso/releases/tag/v1.20.1",
+    "notes": "## Kanso 1.20.1\n\n### Novita\n- Home: in verticale i pulsanti rapidi in colonna, l'ora non va più a capo\n\nScarica **Kanso-v1.20.1.apk** e installalo.\n\nAndroid 9 o successivo.",
     "assets": [
      {
-      "name": "Kanso-v1.16.1.apk",
-      "url": "https://github.com/carellice/kanso/releases/download/v1.16.1/Kanso-v1.16.1.apk",
-      "size": 4050501,
-      "downloads": 2
+      "name": "Kanso-v1.20.1.apk",
+      "url": "https://github.com/carellice/kanso/releases/download/v1.20.1/Kanso-v1.20.1.apk",
+      "size": 4133685,
+      "downloads": 3
      }
     ]
    },
@@ -655,88 +738,6 @@
    "hidden": false,
    "androidPackage": "it.dueffe.health",
    "dueffe": true
-  },
-  {
-   "id": "declutty",
-   "name": "Declutty",
-   "description": "Decluttering digitale: disinstalla più app insieme, categorie automatiche e contatti doppioni da unire",
-   "about": "Declutty aiuta a fare ordine sul telefono. Selezioni le app che non ti servono e le disinstalli in serie, ordinandole per nome, dimensione, data o ultimo utilizzo; le app vengono divise da sole per categoria e quelle che non vuoi vedere si nascondono. In rubrica trova i doppioni, li unisce in un tocco ed elimina più contatti insieme.\n\nScarica Declutty-vX.Y.Z.apk dall'ultima release e aprilo sul telefono. Gli aggiornamenti si installano da Impostazioni → Aggiornamenti.",
-   "features": [
-    "🧹 Disinstalla più app insieme e vedi quanto spazio liberi",
-    "↕️ Ordina per nome, dimensione, installazione, aggiornamento o ultimo utilizzo",
-    "🗂️ Categorie automatiche, ordinabili, con app spostabili a mano",
-    "🙈 Nascondi da Declutty le app che non vuoi vedere",
-    "👥 Elimina più contatti insieme e unisci i doppioni",
-    "🔄 Aggiornamenti direttamente dall'app"
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "android",
-    "declutter",
-    "jetpack-compose",
-    "kotlin"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-11-13T23:21:05Z",
-   "updatedAt": "2026-11-13T23:21:14Z",
-   "repoUrl": "https://github.com/carellice/declutty",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/declutty"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.0.0",
-     "url": "https://github.com/carellice/declutty/releases/tag/v1.0.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/declutty/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/declutty/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/declutty/main/docs/icon.png?v=a7ae889b",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/home.jpg",
-    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/app.jpg",
-    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/categorie.jpg",
-    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/doppioni.jpg",
-    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/pulizia.jpg"
-   ],
-   "video": null,
-   "release": {
-    "tag": "v1.0.0",
-    "name": "Declutty 1.0.0",
-    "date": "2026-11-13T23:21:17Z",
-    "url": "https://github.com/carellice/declutty/releases/tag/v1.0.0",
-    "notes": "## Declutty 1.0.0\n\nPrima versione.\n\n- Disinstalla più app insieme, ordinandole per nome, dimensione, installazione, aggiornamento o ultimo utilizzo\n- Filtro per le app non usate da 30 giorni\n- Categorie automatiche, ordinabili, con spostamento manuale delle app\n- App nascoste da Declutty\n- Contatti: eliminazione multipla, filtri senza numero/senza nome, unione dei doppioni\n- Aggiornamenti direttamente dall'app (Impostazioni > Aggiornamenti)\n\nScarica **Declutty-v1.0.0.apk** e installalo. Android 8.0 o successivo.\n",
-    "assets": [
-     {
-      "name": "Declutty-v1.0.0.apk",
-      "url": "https://github.com/carellice/declutty/releases/download/v1.0.0/Declutty-v1.0.0.apk",
-      "size": 2222729,
-      "downloads": 4
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "app.declutty",
-   "dueffe": false
   },
   {
    "id": "dueffe-streamwise",
@@ -1441,81 +1442,6 @@
    "dueffe": false
   },
   {
-   "id": "SimPhotos",
-   "name": "SimPhotos",
-   "description": "App Android che trova le foto simili o doppie e tiene solo la migliore",
-   "about": "Una galleria più leggera, senza doppioni.\n\nSimPhotos trova le foto identiche o quasi uguali scattate nello stesso momento, sceglie quella venuta meglio e ti aiuta a eliminare le altre in pochi tocchi.",
-   "features": [
-    "🔍 Analisi intelligente: confronta ogni foto con quelle scattate nello stesso periodo e riconosce raffiche, scatti ripetuti e copie identiche.",
-    "🏆 Sceglie la migliore: per ogni gruppo valuta nitidezza, esposizione e risoluzione e mette da parte la foto venuta meglio.",
-    "✋ Decidi tu: niente viene cancellato senza la tua conferma. Prima vedi il riepilogo, poi confermi nel dialogo di sistema di Android.",
-    "♻️ Cestino sicuro: per impostazione predefinita le foto finiscono nel cestino e restano recuperabili per 30 giorni.",
-    "⭐ Preferite protette: le foto contrassegnate come preferite non vengono mai proposte per l'eliminazione.",
-    "🎚️ Sensibilità regolabile: scegli quanto devono essere simili le foto, da \"Più permissivo\" a \"Solo quasi identiche\"."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T14:37:48Z",
-   "updatedAt": "2026-10-16T07:41:05Z",
-   "repoUrl": "https://github.com/carellice/SimPhotos",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/SimPhotos"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.0.2",
-     "url": "https://github.com/carellice/SimPhotos/releases/tag/v1.0.2"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/SimPhotos/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/SimPhotos/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/SimPhotos/main/docs/icon.png?v=82ef9a25",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/SimPhotos/main/docs/home.png",
-    "https://raw.githubusercontent.com/carellice/SimPhotos/main/docs/results.png",
-    "https://raw.githubusercontent.com/carellice/SimPhotos/main/docs/detail.png"
-   ],
-   "video": null,
-   "release": {
-    "tag": "v1.0.2",
-    "name": "SimPhotos 1.0.2",
-    "date": "2026-10-16T07:41:01Z",
-    "url": "https://github.com/carellice/SimPhotos/releases/tag/v1.0.2",
-    "notes": "## Novità\n\n- Visualizzatore a schermo intero con zoom per le foto dei gruppi\n\n📲 Scarica **SimPhotos.apk** qui sotto, oppure aggiorna direttamente dall'app in Impostazioni → Aggiornamenti.",
-    "assets": [
-     {
-      "name": "SimPhotos.apk",
-      "url": "https://github.com/carellice/SimPhotos/releases/download/v1.0.2/SimPhotos.apk",
-      "size": 2569656,
-      "downloads": 1
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "com.simphotos.app",
-   "dueffe": false
-  },
-  {
    "id": "arcade-classici",
    "name": "Arcadio",
    "description": "Snake, Campo Minato, Breakout e Invasori rivisitati in chiave neon/3D per Android (Kotlin + Jetpack Compose)",
@@ -2072,7 +1998,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-17T19:42:09Z",
+   "updatedAt": "2026-11-18T11:08:01Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -2083,8 +2009,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.27.3",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.27.3"
+     "label": "Release v1.28.6",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.28.6"
     },
     {
      "type": "releases",
@@ -2105,35 +2031,35 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.27.3",
-    "name": "IPTVISION 1.27.3",
-    "date": "2026-11-17T19:42:17Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.27.3",
-    "notes": "- Film e serie: niente più carosello in cima su nessuna app (Android, iOS, Windows, PWA)\n\n---\n**Windows:** scarica `IPTVISION-Setup-1.27.3.exe` e avvialo (non servono permessi di amministratore).\n**Android e Android TV:** scarica `IPTVISION-1.27.3.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\n**TV LG (webOS):** installa `IPTVISION-1.27.3.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.27.3.wgt`, lo firma e lo installa (guida nel README).\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.28.6",
+    "name": "IPTVISION 1.28.6",
+    "date": "2026-11-18T11:08:09Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.28.6",
+    "notes": "- Profili: \"Chi guarda?\" anche su Windows; il PIN si scrive subito; \"Nascondi XXX\" acceso di base\n\n---\n**Windows:** scarica `IPTVISION-Setup-1.28.6.exe` e avvialo (non servono permessi di amministratore).\n**Android e Android TV:** scarica `IPTVISION-1.28.6.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\n**TV LG (webOS):** installa `IPTVISION-1.28.6.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.28.6.wgt`, lo firma e lo installa (guida nel README).\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.27.3.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.27.3/IPTVISION-1.27.3.apk",
-      "size": 9711014,
+      "name": "IPTVISION-1.28.6.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.28.6/IPTVISION-1.28.6.apk",
+      "size": 9715094,
+      "downloads": 3
+     },
+     {
+      "name": "IPTVISION-1.28.6.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.28.6/IPTVISION-1.28.6.ipk",
+      "size": 810232,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-1.27.3.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.27.3/IPTVISION-1.27.3.ipk",
-      "size": 809942,
+      "name": "IPTVISION-1.28.6.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.28.6/IPTVISION-1.28.6.wgt",
+      "size": 832736,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-1.27.3.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.27.3/IPTVISION-1.27.3.wgt",
-      "size": 832340,
-      "downloads": 1
-     },
-     {
-      "name": "IPTVISION-Setup-1.27.3.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.27.3/IPTVISION-Setup-1.27.3.exe",
-      "size": 72166245,
-      "downloads": 1
+      "name": "IPTVISION-Setup-1.28.6.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.28.6/IPTVISION-Setup-1.28.6.exe",
+      "size": 72166699,
+      "downloads": 3
      }
     ]
    },
@@ -2215,7 +2141,7 @@
       "name": "ClaudeMonitor.exe",
       "url": "https://github.com/carellice/claude-monitor/releases/download/v1.1.0/ClaudeMonitor.exe",
       "size": 51200,
-      "downloads": 1
+      "downloads": 2
      }
     ]
    },

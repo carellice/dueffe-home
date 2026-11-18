@@ -8,7 +8,8 @@
     "mutuo-roma-nord",
     "appunto",
     "sweep",
-    "nimbo"
+    "nimbo",
+    "SimPhotos"
   ],
   "categories": [
     {
@@ -335,13 +336,14 @@
       "name": "Declutty",
       "category": "android",
       "androidPackage": "app.declutty",
-      "description": "Decluttering digitale: disinstalla più app insieme, categorie automatiche e contatti doppioni da unire",
-      "about": "Declutty aiuta a fare ordine sul telefono. Selezioni le app che non ti servono e le disinstalli in serie, ordinandole per nome, dimensione, data o ultimo utilizzo; le app vengono divise da sole per categoria e quelle che non vuoi vedere si nascondono. In rubrica trova i doppioni, li unisce in un tocco ed elimina più contatti insieme.\n\nScarica Declutty-vX.Y.Z.apk dall'ultima release e aprilo sul telefono. Gli aggiornamenti si installano da Impostazioni → Aggiornamenti.",
+      "description": "Decluttering digitale: disinstalla più app insieme, elimina le foto simili, categorie automatiche e contatti doppioni da unire",
+      "about": "Declutty aiuta a fare ordine sul telefono. Selezioni le app che non ti servono e le disinstalli in serie, ordinandole per nome, dimensione, data o ultimo utilizzo; le app vengono divise da sole per categoria e quelle che non vuoi vedere si nascondono. Nella galleria trova le foto doppie o quasi uguali, tiene quella venuta meglio e sposta le altre nel cestino. In rubrica trova i doppioni, li unisce in un tocco ed elimina più contatti insieme.\n\nScarica Declutty-vX.Y.Z.apk dall'ultima release e aprilo sul telefono. Gli aggiornamenti si installano da Impostazioni → Aggiornamenti.",
       "features": [
         "🧹 Disinstalla più app insieme e vedi quanto spazio liberi",
         "↕️ Ordina per nome, dimensione, installazione, aggiornamento o ultimo utilizzo",
         "🗂️ Categorie automatiche, ordinabili, con app spostabili a mano",
         "🙈 Nascondi da Declutty le app che non vuoi vedere",
+        "🖼️ Trova le foto simili e le copie identiche, tiene la migliore ed elimina le altre",
         "👥 Elimina più contatti insieme e unisci i doppioni",
         "🔄 Aggiornamenti direttamente dall'app"
       ]
