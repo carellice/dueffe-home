@@ -9,7 +9,8 @@
     "appunto",
     "sweep",
     "nimbo",
-    "SimPhotos"
+    "SimPhotos",
+    "dueffe-streamwise"
   ],
   "categories": [
     {
@@ -241,14 +242,6 @@
     },
     "devdex": {
       "category": "web"
-    },
-    "dueffe-streamwise": {
-      "category": "android",
-      "platforms": [
-        "android"
-      ],
-      "name": "StreamWise",
-      "about": "Cosa guardare, dove e quando. Tieni traccia di film e serie, scopri le novità sulle piattaforme e ricevi un avviso quando escono nuovi episodi o nuovi titoli delle persone che segui. App nativa della famiglia Dueffe."
     },
     "dueffe-garage": {
       "category": "android",

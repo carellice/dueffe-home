@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-18T16:31:22.071Z",
+ "generatedAt": "2026-11-22T12:17:23.846Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -109,7 +109,7 @@
       "name": "Chiarella-1.24.apk",
       "url": "https://github.com/carellice/chiarella/releases/download/v1.24/Chiarella-1.24.apk",
       "size": 44381876,
-      "downloads": 3
+      "downloads": 4
      },
      {
       "name": "Chiarella-Web-1.24.zip",
@@ -201,7 +201,7 @@
       "name": "Hommaterial-v1.90.apk",
       "url": "https://github.com/carellice/hommaterial/releases/download/v1.90/Hommaterial-v1.90.apk",
       "size": 5736118,
-      "downloads": 2
+      "downloads": 3
      }
     ]
    },
@@ -435,6 +435,78 @@
    "dueffe": false
   },
   {
+   "id": "sonora",
+   "name": "Sonora",
+   "description": "Sonora: YouTube Music in streaming dal tuo server di casa (CasaOS) - web app e app Android",
+   "about": "La tua musica da YouTube Music, in streaming dal tuo server di casa (CasaOS, Raspberry Pi o qualsiasi Linux con Docker) verso telefono e browser.\n\nLo script ti guida: controlla Docker e CasaOS, chiede cartella dati, porta (predefinita 8110) e fuso orario, controlla Tailscale e, se manca, si offre di installarlo e collegarlo; poi costruisce Sonora, la aggiunge alla dashboard di CasaOS, la pubblica su Tailscale e ti chiede se vuoi gli aggiornamenti automatici ogni notte.",
+   "features": [
+    "Web app (PWA) con lo stesso stile dell'app Android, adattata anche a PC e tablet: si apre dall'icona di CasaOS e si installa come app dal browser.",
+    "App Android nativa, scaricabile direttamente dal tuo server.",
+    "Profili separati: ognuno ha la sua libreria (brani, album, artisti) e le sue playlist.",
+    "Ricerca di brani, album, artisti e playlist; radio automatica dopo un brano; coda, ripetizione, riproduzione casuale; controlli dalla schermata di blocco.",
+    "Accesso da fuori casa con Tailscale (HTTPS vero, solo i tuoi dispositivi)."
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "windows",
+    "web"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-12T16:58:43Z",
+   "updatedAt": "2026-11-20T11:15:49Z",
+   "repoUrl": "https://github.com/carellice/sonora",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/sonora"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.7.1",
+     "url": "https://github.com/carellice/sonora/releases/tag/v1.7.1"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/sonora/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/sonora/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/sonora/main/web/public/icon-512.png?v=a73fada7",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.7.1",
+    "name": "Sonora 1.7.1",
+    "date": "2026-11-20T11:15:49Z",
+    "url": "https://github.com/carellice/sonora/releases/tag/v1.7.1",
+    "notes": "App Android di Sonora 1.7.1.\n\nInstallala dal tuo server (Impostazioni → Scarica l'app Android) oppure scarica Sonora.apk qui sotto.\nI server con sonora-aggiorna si aggiornano a questa versione (ogni notte o con sudo sonora-aggiorna).",
+    "assets": [
+     {
+      "name": "Sonora.apk",
+      "url": "https://github.com/carellice/sonora/releases/download/v1.7.1/Sonora.apk",
+      "size": 3545546,
+      "downloads": 5
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "it.casa.sonora",
+   "dueffe": false
+  },
+  {
    "id": "declutty",
    "name": "Declutty",
    "description": "Decluttering digitale: disinstalla più app insieme, elimina le foto simili, categorie automatiche e contatti doppioni da unire",
@@ -463,7 +535,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-11-13T23:21:05Z",
-   "updatedAt": "2026-11-18T16:29:39Z",
+   "updatedAt": "2026-11-20T10:48:12Z",
    "repoUrl": "https://github.com/carellice/declutty",
    "webUrl": null,
    "links": [
@@ -474,8 +546,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.1.0",
-     "url": "https://github.com/carellice/declutty/releases/tag/v1.1.0"
+     "label": "Release v1.5.0",
+     "url": "https://github.com/carellice/declutty/releases/tag/v1.5.0"
     },
     {
      "type": "releases",
@@ -498,17 +570,17 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.1.0",
-    "name": "Declutty 1.1.0",
-    "date": "2026-11-18T16:29:42Z",
-    "url": "https://github.com/carellice/declutty/releases/tag/v1.1.0",
-    "notes": "## Declutty 1.1.0\n\n### Novita\n- Foto simili: trova foto doppie o quasi uguali, tiene la migliore ed elimina le altre\n\nScarica **Declutty-v1.1.0.apk** e installalo, oppure aggiorna da **Impostazioni > Aggiornamenti** dentro l'app.\n\nAndroid 8.0 o successivo.",
+    "tag": "v1.5.0",
+    "name": "Declutty 1.5.0",
+    "date": "2026-11-20T10:48:17Z",
+    "url": "https://github.com/carellice/declutty/releases/tag/v1.5.0",
+    "notes": "## Declutty 1.5.0\n\n### Novita\n- Stile Dueffe: avorio e oro su fondo quasi nero, aurora ambra, scelto dalle impostazioni\n\nScarica **Declutty-v1.5.0.apk** e installalo, oppure aggiorna da **Impostazioni > Aggiornamenti** dentro l'app.\n\nAndroid 8.0 o successivo.",
     "assets": [
      {
-      "name": "Declutty-v1.1.0.apk",
-      "url": "https://github.com/carellice/declutty/releases/download/v1.1.0/Declutty-v1.1.0.apk",
-      "size": 2321149,
-      "downloads": 0
+      "name": "Declutty-v1.5.0.apk",
+      "url": "https://github.com/carellice/declutty/releases/download/v1.5.0/Declutty-v1.5.0.apk",
+      "size": 2562233,
+      "downloads": 3
      }
     ]
    },
@@ -542,7 +614,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-11-15T15:01:57Z",
-   "updatedAt": "2026-11-18T14:04:20Z",
+   "updatedAt": "2026-11-18T23:01:56Z",
    "repoUrl": "https://github.com/carellice/kanso",
    "webUrl": null,
    "links": [
@@ -553,8 +625,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.20.1",
-     "url": "https://github.com/carellice/kanso/releases/tag/v1.20.1"
+     "label": "Release v1.21.0",
+     "url": "https://github.com/carellice/kanso/releases/tag/v1.21.0"
     },
     {
      "type": "releases",
@@ -577,16 +649,16 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.20.1",
-    "name": "Kanso 1.20.1",
-    "date": "2026-11-18T14:04:24Z",
-    "url": "https://github.com/carellice/kanso/releases/tag/v1.20.1",
-    "notes": "## Kanso 1.20.1\n\n### Novita\n- Home: in verticale i pulsanti rapidi in colonna, l'ora non va più a capo\n\nScarica **Kanso-v1.20.1.apk** e installalo.\n\nAndroid 9 o successivo.",
+    "tag": "v1.21.0",
+    "name": "Kanso 1.21.0",
+    "date": "2026-11-18T23:01:59Z",
+    "url": "https://github.com/carellice/kanso/releases/tag/v1.21.0",
+    "notes": "## Kanso 1.21.0\n\n### Novita\n- Widget: pulsante Modifica per spostarli, ridimensionarli e bloccarne lo scorrimento\n\nScarica **Kanso-v1.21.0.apk** e installalo.\n\nAndroid 9 o successivo.",
     "assets": [
      {
-      "name": "Kanso-v1.20.1.apk",
-      "url": "https://github.com/carellice/kanso/releases/download/v1.20.1/Kanso-v1.20.1.apk",
-      "size": 4133685,
+      "name": "Kanso-v1.21.0.apk",
+      "url": "https://github.com/carellice/kanso/releases/download/v1.21.0/Kanso-v1.21.0.apk",
+      "size": 4133681,
       "downloads": 3
      }
     ]
@@ -594,78 +666,6 @@
    "featured": false,
    "hidden": false,
    "androidPackage": "app.kanso",
-   "dueffe": false
-  },
-  {
-   "id": "sonora",
-   "name": "Sonora",
-   "description": "Sonora: YouTube Music in streaming dal tuo server di casa (CasaOS) - web app e app Android",
-   "about": "La tua musica da YouTube Music, in streaming dal tuo server di casa (CasaOS, Raspberry Pi o qualsiasi Linux con Docker) verso telefono e browser.\n\nLo script ti guida: controlla Docker e CasaOS, chiede cartella dati, porta (predefinita 8110) e fuso orario, controlla Tailscale e, se manca, si offre di installarlo e collegarlo; poi costruisce Sonora, la aggiunge alla dashboard di CasaOS, la pubblica su Tailscale e ti chiede se vuoi gli aggiornamenti automatici ogni notte.",
-   "features": [
-    "Web app (PWA) con lo stesso stile dell'app Android, adattata anche a PC e tablet: si apre dall'icona di CasaOS e si installa come app dal browser.",
-    "App Android nativa, scaricabile direttamente dal tuo server.",
-    "Profili separati: ognuno ha la sua libreria (brani, album, artisti) e le sue playlist.",
-    "Ricerca di brani, album, artisti e playlist; radio automatica dopo un brano; coda, ripetizione, riproduzione casuale; controlli dalla schermata di blocco.",
-    "Accesso da fuori casa con Tailscale (HTTPS vero, solo i tuoi dispositivi)."
-   ],
-   "category": "android",
-   "platforms": [
-    "android",
-    "windows",
-    "web"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-11-12T16:58:43Z",
-   "updatedAt": "2026-11-14T15:55:22Z",
-   "repoUrl": "https://github.com/carellice/sonora",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/sonora"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.6.0",
-     "url": "https://github.com/carellice/sonora/releases/tag/v1.6.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/sonora/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/sonora/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/sonora/main/web/public/icon-512.png?v=a73fada7",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.6.0",
-    "name": "Sonora 1.6.0",
-    "date": "2026-11-14T15:55:22Z",
-    "url": "https://github.com/carellice/sonora/releases/tag/v1.6.0",
-    "notes": "App Android di Sonora 1.6.0.\n\nInstallala dal tuo server (Impostazioni → Scarica l'app Android) oppure scarica Sonora.apk qui sotto.\nI server con sonora-aggiorna si aggiornano a questa versione (ogni notte o con sudo sonora-aggiorna).",
-    "assets": [
-     {
-      "name": "Sonora.apk",
-      "url": "https://github.com/carellice/sonora/releases/download/v1.6.0/Sonora.apk",
-      "size": 3545546,
-      "downloads": 6
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "it.casa.sonora",
    "dueffe": false
   },
   {
@@ -737,77 +737,6 @@
    "featured": false,
    "hidden": false,
    "androidPackage": "it.dueffe.health",
-   "dueffe": true
-  },
-  {
-   "id": "dueffe-streamwise",
-   "name": "StreamWise",
-   "description": "StreamWise per Android – cosa guardare, dove e quando",
-   "about": "Cosa guardare, dove e quando. Tieni traccia di film e serie, scopri le novità sulle piattaforme e ricevi un avviso quando escono nuovi episodi o nuovi titoli delle persone che segui. App nativa della famiglia Dueffe.",
-   "features": [
-    "Interfaccia Material 3 scura e cinematografica, animazioni Compose e navigazione ottimizzata per l'uso con una mano.",
-    "Home con “Da continuare”, “La mia lista”, “Già visti” e titoli nascosti.",
-    "Cataloghi Film e Serie, Top 10, generi preferiti, sezione True crime e caricamento di altre proposte.",
-    "Widget ridimensionabile “Prossimi episodi”: mostra le serie da continuare e permette di segnare gli episodi come visti; al termine della serie chiede Mi piace / Non mi piace. Aggiungilo tenendo premuto sulla schermata Home del telefono e scegliendo Widget → StreamWise.",
-    "Ricerca per titolo con anno facoltativo e ricerca per attore/attrice con filmografia. Per impostazione predefinita le filmografie nascondono late show, talk show, reality, telegiornali e apparizioni come sé stessi; si può disattivare da Impostazioni → “Filmografie senza talk show”.",
-    "“Segui” per attori e registi: dalla pagina della filmografia si ricevono notifiche quando a TMDB viene aggiunto un loro nuovo film o serie (recente o in arrivo). Le persone seguite compaiono in Home in “Persone che segui” e sono incluse nel backup."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "TypeScript",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-15T20:43:47Z",
-   "updatedAt": "2026-11-12T10:49:56Z",
-   "repoUrl": "https://github.com/carellice/dueffe-streamwise",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/dueffe-streamwise"
-    },
-    {
-     "type": "release",
-     "label": "Release streamwise-v2.5.0",
-     "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.5.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/dueffe-streamwise/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/dueffe-streamwise/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/dueffe-streamwise/main/docs/logo.png?v=4580aad4",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "streamwise-v2.5.0",
-    "name": "StreamWise 2.5.0",
-    "date": "2026-11-12T10:49:32Z",
-    "url": "https://github.com/carellice/dueffe-streamwise/releases/tag/streamwise-v2.5.0",
-    "notes": "APK Android firmato di StreamWise. Versione 2.5.0, codice aggiornamento 158.\n\n- Chat IA: con la tastiera aperta il campo di testo non sale più fino in cima allo schermo.\n- “Ritrova un titolo”: ricerca web facoltativa con Tavily (chiave in Impostazioni › Intelligenza artificiale) per risultati più precisi.",
-    "assets": [
-     {
-      "name": "StreamWise-2.5.0.apk",
-      "url": "https://github.com/carellice/dueffe-streamwise/releases/download/streamwise-v2.5.0/StreamWise-2.5.0.apk",
-      "size": 17054999,
-      "downloads": 3
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "it.dueffe.streamwise",
    "dueffe": true
   },
   {
@@ -1998,7 +1927,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-18T11:08:01Z",
+   "updatedAt": "2026-11-21T18:46:20Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -2009,8 +1938,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.28.6",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.28.6"
+     "label": "Release v1.32.1",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.32.1"
     },
     {
      "type": "releases",
@@ -2031,35 +1960,35 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.28.6",
-    "name": "IPTVISION 1.28.6",
-    "date": "2026-11-18T11:08:09Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.28.6",
-    "notes": "- Profili: \"Chi guarda?\" anche su Windows; il PIN si scrive subito; \"Nascondi XXX\" acceso di base\n\n---\n**Windows:** scarica `IPTVISION-Setup-1.28.6.exe` e avvialo (non servono permessi di amministratore).\n**Android e Android TV:** scarica `IPTVISION-1.28.6.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\n**TV LG (webOS):** installa `IPTVISION-1.28.6.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.28.6.wgt`, lo firma e lo installa (guida nel README).\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.32.1",
+    "name": "IPTVISION 1.32.1",
+    "date": "2026-11-21T18:46:06Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.32.1",
+    "notes": "Ricerca: lo stesso canale in più qualità compare una volta sola\n\n---\n**Windows:** scarica `IPTVISION-Setup-1.32.1.exe` e avvialo (non servono permessi di amministratore).\n**Android e Android TV:** scarica `IPTVISION-1.32.1.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\n**TV LG (webOS):** installa `IPTVISION-1.32.1.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.32.1.wgt`, lo firma e lo installa (guida nel README).\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.28.6.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.28.6/IPTVISION-1.28.6.apk",
+      "name": "IPTVISION-1.32.1.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.32.1/IPTVISION-1.32.1.apk",
       "size": 9715094,
-      "downloads": 3
+      "downloads": 7
      },
      {
-      "name": "IPTVISION-1.28.6.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.28.6/IPTVISION-1.28.6.ipk",
-      "size": 810232,
+      "name": "IPTVISION-1.32.1.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.32.1/IPTVISION-1.32.1.ipk",
+      "size": 810776,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-1.28.6.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.28.6/IPTVISION-1.28.6.wgt",
-      "size": 832736,
+      "name": "IPTVISION-1.32.1.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.32.1/IPTVISION-1.32.1.wgt",
+      "size": 833701,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-Setup-1.28.6.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.28.6/IPTVISION-Setup-1.28.6.exe",
-      "size": 72166699,
-      "downloads": 3
+      "name": "IPTVISION-Setup-1.32.1.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.32.1/IPTVISION-Setup-1.32.1.exe",
+      "size": 72181702,
+      "downloads": 1
      }
     ]
    },
@@ -2434,13 +2363,13 @@
       "name": "MonitorSwitch-portable-win-x64.zip",
       "url": "https://github.com/carellice/MonitorSwitch/releases/download/v3.0.1/MonitorSwitch-portable-win-x64.zip",
       "size": 154470,
-      "downloads": 2
+      "downloads": 3
      },
      {
       "name": "MonitorSwitch.exe",
       "url": "https://github.com/carellice/MonitorSwitch/releases/download/v3.0.1/MonitorSwitch.exe",
       "size": 249344,
-      "downloads": 6
+      "downloads": 8
      }
     ]
    },
