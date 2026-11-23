@@ -730,6 +730,23 @@ function detail(p) {
     <div style="height:40px"></div></div>`;
 }
 
+// Il catalogo si rigenera una volta al giorno: la release appena pubblicata si chiede direttamente a GitHub.
+async function refreshRelease(p) {
+  try {
+    const r = await fetch(`https://api.github.com/repos/${p.repoUrl.replace('https://github.com/', '')}/releases/latest`, { cache: 'no-store' });
+    if (!r.ok) return;
+    const j = await r.json();
+    if (j.tag_name === p.release?.tag) return;
+    p.release = {
+      tag: j.tag_name, name: j.name || j.tag_name, date: j.published_at, url: j.html_url, notes: (j.body || '').slice(0, 1500),
+      assets: j.assets.filter((a) => !/\.(json|txt|sha256|sig|asc)$/i.test(a.name))
+        .map((a) => ({ name: a.name, url: a.browser_download_url, size: a.size, downloads: a.download_count })),
+    };
+    const route = parseRoute();
+    if (route.name === 'detail' && route.id === p.id) render(route, null, scrollY);
+  } catch { /* offline o limite API: resta il catalogo */ }
+}
+
 function wireDetail(p) {
   const root = $('#detail');
   applyAccent(root, p.icon);
@@ -748,6 +765,7 @@ function wireDetail(p) {
     more.classList.toggle('open', open);
     more.firstChild.textContent = open ? 'Mostra meno' : 'Leggi tutto';
   });
+  refreshRelease(p);
   // Ogni download finisce in "Le tue app", per accorgersi quando esce una versione nuova.
   $$('[data-get]', root).forEach((a) => a.addEventListener('click', () => remember(p, p.release?.tag || 'web')));
   $$('[data-shot]', root).forEach((b) => b.addEventListener('click', () => openViewer(p.screenshots, Number(b.dataset.shot))));
