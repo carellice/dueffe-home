@@ -356,6 +356,13 @@
         "✨ Riassunto delle notifiche con Cloudflare Workers AI",
         "🔒 Impostazioni bloccabili con PIN o gesto"
       ]
+    },
+    "extract-audio-from-video": {
+      "category": "web",
+      "name": "Estrai Audio",
+      "platforms": [
+        "web"
+      ]
     }
   }
 }

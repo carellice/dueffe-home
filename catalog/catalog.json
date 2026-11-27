@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-22T12:17:56.666Z",
+ "generatedAt": "2026-11-27T09:01:27.965Z",
  "owner": {
   "login": "carellice",
   "name": "Dueffe",
@@ -36,6 +36,80 @@
  ],
  "projects": [
   {
+   "id": "money",
+   "name": "Money",
+   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
+   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
+   "features": [
+    "Font Bricolage Grotesque (SIL OFL).",
+    "Texture della pelle dello stile skeuomorfico generata con ChatGPT.",
+    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "cloudflare-workers-ai",
+    "jetpack-compose",
+    "kotlin",
+    "personal-finance"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-10-28T11:41:54Z",
+   "updatedAt": "2026-11-26T22:13:35Z",
+   "repoUrl": "https://github.com/carellice/money",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/money"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.27.0",
+     "url": "https://github.com/carellice/money/releases/tag/v1.27.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/money/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/money/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png?v=36cdeefd",
+   "screenshots": [],
+   "video": null,
+   "release": {
+    "tag": "v1.27.0",
+    "name": "Money 1.27.0",
+    "date": "2026-11-26T22:13:24Z",
+    "url": "https://github.com/carellice/money/releases/tag/v1.27.0",
+    "notes": "## Novita'\n- Mese in Movimenti e Report: si cambia anche scorrendo col dito, e il nome del mese non finisce più sotto le frecce, su app e PWA\n- Server PWA 1.19.0: agita per nascondere gli importi e note completate dai movimenti passati",
+    "assets": [
+     {
+      "name": "Money-1.27.0.apk",
+      "url": "https://github.com/carellice/money/releases/download/v1.27.0/Money-1.27.0.apk",
+      "size": 7218901,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": true,
+   "hidden": false,
+   "androidPackage": "com.money.app",
+   "dueffe": false
+  },
+  {
    "id": "chiarella",
    "name": "Chiarella",
    "description": "Chiarella — app Android open source di suoni rilassanti da mescolare, con timer, profili, Live Update e widget",
@@ -65,7 +139,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-21T09:30:02Z",
-   "updatedAt": "2026-11-17T19:39:48Z",
+   "updatedAt": "2026-11-22T15:03:17Z",
    "repoUrl": "https://github.com/carellice/chiarella",
    "webUrl": "https://carellice.github.io/chiarella/",
    "links": [
@@ -81,8 +155,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.24",
-     "url": "https://github.com/carellice/chiarella/releases/tag/v1.24"
+     "label": "Release v1.25",
+     "url": "https://github.com/carellice/chiarella/releases/tag/v1.25"
     },
     {
      "type": "releases",
@@ -99,28 +173,28 @@
    "screenshots": [],
    "video": null,
    "release": {
-    "tag": "v1.24",
-    "name": "Chiarella 1.24",
-    "date": "2026-11-17T19:40:39Z",
-    "url": "https://github.com/carellice/chiarella/releases/tag/v1.24",
-    "notes": "Stile Nothing: interruttori spenti ben visibili sullo sfondo nero",
+    "tag": "v1.25",
+    "name": "Chiarella 1.25",
+    "date": "2026-11-22T15:04:32Z",
+    "url": "https://github.com/carellice/chiarella/releases/tag/v1.25",
+    "notes": "- Play e pausa da Kanso: il pulsante di Chiarella nella Home di Kanso avvia o mette in pausa l'ultimo mix",
     "assets": [
      {
-      "name": "Chiarella-1.24.apk",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.24/Chiarella-1.24.apk",
-      "size": 44381876,
+      "name": "Chiarella-1.25.apk",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.25/Chiarella-1.25.apk",
+      "size": 44381992,
       "downloads": 4
      },
      {
-      "name": "Chiarella-Web-1.24.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.24/Chiarella-Web-1.24.zip",
+      "name": "Chiarella-Web-1.25.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.25/Chiarella-Web-1.25.zip",
       "size": 39800319,
       "downloads": 0
      },
      {
-      "name": "Chiarella-Windows-1.24.zip",
-      "url": "https://github.com/carellice/chiarella/releases/download/v1.24/Chiarella-Windows-1.24.zip",
-      "size": 105071174,
+      "name": "Chiarella-Windows-1.25.zip",
+      "url": "https://github.com/carellice/chiarella/releases/download/v1.25/Chiarella-Windows-1.25.zip",
+      "size": 105071171,
       "downloads": 1
      }
     ]
@@ -201,87 +275,13 @@
       "name": "Hommaterial-v1.90.apk",
       "url": "https://github.com/carellice/hommaterial/releases/download/v1.90/Hommaterial-v1.90.apk",
       "size": 5736118,
-      "downloads": 3
+      "downloads": 4
      }
     ]
    },
    "featured": true,
    "hidden": false,
    "androidPackage": "app.hommaterial",
-   "dueffe": false
-  },
-  {
-   "id": "money",
-   "name": "Money",
-   "description": "Money: app Android per gestire spese ed entrate, con report mensile, abbonamenti e assistente AI",
-   "about": "Spese ed entrate, senza fatica e con un po' di colore. App Android nativa, tutta in Kotlin e Jetpack Compose.\n\n1. Scarica Money-x.y.z.apk dall'ultima release. 2. Aprilo sul telefono e consenti l'installazione da questa fonte. 3. Dalla volta successiva gli aggiornamenti arrivano dentro l'app: Impostazioni → Aggiornamenti.",
-   "features": [
-    "Font Bricolage Grotesque (SIL OFL).",
-    "Texture della pelle dello stile skeuomorfico generata con ChatGPT.",
-    "Loghi dei servizi da Simple Icons (CC0). I marchi appartengono ai rispettivi proprietari."
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "android",
-    "cloudflare-workers-ai",
-    "jetpack-compose",
-    "kotlin",
-    "personal-finance"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": null,
-   "createdAt": "2026-10-28T11:41:54Z",
-   "updatedAt": "2026-11-13T11:56:41Z",
-   "repoUrl": "https://github.com/carellice/money",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/money"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.25.0",
-     "url": "https://github.com/carellice/money/releases/tag/v1.25.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/money/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/money/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/money/main/docs/logo.png?v=36cdeefd",
-   "screenshots": [],
-   "video": null,
-   "release": {
-    "tag": "v1.25.0",
-    "name": "Money 1.25.0",
-    "date": "2026-11-13T11:56:44Z",
-    "url": "https://github.com/carellice/money/releases/tag/v1.25.0",
-    "notes": "## Novita'\n- Stile Dueffe a scelta: da Impostazioni → Stile la grafica scura con superfici calde, testo avorio e accento oro, titoli Bricolage e testo Inter, card a gradiente con bordo oro, tasti oro, icone squircle, aurora sullo sfondo e barra flottante, su app e PWA\n- Server PWA 1.17.0: stile Nothing\n",
-    "assets": [
-     {
-      "name": "Money-1.25.0.apk",
-      "url": "https://github.com/carellice/money/releases/download/v1.25.0/Money-1.25.0.apk",
-      "size": 7202521,
-      "downloads": 3
-     }
-    ]
-   },
-   "featured": true,
-   "hidden": false,
-   "androidPackage": "com.money.app",
    "dueffe": false
   },
   {
@@ -435,6 +435,168 @@
    "dueffe": false
   },
   {
+   "id": "kanso",
+   "name": "Kanso Launcher",
+   "description": "Launcher minimalista per il benessere digitale: tre schermate, ricerca universale e un respiro prima delle app che distraggono",
+   "about": "Kanso è un launcher Android che toglie il superfluo. Al centro la Home con pochi riquadri essenziali e una barra di ricerca per app, contatti, indirizzi e web; a destra la Libreria con tutte le altre app divise per categoria; a sinistra la Consapevolezza con agenda, tempo schermo, sblocchi e riassunto AI delle notifiche. Prima di aprire un'app non essenziale Kanso chiede se vuoi davvero aprirla.\n\nScarica Kanso-vX.Y.Z.apk dall'ultima release, installalo e sceglilo come app Home.",
+   "features": [
+    "🏠 Home senza distrazioni: riquadri tutti uguali e orologio facoltativo",
+    "🔎 Ricerca universale: app, contatti, indirizzi su Maps e web",
+    "🌬️ Attrito consapevole: un respiro prima delle app che distraggono",
+    "🗂️ Libreria con le app divise da sole per categoria",
+    "📅 Agenda, tempo schermo e sblocchi di oggi",
+    "✨ Riassunto delle notifiche con Cloudflare Workers AI",
+    "🔒 Impostazioni bloccabili con PIN o gesto"
+   ],
+   "category": "android",
+   "platforms": [
+    "android",
+    "web"
+   ],
+   "language": "Kotlin",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-11-15T15:01:57Z",
+   "updatedAt": "2026-11-26T22:16:05Z",
+   "repoUrl": "https://github.com/carellice/kanso",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/kanso"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.25.0",
+     "url": "https://github.com/carellice/kanso/releases/tag/v1.25.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/kanso/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/kanso/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/kanso/main/docs/icon.png?v=8fad40ff",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/orologio.jpg",
+    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/agenda.jpg",
+    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/libreria.jpg",
+    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/attrito.jpg",
+    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/ricerca.jpg"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.25.0",
+    "name": "Kanso 1.25.0",
+    "date": "2026-11-26T22:16:10Z",
+    "url": "https://github.com/carellice/kanso/releases/tag/v1.25.0",
+    "notes": "## Kanso 1.25.0\n\n### Novita\n- Pulsante Gemini in Home, da accendere nelle impostazioni se Gemini è installata\n\nScarica **Kanso-v1.25.0.apk** e installalo.\n\nAndroid 9 o successivo.",
+    "assets": [
+     {
+      "name": "Kanso-v1.25.0.apk",
+      "url": "https://github.com/carellice/kanso/releases/download/v1.25.0/Kanso-v1.25.0.apk",
+      "size": 4744706,
+      "downloads": 2
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "app.kanso",
+   "dueffe": false
+  },
+  {
+   "id": "declutty",
+   "name": "Declutty",
+   "description": "Decluttering digitale: disinstalla più app insieme, elimina le foto simili, categorie automatiche e contatti doppioni da unire",
+   "about": "Declutty aiuta a fare ordine sul telefono. Selezioni le app che non ti servono e le disinstalli in serie, ordinandole per nome, dimensione, data o ultimo utilizzo; le app vengono divise da sole per categoria e quelle che non vuoi vedere si nascondono. Nella galleria trova le foto doppie o quasi uguali, tiene quella venuta meglio e sposta le altre nel cestino. In rubrica trova i doppioni, li unisce in un tocco ed elimina più contatti insieme.\n\nScarica Declutty-vX.Y.Z.apk dall'ultima release e aprilo sul telefono. Gli aggiornamenti si installano da Impostazioni → Aggiornamenti.",
+   "features": [
+    "🧹 Disinstalla più app insieme e vedi quanto spazio liberi",
+    "↕️ Ordina per nome, dimensione, installazione, aggiornamento o ultimo utilizzo",
+    "🗂️ Categorie automatiche, ordinabili, con app spostabili a mano",
+    "🙈 Nascondi da Declutty le app che non vuoi vedere",
+    "🖼️ Trova le foto simili e le copie identiche, tiene la migliore ed elimina le altre",
+    "👥 Elimina più contatti insieme e unisci i doppioni",
+    "🔄 Aggiornamenti direttamente dall'app"
+   ],
+   "category": "android",
+   "platforms": [
+    "android"
+   ],
+   "language": "Kotlin",
+   "topics": [
+    "android",
+    "declutter",
+    "jetpack-compose",
+    "kotlin"
+   ],
+   "stars": 0,
+   "forks": 0,
+   "license": "MIT",
+   "createdAt": "2026-11-13T23:21:05Z",
+   "updatedAt": "2026-11-23T08:28:49Z",
+   "repoUrl": "https://github.com/carellice/declutty",
+   "webUrl": null,
+   "links": [
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/declutty"
+    },
+    {
+     "type": "release",
+     "label": "Release v1.8.0",
+     "url": "https://github.com/carellice/declutty/releases/tag/v1.8.0"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/declutty/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/declutty/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/declutty/main/docs/icon.png?v=a7ae889b",
+   "screenshots": [
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/home.jpg",
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/app.jpg",
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/categorie.jpg",
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/doppioni.jpg",
+    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/pulizia.jpg"
+   ],
+   "video": null,
+   "release": {
+    "tag": "v1.8.0",
+    "name": "Declutty 1.8.0",
+    "date": "2026-11-23T08:28:55Z",
+    "url": "https://github.com/carellice/declutty/releases/tag/v1.8.0",
+    "notes": "## Declutty 1.8.0\n\n### Novita\n- Foto: Scorri e scegli, tutta la galleria a swipe con le scartate in sospeso da eliminare o rivedere alla fine\n\nScarica **Declutty-v1.8.0.apk** e installalo, oppure aggiorna da **Impostazioni > Aggiornamenti** dentro l'app.\n\nAndroid 8.0 o successivo.",
+    "assets": [
+     {
+      "name": "Declutty-v1.8.0.apk",
+      "url": "https://github.com/carellice/declutty/releases/download/v1.8.0/Declutty-v1.8.0.apk",
+      "size": 2578621,
+      "downloads": 3
+     }
+    ]
+   },
+   "featured": false,
+   "hidden": false,
+   "androidPackage": "app.declutty",
+   "dueffe": false
+  },
+  {
    "id": "sonora",
    "name": "Sonora",
    "description": "Sonora: YouTube Music in streaming dal tuo server di casa (CasaOS) - web app e app Android",
@@ -504,168 +666,6 @@
    "featured": false,
    "hidden": false,
    "androidPackage": "it.casa.sonora",
-   "dueffe": false
-  },
-  {
-   "id": "declutty",
-   "name": "Declutty",
-   "description": "Decluttering digitale: disinstalla più app insieme, elimina le foto simili, categorie automatiche e contatti doppioni da unire",
-   "about": "Declutty aiuta a fare ordine sul telefono. Selezioni le app che non ti servono e le disinstalli in serie, ordinandole per nome, dimensione, data o ultimo utilizzo; le app vengono divise da sole per categoria e quelle che non vuoi vedere si nascondono. Nella galleria trova le foto doppie o quasi uguali, tiene quella venuta meglio e sposta le altre nel cestino. In rubrica trova i doppioni, li unisce in un tocco ed elimina più contatti insieme.\n\nScarica Declutty-vX.Y.Z.apk dall'ultima release e aprilo sul telefono. Gli aggiornamenti si installano da Impostazioni → Aggiornamenti.",
-   "features": [
-    "🧹 Disinstalla più app insieme e vedi quanto spazio liberi",
-    "↕️ Ordina per nome, dimensione, installazione, aggiornamento o ultimo utilizzo",
-    "🗂️ Categorie automatiche, ordinabili, con app spostabili a mano",
-    "🙈 Nascondi da Declutty le app che non vuoi vedere",
-    "🖼️ Trova le foto simili e le copie identiche, tiene la migliore ed elimina le altre",
-    "👥 Elimina più contatti insieme e unisci i doppioni",
-    "🔄 Aggiornamenti direttamente dall'app"
-   ],
-   "category": "android",
-   "platforms": [
-    "android"
-   ],
-   "language": "Kotlin",
-   "topics": [
-    "android",
-    "declutter",
-    "jetpack-compose",
-    "kotlin"
-   ],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-11-13T23:21:05Z",
-   "updatedAt": "2026-11-20T10:48:12Z",
-   "repoUrl": "https://github.com/carellice/declutty",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/declutty"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.5.0",
-     "url": "https://github.com/carellice/declutty/releases/tag/v1.5.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/declutty/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/declutty/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/declutty/main/docs/icon.png?v=a7ae889b",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/home.jpg",
-    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/app.jpg",
-    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/categorie.jpg",
-    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/doppioni.jpg",
-    "https://raw.githubusercontent.com/carellice/declutty/main/docs/screenshots/pulizia.jpg"
-   ],
-   "video": null,
-   "release": {
-    "tag": "v1.5.0",
-    "name": "Declutty 1.5.0",
-    "date": "2026-11-20T10:48:17Z",
-    "url": "https://github.com/carellice/declutty/releases/tag/v1.5.0",
-    "notes": "## Declutty 1.5.0\n\n### Novita\n- Stile Dueffe: avorio e oro su fondo quasi nero, aurora ambra, scelto dalle impostazioni\n\nScarica **Declutty-v1.5.0.apk** e installalo, oppure aggiorna da **Impostazioni > Aggiornamenti** dentro l'app.\n\nAndroid 8.0 o successivo.",
-    "assets": [
-     {
-      "name": "Declutty-v1.5.0.apk",
-      "url": "https://github.com/carellice/declutty/releases/download/v1.5.0/Declutty-v1.5.0.apk",
-      "size": 2562233,
-      "downloads": 3
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "app.declutty",
-   "dueffe": false
-  },
-  {
-   "id": "kanso",
-   "name": "Kanso Launcher",
-   "description": "Launcher minimalista per il benessere digitale: tre schermate, ricerca universale e un respiro prima delle app che distraggono",
-   "about": "Kanso è un launcher Android che toglie il superfluo. Al centro la Home con pochi riquadri essenziali e una barra di ricerca per app, contatti, indirizzi e web; a destra la Libreria con tutte le altre app divise per categoria; a sinistra la Consapevolezza con agenda, tempo schermo, sblocchi e riassunto AI delle notifiche. Prima di aprire un'app non essenziale Kanso chiede se vuoi davvero aprirla.\n\nScarica Kanso-vX.Y.Z.apk dall'ultima release, installalo e sceglilo come app Home.",
-   "features": [
-    "🏠 Home senza distrazioni: riquadri tutti uguali e orologio facoltativo",
-    "🔎 Ricerca universale: app, contatti, indirizzi su Maps e web",
-    "🌬️ Attrito consapevole: un respiro prima delle app che distraggono",
-    "🗂️ Libreria con le app divise da sole per categoria",
-    "📅 Agenda, tempo schermo e sblocchi di oggi",
-    "✨ Riassunto delle notifiche con Cloudflare Workers AI",
-    "🔒 Impostazioni bloccabili con PIN o gesto"
-   ],
-   "category": "android",
-   "platforms": [
-    "android",
-    "web"
-   ],
-   "language": "Kotlin",
-   "topics": [],
-   "stars": 0,
-   "forks": 0,
-   "license": "MIT",
-   "createdAt": "2026-11-15T15:01:57Z",
-   "updatedAt": "2026-11-18T23:01:56Z",
-   "repoUrl": "https://github.com/carellice/kanso",
-   "webUrl": null,
-   "links": [
-    {
-     "type": "github",
-     "label": "Codice sorgente",
-     "url": "https://github.com/carellice/kanso"
-    },
-    {
-     "type": "release",
-     "label": "Release v1.21.0",
-     "url": "https://github.com/carellice/kanso/releases/tag/v1.21.0"
-    },
-    {
-     "type": "releases",
-     "label": "Tutte le release",
-     "url": "https://github.com/carellice/kanso/releases"
-    },
-    {
-     "type": "issues",
-     "label": "Segnala un problema",
-     "url": "https://github.com/carellice/kanso/issues"
-    }
-   ],
-   "icon": "https://raw.githubusercontent.com/carellice/kanso/main/docs/icon.png?v=8fad40ff",
-   "screenshots": [
-    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/orologio.jpg",
-    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/agenda.jpg",
-    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/libreria.jpg",
-    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/attrito.jpg",
-    "https://raw.githubusercontent.com/carellice/kanso/main/docs/screenshots/ricerca.jpg"
-   ],
-   "video": null,
-   "release": {
-    "tag": "v1.21.0",
-    "name": "Kanso 1.21.0",
-    "date": "2026-11-18T23:01:59Z",
-    "url": "https://github.com/carellice/kanso/releases/tag/v1.21.0",
-    "notes": "## Kanso 1.21.0\n\n### Novita\n- Widget: pulsante Modifica per spostarli, ridimensionarli e bloccarne lo scorrimento\n\nScarica **Kanso-v1.21.0.apk** e installalo.\n\nAndroid 9 o successivo.",
-    "assets": [
-     {
-      "name": "Kanso-v1.21.0.apk",
-      "url": "https://github.com/carellice/kanso/releases/download/v1.21.0/Kanso-v1.21.0.apk",
-      "size": 4133681,
-      "downloads": 3
-     }
-    ]
-   },
-   "featured": false,
-   "hidden": false,
-   "androidPackage": "app.kanso",
    "dueffe": false
   },
   {
@@ -1927,7 +1927,7 @@
    "forks": 0,
    "license": "MIT",
    "createdAt": "2026-10-28T15:30:03Z",
-   "updatedAt": "2026-11-21T18:46:20Z",
+   "updatedAt": "2026-11-25T11:49:15Z",
    "repoUrl": "https://github.com/carellice/IPTVISION",
    "webUrl": null,
    "links": [
@@ -1938,8 +1938,8 @@
     },
     {
      "type": "release",
-     "label": "Release v1.32.1",
-     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.32.1"
+     "label": "Release v1.35.1",
+     "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.35.1"
     },
     {
      "type": "releases",
@@ -1960,35 +1960,35 @@
    ],
    "video": null,
    "release": {
-    "tag": "v1.32.1",
-    "name": "IPTVISION 1.32.1",
-    "date": "2026-11-21T18:46:06Z",
-    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.32.1",
-    "notes": "Ricerca: lo stesso canale in più qualità compare una volta sola\n\n---\n**Windows:** scarica `IPTVISION-Setup-1.32.1.exe` e avvialo (non servono permessi di amministratore).\n**Android e Android TV:** scarica `IPTVISION-1.32.1.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\n**TV LG (webOS):** installa `IPTVISION-1.32.1.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.32.1.wgt`, lo firma e lo installa (guida nel README).\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
+    "tag": "v1.35.1",
+    "name": "IPTVISION 1.35.1",
+    "date": "2026-11-25T11:49:05Z",
+    "url": "https://github.com/carellice/IPTVISION/releases/tag/v1.35.1",
+    "notes": "- Android: arrivando su TV in diretta da un'altra pagina l'elenco parte dal primo canale invece che da quello in onda\n- Server PWA 2.23.0: allineato alla release 1.35.0\n\n---\n**Windows:** scarica `IPTVISION-Setup-1.35.1.exe` e avvialo (non servono permessi di amministratore).\n**Android e Android TV:** scarica `IPTVISION-1.35.1.apk` sul dispositivo e aprilo (consenti l'installazione da origini sconosciute).\n**TV LG (webOS):** installa `IPTVISION-1.35.1.ipk` dal PC con la modalità sviluppatore attiva (guida nel README).\n**TV Samsung (Tizen):** avvia `tizen\\installa-tv.bat`: scarica `IPTVISION-1.35.1.wgt`, lo firma e lo installa (guida nel README).\nChi ha già IPTVISION riceve l'aggiornamento direttamente dall'app (Impostazioni → Aggiornamenti).",
     "assets": [
      {
-      "name": "IPTVISION-1.32.1.apk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.32.1/IPTVISION-1.32.1.apk",
-      "size": 9715094,
-      "downloads": 7
+      "name": "IPTVISION-1.35.1.apk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.35.1/IPTVISION-1.35.1.apk",
+      "size": 9731482,
+      "downloads": 14
      },
      {
-      "name": "IPTVISION-1.32.1.ipk",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.32.1/IPTVISION-1.32.1.ipk",
-      "size": 810776,
+      "name": "IPTVISION-1.35.1.ipk",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.35.1/IPTVISION-1.35.1.ipk",
+      "size": 811982,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-1.32.1.wgt",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.32.1/IPTVISION-1.32.1.wgt",
-      "size": 833701,
+      "name": "IPTVISION-1.35.1.wgt",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.35.1/IPTVISION-1.35.1.wgt",
+      "size": 835872,
       "downloads": 1
      },
      {
-      "name": "IPTVISION-Setup-1.32.1.exe",
-      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.32.1/IPTVISION-Setup-1.32.1.exe",
-      "size": 72181702,
-      "downloads": 1
+      "name": "IPTVISION-Setup-1.35.1.exe",
+      "url": "https://github.com/carellice/IPTVISION/releases/download/v1.35.1/IPTVISION-Setup-1.35.1.exe",
+      "size": 72185900,
+      "downloads": 5
      }
     ]
    },
@@ -2363,7 +2363,7 @@
       "name": "MonitorSwitch-portable-win-x64.zip",
       "url": "https://github.com/carellice/MonitorSwitch/releases/download/v3.0.1/MonitorSwitch-portable-win-x64.zip",
       "size": 154470,
-      "downloads": 3
+      "downloads": 4
      },
      {
       "name": "MonitorSwitch.exe",
@@ -2558,6 +2558,62 @@
    "featured": false,
    "hidden": false,
    "androidPackage": "com.flaviocecca.slideshower",
+   "dueffe": false
+  },
+  {
+   "id": "extract-audio-from-video",
+   "name": "Estrai Audio",
+   "description": "PWA che estrae le tracce audio da un video, anche grande, direttamente nel browser",
+   "about": "Le tracce audio di un video, estratte direttamente nel browser.\n\nIl video non viene caricato in memoria né inviato a un server: FFmpeg (WebAssembly) lo legge a pezzi dal disco tramite WORKERFS. Così si lavora anche su film di diversi GB. In memoria resta solo l'audio estratto.",
+   "features": [
+    "Apri o trascina un video (MP4, MKV, MOV, WebM, AVI, TS…): l'app elenca tutte le tracce audio con lingua, titolo e codec.",
+    "Scegli le tracce e il formato:",
+    "Originale: copia la traccia senza ricodificarla, velocissimo e senza perdita (AAC in .m4a, AC3, DTS, FLAC, Opus…).",
+    "MP3 o WAV: per la massima compatibilità.",
+    "Scarichi un file per traccia."
+   ],
+   "category": "web",
+   "platforms": [
+    "web"
+   ],
+   "language": "JavaScript",
+   "topics": [],
+   "stars": 0,
+   "forks": 0,
+   "license": null,
+   "createdAt": "2026-11-27T09:01:10Z",
+   "updatedAt": "2026-11-27T09:01:20Z",
+   "repoUrl": "https://github.com/carellice/extract-audio-from-video",
+   "webUrl": "https://carellice.github.io/extract-audio-from-video/",
+   "links": [
+    {
+     "type": "web",
+     "label": "Apri online",
+     "url": "https://carellice.github.io/extract-audio-from-video/"
+    },
+    {
+     "type": "github",
+     "label": "Codice sorgente",
+     "url": "https://github.com/carellice/extract-audio-from-video"
+    },
+    {
+     "type": "releases",
+     "label": "Tutte le release",
+     "url": "https://github.com/carellice/extract-audio-from-video/releases"
+    },
+    {
+     "type": "issues",
+     "label": "Segnala un problema",
+     "url": "https://github.com/carellice/extract-audio-from-video/issues"
+    }
+   ],
+   "icon": "https://raw.githubusercontent.com/carellice/extract-audio-from-video/main/icons/icon-512.png?v=0620c2a7",
+   "screenshots": [],
+   "video": null,
+   "release": null,
+   "featured": false,
+   "hidden": false,
+   "androidPackage": null,
    "dueffe": false
   },
   {
